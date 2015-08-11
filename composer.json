@@ -3,7 +3,8 @@
   "description": "Servicio Postal Mexicano PHP Library (Unofficial)",
   "minimum-stability": "stable",
   "license": "MIT",
-  "keywords": ["sepomex"],
+  "keywords": ["sepomex", "mexico"],
+  "homepage": "http://github/eclipxe13/sepomexphp",
   "authors": [
     {
       "name": "Carlos C Soto",
