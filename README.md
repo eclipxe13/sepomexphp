@@ -10,8 +10,33 @@ Anyhow, all the database, code and other information is in english (that is not 
 Install using composer, no other methods are recommended!
 
 ```
-composer require --prefer-dist eclipxe/sepomexphp
+composer require eclipxe/sepomexphp
 ```
+
+# Usage
+
+This is a basic usage example to 
+
+```php
+// set the database connection using Pdo
+$pdostring = "...";
+
+// create the SepomexPhp Object
+$sepomex = new \SepomexPhp\SepomexPhp(
+    new SepomexPhp\PdoGateway\Gateway(
+        new PDO($pdostring)
+    )
+);
+
+// query a zip code
+$zipcode = $sepomex->getZipCodeData((int) $argv[1]);
+```
+
+Also, check the `zipcode-info.php` script. and `ZipCodeDataTest.php`
+
+Do you have your own dataset of Sepomex? You can extend this library, just create `DataGateway` that
+implements the methods and get the data from anywhere.
+
 
 # About the SEPOMEX information
 
@@ -55,7 +80,10 @@ Search from global to specific:
 - [ ] Select a city and get all locations
 - [ ] Select a location and get all zip codes
 
-Create an API for public access. 
+Other things to do:
+
+- [ ] Create an API for public access.
+- [ ] Create a sepomex.txt with fake information that can be distributed with the project, useful for tests
 
 # Are you interested on help to this project?
 
