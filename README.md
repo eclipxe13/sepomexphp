@@ -48,13 +48,14 @@ no estando permitida su comercialización, total o parcial, ni su distribución 
 That means:
 
 * The data is ditributed only for personal use
-* Cannot redistribute the information (total or parial) to anybody (insert a big WTF! here)
+* Cannot redistribute the information (total or partial) to anyone (insert a big WTF! here)
 * Cannot create any profit of the information
 
-So, I'm not allowed to share with you the *public* information (in the original form or changed).
+So, I'm not allowed to share with you the SEPOMEX public information (in the original form or changed).
 You can download it from: http://www.sepomex.gob.mx/ServiciosLinea/Paginas/DescargaCP.aspx
 
-If you run the script `scripts/create-sqlite-from-raw.php` you will create a sqlite database with the same information.
+If you run the script `scripts/create-sqlite-from-raw.php` you will create a sqlite database
+with the same information but normalized.
 
 # What is working
 
@@ -89,7 +90,11 @@ Other things to do:
 
 You are welcome to join! Please try to follow up PSR-1, PSR-2 and PSR-4 conventions.
 
-Lets make this agnostic, without depends on any framework, except for an implementation (like an API)
+Lets make this agnostic, a simple library, without depends on any framework, except for an implementation (like an API)
+
+# Licence
+
+The MIT License (MIT). Please see [License File](LICENSE) for more information.
 
 
 
