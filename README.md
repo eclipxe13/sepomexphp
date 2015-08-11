@@ -17,7 +17,7 @@ composer require --prefer-dist eclipxe/sepomexphp
 
 Sepomex distribute its database of postal codes under a very restrictive clause:
 
-*El Catálogo Nacional de Códigos Postales, es elaborado por Correos de México y se proporciona en forma gratuita para uso particular,
+>> *El Catálogo Nacional de Códigos Postales, es elaborado por Correos de México y se proporciona en forma gratuita para uso particular,
 no estando permitida su comercialización, total o parcial, ni su distribución a terceros bajo ningún concepto.*
 
 That means:
@@ -49,11 +49,11 @@ and some places outside the city. Yes, this is how it works in Mexico.
 
 Search from global to specific:
 
-[ ] Get the full list of states
-[ ] Select a state and get all cities and districts.
-[ ] Select a district and get all locations
-[ ] Select a city and get all locations
-[ ] Select a location and get all zip codes
+- [ ] Get the full list of states
+- [ ] Select a state and get all cities and districts.
+- [ ] Select a district and get all locations
+- [ ] Select a city and get all locations
+- [ ] Select a location and get all zip codes
 
 Create an API for public access. 
 
