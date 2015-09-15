@@ -1,5 +1,7 @@
 # SepomexPhp - Servicio postal Mexicano PHP Library
 
+[![Join the chat at https://gitter.im/eclipxe13/sepomexphp](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/eclipxe13/sepomexphp?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This library is an unofficial version for the Mexicam SEPOMEX data.
 
 Some parts of the project are in Spanish since the main consumers of this library would are mexicans.
