@@ -5,7 +5,6 @@
  * Date: 10/08/15
  * Time: 12:16 AM
  */
-
 namespace SepomexPhp;
 
 class Location

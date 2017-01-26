@@ -5,7 +5,6 @@
  * Date: 9/08/15
  * Time: 11:39 PM
  */
-
 namespace SepomexPhp;
 
 class State

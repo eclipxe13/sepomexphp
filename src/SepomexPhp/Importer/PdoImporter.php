@@ -1,5 +1,4 @@
 <?php
-
 namespace SepomexPhp\Importer;
 
 use PDO;
@@ -58,17 +57,17 @@ class PdoImporter
 
     public function importRawTxt($filename)
     {
-        if (!file_exists($filename) or !is_readable($filename)) {
+        if (! file_exists($filename) or ! is_readable($filename)) {
             throw new \RuntimeException("File $filename not found or not readable");
         }
         $sqlInsert = 'INSERT INTO raw VALUES (' . trim(str_repeat('?,', 15), ',') . ');';
         $stmt = $this->pdo->prepare($sqlInsert);
         $this->pdo->beginTransaction();
         $this->pdo->exec('DELETE FROM raw');
-        $source = new SplFileObject($filename, "r");
+        $source = new SplFileObject($filename, 'r');
         foreach ($source as $i => $line) {
             // discard first lines
-            if ($i < 2 || !$line) {
+            if ($i < 2 || ! $line) {
                 continue;
             }
             $values = explode('|', iconv('iso-8859-1', 'utf-8', $line));

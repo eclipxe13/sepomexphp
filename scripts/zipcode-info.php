@@ -10,7 +10,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 // escape the global scope
 
 if (2 !== $argc) {
-    echo "Usage: ", $argv[0], " zipcode\n";
+    echo 'Usage: ', $argv[0], " zipcode\n";
     exit;
 }
 
@@ -19,7 +19,7 @@ call_user_func(function () use ($argv) {
     // set the database location
     $dbfile = __DIR__ . '/../assets/sepomex.db';
     // create the PDO Object
-    $pdo = new PDO("sqlite:" . $dbfile, null, null, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+    $pdo = new PDO('sqlite:' . $dbfile, null, null, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
     // create the gateway
     $gateway = new SepomexPhp\PdoGateway\Gateway($pdo);
     // create the SepomexPhp Object
@@ -28,18 +28,18 @@ call_user_func(function () use ($argv) {
     // query a zip code
     $zipcode = $sepomex->getZipCodeData((int) $argv[1]);
     if (null === $zipcode) {
-        echo "Not found: ", $argv[1], "\n";
+        echo 'Not found: ', $argv[1], "\n";
         exit;
     }
 
     // display information
-    echo "      ZipCode: ", sprintf("%05d", $zipcode->zipcode), "\n";
-    echo "     District: ", $zipcode->district->name, "\n";
-    echo "        State: ", $zipcode->state->name, "\n";
-    echo "    Locations: ", count($zipcode->locations), "\n";
+    echo '      ZipCode: ', sprintf('%05d', $zipcode->zipcode), "\n";
+    echo '     District: ', $zipcode->district->name, "\n";
+    echo '        State: ', $zipcode->state->name, "\n";
+    echo '    Locations: ', count($zipcode->locations), "\n";
     foreach ($zipcode->locations as $location) {
-        echo "               ", $location->getFullName();
-        echo ($location->city) ? ", City: " . $location->city->name : "";
+        echo '               ', $location->getFullName();
+        echo ($location->city) ? ', City: ' . $location->city->name : '';
         echo "\n";
     }
 });

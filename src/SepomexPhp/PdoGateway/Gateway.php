@@ -5,15 +5,13 @@
  * Date: 9/08/15
  * Time: 10:51 PM
  */
-
 namespace SepomexPhp\PdoGateway;
 
-use SepomexPhp\DataGateway;
 use PDO;
+use SepomexPhp\DataGateway;
 
 class Gateway implements DataGateway
 {
-
     /**
      * @var PDO
      */
@@ -35,10 +33,10 @@ class Gateway implements DataGateway
             . ';';
         $stmt = $this->pdo->prepare($sql);
         if (! $stmt->bindParam(':zipcode', $zipcode, PDO::PARAM_INT)) {
-            throw new \RuntimeException("Cannot bind param :zipcode");
+            throw new \RuntimeException('Cannot bind param :zipcode');
         }
         if (! $stmt->execute()) {
-            throw new \RuntimeException("Cannot execute " . $stmt->queryString);
+            throw new \RuntimeException('Cannot execute ' . $stmt->queryString);
         }
         if (false === $data = $stmt->fetch(PDO::FETCH_ASSOC)) {
             return null;
@@ -59,10 +57,10 @@ class Gateway implements DataGateway
             . ';';
         $stmt = $this->pdo->prepare($sql);
         if (! $stmt->bindParam(':zipcode', $zipcode, PDO::PARAM_INT)) {
-            throw new \RuntimeException("Cannot bind param :zipcode");
+            throw new \RuntimeException('Cannot bind param :zipcode');
         }
         if (! $stmt->execute()) {
-            throw new \RuntimeException("Cannot execute " . $stmt->queryString);
+            throw new \RuntimeException('Cannot execute ' . $stmt->queryString);
         }
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
