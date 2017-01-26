@@ -2,20 +2,11 @@
 
 **This document is in spanish**
 
-SEPOMEX: http://www.sepomex.gob.mx/ServiciosLinea/Paginas/DescargaCP.aspx
+SEPOMEX: https://datos.gob.mx/busca/dataset/catalogo-nacional-de-codigos-postales/resource/13887b9a-f770-4276-8b80-f092cd886b44
 
-La información que se descarga de SEPOMEX es ineficiente pues archivos que no se encuentran normalizados
-y tiene una restricción clara:
-
-> *El Catálogo Nacional de Códigos Postales, es elaborado por Correos de México
-> y se proporciona en forma gratuita para uso particular, no estando permitida
-> su comercialización, total o parcial, ni su distribución a terceros bajo ningún concepto.
-
-Por lo anterior no se puede distribuir la base de datos (compartirla por github, por ejemplo)
-bajo ningún concepto (eso aplica al software libre)
-
-Ahora bien, eso convierte a los datos en privados, pero no a las aplicaciones que hagan uso de ellos,
-es decir, usted puede descargar la base de datos y procesarla.
+A pesar de la leyenda restrictiva en el archivo descargado, la información es liberada bajo licencia LIBRE USO MX por lo
+que mientras se cite la fuente y se utilice en los términos de la misma licencia se permite su distribución y uso de la información
+incluso para fines comerciales.
 
 # Estructura origen:
 
@@ -49,7 +40,7 @@ Lista de las 32 entidades federativas, la información corresponde a INEGI, por 
 en lugar de llamarse "Veracruz" se llama "Veracruz de Ignacio de la Llave",
 por eso crearemos la tabla con un campo de nombre común de los ya conocidos.
 
-### Listado de municipios
+### Listado de delegaciones/municipios
 
 Cada municipio tiene una clave numérica que está relacionada directamente con el estado,
 por lo que en realidad es una llave compuesta.
@@ -64,7 +55,7 @@ los municipios tienen una y sola una ciudad.
 
 También existen códigos postales que están relacionados con una ciudad y al mismo tiempo
 no están relacionados con alguna, lo único que se me ocurre es que el código postal es tan
-amplio que abarca zonas de una ciudad y zonas que están fuera de la ciudad.
+amplio que abarca zonas que pertenecen a una ciudad y zonas que están fuera de la ciudad.
 
 La entidad que sí tiene una relación directa con la ciudad es el asentamiento (colonia) por lo que
 podemos decir que un asentamiento pertenece en su totalidad o no a una ciudad.
@@ -80,16 +71,16 @@ Se puede entender asentamiento como "Colonia",
 en el catálogo podremos encontrar colonias en el mismo municipio y con el mismo nombre,
 pero con diferente clave. Esto es porque el tipo de asentamiento cambia.
 
-Se puede identificar un asentamiento de roma única por el conjunto de estos campos:
-nombre + tipo de asentamiento + municipio + estado
+Se puede identificar un asentamiento de forma única por el conjunto de estos campos:
+nombre + tipo de asentamiento + municipio + estado.
 
 Sin embargo, para cada uno de estos registros le corresponden varios códigos postales.
 
 ### Tipos de asentamiento
 
 Los tipos de asentamiento juegan el papel de un prefijo para la colonia (asentamiento),
-por ejemplo: en DF, Álvaro Obregón existen dos asentamientos llamados "Molino de Santo Domingo",
-solo que uno es "Unidad habitacional" y el otro es "Colonia".
+por ejemplo: en la delegación Álvaro Obregón de la Ciudad de México
+existen dos asentamientos llamados "Molino de Santo Domingo", solo que uno es "Unidad habitacional" y el otro es "Colonia".
 
 Como esta base de datos es por SEPOMEX y no por INEGI,
 cuenta con un tipo de asentamiento llamado "Gran usuario",
