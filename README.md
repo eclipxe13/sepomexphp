@@ -1,6 +1,5 @@
 # SepomexPhp - Servicio postal Mexicano PHP Library
 
-[![Source Code][badge-source]][source]
 [![Latest Version][badge-release]][release]
 [![Software License][badge-license]][license]
 [![Build Status][badge-build]][build]
@@ -99,18 +98,22 @@ Other things to do:
 
 # Are you interested on help to this project?
 
-You are welcome to join! Please try to follow up PSR-1, PSR-2 and PSR-4 conventions.
+Contributions are welcome! Please read [CONTRIBUTING][] for details.
 
 Lets make this agnostic, a simple library, without depends on any framework, except for an implementation (like an API)
 
 # License
 
-The MIT License (MIT). Please see [License File](LICENSE) for more information.
+The SepomexPhp library is copyright © [Carlos C Soto](https://eclipxe.com.mx/)
+and licensed for use under the MIT License (MIT). Please see [LICENSE][] for more information.
 
 ## Data source
 
 "Tabla de Códigos Postales y asentamientos humanos" published by "Correos de México".
 Getting from https://datos.gob.mx/busca/dataset/catalogo-nacional-de-codigos-postales on 2017-01-25. 
+
+[contributing]: CONTRIBUTING.md
+[license]: LICENSE
 
 [source]: https://github.com/eclipxe13/sepomexphp
 [release]: https://github.com/eclipxe13/sepomexphp/releases
@@ -118,7 +121,7 @@ Getting from https://datos.gob.mx/busca/dataset/catalogo-nacional-de-codigos-pos
 [build]: https://travis-ci.org/eclipxe13/sepomexphp
 [quality]: https://scrutinizer-ci.com/g/eclipxe13/sepomexphp/
 [sensiolabs]: https://insight.sensiolabs.com/projects/0b8eb458-a6ef-4300-8950-3c4972228bbe
-[coverage]: https://coveralls.io/github/eclipxe13/sepomexphp?branch=master
+[coverage]: https://scrutinizer-ci.com/g/eclipxe13/sepomexphp/?branch=master
 [downloads]: https://packagist.org/packages/eclipxe/sepomexphp
 
 [badge-source]: http://img.shields.io/badge/source-eclipxe13/sepomexphp-blue.svg?style=flat-square
@@ -127,5 +130,5 @@ Getting from https://datos.gob.mx/busca/dataset/catalogo-nacional-de-codigos-pos
 [badge-build]: https://img.shields.io/travis/eclipxe13/sepomexphp.svg?style=flat-square
 [badge-quality]: https://img.shields.io/scrutinizer/g/eclipxe13/sepomexphp/master.svg?style=flat-square
 [badge-sensiolabs]: https://img.shields.io/sensiolabs/i/4bddd94b-1f59-4e22-8053-b6e98712da50.svg?style=flat-square
-[badge-coverage]: https://coveralls.io/repos/github/eclipxe13/sepomexphp/badge.svg?branch=master
+[badge-coverage]: https://img.shields.io/scrutinizer/coverage/g/eclipxe13/sepomexphp/master.svg?style=flat-square
 [badge-downloads]: https://img.shields.io/packagist/dt/eclipxe/sepomexphp.svg?style=flat-square
