@@ -1,5 +1,3 @@
 /composer.lock
 /vendor/
-/.idea/
-/tests/assets/sepomex.db
-/tests/assets/sepomex.txt
+/assets/
