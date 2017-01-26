@@ -1,5 +1,14 @@
 # SepomexPhp - Servicio postal Mexicano PHP Library
 
+[![Source Code][badge-source]][source]
+[![Latest Version][badge-release]][release]
+[![Software License][badge-license]][license]
+[![Build Status][badge-build]][build]
+[![Scrutinizer][badge-quality]][quality]
+[![SensioLabsInsight][badge-sensiolabs]][sensiolabs]
+[![Coverage Status][badge-coverage]][coverage]
+[![Total Downloads][badge-downloads]][downloads]
+
 This library is an unofficial version for the Mexicam SEPOMEX data.
 
 Some parts of the project are in Spanish since the main consumers of this library would are mexicans.
@@ -58,11 +67,6 @@ allows us to distribute a copy of the original data and also to manipulate it.
 If you run the script `scripts/create-sqlite-from-raw.php` you will create a sqlite database
 with the same information but normalized, the script will download the source if not exists.
 
-### Data source
-
-"Tabla de Códigos Postales y asentamientos humanos" published by "Correos de México".
-Getting from https://datos.gob.mx/busca/dataset/catalogo-nacional-de-codigos-postales on 2017-01-25. 
-
 # What is working
 
 Right now you can search a mexican zip code and it will give you the information about:
@@ -102,3 +106,26 @@ Lets make this agnostic, a simple library, without depends on any framework, exc
 # License
 
 The MIT License (MIT). Please see [License File](LICENSE) for more information.
+
+## Data source
+
+"Tabla de Códigos Postales y asentamientos humanos" published by "Correos de México".
+Getting from https://datos.gob.mx/busca/dataset/catalogo-nacional-de-codigos-postales on 2017-01-25. 
+
+[source]: https://github.com/eclipxe13/sepomexphp
+[release]: https://github.com/eclipxe13/sepomexphp/releases
+[license]: https://github.com/eclipxe13/sepomexphp/blob/master/LICENSE
+[build]: https://travis-ci.org/eclipxe13/sepomexphp
+[quality]: https://scrutinizer-ci.com/g/eclipxe13/sepomexphp/
+[sensiolabs]: https://insight.sensiolabs.com/projects/0b8eb458-a6ef-4300-8950-3c4972228bbe
+[coverage]: https://coveralls.io/github/eclipxe13/sepomexphp?branch=master
+[downloads]: https://packagist.org/packages/eclipxe/sepomexphp
+
+[badge-source]: http://img.shields.io/badge/source-eclipxe13/sepomexphp-blue.svg?style=flat-square
+[badge-release]: https://img.shields.io/github/release/eclipxe13/sepomexphp.svg?style=flat-square
+[badge-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
+[badge-build]: https://img.shields.io/travis/eclipxe13/sepomexphp.svg?style=flat-square
+[badge-quality]: https://img.shields.io/scrutinizer/g/eclipxe13/sepomexphp/master.svg?style=flat-square
+[badge-sensiolabs]: https://img.shields.io/sensiolabs/i/4bddd94b-1f59-4e22-8053-b6e98712da50.svg?style=flat-square
+[badge-coverage]: https://coveralls.io/repos/github/eclipxe13/sepomexphp/badge.svg?branch=master
+[badge-downloads]: https://img.shields.io/packagist/dt/eclipxe/sepomexphp.svg?style=flat-square
