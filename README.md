@@ -129,6 +129,6 @@ Getting from https://datos.gob.mx/busca/dataset/catalogo-nacional-de-codigos-pos
 [badge-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [badge-build]: https://img.shields.io/travis/eclipxe13/sepomexphp.svg?style=flat-square
 [badge-quality]: https://img.shields.io/scrutinizer/g/eclipxe13/sepomexphp/master.svg?style=flat-square
-[badge-sensiolabs]: https://img.shields.io/sensiolabs/i/4bddd94b-1f59-4e22-8053-b6e98712da50.svg?style=flat-square
+[badge-sensiolabs]: https://img.shields.io/sensiolabs/i/0b8eb458-a6ef-4300-8950-3c4972228bbe.svg?style=flat-square
 [badge-coverage]: https://img.shields.io/scrutinizer/coverage/g/eclipxe13/sepomexphp/master.svg?style=flat-square
 [badge-downloads]: https://img.shields.io/packagist/dt/eclipxe/sepomexphp.svg?style=flat-square
