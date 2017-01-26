@@ -1,3 +1,8 @@
+Version 1.1.0 2017-01-26
+- Rename interface `DataGateway` to `DataGatewayInterface`
+- Travis integration and php 7.1
+- Code comments cleanup
+
 Version 1.0.1 2017-01-26
 - Document changes to data source license "uso libre mx"
 - Move assets to `/assets/` instead of `/test/assets/`
