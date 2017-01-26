@@ -9,7 +9,6 @@
 namespace SepomexPhp\PdoGateway;
 
 use SepomexPhp\DataGateway;
-
 use PDO;
 
 class Gateway implements DataGateway
@@ -25,9 +24,6 @@ class Gateway implements DataGateway
         $this->pdo = $pdo;
     }
 
-    /**
-     * @inheritdoc
-     */
     public function getZipCodeData($zipcode)
     {
         $sql = 'select z.id as zipcode, d.id as iddistrict, d.name as districtname,'

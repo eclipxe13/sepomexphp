@@ -21,14 +21,14 @@ class State
     public $name;
 
     /**
-     * @var array
+     * @var Location[]
      */
     public $locations;
 
     /**
      * @param int $id
      * @param string $name
-     * @param array $locations
+     * @param Location[] $locations
      */
     public function __construct($id, $name, array $locations = [])
     {

@@ -30,7 +30,7 @@ class SepomexPhp
     /**
      * Return a ZipCodeData object or null if not found
      * @param int $zipcode
-     * @return ZipCodeData
+     * @return ZipCodeData|null
      */
     public function getZipCodeData($zipcode)
     {
@@ -41,7 +41,7 @@ class SepomexPhp
         // get data information
         $data = $this->gateway->getZipCodeData($zipcode);
         // no data, return null
-        if (!$data) {
+        if (null === $data) {
             return null;
         }
         // return ZipCodeData array
@@ -55,7 +55,7 @@ class SepomexPhp
 
     /**
      * @param int $zipcode
-     * @return array
+     * @return Location[]
      */
     public function getLocationsFromZipCode($zipcode)
     {
