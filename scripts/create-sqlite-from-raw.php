@@ -9,7 +9,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 // escape the global scope
 call_user_func(function() {
 
-    $path = realpath(__DIR__ . '/../tests/assets');
+    $path = realpath(__DIR__ . '/../assets');
     // create the path if this soes not exists
     if (! is_dir($path)) {
         mkdir($path, 0755, true);
@@ -17,6 +17,14 @@ call_user_func(function() {
     // files
     $dbfile = $path . '/sepomex.db';
     $rawfile = $path . '/sepomex.txt';
+
+    // raw file
+    if (!file_exists($rawfile)) {
+        $sourceurl = "http://www.correosdemexico.gob.mx/datosabiertos/cp/cpdescarga.txt";
+        echo "File $rawfile does not exists, will be downloaded from $sourceurl\n";
+        copy($sourceurl, $rawfile);
+    }
+
     // touch the dbfile if not exists
     if (!file_exists($dbfile)) {
         touch($dbfile);
@@ -39,6 +47,4 @@ call_user_func(function() {
     $importer->populateLocations();
     $importer->populateLocationZipCodes();
     $importer->dropRawTable();
-
-    echo "Done!\n";
 });
