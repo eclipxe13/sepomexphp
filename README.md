@@ -56,7 +56,7 @@ by the Mexican goverment using a less restrictive license called LIBRE USO MX ht
 allows us to distribute a copy of the original data and also to manipulate it.
 
 If you run the script `scripts/create-sqlite-from-raw.php` you will create a sqlite database
-with the same information but normalized.
+with the same information but normalized, the script will download the source if not exists.
 
 ### Data source
 
