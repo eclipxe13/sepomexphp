@@ -8,13 +8,12 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 // escape the global scope
-
-if (2 !== $argc) {
-    echo 'Usage: ', $argv[0], " zipcode\n";
-    exit;
-}
-
 call_user_func(function () use ($argv) {
+    // exit if no arguments
+    if (2 !== count($argv)) {
+        echo 'Usage: ', $argv[0], " zipcode\n";
+        return;
+    }
 
     // set the database location
     $dbfile = __DIR__ . '/../assets/sepomex.db';
@@ -29,7 +28,7 @@ call_user_func(function () use ($argv) {
     $zipcode = $sepomex->getZipCodeData((int) $argv[1]);
     if (null === $zipcode) {
         echo 'Not found: ', $argv[1], "\n";
-        exit;
+        return;
     }
 
     // display information
