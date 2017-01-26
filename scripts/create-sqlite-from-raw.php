@@ -7,7 +7,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 // escape the global scope
 call_user_func(function () {
-    $path = realpath(__DIR__ . '/../assets');
+    $path = dirname(__DIR__) . '/assets';
     // create the path if this soes not exists
     if (! is_dir($path)) {
         mkdir($path, 0755, true);
