@@ -29,7 +29,6 @@
     "phpunit/phpunit": "@stable",
     "squizlabs/php_codesniffer": "@stable",
     "friendsofphp/php-cs-fixer": "@stable",
-    "scrutinizer/ocular": "@stable",
-    "satooshi/php-coveralls": "@stable"
+    "scrutinizer/ocular": "@stable"
   }
 }
