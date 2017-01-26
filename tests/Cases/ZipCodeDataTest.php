@@ -15,7 +15,7 @@ class ZipCodeDataTest extends \PHPUnit_Framework_TestCase
 {
     public function getPDO()
     {
-        $dbfile = realpath(__DIR__ . '/../assets/sepomex.db');
+        $dbfile = realpath(__DIR__ . '/../../assets/sepomex.db');
         if (!$dbfile) {
             $this->markTestIncomplete("Cannot find the sepomex.db");
         }

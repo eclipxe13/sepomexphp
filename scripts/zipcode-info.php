@@ -1,7 +1,7 @@
 <?php
 /**
  * This script is a command line tool to get information about a zipcode
- * It uses the database on tests/assets/sepomex.db
+ * It uses the database on assets/sepomex.db
  * This database is not distributable but you can create it with create-sqlite-from-raw.php
  * Usage: zipcode-infp.php zipcode
  */
@@ -17,7 +17,7 @@ if (2 !== $argc) {
 call_user_func(function() use ($argv) {
 
     // set the database location
-    $dbfile = __DIR__ . '/../tests/assets/sepomex.db';
+    $dbfile = __DIR__ . '/../assets/sepomex.db';
     // create the PDO Object
     $pdo = new PDO("sqlite:" . $dbfile, null, null, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
     // create the gateway
