@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: eclipxe
- * Date: 9/08/15
- * Time: 10:51 PM
- */
 namespace SepomexPhp\PdoGateway;
 
 use PDO;
