@@ -57,7 +57,7 @@ class PdoImporter
 
     public function importRawTxt($filename)
     {
-        if (! file_exists($filename) or ! is_readable($filename)) {
+        if (! file_exists($filename) || ! is_readable($filename)) {
             throw new \RuntimeException("File $filename not found or not readable");
         }
         $sqlInsert = 'INSERT INTO raw VALUES (' . trim(str_repeat('?,', 15), ',') . ');';

@@ -8,9 +8,9 @@
 namespace SepomexPhp\PdoGateway;
 
 use PDO;
-use SepomexPhp\DataGateway;
+use SepomexPhp\DataGatewayInterface;
 
-class Gateway implements DataGateway
+class Gateway implements DataGatewayInterface
 {
     /**
      * @var PDO

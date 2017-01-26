@@ -4,7 +4,7 @@ namespace SepomexPhp;
 class SepomexPhp
 {
     /**
-     * @var DataGateway
+     * @var DataGatewayInterface
      */
     protected $gateway;
 
@@ -14,10 +14,10 @@ class SepomexPhp
     protected $factory;
 
     /**
-     * @param DataGateway $gateway
+     * @param DataGatewayInterface $gateway
      * @param Factory|null $factory Change the object creation factory, if null the internal factory will be instanced
      */
-    public function __construct(DataGateway $gateway, Factory $factory = null)
+    public function __construct(DataGatewayInterface $gateway, Factory $factory = null)
     {
         $this->gateway = $gateway;
         if (null === $factory) {

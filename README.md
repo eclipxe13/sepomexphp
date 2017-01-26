@@ -42,7 +42,7 @@ $zipcode = $sepomex->getZipCodeData((int) $argv[1]);
 
 Also, check the `zipcode-info.php` script. and `ZipCodeDataTest.php`
 
-Do you have your own dataset of Sepomex? You can extend this library, just create `DataGateway` that
+Do you have your own dataset of Sepomex? You can extend this library, just create `DataGatewayInterface` that
 implements the methods and get the data from anywhere.
 
 # About the SEPOMEX information (as of 2017-01-25)

@@ -7,7 +7,7 @@
  */
 namespace SepomexPhp;
 
-interface DataGateway
+interface DataGatewayInterface
 {
     /**
      * Get zipcode data
