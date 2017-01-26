@@ -8,7 +8,6 @@
 
 namespace SepomexPhp\PdoGateway;
 
-
 use SepomexPhp\DataGateway;
 
 use PDO;
@@ -31,7 +30,8 @@ class Gateway implements DataGateway
      */
     public function getZipCodeData($zipcode)
     {
-        $sql = 'select z.id as zipcode, d.id as iddistrict, d.name as districtname, s.id as idstate, s.name as statename'
+        $sql = 'select z.id as zipcode, d.id as iddistrict, d.name as districtname,'
+            . ' s.id as idstate, s.name as statename'
             . ' from zipcodes as z'
             . ' inner join districts as d on (d.id = z.iddistrict)'
             . ' inner join states as s on (s.id = d.idstate)'
@@ -70,5 +70,4 @@ class Gateway implements DataGateway
         }
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
-
 }

@@ -29,9 +29,13 @@ class ZipCodeDataTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(ZipCodeData::class, $zipcode, "The zip code was not found");
         $this->assertSame(9208, $zipcode->zipcode, "The zipcode property does not match");
         $this->assertCount(10, $zipcode->locations, "Not all locations were found");
-        $this->assertInstanceOf(District::class, $zipcode->district, "The district was not received or is an invalid class");
+        $this->assertInstanceOf(
+            District::class,
+            $zipcode->district,
+            "The district was not received or is an invalid class"
+        );
         $this->assertInstanceOf(State::class, $zipcode->state, "The state was not received or is an invalid class");
-        foreach($zipcode->locations as $location) {
+        foreach ($zipcode->locations as $location) {
             $this->assertInstanceOf(Location::class, $location, "One item in locations is not a Location");
             if (null !== $location->city) {
                 $this->assertInstanceOf(City::class, $location->city, "One city in locations is not a City");

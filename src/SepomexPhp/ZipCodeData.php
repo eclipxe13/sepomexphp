@@ -33,5 +33,4 @@ class ZipCodeData
         $this->district = $district;
         $this->state = $state;
     }
-
 }

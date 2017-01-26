@@ -9,7 +9,6 @@ namespace SepomexPhp;
  */
 class Factory
 {
-
     public function newZipCodeData($zipcode, array $locations, District $district, State $state)
     {
         return new ZipCodeData($zipcode, $locations, $district, $state);
@@ -34,6 +33,4 @@ class Factory
     {
         return new Location($id, $name, $type, $district, $city);
     }
-
-
 }

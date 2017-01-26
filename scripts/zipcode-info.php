@@ -14,7 +14,7 @@ if (2 !== $argc) {
     exit;
 }
 
-call_user_func(function() use ($argv) {
+call_user_func(function () use ($argv) {
 
     // set the database location
     $dbfile = __DIR__ . '/../assets/sepomex.db';
@@ -37,12 +37,9 @@ call_user_func(function() use ($argv) {
     echo "     District: ", $zipcode->district->name, "\n";
     echo "        State: ", $zipcode->state->name, "\n";
     echo "    Locations: ", count($zipcode->locations), "\n";
-    foreach($zipcode->locations as $location) {
+    foreach ($zipcode->locations as $location) {
         echo "               ", $location->getFullName();
         echo ($location->city) ? ", City: " . $location->city->name : "";
         echo "\n";
     }
 });
-
-
-

@@ -8,7 +8,6 @@
 
 namespace SepomexPhp;
 
-
 class District
 {
     /** @var int */

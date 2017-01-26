@@ -48,5 +48,4 @@ class Location
     {
         return $this->name . ' (' . $this->type . ')';
     }
-
 }
