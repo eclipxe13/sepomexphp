@@ -1,6 +1,10 @@
 <?php
 namespace SepomexPhp;
 
+use SepomexPhp\Traits\PropertyIdIntegerTrait;
+use SepomexPhp\Traits\PropertyLocationsTrait;
+use SepomexPhp\Traits\PropertyNameStringTrait;
+
 class State
 {
     use PropertyIdIntegerTrait;

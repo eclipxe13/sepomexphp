@@ -1,5 +1,8 @@
 <?php
-namespace SepomexPhp;
+namespace SepomexPhp\Traits;
+
+use SepomexPhp\Location;
+use SepomexPhp\Locations;
 
 trait PropertyLocationsTrait
 {

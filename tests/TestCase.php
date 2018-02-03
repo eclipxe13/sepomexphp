@@ -32,7 +32,7 @@ class TestCase extends \PHPUnit\Framework\TestCase
             $dbfile = $this->dbfile();
         }
         return new PDO('sqlite:' . $dbfile, null, null, [
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         ]);
     }
 

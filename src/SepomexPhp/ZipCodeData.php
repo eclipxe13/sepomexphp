@@ -1,6 +1,10 @@
 <?php
 namespace SepomexPhp;
 
+use SepomexPhp\Traits\PropertyDistrictTrait;
+use SepomexPhp\Traits\PropertyLocationsTrait;
+use SepomexPhp\Traits\PropertyStateTrait;
+
 class ZipCodeData
 {
     use PropertyLocationsTrait;

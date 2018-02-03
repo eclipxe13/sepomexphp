@@ -1,5 +1,7 @@
 <?php
-namespace SepomexPhp;
+namespace SepomexPhp\Traits;
+
+use SepomexPhp\District;
 
 trait PropertyDistrictTrait
 {

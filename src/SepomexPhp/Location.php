@@ -1,6 +1,11 @@
 <?php
 namespace SepomexPhp;
 
+use SepomexPhp\Traits\PropertyCityTrait;
+use SepomexPhp\Traits\PropertyDistrictTrait;
+use SepomexPhp\Traits\PropertyIdIntegerTrait;
+use SepomexPhp\Traits\PropertyNameStringTrait;
+
 class Location
 {
     use PropertyIdIntegerTrait;

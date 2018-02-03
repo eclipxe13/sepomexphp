@@ -1,5 +1,5 @@
 <?php
-namespace SepomexPhp;
+namespace SepomexPhp\Traits;
 
 trait PropertyNameStringTrait
 {
