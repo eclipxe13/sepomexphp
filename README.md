@@ -47,7 +47,7 @@ Also, check the `zipcode-info.php` script. and `ZipCodeDataTest.php`
 Do you have your own dataset of Sepomex? You can extend this library, just create `DataGatewayInterface` that
 implements the methods and get the data from anywhere.
 
-# About the SEPOMEX information (as of 2017-01-25)
+# About the SEPOMEX information (as of 2018-02-02)
 
 Sepomex distribute its database of postal codes with a very restrictive clause on its first line:
 
