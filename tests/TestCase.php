@@ -2,6 +2,8 @@
 namespace SepomexPhpTests;
 
 use PDO;
+use SepomexPhp\PdoGateway\Gateway;
+use SepomexPhp\SepomexPhp;
 
 class TestCase extends \PHPUnit\Framework\TestCase
 {
@@ -11,6 +13,11 @@ class TestCase extends \PHPUnit\Framework\TestCase
     public static function utilAsset($filename)
     {
         return __DIR__ . '/assets/' . $filename;
+    }
+
+    protected function createSepomexPhp(): SepomexPhp
+    {
+        return new SepomexPhp(new Gateway($this->pdo($this->dbfile())));
     }
 
     public static function dbfile(): string

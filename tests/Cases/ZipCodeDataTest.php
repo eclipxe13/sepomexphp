@@ -1,15 +1,13 @@
 <?php
 namespace SepomexPhpTests\Cases;
 
-use SepomexPhp\PdoGateway\Gateway;
-use SepomexPhp\SepomexPhp;
 use SepomexPhpTests\TestCase;
 
 class ZipCodeDataTest extends TestCase
 {
     public function testGetZipCodeDataOnNotFound()
     {
-        $sepomex = new SepomexPhp(new Gateway($this->pdo()));
+        $sepomex = $this->createSepomexPhp();
         $this->assertNull($sepomex->getZipCodeData('00001'));
     }
 
@@ -17,7 +15,7 @@ class ZipCodeDataTest extends TestCase
     {
         $expectedZipCode = 88305;
 
-        $sepomex = new SepomexPhp(new Gateway($this->pdo()));
+        $sepomex = $this->createSepomexPhp();
         $zipcode = $sepomex->getZipCodeData($expectedZipCode);
         if (null === $zipcode) {
             $this->fail("Expected information of zip code $expectedZipCode was not found");
