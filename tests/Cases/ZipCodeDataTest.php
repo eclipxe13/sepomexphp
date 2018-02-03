@@ -7,6 +7,12 @@ use SepomexPhpTests\TestCase;
 
 class ZipCodeDataTest extends TestCase
 {
+    public function testGetZipCodeDataOnNotFound()
+    {
+        $sepomex = new SepomexPhp(new Gateway($this->pdo()));
+        $this->assertNull($sepomex->getZipCodeData('00001'));
+    }
+
     public function testZipCodeCheck()
     {
         $expectedZipCode = 88305;
