@@ -6,9 +6,14 @@ class Locations implements \IteratorAggregate, \Countable
     /** @var Location[] */
     private $collection;
 
+    /** @var Cities */
+    private $cities;
+
     public function __construct(Location ...$location)
     {
         $this->collection = $location;
+        $this->cities = $this->extractUniqueCities(...$location);
+    }
 
     public static function extractUniqueCities(Location ...$locations): Cities
     {
@@ -40,16 +45,7 @@ class Locations implements \IteratorAggregate, \Countable
      */
     public function cities(): Cities
     {
-        $cities = [];
-        foreach ($this->collection as $location) {
-            if ($location->hasCity()) {
-                $city = $location->city();
-                if (! array_key_exists($city->id(), $cities)) {
-                    $cities[$city->id()] = $location->city();
-                }
-            }
-        }
-        return new Cities(...$cities);
+        return $this->cities;
     }
 
     public function asArray(): array
