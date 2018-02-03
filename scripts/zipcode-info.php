@@ -30,15 +30,24 @@ call_user_func(function ($argv) {
         echo 'Not found: ', $argv[1], "\n";
         return;
     }
+    $locations = $zipcode->locations();
+    $cities = $locations->cities();
+    $citiesCount = $cities->count();
 
     // display information
-    echo '      ZipCode: ', sprintf('%05d', $zipcode->zipcode), "\n";
-    echo '     District: ', $zipcode->district->name, "\n";
-    echo '        State: ', $zipcode->state->name, "\n";
-    echo '    Locations: ', count($zipcode->locations), "\n";
-    foreach ($zipcode->locations as $location) {
-        echo '               ', $location->getFullName();
-        echo ($location->city) ? ', City: ' . $location->city->name : '';
-        echo "\n";
+    echo '      ZipCode: ', $zipcode->format(), "\n";
+    echo '     District: ', $zipcode->district()->name(), "\n";
+    echo '        State: ', $zipcode->state()->name(), "\n";
+    if ($citiesCount > 1) {
+        echo '       Cities: ', $citiesCount, "\n";
+        foreach ($cities as $city) {
+            echo '               ', $city->name(), "\n";
+        }
+    } else {
+        echo '         City: ', ($citiesCount > 0) ? $cities->byIndex(0)->name() : '(Ninguna)', "\n";
+    }
+    echo '    Locations: ', $locations->count() ? : '(Ninguna)', "\n";
+    foreach ($locations as $location) {
+        echo '               ', $location->getFullName(), "\n";
     }
 }, $argv);

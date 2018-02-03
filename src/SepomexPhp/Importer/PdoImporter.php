@@ -18,6 +18,19 @@ class PdoImporter
         $this->pdo = $pdo;
     }
 
+    public function import(string $rawfile)
+    {
+        $this->importRawTxt($rawfile);
+        $this->populateStates();
+        $this->populateDistricts();
+        $this->populateCities();
+        $this->populateZipCodes();
+        $this->populateLocationTypes();
+        $this->populateLocations();
+        $this->populateLocationZipCodes();
+        $this->clearRawTable();
+    }
+
     public function createStruct()
     {
         $commands = [
@@ -162,6 +175,14 @@ class PdoImporter
             . ' ON (d.idraw = CAST(c_mnpio AS INTEGER) AND d.idstate = CAST(c_estado AS INTEGER))'
             . ' INNER JOIN locations AS l ON (t.id = l.idlocationtype AND d.id = l.iddistrict AND l.name = r.d_asenta)'
             . ';',
+        ];
+        $this->execute($commands);
+    }
+
+    public function clearRawTable()
+    {
+        $commands = [
+            'DELETE FROM raw;',
         ];
         $this->execute($commands);
     }
