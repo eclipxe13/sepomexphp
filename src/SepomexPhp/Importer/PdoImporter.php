@@ -67,7 +67,7 @@ class PdoImporter
         $source = new SplFileObject($filename, 'r');
         foreach ($source as $i => $line) {
             // discard first lines
-            if ($i < 2 || ! $line) {
+            if ($i < 2 || is_array($line) || ! $line) {
                 continue;
             }
             $values = explode('|', iconv('iso-8859-1', 'utf-8', $line));
