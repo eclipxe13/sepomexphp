@@ -177,12 +177,10 @@ class PdoImporter
     /**
      * @param string[] $commands
      */
-    protected function execute($commands)
+    protected function execute(array $commands)
     {
-        if (is_array($commands)) {
-            foreach ($commands as $command) {
-                $this->pdo->exec($command);
-            }
+        foreach ($commands as $command) {
+            $this->pdo->exec($command);
         }
     }
 }
