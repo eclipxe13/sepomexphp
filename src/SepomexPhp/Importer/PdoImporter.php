@@ -65,10 +65,10 @@ class PdoImporter
             'CREATE TABLE locationzipcodes (idlocation integer not null, zipcode integer not null,'
             . ' primary key(idlocation, zipcode));',
         ];
-        $this->execute($commands);
+        $this->execute(...$commands);
     }
 
-    public function importRawTxt($filename)
+    public function importRawTxt(string $filename)
     {
         if (! file_exists($filename) || ! is_readable($filename)) {
             throw new \RuntimeException("File $filename not found or not readable");
@@ -96,7 +96,7 @@ class PdoImporter
             'INSERT INTO states SELECT DISTINCT CAST(c_estado AS INTEGER) as id, d_estado as name'
             . ' FROM raw ORDER BY c_estado;',
         ];
-        $this->execute($commands);
+        $this->execute(...$commands);
         // TODO: renombrar los estados a su nombre tradicional
     }
 
@@ -107,7 +107,7 @@ class PdoImporter
             'INSERT INTO districts SELECT DISTINCT null as id, CAST(c_estado AS INTEGER) as idstate, d_mnpio as name,'
             . ' CAST(c_mnpio AS INTEGER) as idraw FROM raw ORDER BY c_estado, c_mnpio;',
         ];
-        $this->execute($commands);
+        $this->execute(...$commands);
     }
 
     public function populateCities()
@@ -118,7 +118,7 @@ class PdoImporter
             . ' CAST(c_cve_ciudad AS INTEGER) as idraw FROM raw WHERE (d_ciudad <> "")'
             . ' ORDER BY c_estado, c_cve_ciudad;',
         ];
-        $this->execute($commands);
+        $this->execute(...$commands);
     }
 
     public function populateLocationTypes()
@@ -128,7 +128,7 @@ class PdoImporter
             'INSERT INTO locationtypes SELECT DISTINCT CAST(c_tipo_asenta AS INTEGER) AS id, d_tipo_asenta AS name'
             . ' FROM raw ORDER BY c_tipo_asenta;',
         ];
-        $this->execute($commands);
+        $this->execute(...$commands);
     }
 
     public function populateLocations()
@@ -146,7 +146,7 @@ class PdoImporter
             . ' ON (c.idraw = CAST(c_cve_ciudad AS INTEGER) AND c.idstate = CAST(c_estado AS INTEGER))'
             . ';',
         ];
-        $this->execute($commands);
+        $this->execute(...$commands);
     }
 
     public function populateZipCodes()
@@ -160,7 +160,7 @@ class PdoImporter
             . ' ON (d.idraw = CAST(c_mnpio AS INTEGER) AND d.idstate = CAST(c_estado AS INTEGER))'
             . ';',
         ];
-        $this->execute($commands);
+        $this->execute(...$commands);
     }
 
     public function populateLocationZipCodes()
@@ -176,21 +176,15 @@ class PdoImporter
             . ' INNER JOIN locations AS l ON (t.id = l.idlocationtype AND d.id = l.iddistrict AND l.name = r.d_asenta)'
             . ';',
         ];
-        $this->execute($commands);
+        $this->execute(...$commands);
     }
 
     public function clearRawTable()
     {
-        $commands = [
-            'DELETE FROM raw;',
-        ];
-        $this->execute($commands);
+        $this->execute('DELETE FROM raw;');
     }
 
-    /**
-     * @param string[] $commands
-     */
-    protected function execute(array $commands)
+    protected function execute(string ...$commands)
     {
         foreach ($commands as $command) {
             $this->pdo->exec($command);
