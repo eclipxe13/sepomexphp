@@ -9,7 +9,7 @@ class District
     /** @var string */
     public $name;
 
-    /** @var State */
+    /** @var State|null */
     public $state;
 
     /**

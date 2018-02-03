@@ -5,19 +5,18 @@ php:
   - 5.6
   - 7.0
   - 7.1
-  - hhvm
-
-matrix:
-  allow_failures:
-    - php: hhvm
+  - 7.2
 
 # This triggers builds to run on the new TravisCI infrastructure.
 # See: http://docs.travis-ci.com/user/workers/container-based-infrastructure/
 sudo: false
 
 before_script:
-  - travis_retry composer self-update
-  - travis_retry composer install --no-interaction
+  - |
+    if [[ $TRAVIS_PHP_VERSION != '7.1' ]]; then
+        phpenv config-rm xdebug.ini
+    fi
+  - travis_retry composer install --no-interaction --prefer-dist
   - travis_retry php scripts/create-sqlite-from-raw.php
 
 script:
@@ -25,9 +24,19 @@ script:
   - vendor/bin/parallel-lint src/ scripts/ tests/
   - vendor/bin/phpcs -sp src/ scripts/ tests/
   - vendor/bin/phpunit --coverage-text --coverage-clover=build/tests/coverage.xml
+  - |
+    if [[ $TRAVIS_PHP_VERSION != '5.6' ]]; then
+        wget https://github.com/phpstan/phpstan-shim/raw/master/phpstan.phar
+        php phpstan.phar analyse --level max scripts/ src/ tests/
+    fi
 
 after_script:
-  - if [[ $TRAVIS_PHP_VERSION == '5.6' ]]; then php vendor/bin/ocular code-coverage:upload --format=php-clover build/tests/coverage.xml; fi
+  # upload to scrutinizer
+  - |
+    if [[ $TRAVIS_PHP_VERSION == '7.1' ]]; then
+      wget https://scrutinizer-ci.com/ocular.phar
+      php ocular.phar code-coverage:upload --format=php-clover build/tests/coverage.xml
+    fi
 
 notifications:
   email: false

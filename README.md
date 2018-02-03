@@ -1,5 +1,6 @@
 # SepomexPhp - Servicio postal Mexicano PHP Library
 
+[![Gitter][badge-gitter]][gitter]
 [![Latest Version][badge-release]][release]
 [![Software License][badge-license]][license]
 [![Build Status][badge-build]][build]
@@ -26,6 +27,7 @@ composer require eclipxe/sepomexphp
 This is a basic usage example to 
 
 ```php
+<?php
 // set the database connection using Pdo
 $pdostring = "...";
 
@@ -116,6 +118,7 @@ Getting from https://datos.gob.mx/busca/dataset/catalogo-nacional-de-codigos-pos
 [license]: LICENSE
 
 [source]: https://github.com/eclipxe13/sepomexphp
+[gitter]: https://gitter.im/eclipxe13/sepomexphp
 [release]: https://github.com/eclipxe13/sepomexphp/releases
 [license]: https://github.com/eclipxe13/sepomexphp/blob/master/LICENSE
 [build]: https://travis-ci.org/eclipxe13/sepomexphp
@@ -125,10 +128,11 @@ Getting from https://datos.gob.mx/busca/dataset/catalogo-nacional-de-codigos-pos
 [downloads]: https://packagist.org/packages/eclipxe/sepomexphp
 
 [badge-source]: http://img.shields.io/badge/source-eclipxe13/sepomexphp-blue.svg?style=flat-square
+[badge-gitter]: https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=flat-square
 [badge-release]: https://img.shields.io/github/release/eclipxe13/sepomexphp.svg?style=flat-square
 [badge-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [badge-build]: https://img.shields.io/travis/eclipxe13/sepomexphp.svg?style=flat-square
 [badge-quality]: https://img.shields.io/scrutinizer/g/eclipxe13/sepomexphp/master.svg?style=flat-square
-[badge-sensiolabs]: https://img.shields.io/sensiolabs/i/4bddd94b-1f59-4e22-8053-b6e98712da50.svg?style=flat-square
+[badge-sensiolabs]: https://img.shields.io/sensiolabs/i/0b8eb458-a6ef-4300-8950-3c4972228bbe.svg?style=flat-square
 [badge-coverage]: https://img.shields.io/scrutinizer/coverage/g/eclipxe13/sepomexphp/master.svg?style=flat-square
 [badge-downloads]: https://img.shields.io/packagist/dt/eclipxe/sepomexphp.svg?style=flat-square
