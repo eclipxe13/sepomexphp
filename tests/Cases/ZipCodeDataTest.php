@@ -25,6 +25,10 @@ class ZipCodeDataTest extends \PHPUnit_Framework_TestCase
     {
         $sepomex = new SepomexPhp(new Gateway($this->getPDO()));
         $zipcode = $sepomex->getZipCodeData(86000);
+        $this->assertNotNull($zipcode);
+        if (null === $zipcode) {
+            return;
+        }
         $this->assertInstanceOf(ZipCodeData::class, $zipcode, 'The zip code was not found');
         $this->assertSame(86000, $zipcode->zipcode, 'The zipcode property does not match');
         $this->assertCount(3, $zipcode->locations, 'Not all locations were found');
