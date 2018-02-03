@@ -31,7 +31,7 @@ class ZipCodeDataTest extends \PHPUnit_Framework_TestCase
         }
         $this->assertInstanceOf(ZipCodeData::class, $zipcode, 'The zip code was not found');
         $this->assertSame(86000, $zipcode->zipcode, 'The zipcode property does not match');
-        $this->assertCount(3, $zipcode->locations, 'Not all locations were found');
+        $this->assertCount(2, $zipcode->locations, 'Not all locations were found');
         $this->assertInstanceOf(
             District::class,
             $zipcode->district,
