@@ -24,6 +24,7 @@ script:
   - vendor/bin/parallel-lint src/ scripts/ tests/
   - vendor/bin/phpcs -sp src/ scripts/ tests/
   - vendor/bin/phpunit --coverage-text --coverage-clover=build/tests/coverage.xml
+  - vendor/bin/phpstan.phar analyse --level max scripts/ src/ tests/
 
 after_script:
   # upload to scrutinizer
