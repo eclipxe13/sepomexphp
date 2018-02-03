@@ -44,5 +44,5 @@ call_user_func(function () {
     $importer->populateLocationTypes();
     $importer->populateLocations();
     $importer->populateLocationZipCodes();
-    $importer->dropRawTable();
+    $importer->clearRawTable();
 });

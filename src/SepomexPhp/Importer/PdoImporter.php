@@ -187,14 +187,6 @@ class PdoImporter
         $this->execute($commands);
     }
 
-    public function dropRawTable()
-    {
-        $commands = [
-            'DROP TABLE IF EXISTS raw;',
-        ];
-        $this->execute($commands);
-    }
-
     /**
      * @param string[] $commands
      */
