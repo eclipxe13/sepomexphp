@@ -175,7 +175,7 @@ class PdoImporter
     }
 
     /**
-     * @param \PDOStatement|string|string[] $commands
+     * @param string[] $commands
      */
     protected function execute($commands)
     {

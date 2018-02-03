@@ -28,7 +28,7 @@ class SepomexPhp
 
     /**
      * Return a ZipCodeData object or null if not found
-     * @param int $zipcode
+     * @param int|string $zipcode
      * @return ZipCodeData|null
      */
     public function getZipCodeData($zipcode)
