@@ -12,10 +12,10 @@ class Location
     /** @var string */
     public $type;
 
-    /** @var District */
+    /** @var District|null */
     public $district;
 
-    /** @var City */
+    /** @var City|null */
     public $city;
 
     /**
