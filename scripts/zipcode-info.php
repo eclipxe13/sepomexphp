@@ -8,7 +8,7 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 // escape the global scope
-call_user_func(function () use ($argv) {
+call_user_func(function ($argv) {
     // exit if no arguments
     if (2 !== count($argv)) {
         echo 'Usage: ', $argv[0], " zipcode\n";
@@ -41,4 +41,4 @@ call_user_func(function () use ($argv) {
         echo ($location->city) ? ', City: ' . $location->city->name : '';
         echo "\n";
     }
-});
+}, $argv);
