@@ -1,0 +1,1502 @@
+El Catálogo Nacional de Códigos Postales, es elaborado por Correos de México y se proporciona en forma gratuita para uso particular, no estando permitida su comercialización, total o parcial, ni su distribución a terceros bajo ningún concepto.
+d_codigo|d_asenta|d_tipo_asenta|D_mnpio|d_estado|d_ciudad|d_CP|c_estado|c_oficina|c_CP|c_tipo_asenta|c_mnpio|id_asenta_cpcons|d_zona|c_cve_ciudad
+26610|Alfonso Lara Talamante|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3459|Rural|
+26610|Paty|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3643|Rural|
+26613|El Gavilán|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3504|Rural|
+26613|El Vive|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3524|Rural|
+26613|Lomas del Tule|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3600|Rural|
+26613|Ernesto González|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3527|Rural|
+26613|La Herradura|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3570|Rural|
+26613|Santa Ana|Ejido|Villa Unión|Coahuila de Zaragoza||26531|05|26531||15|037|0909|Rural|
+26613|El Chivato|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3493|Rural|
+26613|La Potaza|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3584|Rural|
+26613|La Zacatosa|Ejido|Villa Unión|Coahuila de Zaragoza||26531|05|26531||15|037|3585|Rural|
+26613|La Zacatosa|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3586|Rural|
+26613|Mojarras|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3628|Rural|
+26614|El Porvenir|Ejido|Villa Unión|Coahuila de Zaragoza||26531|05|26531||15|037|0902|Rural|
+26614|Guadalupe|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3537|Rural|
+26614|El Potrero|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3517|Rural|
+26614|San Diego|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3664|Rural|
+26614|El Milagro|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3507|Rural|
+26614|El Setenta|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3520|Rural|
+26614|Ojo de Agua de San Diego|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3634|Rural|
+26614|Los Altares|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3604|Rural|
+26615|Los Papalotes Cuates|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3611|Rural|
+26616|El Cedrito|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3491|Rural|
+26617|Jesús Rodríguez|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3552|Rural|
+26617|La Luz|Ejido|Villa Unión|Coahuila de Zaragoza||26531|05|26531||15|037|0907|Rural|
+26617|Palmira|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3637|Rural|
+26617|Ex-Hacienda de Santa Ana|Hacienda|Villa Unión|Coahuila de Zaragoza||26531|05|26531||24|037|3530|Rural|
+26617|Manuel Acevedo|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3616|Rural|
+26617|Los Realitos|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3613|Rural|
+26620|Las Flores|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3591|Rural|
+26620|El Chapote|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3492|Rural|
+26620|El Garabatal|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3503|Rural|
+26620|La Mona|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3576|Rural|
+26623|Loma Pinta (Las Jaritas)|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3599|Rural|
+26623|Santa Isabel Dos|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3675|Rural|
+26623|El Millón (El Milagro)|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3508|Rural|
+26623|La Lechuza|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3574|Rural|
+26623|Santa Isabel|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3674|Rural|
+26624|Santa Margarita|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3676|Rural|
+26624|El Cimarrón|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3496|Rural|
+26624|La Jauja|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3572|Rural|
+26625|Casa Blanca|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3473|Rural|
+26625|El Venadito (La Mezquitosa)|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3523|Rural|
+26625|El Comandante|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3497|Rural|
+26625|Guadalupe|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3536|Rural|
+26626|Matamoreño Viejo|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3624|Rural|
+26626|Matamoreño|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3623|Rural|
+26627|Minas Viejas|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3627|Rural|
+26630|Ciénega Grande|Ejido|Villa Unión|Coahuila de Zaragoza||26531|05|26531||15|037|0908|Rural|
+26630|Gilberto Villarreal|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3535|Rural|
+26630|Los Nogales|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3609|Rural|
+26630|Ojo de Agua|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3633|Rural|
+26633|Puerto Romero|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3652|Rural|
+26634|El Silencio (Sección K-R Noventa)|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3522|Rural|
+26634|El Refugio|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3518|Rural|
+26634|Piedra Pinta|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3650|Rural|
+26634|Pablo Rodríguez|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3636|Rural|
+26634|Peyotes (Sección Kilómetro 83)|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3649|Rural|
+26634|El Caracol|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3489|Rural|
+26635|La Morita|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3577|Rural|
+26635|Guillermo Ochoa|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3540|Rural|
+26635|San Ramón|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3671|Rural|
+26635|Santana Ortiz|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3677|Rural|
+26635|Peyotes|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3648|Rural|
+26636|El Nogalito (Daniel Frías)|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3513|Rural|
+26636|Fundadores|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3533|Rural|
+26636|José Luis Lira|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3556|Rural|
+26636|Conrado Arizpe|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3479|Rural|
+26636|Los Aguilares (Alejandro Aguilar)|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3602|Rural|
+26636|Nicolás de Luna|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3630|Rural|
+26636|Juan Raúl Méndez|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3562|Rural|
+26636|Rafaela Salomón|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3653|Rural|
+26636|Roque Martínez|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3662|Rural|
+26636|Celso Frías|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3477|Rural|
+26636|Guadalupe Frías|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3538|Rural|
+26636|Jesús Frías|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3550|Rural|
+26636|Las Jaras|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3592|Rural|
+26636|Los Aguilares (José Elisandro Aguilar)|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3603|Rural|
+26636|Alejandro Frías|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3458|Rural|
+26636|Luis Pérez|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3615|Rural|
+26636|María Leticia Valdez Rodríguez|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3622|Rural|
+26636|Las Blancas|Ejido|Villa Unión|Coahuila de Zaragoza||26531|05|26531||15|037|0906|Rural|
+26636|Daniel Flores|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3483|Rural|
+26636|Dora Elia Pérez|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3484|Rural|
+26636|Palomares (Ramón de Luna)|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3641|Rural|
+26637|Roberto Frías|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3659|Rural|
+26637|Antonio Frías|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3464|Rural|
+26637|Crescencio Frías|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3481|Rural|
+26637|La Escondida|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3567|Rural|
+26637|Norberto Alarcón|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3632|Rural|
+26637|Arturo Frías|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3467|Rural|
+26637|La Iguana|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3571|Rural|
+26637|El Fresnito|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3501|Rural|
+26637|Juan Frías|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3559|Rural|
+26637|Pedro Lira|Ranchería|Villa Unión|Coahuila de Zaragoza||26531|05|26531||29|037|3645|Rural|
+26640|Guerrero|Villa|Guerrero|Coahuila de Zaragoza||26001|05|26001||32|012|0910|Rural|
+26643|San Vicente|Ejido|Guerrero|Coahuila de Zaragoza||26001|05|26001||15|012|3180|Rural|
+26650|La Reforma|Ranchería|Guerrero|Coahuila de Zaragoza||26531|05|26531||29|012|0911|Rural|
+26650|Santa Mónica|Hacienda|Guerrero|Coahuila de Zaragoza||26531|05|26531||24|012|0912|Rural|
+26659|Guadalupe|Ejido|Guerrero|Coahuila de Zaragoza||26531|05|26531||15|012|0914|Rural|
+30943|San Antonio la Junta|Barrio|Amatenango de la Frontera|Chiapas||30901|07|30901||02|006|4866|Rural|
+30943|Ojo de Agua las Cruces|Barrio|Amatenango de la Frontera|Chiapas||30901|07|30901||02|006|1946|Rural|
+30943|Altamirano|Barrio|Amatenango de la Frontera|Chiapas||30901|07|30901||02|006|4871|Rural|
+30943|Las Marías|Barrio|Amatenango de la Frontera|Chiapas||30901|07|30901||02|006|4863|Rural|
+30943|Hoja Blanca|Barrio|Amatenango de la Frontera|Chiapas||30901|07|30901||02|006|4865|Rural|
+30943|Miramorelia|Barrio|Amatenango de la Frontera|Chiapas||30901|07|30901||02|006|4873|Rural|
+30943|Nueva Esperanza|Barrio|Amatenango de la Frontera|Chiapas||30901|07|30901||02|006|4867|Rural|
+30943|Ojo de Agua|Barrio|Amatenango de la Frontera|Chiapas||30901|07|30901||02|006|4893|Rural|
+30944|Tapitzala 2|Ejido|Amatenango de la Frontera|Chiapas||30901|07|30901||15|006|1951|Rural|
+30944|Flor de Mayo|Barrio|Amatenango de la Frontera|Chiapas||30901|07|30901||02|006|4872|Rural|
+30944|Nueva Morelia|Ejido|Amatenango de la Frontera|Chiapas||30901|07|30901||15|006|1949|Rural|
+30944|Nueva Libertad|Barrio|Amatenango de la Frontera|Chiapas||30901|07|30901||02|006|4875|Rural|
+30944|El Pacayalito|Ejido|Amatenango de la Frontera|Chiapas||30901|07|30901||15|006|1948|Rural|
+30944|El Relicario|Barrio|Amatenango de la Frontera|Chiapas||30901|07|30901||02|006|4870|Rural|
+30944|Río Guerrero|Ejido|Amatenango de la Frontera|Chiapas||30901|07|30901||15|006|1940|Rural|
+30944|Los Ángeles|Barrio|Amatenango de la Frontera|Chiapas||30901|07|30901||02|006|4869|Rural|
+30944|Bienestar Social|Barrio|Amatenango de la Frontera|Chiapas||30901|07|30901||02|006|4874|Rural|
+30945|La Montaña|Barrio|Amatenango de la Frontera|Chiapas||30901|07|30901||02|006|4859|Rural|
+30945|Agua Escondida|Barrio|Amatenango de la Frontera|Chiapas||30901|07|30901||02|006|4858|Rural|
+30945|Montes Ordóñez|Ejido|Amatenango de la Frontera|Chiapas||30901|07|30901||15|006|1950|Rural|
+30945|Zacatonal|Barrio|Amatenango de la Frontera|Chiapas||30901|07|30901||02|006|4860|Rural|
+30945|La Mesilla|Barrio|Amatenango de la Frontera|Chiapas||30901|07|30901||02|006|4857|Rural|
+30945|La Pureza|Barrio|Amatenango de la Frontera|Chiapas||30901|07|30901||02|006|4861|Rural|
+30946|Santo Domingo|Barrio|Amatenango de la Frontera|Chiapas||30901|07|30901||02|006|4879|Rural|
+30946|Huixquilar|Barrio|Amatenango de la Frontera|Chiapas||30901|07|30901||02|006|1945|Rural|
+30946|Guanajuatillo|Barrio|Amatenango de la Frontera|Chiapas||30901|07|30901||02|006|4878|Rural|
+30946|Granadillal|Barrio|Amatenango de la Frontera|Chiapas||30901|07|30901||02|006|4877|Rural|
+30946|Monte Verde|Barrio|Amatenango de la Frontera|Chiapas||30901|07|30901||02|006|4880|Rural|
+30946|Guadalupe Victoria|Ejido|Amatenango de la Frontera|Chiapas||30901|07|30901||15|006|1942|Rural|
+30950|Bejucal de Ocampo|Pueblo|Bejucal de Ocampo|Chiapas||30901|07|30901||28|010|1952|Rural|
+30953|La Calera|Barrio|Bejucal de Ocampo|Chiapas||30901|07|30901||02|010|5183|Rural|
+30953|Buena Vista|Barrio|Bejucal de Ocampo|Chiapas||30901|07|30901||02|010|5189|Rural|
+30953|El Portal|Barrio|Bejucal de Ocampo|Chiapas||30901|07|30901||02|010|5182|Rural|
+30953|Palmar Chiquito|Barrio|Bejucal de Ocampo|Chiapas||30901|07|30901||02|010|5180|Rural|
+30953|Yalincun|Barrio|Bejucal de Ocampo|Chiapas||30901|07|30901||02|010|5185|Rural|
+30953|El Cercadillo|Barrio|Bejucal de Ocampo|Chiapas||30901|07|30901||02|010|0001|Rural|
+30954|El Limón|Barrio|Bejucal de Ocampo|Chiapas||30901|07|30901||02|010|5186|Rural|
+30954|Las Tablas|Ejido|Bejucal de Ocampo|Chiapas||30901|07|30901||15|010|1955|Rural|
+30954|Altamirano|Barrio|Bejucal de Ocampo|Chiapas||30901|07|30901||02|010|5181|Rural|
+30954|El Pino|Barrio|Bejucal de Ocampo|Chiapas||30901|07|30901||02|010|5187|Rural|
+30954|Nueva Libertad|Barrio|Bejucal de Ocampo|Chiapas||30901|07|30901||02|010|5188|Rural|
+30954|Banderas|Barrio|Bejucal de Ocampo|Chiapas||30901|07|30901||02|010|5184|Rural|
+30955|Las Pilas el Sicil|Barrio|Bejucal de Ocampo|Chiapas||30901|07|30901||02|010|5171|Rural|
+30955|Los Aguacatales|Barrio|Bejucal de Ocampo|Chiapas||30901|07|30901||02|010|5175|Rural|
+30955|Ojo de Agua Centro|Ejido|Bejucal de Ocampo|Chiapas||30901|07|30901||15|010|5176|Rural|
+30956|La Laguna|Barrio|Bejucal de Ocampo|Chiapas||30901|07|30901||02|010|1953|Rural|
+30956|Justo Sierra|Barrio|Bejucal de Ocampo|Chiapas||30901|07|30901||02|010|5166|Rural|
+30956|La Soledad|Barrio|Bejucal de Ocampo|Chiapas||30901|07|30901||02|010|5168|Rural|
+30956|La Hacienda|Barrio|Bejucal de Ocampo|Chiapas||30901|07|30901||02|010|5167|Rural|
+30957|Nuevo Parralito|Barrio|Bejucal de Ocampo|Chiapas||30901|07|30901||02|010|5169|Rural|
+30957|Palmar Grande|Barrio|Bejucal de Ocampo|Chiapas||30901|07|30901||02|010|5174|Rural|
+30957|El Caballete|Barrio|Bejucal de Ocampo|Chiapas||30901|07|30901||02|010|5177|Rural|
+30957|Sabinal|Barrio|Bejucal de Ocampo|Chiapas||30901|07|30901||02|010|5178|Rural|
+30957|El Molino|Barrio|Bejucal de Ocampo|Chiapas||30901|07|30901||02|010|5172|Rural|
+30957|Reforma|Barrio|Bejucal de Ocampo|Chiapas||30901|07|30901||02|010|5170|Rural|
+30957|Las Pilas II|Barrio|Bejucal de Ocampo|Chiapas||30901|07|30901||02|010|5173|Rural|
+30957|Ojo de Agua Grande|Barrio|Bejucal de Ocampo|Chiapas||30901|07|30901||02|010|5179|Rural|
+30960|La Grandeza|Pueblo|La Grandeza|Chiapas||30901|07|30901||28|036|1956|Rural|
+30963|Pino Suárez|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5131|Rural|
+30963|Melchor Ocampo|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5138|Rural|
+30963|Los Cholunes|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5133|Rural|
+30963|La Pinada|Ejido|La Grandeza|Chiapas||30901|07|30901||15|036|1957|Rural|
+30963|Nueva Libertad|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5134|Rural|
+30963|Miramar|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5135|Rural|
+30963|Francisco I. Madero|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5136|Rural|
+30963|Maíz Blanco|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5132|Rural|
+30963|La Soledad|Ranchería|La Grandeza|Chiapas||30901|07|30901||29|036|5130|Rural|
+30963|Propiedad|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5159|Rural|
+30964|Guadalupe Victoria|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5139|Rural|
+30964|Bartolomé de Las Casas|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5137|Rural|
+30965|Alta Vista|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5142|Rural|
+30965|20 de Noviembre|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5145|Rural|
+30965|San Miguel|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5158|Rural|
+30965|La Lucha|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5143|Rural|
+30965|El Orienta|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5140|Rural|
+30965|Toquin|Ejido|La Grandeza|Chiapas||30901|07|30901||15|036|1960|Rural|
+30965|Vicente Guerrero|Ejido|La Grandeza|Chiapas||30901|07|30901||15|036|5141|Rural|
+30965|Niños Héroes|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5144|Rural|
+30965|Las Joyas|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5148|Rural|
+30965|Providencia|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5147|Rural|
+30966|Agua Escondida|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5157|Rural|
+30966|Reforma Casbil|Ejido|La Grandeza|Chiapas||30901|07|30901||15|036|1958|Rural|
+30966|Banderas|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5161|Rural|
+30966|Loma Bonita|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5162|Rural|
+30966|San Francisco|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5153|Rural|
+30966|Casbil|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5156|Rural|
+30966|Las Palmas|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5155|Rural|
+30967|El Chorro|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5149|Rural|
+30967|Cipres|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5150|Rural|
+30967|Chicharras|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5151|Rural|
+30967|Llano Grande|Ejido|La Grandeza|Chiapas||30901|07|30901||15|036|1959|Rural|
+30967|Las Cruces|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5152|Rural|
+30967|Desvío San José|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5154|Rural|
+30967|Encuentro|Barrio|La Grandeza|Chiapas||30901|07|30901||02|036|5146|Rural|
+30970|Los Pérez|Barrio|El Porvenir|Chiapas||30901|07|30901||02|070|0001|Rural|
+30970|El Porvenir de Velasco Suárez|Pueblo|El Porvenir|Chiapas||30901|07|30901||28|070|1965|Rural|
+30970|San Vicente|Barrio|El Porvenir|Chiapas||30901|07|30901||02|070|0002|Rural|
+30973|Male|Ejido|El Porvenir|Chiapas||30901|07|30901||15|070|1966|Rural|
+30973|Las Flores|Barrio|El Porvenir|Chiapas||30901|07|30901||02|070|4898|Rural|
+30973|Nueva Esperanza|Barrio|El Porvenir|Chiapas||30901|07|30901||02|070|4931|Rural|
+34167|Milenio 450|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|0036|Urbano|01
+34167|Victoria de Durango|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|0094|Urbano|01
+34167|Isabel Almanza|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|0164|Urbano|01
+34168|Real Victoria II|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|2116|Urbano|01
+34168|Ampliación Las Rosas|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|3475|Urbano|01
+34168|San Carlos|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|0170|Urbano|01
+34168|Cristóbal Colón|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|0167|Urbano|01
+34169|Genaro Vázquez|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|0171|Urbano|01
+34169|Miramar|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|0172|Urbano|01
+34170|Camino Real|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|0173|Urbano|01
+34170|El Refugio|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|0174|Urbano|01
+34170|Privada las Quintas|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|3658|Urbano|01
+34170|Las Misiones (Edificios de Departamentos)|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|2167|Urbano|01
+34170|Jalisco|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|0175|Urbano|01
+34170|Los Fuentes|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|0176|Urbano|01
+34175|José Martí|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|0177|Urbano|01
+34176|Privada Casuarinas|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|2179|Urbano|01
+34176|Providencia II FOVISSSTE|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|0178|Urbano|01
+34179|Providencia I|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|0181|Urbano|01
+34180|Domingo Arrieta|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|0182|Urbano|01
+34185|Las Quintas|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|6090|Urbano|01
+34185|Senderos|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|0079|Urbano|01
+34185|Real de Privanzas|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|0095|Urbano|01
+34186|Campo Alegre|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|2087|Urbano|01
+34186|Villas Doradas II|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|3665|Urbano|01
+34186|Las Privanzas|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|3325|Urbano|01
+34186|Diana Laura R de Colosio|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|2074|Urbano|01
+34186|Villas Alpinas|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|2079|Urbano|01
+34186|Mireles|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|2082|Urbano|01
+34186|Claveles II|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|2085|Urbano|01
+34186|Claveles 1 (Ampliación Luis Donaldo Colosio)|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|2086|Urbano|01
+34186|Las Esperanzas|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|2174|Urbano|01
+34187|Ejidal|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|0183|Urbano|01
+34187|Niños Héroes|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|0184|Urbano|01
+34188|Jesús María|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|1890|Urbano|01
+34188|Constitución|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|0185|Rural|01
+34188|Luis Donaldo Colosio|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|1844|Urbano|01
+34188|Juan Lira Bracho|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|0187|Urbano|01
+34188|Dolores del Río|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|0186|Rural|01
+34189|La Arboleda|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|0188|Urbano|01
+34190|SAHOP|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|0192|Urbano|01
+34190|El Naranjal|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|0190|Urbano|01
+34190|Santa Cruz|Residencial|Durango|Durango|Victoria de Durango|34131|10|34131||30|005|2244|Urbano|01
+34190|Azteca|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|0189|Urbano|01
+34190|Los Ángeles Villas|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|3659|Urbano|01
+34190|Granja Graciela|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|1876|Urbano|01
+34190|Real del Naranjal|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|0191|Urbano|01
+34193|Los Cedros Residencial|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|6087|Urbano|01
+34193|El Atardecer Residencial|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|0142|Urbano|01
+34193|El Roble Residencial|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|0230|Urbano|01
+34193|El Bosque Residencial|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|7387|Urbano|01
+34193|Residencial los Laureles|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|0003|Urbano|01
+34193|El Lago|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|0136|Urbano|01
+34193|Cotto de Asturias|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|0154|Urbano|01
+34194|Las Flores Sur|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|0193|Urbano|01
+34194|Justicia Social|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|1848|Urbano|01
+34194|Artemisas|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|2101|Urbano|01
+34194|Promotores Sociales|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|2247|Urbano|01
+34194|Girasoles|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|2176|Urbano|01
+34194|Arantzazú|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|7388|Urbano|01
+34194|Rancho San Miguel|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|0097|Urbano|01
+34194|Campestre de Durango|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|2028|Urbano|01
+34194|Venecia|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|2246|Urbano|01
+34194|Arantzazu II|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|0004|Urbano|01
+34194|Santa Anita|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|0195|Urbano|01
+34194|México|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|0194|Urbano|01
+34194|Valle Verde Sur|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|0196|Urbano|01
+34194|Villas Campestre|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|0197|Urbano|01
+34194|Valle de México|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|1859|Urbano|01
+34194|Haciendas del Campestre|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|2117|Urbano|01
+34194|Campestre de Durango II|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|2169|Urbano|01
+34194|El Ensueño|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|2171|Urbano|01
+34195|Villa Universitaria|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|1861|Urbano|01
+34195|Ricardo Rosales (SCT)|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|1878|Urbano|01
+34195|Benigno Montoya|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|0198|Urbano|01
+34195|Campestre Martinica|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|1841|Urbano|01
+34196|Rinconada Bugambilias|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|3670|Urbano|01
+34196|8 de Septiembre|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|0199|Urbano|01
+34197|Morelos Sur|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|0200|Urbano|01
+34197|Loma Bonita II|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|2165|Urbano|01
+34197|Loma Bonita I|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|1877|Urbano|01
+34197|Praderas del Sur|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|0201|Urbano|01
+34197|Ampliación Morelos Sur|Colonia|Durango|Durango|Victoria de Durango|34131|10|34131||09|005|4626|Urbano|01
+34198|Villas del Manantial (Ameyal)|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|6089|Urbano|01
+34199|Real del Mezquital|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|0203|Urbano|01
+34199|Privada Vista del Sol|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|0204|Urbano|01
+34199|Villa Jacarandas|Fraccionamiento|Durango|Durango|Victoria de Durango|34131|10|34131||21|005|0205|Urbano|01
+34200|Hacienda de Fray Diego|Fraccionamiento|Durango|Durango|Victoria de Durango|34222|10|34222||21|005|2062|Urbano|01
+34200|Jardines de Durango|Fraccionamiento|Durango|Durango|Victoria de Durango|34222|10|34222||21|005|0206|Urbano|01
+34200|Las Américas|Fraccionamiento|Durango|Durango|Victoria de Durango|34222|10|34222||21|005|0207|Urbano|01
+34204|Los Eucaliptos|Fraccionamiento|Durango|Durango|Victoria de Durango|34222|10|34222||21|005|0209|Urbano|01
+34204|Privadas San Ignacio|Fraccionamiento|Durango|Durango|Victoria de Durango|34222|10|34222||21|005|3669|Urbano|01
+34204|Puerta de San Ignacio|Fraccionamiento|Durango|Durango|Victoria de Durango|34222|10|34222||21|005|0210|Urbano|01
+34204|Antigua Hacienda|Fraccionamiento|Durango|Durango|Victoria de Durango|34222|10|34222||21|005|2107|Urbano|01
+34204|San José II|Fraccionamiento|Durango|Durango|Victoria de Durango|34222|10|34222||21|005|0212|Urbano|01
+34204|San Carlo|Fraccionamiento|Durango|Durango|Victoria de Durango|34222|10|34222||21|005|3328|Urbano|01
+34204|Acueducto|Fraccionamiento|Durango|Durango|Victoria de Durango|34222|10|34222||21|005|3474|Urbano|01
+34204|La Cima|Fraccionamiento|Durango|Durango|Victoria de Durango|34222|10|34222||21|005|0208|Urbano|01
+34204|San José|Fraccionamiento|Durango|Durango|Victoria de Durango|34222|10|34222||21|005|0211|Urbano|01
+34204|Cerrada las Torres|Fraccionamiento|Durango|Durango|Victoria de Durango|34222|10|34222||21|005|2134|Urbano|01
+36935|El Guayabo de Camarena|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|4999|Rural|
+36935|El Chupadero|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7477|Rural|
+36935|El Sauz de Pastores|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7516|Rural|
+36935|Las Plazuelas (San Juan el Alto)|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7597|Rural|
+36935|Los Álamos|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7607|Rural|
+36935|San Andrés|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7639|Rural|
+36935|Churipitzeo|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|0812|Rural|
+36935|El Cobre|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|4985|Rural|
+36935|El Xoconoxtle|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7524|Rural|
+36935|Guadalupe de Gómez (La Calavera)|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7534|Rural|
+36936|Las Tinajitas|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7599|Rural|
+36936|Loma Linda de Álvarez|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7605|Rural|
+36936|Sauz de Villaseñor|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7656|Rural|
+36936|Pequeña Propiedad del Corral de la Partida|Congregación|Pénjamo|Guanajuato||36901|11|36901||11|023|0836|Rural|
+36936|San Miguel de Buenavista (Rancho de Peña)|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7647|Rural|
+36936|Colorado de Saavedra|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|0891|Rural|
+36936|El Mogote de Reyes|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7500|Rural|
+36936|La Lucita de Ledezma|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7569|Rural|
+36936|La Remolacha|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7574|Rural|
+36936|Santa Teresa de Morales Tres|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7653|Rural|
+36936|Corral de Partida|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|4995|Rural|
+36936|Liebres de Rosales|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7602|Rural|
+36936|Playa Azul|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7624|Rural|
+36936|Sauz de Molina|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7655|Rural|
+36936|Varal de Morales|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7661|Rural|
+36937|San Rafael de Villaseñor|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|4989|Rural|
+36937|El Pedregal de Abajo|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|0799|Rural|
+36937|El Tlacuache|Congregación|Pénjamo|Guanajuato||36901|11|36901||11|023|0893|Rural|
+36937|El Pochote|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|4997|Rural|
+36937|Viborillas de Suárez|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|5000|Rural|
+36937|El Huizache|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7493|Rural|
+36937|Puerta de Gómez Chica|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7632|Rural|
+36937|El Capricho de Reyes|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|5346|Rural|
+36937|El Pedregal de Arriba|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|0800|Rural|
+36937|Zapote de Barajas|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|0929|Rural|
+36937|San Antonio de Aguirre (San Vicente)|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|4979|Rural|
+36938|Pénjamo|Estación|Pénjamo|Guanajuato||36901|11|36901||16|023|0801|Rural|
+36938|San Carlos|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7674|Rural|
+36940|La Estaca|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7553|Rural|
+36940|La Villa de Guadalupe|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7583|Rural|
+36940|Buenavista de Cortés|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|0865|Rural|
+36940|San José del Chincual|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7646|Rural|
+36940|Morelos|Colonia|Pénjamo|Guanajuato||36901|11|36901||09|023|0884|Rural|
+36940|Villafuerte|Colonia|Pénjamo|Guanajuato||36901|11|36901||09|023|7458|Rural|
+36940|El Talón|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7518|Rural|
+36940|Las Jaras|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7591|Rural|
+36940|San Miguel de Camarena|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|0868|Rural|
+36940|Churincillo|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|4992|Rural|
+36940|La Cal Grande|Hacienda|Pénjamo|Guanajuato||36901|11|36901||24|023|0866|Rural|
+36940|La Esperanza|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7552|Rural|
+36943|Mezquite de Luna|Ejido|Pénjamo|Guanajuato||36901|11|36901||15|023|0876|Rural|
+36943|La Estancia del Refugio|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7555|Rural|
+36943|Peralta de Jiménez|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7621|Rural|
+36943|Arechita|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7438|Rural|
+36943|Corral de Santiago|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|0883|Rural|
+36943|Lagunillas|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|0875|Rural|
+36943|El Recreo|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7512|Rural|
+36943|San José de la Cal Grande (El Cuile)|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7644|Rural|
+36944|Hornitos (Hornos)|Congregación|Pénjamo|Guanajuato||36901|11|36901||11|023|0874|Rural|
+36944|La Lobera|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|0877|Rural|
+36944|Cruces de Rojas|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|0873|Rural|
+36944|La Soledad|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7579|Rural|
+36944|Maravillas de Morales|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|0878|Rural|
+36944|El Cuervo|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7483|Rural|
+36944|El Tigre|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7677|Rural|
+36945|El Tarengo|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7519|Rural|
+36945|El Avispero|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|0879|Rural|
+36945|Abraham Martínez (Colonia las Flores)|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|4991|Rural|
+36945|La Huerta de Huandarillo|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7563|Rural|
+36945|El Cerro|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|4978|Rural|
+36945|Del Cerro|Colonia|Pénjamo|Guanajuato||36901|11|36901||09|023|7455|Rural|
+36945|Veredas|Congregación|Pénjamo|Guanajuato||36901|11|36901||11|023|0881|Rural|
+36945|Casas Chicas|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7446|Rural|
+36945|San Antonio Casa Chica|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7641|Rural|
+36945|Cerritos Blancos|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|0872|Rural|
+36945|La Soledad|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7578|Rural|
+36945|San Rafael de la Angostura|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|5379|Rural|
+36945|La Puerta del Rincón|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7573|Rural|
+36945|Corrales de Rábago|Ejido|Pénjamo|Guanajuato||36901|11|36901||15|023|0869|Rural|
+36945|Hacienda del Carmen|Hacienda|Pénjamo|Guanajuato||36901|11|36901||24|023|0870|Rural|
+36945|San Isidro del Carmen|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|0871|Rural|
+36945|El Caracol|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|0880|Rural|
+36945|Huandarillo|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|4981|Rural|
+36946|Cuevas de Morales|Ejido|Pénjamo|Guanajuato||36901|11|36901||15|023|0899|Rural|
+36946|Castillo de Villaseñor|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|0905|Rural|
+36946|San Ignacio de Álvarez|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|0928|Rural|
+36946|La Paz|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|0902|Rural|
+36946|Santa Teresa de Morales|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7651|Rural|
+36946|Tacuba|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7657|Rural|
+36946|San Marcos|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|0904|Rural|
+36946|Charcos de Paúl|Ejido|Pénjamo|Guanajuato||36901|11|36901||15|023|0892|Rural|
+36946|La Rosa (De Cruces de Morales)|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|0927|Rural|
+36946|Independencia|Colonia|Pénjamo|Guanajuato||36901|11|36901||09|023|7456|Rural|
+36946|La Paz|Colonia|Pénjamo|Guanajuato||36901|11|36901||09|023|0900|Rural|
+36946|El Infiernillo|Residencial|Pénjamo|Guanajuato||36901|11|36901||30|023|0901|Rural|
+36946|Lomita de Navarro|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7606|Rural|
+36946|Ojo de Agua del Moro|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7618|Rural|
+36946|Cruces de Morales|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7462|Rural|
+36946|Tepamal de Pimentel|Ranchería|Pénjamo|Guanajuato||36901|11|36901||29|023|7658|Rural|
+36947|Palo Verde|Estación|Pénjamo|Guanajuato||36901|11|36901||16|023|0867|Rural|
+41007|Rancho Hermelindo Patrón|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4819|Rural|
+41007|Las Casitas|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4766|Rural|
+41007|Rancho Miguel Diego|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4839|Rural|
+41007|Llano Grande|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4772|Rural|
+41007|Tetelcingo|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4879|Rural|
+41007|Rancho el Limón|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4814|Rural|
+41007|Vista Hermosa|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4890|Rural|
+41007|Rancho Buena Vista|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4801|Rural|
+41007|Rancho Constantino Rodríguez (Tenantzingo)|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4805|Rural|
+41007|Rancho los Rosendo|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4836|Rural|
+41007|Huixcuautla|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4742|Rural|
+41007|Tierra Colorada|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4881|Rural|
+41007|Zacachautipa (Chautipa)|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4894|Rural|
+41007|Rancho Justino García|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4826|Rural|
+41010|Temalacacingo|Pueblo|Olinalá|Guerrero||41001|12|41001||28|045|2979|Rural|
+41013|Duraznotitlán|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4717|Rural|
+41013|El Tenanyo|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4735|Rural|
+41013|La Guadalupita|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4753|Rural|
+41013|Loma de Mazatepec (Mazatepec)|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4774|Rural|
+41013|Rancho Miguel Amaro|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4838|Rural|
+41013|San José Tecomulco|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4857|Rural|
+41013|Lázaro Cárdenas|Colonia|Olinalá|Guerrero||41001|12|41001||09|045|4703|Rural|
+41013|La Ciénega|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4746|Rural|
+41013|La Lobera|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4757|Rural|
+41013|Rancho los Laureles|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4834|Rural|
+41013|Cerro de Ahuacatlán|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4695|Rural|
+41013|San Antonio Coyahuacán|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|2982|Rural|
+41013|La Escalera|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4751|Rural|
+41013|Metlatijca|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4788|Rural|
+41013|Rancho Buena Vista|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4802|Rural|
+41013|Rancho Pablo Vázquez|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4841|Rural|
+41013|Las Dos Cruces|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4767|Rural|
+41013|Lomas de Cocoyoc|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4778|Rural|
+41013|Rancho los Aguacates|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4831|Rural|
+41013|San Gabriel|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4855|Rural|
+41014|Shitepec|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4860|Rural|
+41014|Vista Hermosa|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4891|Rural|
+41014|Nantzinyo|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4789|Rural|
+41014|Zumpango|Pueblo|Olinalá|Guerrero||41001|12|41001||28|045|2986|Rural|
+41014|Benito Juárez|Colonia|Olinalá|Guerrero||41001|12|41001||09|045|4702|Rural|
+41014|Paraje Chilpancingo|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4793|Rural|
+41014|Chilatlajco|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4699|Rural|
+41014|Campanario|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4694|Rural|
+41014|San Pedro|Colonia|Olinalá|Guerrero||41001|12|41001||09|045|4705|Rural|
+41014|Teapan|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4862|Rural|
+41014|Tepozonalco|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4878|Rural|
+41014|Tuxtlán (Barranca del Tigre)|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4887|Rural|
+41014|Xalatzingo|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4892|Rural|
+41014|Santa Cruz Lomalapa (Lomalapa)|Pueblo|Olinalá|Guerrero||41001|12|41001||28|045|2980|Rural|
+41014|Cuatecomatitlán|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4715|Rural|
+41014|Las Minas (Tlalchichiltipan)|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4768|Rural|
+41014|Tecorrales|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4866|Rural|
+41014|Altamirano|Colonia|Olinalá|Guerrero||41001|12|41001||09|045|4701|Rural|
+41014|Huizachitepec (Casas Blancas)|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4743|Rural|
+41015|Rancho Llano Grande|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4830|Rural|
+41015|Tzicapotzaltzi|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4888|Rural|
+41015|Viacrucis|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4889|Rural|
+41015|Cozahuatitlán|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4710|Rural|
+41015|Limontitlán|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4770|Rural|
+41015|Rancho el Mirador|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4815|Rural|
+41015|La Cumbre|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4749|Rural|
+41015|San Felipe Amatitlán (Amatitlán)|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4854|Rural|
+41015|Tecolhuitzo|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4865|Rural|
+41015|Chichihualcamac (Rancho los Limones)|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4698|Rural|
+41015|Los Terrerillos|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4787|Rural|
+41015|Sicatlán|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4861|Rural|
+41015|Tecusiapa (Tecuisiapan)|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4868|Rural|
+41015|Tecuzijapan (Tecuisiapan)|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4869|Rural|
+41015|Teohuaxtitlán (Tepehuaje)|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4874|Rural|
+41015|Cuachichinolco|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4712|Rural|
+41015|El Portezuelo|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4730|Rural|
+41015|La Presa|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4765|Rural|
+41015|San Andrés|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4852|Rural|
+41015|El Progreso (Chupandillo)|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|2972|Rural|
+41015|Zontecomatlán|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|2981|Rural|
+41015|Nazareth|Colonia|Olinalá|Guerrero||41001|12|41001||09|045|4704|Rural|
+41015|Cuahulotitlán|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4713|Rural|
+41015|Tetlate|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4880|Rural|
+41015|Tlaxco|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4885|Rural|
+41015|El Amate del Letrero|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4721|Rural|
+41016|Ocotitlán|Pueblo|Olinalá|Guerrero||41001|12|41001||28|045|2974|Rural|
+41016|Coyomitla|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4708|Rural|
+41016|Rancho Manuel González|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4837|Rural|
+41016|Dos Cruces|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4716|Rural|
+41016|Rancho el Capadero|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4811|Rural|
+41016|Rancho los Joselitos|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4833|Rural|
+41016|Axoxuca|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4692|Rural|
+41016|La Ciénega|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4745|Rural|
+41016|Loma del Pitayo|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4775|Rural|
+41016|Rancho Juan Rodríguez Mancilla|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4823|Rural|
+41016|Mextiopam (Mextiopa)|Pueblo|Olinalá|Guerrero||41001|12|41001||28|045|2973|Rural|
+41017|San Lázaro|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4858|Rural|
+41017|Tlahuancatepec|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4882|Rural|
+41017|Cuamanalpan|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4714|Rural|
+41017|Tres Luces|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4886|Rural|
+41017|Temolzingo|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4871|Rural|
+41017|Ahuacatlán|Pueblo|Olinalá|Guerrero||41001|12|41001||28|045|2987|Rural|
+41017|San José Amoltepec (Amoltepec)|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4856|Rural|
+41017|Tecojcoyunca|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4864|Rural|
+41017|Lomas de Tecojcoyunca|Ranchería|Olinalá|Guerrero||41001|12|41001||29|045|4779|Rural|
+46010|San José de Maderas|Ranchería|Huejuquilla el Alto|Jalisco||46001|14|46001||29|042|1451|Rural|
+46012|El Zollate|Rancho|Huejuquilla el Alto|Jalisco||46001|14|46001||48|042|0023|Rural|
+46013|Jimulco|Ranchería|Huejuquilla el Alto|Jalisco||46001|14|46001||29|042|1452|Rural|
+46013|Rancho Colorado|Ranchería|Huejuquilla el Alto|Jalisco||46001|14|46001||29|042|1454|Rural|
+46014|Cerro Blanco|Rancho|Huejuquilla el Alto|Jalisco||46001|14|46001||48|042|0011|Rural|
+46014|La Estancia de Arriba|Ranchería|Huejuquilla el Alto|Jalisco||46001|14|46001||29|042|0026|Rural|
+46014|Los Zapotes|Ranchería|Huejuquilla el Alto|Jalisco||46001|14|46001||29|042|0034|Rural|
+46014|El Terrero|Rancho|Huejuquilla el Alto|Jalisco||46001|14|46001||48|042|0022|Rural|
+46014|San José de Orozco|Rancho|Huejuquilla el Alto|Jalisco||46001|14|46001||48|042|0038|Rural|
+46015|Arroyos del Agua|Ranchería|Huejuquilla el Alto|Jalisco||46001|14|46001||29|042|1455|Rural|
+46015|Vallecito|Rancho|Huejuquilla el Alto|Jalisco||46001|14|46001||48|042|0002|Rural|
+46016|El Colorado|Ranchería|Huejuquilla el Alto|Jalisco||46001|14|46001||29|042|1453|Rural|
+46017|La Ordeña|Rancho|Huejuquilla el Alto|Jalisco||46001|14|46001||48|042|0028|Rural|
+46017|Buenavista (El Tuerto)|Rancho|Huejuquilla el Alto|Jalisco||46001|14|46001||48|042|0039|Rural|
+46017|La Muralla|Rancho|Huejuquilla el Alto|Jalisco||46001|14|46001||48|042|0027|Rural|
+46018|Ortega|Ranchería|Huejuquilla el Alto|Jalisco||46001|14|46001||29|042|1457|Rural|
+46018|Los Ortega y Cardos|Ranchería|Huejuquilla el Alto|Jalisco||46001|14|46001||29|042|1456|Rural|
+46019|Bajío de Maderas|Rancho|Huejuquilla el Alto|Jalisco||46001|14|46001||48|042|0010|Rural|
+46019|Mesa de Cristo|Rancho|Huejuquilla el Alto|Jalisco||46001|14|46001||48|042|0004|Rural|
+46020|Margaritas|Ranchería|Huejuquilla el Alto|Jalisco||46001|14|46001||29|042|1458|Rural|
+46022|San Cayetano de los Landa|Rancho|Huejuquilla el Alto|Jalisco||46001|14|46001||48|042|0037|Rural|
+46022|Los García|Rancho|Huejuquilla el Alto|Jalisco||46001|14|46001||48|042|0031|Rural|
+46022|El Carrizal|Rancho|Huejuquilla el Alto|Jalisco||46001|14|46001||48|042|0019|Rural|
+46022|El Cedro|Rancho|Huejuquilla el Alto|Jalisco||46001|14|46001||48|042|0020|Rural|
+46022|Los Mezquites|Rancho|Huejuquilla el Alto|Jalisco||46001|14|46001||48|042|0033|Rural|
+46023|Las Granjas|Colonia|Huejuquilla el Alto|Jalisco||46001|14|46001||09|042|0017|Rural|
+46024|Salitre de Abajo|Ranchería|Huejuquilla el Alto|Jalisco||46001|14|46001||29|042|0035|Rural|
+46024|Salitre de Arriba|Rancho|Huejuquilla el Alto|Jalisco||46001|14|46001||48|042|0036|Rural|
+46024|La Boquilla|Rancho|Huejuquilla el Alto|Jalisco||46001|14|46001||48|042|0024|Rural|
+46024|Ciénega de Pacheco|Ranchería|Huejuquilla el Alto|Jalisco||46001|14|46001||29|042|0014|Rural|
+46025|Cuesta de Yugos|Rancho|Huejuquilla el Alto|Jalisco||46001|14|46001||48|042|0018|Rural|
+46025|San Nicolás de Acuña|Ranchería|Huejuquilla el Alto|Jalisco||46001|14|46001||29|042|1459|Rural|
+46025|Colomos de San Nicolás|Rancho|Huejuquilla el Alto|Jalisco||46001|14|46001||48|042|0015|Rural|
+46029|La Estancia de Abajo|Ranchería|Huejuquilla el Alto|Jalisco||46001|14|46001||29|042|0025|Rural|
+46029|El Sabino|Ranchería|Huejuquilla el Alto|Jalisco||46001|14|46001||29|042|0021|Rural|
+46029|La Cofradía|Ranchería|Huejuquilla el Alto|Jalisco||46001|14|46001||29|042|1460|Rural|
+46029|Las Pilas|Ranchería|Huejuquilla el Alto|Jalisco||46001|14|46001||29|042|0003|Rural|
+46030|Tenzompa|Pueblo|Huejuquilla el Alto|Jalisco||46001|14|46001||28|042|1461|Rural|
+46030|Rincón de San Vicente|Colonia|Huejuquilla el Alto|Jalisco||46001|14|46001||09|042|0001|Rural|
+46030|Cerro de Temachaco|Rancho|Huejuquilla el Alto|Jalisco||46001|14|46001||48|042|0012|Rural|
+46034|Hatmasie|Colonia|Huejuquilla el Alto|Jalisco||46001|14|46001||09|042|0016|Rural|
+46036|Ciénega de Guadalupe|Rancho|Huejuquilla el Alto|Jalisco||46001|14|46001||48|042|0013|Rural|
+46037|Los Llanos|Rancho|Huejuquilla el Alto|Jalisco||46001|14|46001||48|042|0032|Rural|
+46037|Las Pilas|Rancho|Huejuquilla el Alto|Jalisco||46001|14|46001||48|042|0030|Rural|
+46037|La Soledad|Pueblo|Huejuquilla el Alto|Jalisco||46001|14|46001||28|042|0029|Rural|
+46040|El Vallado|Colonia|Mezquitic|Jalisco||46001|14|46001||09|061|0007|Urbano|
+46040|Centro Mezquitic|Colonia|Mezquitic|Jalisco||46001|14|46001||09|061|1464|Rural|
+46042|Las Bocas|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|1462|Rural|
+46042|Ciénega Grande|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|1469|Rural|
+46042|San Juan de Navarrete|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|1468|Rural|
+46042|Cerro Colorado|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|1470|Rural|
+46043|La Junta de Ríos|Rancho|Mezquitic|Jalisco||46001|14|46001||48|061|0026|Rural|
+46043|Potrero de Navarrete|Rancho|Mezquitic|Jalisco||46001|14|46001||48|061|0036|Rural|
+46043|Las Carreras|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|1463|Rural|
+46043|Minillas|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|1465|Rural|
+46044|Mesa del Fraile (Mesa de Guadalupe)|Pueblo|Mezquitic|Jalisco||46001|14|46001||28|061|1467|Rural|
+46045|El Mortero|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|1472|Rural|
+46047|Ocota (La Taberna)|Rancho|Mezquitic|Jalisco||46001|14|46001||48|061|0032|Rural|
+46047|Totuate|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|0057|Rural|
+46049|Jimulco|Rancho|Mezquitic|Jalisco||46001|14|46001||48|061|0023|Rural|
+46049|Nostic|Pueblo|Mezquitic|Jalisco||46001|14|46001||28|061|1471|Rural|
+46050|Pedernales|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|0033|Rural|
+46050|Nueva Colonia|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|4453|Rural|
+46050|Santa Cruz|Rancho|Mezquitic|Jalisco||46001|14|46001||48|061|0046|Rural|
+46053|Chonacata|Rancho|Mezquitic|Jalisco||46001|14|46001||48|061|0014|Rural|
+46055|Las Guayabas|Rancho|Mezquitic|Jalisco||46001|14|46001||48|061|0029|Rural|
+46055|La Calabacilla|Rancho|Mezquitic|Jalisco||46001|14|46001||48|061|0024|Rural|
+46056|Pueblo Nuevo|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|0002|Rural|
+46056|Mayehekwa Pueblo Nuevo 2|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|0031|Rural|
+46056|Santa Catarina|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|0045|Rural|
+46056|Soconita|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|0048|Rural|
+46057|Taimarita|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|0049|Rural|
+46057|Las Latas|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|0003|Rural|
+46057|Pochotita|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|0034|Rural|
+46060|Los Amoles (Bajío de los Amoles)|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|1473|Rural|
+46063|El Venado|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|0020|Rural|
+46064|Tempeste|Rancho|Mezquitic|Jalisco||46001|14|46001||48|061|0052|Rural|
+46065|Tesorero|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|0054|Rural|
+46065|Ocota de los Llanos|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|1474|Rural|
+46066|Rancho de la Relación|Rancho|Mezquitic|Jalisco||46001|14|46001||48|061|0037|Rural|
+46067|San Sebastián Teponahuaxtlán|Pueblo|Mezquitic|Jalisco||46001|14|46001||28|061|0005|Rural|
+46068|Carlos Rivera Aceves [Aserradero]|Colonia|Mezquitic|Jalisco||46001|14|46001||09|061|0006|Rural|
+46069|Agua Zarca|Rancho|Mezquitic|Jalisco||46001|14|46001||48|061|0009|Rural|
+46070|San Luis|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|0042|Rural|
+46070|San Luisito|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|0043|Rural|
+46070|Tempisque|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|0053|Rural|
+46070|La Ciénega de Huaistita (Los Quesos)|Pueblo|Mezquitic|Jalisco||46001|14|46001||28|061|0025|Rural|
+46070|Tierras Blancas Huaistita|Rancho|Mezquitic|Jalisco||46001|14|46001||48|061|0056|Rural|
+46070|Guamuchilillo|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|0021|Rural|
+46070|Los Lobos|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|0030|Rural|
+46070|Popotita|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|0035|Rural|
+46070|Rancho el Aguacate|Rancho|Mezquitic|Jalisco||46001|14|46001||48|061|0039|Rural|
+46070|Tecolote|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|0051|Rural|
+46070|San Miguel (San Miguel Huaixtita)|Pueblo|Mezquitic|Jalisco||46001|14|46001||28|061|0044|Rural|
+46070|Tierra Colorada|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|0055|Rural|
+46072|Codorniz|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|0015|Rural|
+46072|El Chalate (Los Chalates)|Pueblo|Mezquitic|Jalisco||46001|14|46001||28|061|0018|Rural|
+46073|Bajío del Carrizal|Rancho|Mezquitic|Jalisco||46001|14|46001||48|061|0011|Rural|
+46073|Campamento|Rancho|Mezquitic|Jalisco||46001|14|46001||48|061|0012|Rural|
+46073|Carrizal|Ranchería|Mezquitic|Jalisco||46001|14|46001||29|061|0013|Rural|
+55738|Xalatlaco (Imevis)|Campamento|Coacalco de Berriozábal|México|Coacalco de Berriozabal|55701|15|55701||04|020|5796|Urbano|03
+55738|Asociación de Comerciantes de Coacalco|Condominio|Coacalco de Berriozábal|México|Coacalco de Berriozabal|55701|15|55701||10|020|5795|Urbano|03
+55738|Bonito Coacalco II (La Loma)|Conjunto habitacional|Coacalco de Berriozábal|México|Coacalco de Berriozabal|55701|15|55701||12|020|8977|Urbano|03
+55739|Los Acuales|Colonia|Coacalco de Berriozábal|México|Coacalco de Berriozabal|55701|15|55701||09|020|3911|Urbano|03
+55740|Galaxias el Llano|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|9426|Urbano|12
+55740|Tecámac de Felipe Villanueva Centro|Pueblo|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||28|081|3912|Urbano|12
+55740|El Calvario|Barrio|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||02|081|8122|Urbano|12
+55743|San Nicolás la Redonda|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|8227|Urbano|12
+55743|Rancho la Luz|Condominio|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||10|081|8068|Urbano|12
+55743|Real Granada|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|0008|Urbano|12
+55743|Isidro Fabela|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|5597|Urbano|12
+55743|La Palma|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|8075|Urbano|12
+55743|Hacienda del Bosque|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|8189|Urbano|12
+55744|San Pedro Potzohuacan|Pueblo|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||28|081|3915|Urbano|12
+55745|Ampliación San Jerónimo|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|8083|Urbano|12
+55745|San Jerónimo Xonacahuacan|Pueblo|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||28|081|3916|Urbano|12
+55745|Jardines de Xonacahuacan|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|8276|Urbano|12
+55745|Nuevo México|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|8084|Urbano|12
+55746|Rancho la Capilla|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|0015|Urbano|12
+55746|Ex Hacienda San Miguel Tenopala|Ranchería|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||29|081|0010|Urbano|12
+55746|Santa Cruz Tecámac|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|9423|Urbano|12
+55747|Nueva Santa María (De San Pablo Tecalco)|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|7017|Urbano|12
+55747|San Isidro Citlalcóatl|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|7014|Urbano|12
+55747|San Antonio de San Pablo Tecalco|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|7018|Urbano|12
+55747|San Pablo Tecalco|Pueblo|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||28|081|3930|Urbano|12
+55748|Ejido de Tecámac|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|5335|Urbano|12
+55748|San José|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|3917|Urbano|12
+55748|San Mateo Tecalco|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|3919|Urbano|12
+55748|San Martín Azcatepec|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|3918|Urbano|12
+55748|Los Olivos|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|5598|Urbano|12
+55748|Los Olivos|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|7025|Urbano|12
+55748|Primero de Marzo|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|5596|Urbano|12
+55748|Ampliación Ejido de Tecámac|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|8079|Urbano|12
+55748|Jema|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|0014|Urbano|12
+55749|Hacienda Esmeralda|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|0011|Urbano|12
+55749|Vista Hermosa|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|8078|Urbano|12
+55749|Del Catillo|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|8278|Urbano|12
+55749|Jardines de Tecámac|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|8629|Urbano|12
+55749|Texcaltitla|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|7019|Urbano|12
+55749|Ixotitla|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|8069|Urbano|12
+55749|5 de Mayo|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|3920|Urbano|12
+55749|Electricistas|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|5650|Urbano|12
+55749|Sierra Hermosa|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|6583|Urbano|12
+55749|Nueva Santa María|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|3922|Urbano|12
+55749|La Nopalera|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|5599|Urbano|12
+55749|Azul|Ranchería|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||29|081|8070|Urbano|12
+55749|Hueyotenco|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|3921|Urbano|12
+55749|Villa del Real|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|5099|Urbano|12
+55749|Ampliación 5 de Mayo|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|5337|Urbano|12
+55750|Santa María Ajoloapan|Pueblo|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||28|081|3923|Urbano|12
+55752|San Juan Pueblo Nuevo|Pueblo|Tecámac|México|Tecamac de Felipe Villanueva|55601|15|55601||28|081|3924|Urbano|12
+55754|Paseos de Tecámac|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|7867|Urbano|12
+55754|Santo Domingo Ajoloapan|Pueblo|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||28|081|3925|Urbano|12
+55754|Loma de San Jerónimo (Ampliación Santo Domingo)|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|8080|Urbano|12
+55755|La Campiña|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|7991|Urbano|12
+55755|Buenavista|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|8071|Urbano|12
+55755|Los Reyes Acozac|Pueblo|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||28|081|3926|Urbano|12
+55755|Progreso|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|8077|Urbano|12
+55755|La Palma de Reyes|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|8076|Urbano|12
+55755|Guadalupe de Reyes Acozac|Barrio|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||02|081|8073|Urbano|12
+55755|La Michapa|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|8074|Urbano|12
+55755|San Miguel|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|8121|Urbano|12
+55755|El Calvario de Reyes Acozac|Barrio|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||02|081|8081|Urbano|12
+55757|Ejidal|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55601|15|55601||09|081|8072|Urbano|12
+55757|San Lucas Xolox|Pueblo|Tecámac|México|Tecamac de Felipe Villanueva|55601|15|55601||28|081|3927|Urbano|12
+55758|Ampliación la Palma (Zona Industrial)|Zona industrial|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||37|081|9424|Urbano|12
+55760|San Francisco Cuautliquixca|Pueblo|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||28|081|3929|Urbano|12
+55760|Santa María Ozumbilla|Pueblo|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||28|081|3931|Urbano|12
+55760|Mexicanos Unidos|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|7011|Urbano|12
+55760|Magisterial|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|7016|Urbano|12
+55760|Atlautenco|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|7022|Urbano|12
+55760|El Calvario de Ozumbilla|Barrio|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||02|081|7023|Urbano|12
+55760|Portal Ojo de Agua|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|7026|Urbano|12
+55763|Los Héroes Tecámac|Unidad habitacional|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||31|081|5672|Urbano|12
+55764|Nuevo Paraíso|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|8628|Urbano|12
+55764|Margarito F. Ayala|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|3932|Urbano|12
+55764|Los Héroes Tecámac II|Unidad habitacional|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||31|081|5673|Urbano|12
+55764|Los Héroes Ozumbilla|Unidad habitacional|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||31|081|8626|Urbano|12
+55765|Nueva Tlalnepantla|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|3934|Urbano|12
+55765|La Cañada|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|7021|Urbano|12
+55765|Esmeralda|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|3935|Urbano|12
+55765|Lomas de Tecámac|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|5632|Urbano|12
+55765|Los Héroes San Pablo|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|0007|Urbano|12
+55765|Jesús Romero Flores|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|8250|Urbano|12
+55765|México Independiente|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|8252|Urbano|12
+55765|Granjas Valle de Guadalupe|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|8251|Urbano|12
+55765|21 de Agosto|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|8253|Urbano|12
+55765|10 de Junio|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|8254|Urbano|12
+55765|Soto y Gama|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|8255|Urbano|12
+55766|Ampliación Ozumbilla|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|3940|Urbano|12
+55767|Valle San Pedro Urbi Villa del Campo|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|8487|Urbano|12
+55767|Real del Sol|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|7024|Urbano|12
+55767|Conjunto urbano Real Verona|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|0003|Urbano|12
+55767|Punta Palermo|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|0005|Urbano|12
+55767|Real Toscana|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|0004|Urbano|12
+55767|Bosques de los Héroes|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|0009|Urbano|12
+55767|Paseos del Bosque|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|0012|Urbano|12
+55767|Real Carrara|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|0013|Urbano|12
+55767|Los Arcos|Colonia|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||09|081|7015|Urbano|12
+55767|Real del Cid|Fraccionamiento|Tecámac|México|Tecamac de Felipe Villanueva|55762|15|55762||21|081|7847|Urbano|12
+61595|El Cangrejo|Rancho|Susupuato|Michoacán de Ocampo||61501|16|61501||48|081|0010|Rural|
+61595|Santa Inés (La Haciendita)|Ranchería|Susupuato|Michoacán de Ocampo||61501|16|61501||29|081|0052|Rural|
+61595|Los Guajes|Pueblo|Susupuato|Michoacán de Ocampo||61501|16|61501||28|081|0041|Rural|
+61595|San Malaquías|Rancho|Susupuato|Michoacán de Ocampo||61501|16|61501||48|081|0050|Rural|
+61595|San Pedro|Rancho|Susupuato|Michoacán de Ocampo||61501|16|61501||48|081|0051|Rural|
+61595|El Salto|Ranchería|Susupuato|Michoacán de Ocampo||61501|16|61501||29|081|0024|Rural|
+61595|Santa Rosa|Ranchería|Susupuato|Michoacán de Ocampo||61501|16|61501||29|081|0053|Rural|
+61595|El Carrizal|Ranchería|Susupuato|Michoacán de Ocampo||61501|16|61501||29|081|0012|Rural|
+61596|La Loma (Los Hoyos)|Ranchería|Susupuato|Michoacán de Ocampo||61501|16|61501||29|081|0033|Rural|
+61596|El Llano|Ranchería|Susupuato|Michoacán de Ocampo||61501|16|61501||29|081|0016|Rural|
+61596|El Rincón|Ranchería|Susupuato|Michoacán de Ocampo||61501|16|61501||29|081|0023|Rural|
+61596|La Ciranda|Ranchería|Susupuato|Michoacán de Ocampo||61501|16|61501||29|081|0029|Rural|
+61596|Dolores (Ex-Hacienda de Dolores)|Exhacienda|Susupuato|Michoacán de Ocampo||61501|16|61501||18|081|2486|Rural|
+61596|La Loma|Ranchería|Susupuato|Michoacán de Ocampo||61501|16|61501||29|081|2488|Rural|
+61596|Arroyo Salado|Rancho|Susupuato|Michoacán de Ocampo||61501|16|61501||48|081|0002|Rural|
+61596|El Aguacate|Rancho|Susupuato|Michoacán de Ocampo||61501|16|61501||48|081|0008|Rural|
+61596|Arroyo Salado Dos|Rancho|Susupuato|Michoacán de Ocampo||61501|16|61501||48|081|0003|Rural|
+61596|El Tanque|Ranchería|Susupuato|Michoacán de Ocampo||61501|16|61501||29|081|2487|Rural|
+61597|El Escobetillo|Rancho|Susupuato|Michoacán de Ocampo||61501|16|61501||48|081|0013|Rural|
+61597|El Paso|Rancho|Susupuato|Michoacán de Ocampo||61501|16|61501||48|081|0020|Rural|
+61597|La Palma|Ranchería|Susupuato|Michoacán de Ocampo||61501|16|61501||29|081|0034|Rural|
+61597|El Ocote Torcido|Rancho|Susupuato|Michoacán de Ocampo||61501|16|61501||48|081|0019|Rural|
+61597|Paso Ancho|Rancho|Susupuato|Michoacán de Ocampo||61501|16|61501||48|081|0046|Rural|
+61597|El Llano|Rancho|Susupuato|Michoacán de Ocampo||61501|16|61501||48|081|0017|Rural|
+61597|Paso del Muerto|Rancho|Susupuato|Michoacán de Ocampo||61501|16|61501||48|081|0047|Rural|
+61597|Copándaro (Santiago)|Pueblo|Susupuato|Michoacán de Ocampo||61501|16|61501||28|081|4038|Rural|
+61597|Lagunilla|Rancho|Susupuato|Michoacán de Ocampo||61501|16|61501||48|081|0036|Rural|
+61597|El Potrero|Rancho|Susupuato|Michoacán de Ocampo||61501|16|61501||48|081|0022|Rural|
+61597|Genguaro|Ranchería|Susupuato|Michoacán de Ocampo||61501|16|61501||29|081|0026|Rural|
+61597|Los Teposanes|Rancho|Susupuato|Michoacán de Ocampo||61501|16|61501||48|081|0042|Rural|
+61597|Chilacayote (Landeros)|Ranchería|Susupuato|Michoacán de Ocampo||61501|16|61501||29|081|2489|Rural|
+61597|Mesa Grande (Mesa del Zacatón)|Ranchería|Susupuato|Michoacán de Ocampo||61501|16|61501||29|081|0044|Rural|
+61600|Pátzcuaro|Fraccionamiento|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||21|066|4326|Urbano|07
+61600|Pátzcuaro Centro|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2491|Urbano|07
+61600|España|Condominio|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||10|066|4323|Urbano|07
+61604|Monarcas|Fraccionamiento|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||21|066|4325|Urbano|07
+61604|El Pedregal|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2497|Urbano|07
+61604|Joya de los Molinos|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|3175|Urbano|07
+61604|La Era|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2495|Urbano|07
+61604|Lázaro Cárdenas|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2496|Urbano|07
+61604|Potrero del Agua|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|3174|Urbano|07
+61604|Corazón de Durazno|Fraccionamiento|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||21|066|4313|Urbano|07
+61604|Popular Vasco de Quiroga|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2498|Urbano|07
+61604|Loma Bonita|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|3178|Urbano|07
+61604|Gertrudis Bocanegra|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2494|Urbano|07
+61604|Kercus|Fraccionamiento|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||21|066|4317|Urbano|07
+61604|Vista Bella|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|1017|Urbano|07
+61604|Pátzcuaro|Ejido|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||15|066|4755|Urbano|07
+61605|Erendira III|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2502|Urbano|07
+61605|INFONAVIT I Alfredo Salce|Unidad habitacional|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||31|066|2504|Urbano|07
+61605|Llano de La Virgen|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2510|Urbano|07
+61605|El Triángulo|Fraccionamiento|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||21|066|4314|Urbano|07
+61605|La Ilusión|Fraccionamiento|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||21|066|4319|Urbano|07
+61605|Erendira I|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2500|Urbano|07
+61605|Erendira II|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2501|Urbano|07
+61605|Magisterial|Fraccionamiento|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||21|066|3171|Urbano|07
+61605|San Miguel|Fraccionamiento|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||21|066|4331|Urbano|07
+61605|Villas de La Esperanza|Fraccionamiento|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||21|066|3552|Urbano|07
+61605|Habitacional 2000|Fraccionamiento|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||21|066|4316|Urbano|07
+61605|Paz del Progreso|Fraccionamiento|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||21|066|4327|Urbano|07
+61605|El Ciprés|Fraccionamiento|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||21|066|2499|Urbano|07
+61605|Juventino Rosas|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2508|Urbano|07
+61605|Jamuquen|Fraccionamiento|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||21|066|2507|Urbano|07
+61605|San Lázaro|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2513|Urbano|07
+61605|Vida Purembe|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|3182|Urbano|07
+61605|Jamuquen|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2506|Urbano|07
+61605|Las Palmas|Fraccionamiento|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||21|066|2509|Urbano|07
+61605|Marcos M. Jiménez|Fraccionamiento|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||21|066|2511|Urbano|07
+61605|Erendira IV|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2503|Urbano|07
+61605|INFONAVIT II Fray Alonso de La Veracruz|Unidad habitacional|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||31|066|2505|Urbano|07
+61605|Agua Escondida|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|3172|Urbano|07
+61605|Mercado de Abastos Tariácuri|Fraccionamiento|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||21|066|4324|Urbano|07
+61606|Jacarandas|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2517|Urbano|07
+61606|Los Reyes|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2519|Urbano|07
+61606|Huertas del Mirador|Fraccionamiento|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||21|066|0013|Urbano|07
+61606|Santa Teresita|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2520|Urbano|07
+61606|Mirador del Paraíso|Fraccionamiento|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||21|066|0012|Urbano|07
+61606|Colimillas|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2514|Urbano|07
+61606|Los Cedros|Fraccionamiento|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||21|066|2518|Urbano|07
+61606|Ampliación Los Cedros|Fraccionamiento|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||21|066|0016|Urbano|07
+61606|Vista del Lago|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|3176|Urbano|07
+61607|La Salud|Fraccionamiento|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||21|066|2530|Urbano|07
+61607|Santo Tomas|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2538|Urbano|07
+61607|Rinconada Curátame|Fraccionamiento|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||21|066|4330|Urbano|07
+61607|La Valenciana|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|4756|Urbano|07
+61607|Melchor Ocampo|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|4758|Urbano|07
+61607|Camelinas|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2522|Urbano|07
+61607|La Virgen|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2531|Urbano|07
+61607|El Calvario|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2524|Urbano|07
+61607|La Joya|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2529|Urbano|07
+61607|5 de Mayo|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2523|Urbano|07
+61607|Las Flores|Fraccionamiento|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||21|066|2532|Urbano|07
+61607|Molino de San Nicolás|Fraccionamiento|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||21|066|2536|Urbano|07
+61607|Ex-hacienda San Nicolás|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|0015|Urbano|07
+61607|Independencia|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2527|Urbano|07
+61607|Niños Héroes|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2537|Urbano|07
+61607|Los Fresnos|Fraccionamiento|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||21|066|3170|Urbano|07
+61607|Emiliano Zapata|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2525|Urbano|07
+61607|Maestros Asociados|Fraccionamiento|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||21|066|2534|Urbano|07
+61608|Ignacio Zaragoza|Colonia|Pátzcuaro|Michoacán de Ocampo|Pátzcuaro|61601|16|61601||09|066|2540|Urbano|07
+67912|El Leoncito|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2334|Rural|
+67913|El Tajo|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2336|Rural|
+67913|El Canelo|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2335|Rural|
+67914|Mesa de Gonzalez|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2337|Rural|
+67915|Lagunita y Ranchos Nuevos|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2338|Rural|
+67916|San Pablo de los Rueda|Ranchería|Doctor Arroyo|Nuevo León||67901|19|67901||29|014|2339|Rural|
+67917|Estanque Nuevo|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2340|Rural|
+67920|Los Medina|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2343|Rural|
+67920|Santa Rita|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2345|Rural|
+67920|El Tecolote|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2341|Rural|
+67920|San Juan Del Palmar|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2344|Rural|
+67920|La Yerba|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2342|Rural|
+67921|Santa Ana|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2346|Rural|
+67923|Amaro|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2347|Rural|
+67923|El Pequeño|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2348|Rural|
+67923|El Refugio de los Cedillos|Ranchería|Doctor Arroyo|Nuevo León||67901|19|67901||29|014|2349|Rural|
+67924|El Rucio|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2350|Rural|
+67925|El Charco de La Granja|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2351|Rural|
+67925|San Cayetano de Vacas|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2352|Rural|
+67926|Tanquecillos|Pueblo|Doctor Arroyo|Nuevo León||67901|19|67901||28|014|2358|Rural|
+67926|La Aguita|Pueblo|Doctor Arroyo|Nuevo León||67901|19|67901||28|014|2355|Rural|
+67926|Jesús Maria de Berrones|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2354|Rural|
+67926|Coloradas|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2353|Rural|
+67926|Santa Gertrudis|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2357|Rural|
+67926|La Unión y Cardonal|Pueblo|Doctor Arroyo|Nuevo León||67901|19|67901||28|014|2356|Rural|
+67928|El Represadero|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2360|Rural|
+67928|Cerritos de Vacas|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2359|Rural|
+67928|La Escondida de Arzola|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2361|Rural|
+67928|San Miguelito|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2362|Rural|
+67930|El Jarro|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2365|Rural|
+67930|Los Cuartos|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2367|Rural|
+67930|El Carmen de La Laja|Ranchería|Doctor Arroyo|Nuevo León||67901|19|67901||29|014|2363|Rural|
+67930|La Lajita|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2366|Rural|
+67930|El Charquillo|Ranchería|Doctor Arroyo|Nuevo León||67901|19|67901||29|014|2364|Rural|
+67931|Mesa Del Traidor|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2368|Rural|
+67931|San Ramon de Martinez|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2369|Rural|
+67932|Puerta de Aguilar|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2370|Rural|
+67932|Santa Teresa|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2371|Rural|
+67933|San Francisco Del Yugo|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2374|Rural|
+67933|Guadalupe de Silva|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2372|Rural|
+67933|La Cruz de Elorza|Ranchería|Doctor Arroyo|Nuevo León||67901|19|67901||29|014|2373|Rural|
+67934|San Pedro de Gonzalez|Pueblo|Doctor Arroyo|Nuevo León||67901|19|67901||28|014|2376|Rural|
+67934|Santa Maria|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2377|Rural|
+67934|El Álamo|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2375|Rural|
+67935|Las Jarillas|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2379|Rural|
+67935|Albercones|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2378|Rural|
+67935|San Francisco de los Desmontes|Congregación|Doctor Arroyo|Nuevo León||67901|19|67901||11|014|2380|Rural|
+67936|El Consuelo|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2382|Rural|
+67936|San Miguel de los Aguirre|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2384|Rural|
+67936|Álvaro Obregón|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2381|Rural|
+67936|La Chiripa|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2383|Rural|
+67937|Presita de Rueda|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2387|Rural|
+67937|San Antonio de Peña Nevada|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2388|Rural|
+67937|Santa Lucia|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2390|Rural|
+67937|San Juan de La Cruz|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2389|Rural|
+67937|La Bolsa|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2386|Rural|
+67938|San Ignacio de Torres|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2393|Rural|
+67938|El Reparo|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2391|Rural|
+67938|San Gregorio|Ejido|Doctor Arroyo|Nuevo León||67901|19|67901||15|014|2392|Rural|
+67940|Brownsville|Colonia|Aramberri|Nuevo León||67901|19|67901||09|007|5395|Urbano|
+67940|El Calichal|Colonia|Aramberri|Nuevo León||67901|19|67901||09|007|5396|Urbano|
+67940|La Tijera|Colonia|Aramberri|Nuevo León||67901|19|67901||09|007|5398|Urbano|
+67940|Rancho Nuevo (Las Hornillas)|Ranchería|Aramberri|Nuevo León||67901|19|67901||29|007|5376|Rural|
+67940|Sección Sur|Colonia|Aramberri|Nuevo León||67901|19|67901||09|007|5400|Urbano|
+67940|Sección Norte|Colonia|Aramberri|Nuevo León||67901|19|67901||09|007|5399|Urbano|
+67940|Aramberri Centro|Colonia|Aramberri|Nuevo León||67901|19|67901||09|007|2394|Rural|
+67940|Emiliano Zapata|Colonia|Aramberri|Nuevo León||67901|19|67901||09|007|5397|Urbano|
+67943|Jesús María|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5305|Rural|
+67943|Agua Adentro|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5232|Rural|
+67943|La Peña|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5328|Rural|
+67943|La Vieja|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5336|Rural|
+67943|Santa Teresa|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5392|Rural|
+67943|La Hoya de los Nogales|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5318|Rural|
+67943|El Rosario|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5286|Rural|
+67943|Fraccionamiento del Río (Fracción del Río)|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5298|Rural|
+67943|Garza|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5299|Rural|
+67943|Marmolejo|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5355|Rural|
+67943|Agua Fría|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5236|Rural|
+67943|El Nogalar (La Pita)|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5270|Rural|
+67943|Poblado el Río (El Sabinito)|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5364|Rural|
+67943|Chaloa (San Mauricio)|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5244|Rural|
+67943|La Paila|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5326|Rural|
+67943|Las Higueritas|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5342|Rural|
+67943|Las Veredas|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5350|Rural|
+67943|Callejón de los Vázquez|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5241|Rural|
+67943|Potrero del Padre (Lagunita de González)|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5366|Rural|
+67943|Salitrillo|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5378|Rural|
+67944|El Cedrito|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5254|Rural|
+67944|La Lagunita (Lagunita de los Vázquez)|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5320|Rural|
+67944|Lagunita (Lagunita de los Cerda)|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5339|Rural|
+67944|San Isidro|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5382|Rural|
+67944|Santa Cruz|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5390|Rural|
+67944|La Aldea|Ejido|Aramberri|Nuevo León||67901|19|67901||15|007|2395|Rural|
+67944|El Alamar|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5248|Rural|
+67944|El Monal|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5266|Rural|
+67944|El Refugio|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5281|Rural|
+67944|Los Nogales (El Mezquital)|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5354|Rural|
+67944|El Muerto|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5267|Rural|
+67944|La Florida|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5316|Rural|
+67944|El Molino|Poblado comunal|Aramberri|Nuevo León||67901|19|67901||27|007|5265|Rural|
+74630|San Juan Epatlán|Pueblo|Epatlán|Puebla||74401|21|74401||28|062|1782|Rural|
+74633|Emiliano Zapata|Pueblo|Epatlán|Puebla||74401|21|74401||28|062|1783|Rural|
+74634|Xayultepec|Ranchería|Epatlán|Puebla||74401|21|74401||29|062|1784|Rural|
+74635|San Mateo Oxtotla|Pueblo|Epatlán|Puebla||74401|21|74401||28|062|1785|Rural|
+74640|El Calvario|Barrio|Ahuatlán|Puebla||74401|21|74401||02|007|1786|Rural|
+74641|San Lucas Tejaluca|Pueblo|Ahuatlán|Puebla||74401|21|74401||28|007|1787|Rural|
+74643|España|Barrio|Ahuatlán|Puebla||74401|21|74401||02|007|7938|Rural|
+74644|Cuba|Barrio|Ahuatlán|Puebla||74401|21|74401||02|007|7937|Rural|
+74644|Las Palmas|Barrio|Ahuatlán|Puebla||74401|21|74401||02|007|7939|Rural|
+74645|San José el Rodeo (El Rodeo)|Ranchería|Ahuatlán|Puebla||74401|21|74401||29|007|1788|Rural|
+74645|San Isidro Mimilulco (Mimilulco)|Ranchería|Ahuatlán|Puebla||74401|21|74401||29|007|1789|Rural|
+74646|El Paso Fraile|Ranchería|Ahuatlán|Puebla||74401|21|74401||29|007|7932|Rural|
+74647|Lagunilla|Ranchería|Ahuatlán|Puebla||74401|21|74401||29|007|7933|Rural|
+74647|Guadalupe|Ranchería|Ahuatlán|Puebla||74401|21|74401||29|007|7935|Rural|
+74647|La Sábila|Ranchería|Ahuatlán|Puebla||74401|21|74401||29|007|7934|Rural|
+74647|El Carrizo (Paraje Michihuacan)|Ranchería|Ahuatlán|Puebla||74401|21|74401||29|007|7936|Rural|
+74649|Patlanoaya (San Salvador Patlanoaya)|Pueblo|Ahuatlán|Puebla||74401|21|74401||28|007|1790|Rural|
+74650|Coatzingo|Pueblo|Coatzingo|Puebla||74401|21|74401||28|031|1791|Rural|
+74651|Tenango|Pueblo|Coatzingo|Puebla||74401|21|74401||28|031|1792|Rural|
+74653|Zaragoza|Ranchería|Coatzingo|Puebla||74401|21|74401||29|031|1793|Rural|
+74656|La Matanza|Ranchería|Coatzingo|Puebla||74401|21|74401||29|031|1794|Rural|
+74660|Santa Catarina Tlaltempan|Pueblo|Santa Catarina Tlaltempan|Puebla||74901|21|74901||28|146|1795|Rural|
+74670|Chigmecatitlán|Pueblo|Chigmecatitlán|Puebla||74901|21|74901||28|052|1796|Rural|
+74680|Zacapala|Pueblo|Zacapala|Puebla||74901|21|74901||28|206|1797|Rural|
+74684|La Victoria|Pueblo|Zacapala|Puebla||74901|21|74901||28|206|1798|Rural|
+74685|El Rosario Xochitiopan|Pueblo|Zacapala|Puebla||74901|21|74901||28|206|1799|Rural|
+74688|San Mateo Mimiapan|Pueblo|Zacapala|Puebla||74901|21|74901||28|206|1800|Rural|
+74690|Tepexi de Rodríguez|Pueblo|Tepexi de Rodríguez|Puebla||74901|21|74901||28|169|1802|Rural|
+74691|Agua de Santa Ana|Ranchería|Tepexi de Rodríguez|Puebla||74901|21|74901||29|169|1803|Rural|
+74692|Yeguas|Ranchería|Tepexi de Rodríguez|Puebla||74901|21|74901||29|169|1805|Rural|
+74692|Las Flores|Ranchería|Tepexi de Rodríguez|Puebla||74901|21|74901||29|169|1804|Rural|
+74692|Zacatepec|Ranchería|Tepexi de Rodríguez|Puebla||74901|21|74901||29|169|1806|Rural|
+74693|Progreso|Pueblo|Tepexi de Rodríguez|Puebla||74901|21|74901||28|169|1807|Rural|
+74694|Agua de la Luna|Ranchería|Tepexi de Rodríguez|Puebla||74901|21|74901||29|169|1808|Rural|
+74695|Mariscala|Ranchería|Tepexi de Rodríguez|Puebla||74901|21|74901||29|169|0001|Rural|
+74695|Huajoyuca|Pueblo|Tepexi de Rodríguez|Puebla||74901|21|74901||28|169|1809|Rural|
+74695|Tula|Ranchería|Tepexi de Rodríguez|Puebla||74901|21|74901||29|169|1811|Rural|
+74695|Moralillo|Ranchería|Tepexi de Rodríguez|Puebla||74901|21|74901||29|169|1810|Rural|
+74696|Santo Domingo Chapultepec|Ranchería|Tepexi de Rodríguez|Puebla||74901|21|74901||29|169|1813|Rural|
+74696|Almolonga|Pueblo|Tepexi de Rodríguez|Puebla||74901|21|74901||28|169|1812|Rural|
+74696|Loma San Francisco|Ranchería|Tepexi de Rodríguez|Puebla||74901|21|74901||29|169|0002|Rural|
+74697|Huejonapan de Aquiles Serdán|Pueblo|Tepexi de Rodríguez|Puebla||74901|21|74901||28|169|1814|Rural|
+74698|Morelos|Pueblo|Tepexi de Rodríguez|Puebla||74901|21|74901||28|169|1815|Rural|
+74699|San Felipe Otlaltepec|Pueblo|Tepexi de Rodríguez|Puebla||74901|21|74901||28|169|1816|Rural|
+74700|Santa Cruz|Ranchería|Teotlalco|Puebla||62951|21|62951||29|160|1817|Rural|
+74700|Teotlalco|Pueblo|Teotlalco|Puebla||62951|21|62951||28|160|1818|Rural|
+74702|Achichipico|Ranchería|Teotlalco|Puebla||62951|21|62951||29|160|1819|Rural|
+74703|Tlayehualco|Ranchería|Teotlalco|Puebla||62951|21|62951||29|160|1820|Rural|
+74708|Tlaucingo|Ranchería|Teotlalco|Puebla||62951|21|62951||29|160|1821|Rural|
+74710|Xochitepec|Pueblo|Jolalpan|Puebla||62951|21|62951||28|087|1825|Rural|
+74710|Santa Ana Jolalpan|Pueblo|Jolalpan|Puebla||62951|21|62951||28|087|1824|Rural|
+74710|Santa Maria Jolalpan|Pueblo|Jolalpan|Puebla||62951|21|62951||28|087|3773|Rural|
+74710|Huachinantla|Pueblo|Jolalpan|Puebla||62951|21|62951||28|087|1822|Rural|
+74710|Santiago Mitepec|Pueblo|Jolalpan|Puebla||62951|21|62951||28|087|1823|Rural|
+74714|El Salado|Ranchería|Jolalpan|Puebla||62951|21|62951||29|087|1826|Rural|
+74716|Teutla|Pueblo|Jolalpan|Puebla||62951|21|62951||28|087|1827|Rural|
+74720|San José Patriarca|Ranchería|Huehuetlán el Chico|Puebla||74731|21|74731||29|073|8081|Rural|
+74720|Huehuetlán el Chico|Pueblo|Huehuetlán el Chico|Puebla||74731|21|74731||28|073|1828|Rural|
+74723|Tecaxtla (Rancho de los Villalba)|Rancho|Huehuetlán el Chico|Puebla||74731|21|74731||48|073|8090|Rural|
+74723|El Ahuehuete Gordo (Las Bombas)|Ranchería|Huehuetlán el Chico|Puebla||74731|21|74731||29|073|8091|Rural|
+74724|El Jardín|Ranchería|Huehuetlán el Chico|Puebla||74731|21|74731||29|073|8082|Rural|
+74724|San Miguel el Terrero|Ranchería|Huehuetlán el Chico|Puebla||74731|21|74731||29|073|1830|Rural|
+74725|San Antonio (Mesa de la Palma)|Rancho|Huehuetlán el Chico|Puebla||74731|21|74731||48|073|8083|Rural|
+74725|San Juanaite|Ranchería|Huehuetlán el Chico|Puebla||74731|21|74731||29|073|8085|Rural|
+74725|La Cuadrilla (San Antonio)|Ranchería|Huehuetlán el Chico|Puebla||74731|21|74731||29|073|8084|Rural|
+74725|La Palma|Ranchería|Huehuetlán el Chico|Puebla||74731|21|74731||29|073|8086|Rural|
+74727|Rancho Paredes|Rancho|Huehuetlán el Chico|Puebla||74731|21|74731||48|073|8092|Rural|
+74727|Chapulco|Ranchería|Huehuetlán el Chico|Puebla||74731|21|74731||29|073|1831|Rural|
+74727|La Huilota|Rancho|Huehuetlán el Chico|Puebla||74731|21|74731||48|073|8093|Rural|
+74727|San José Chapulco (La Cuadrilla)|Rancho|Huehuetlán el Chico|Puebla||74731|21|74731||48|073|8087|Rural|
+74728|Maravillas|Ranchería|Huehuetlán el Chico|Puebla||62951|21|62951||29|073|8088|Rural|
+74728|Tzicatlán|Pueblo|Huehuetlán el Chico|Puebla||62951|21|62951||28|073|1829|Rural|
+74728|Río Chiquito (Agua Dulce)|Ranchería|Huehuetlán el Chico|Puebla||62951|21|62951||29|073|8089|Rural|
+74729|Ayoxuxtla|Pueblo|Huehuetlán el Chico|Puebla||74731|21|74731||28|073|1832|Rural|
+74730|Villa de las Flores|Colonia|Chiautla|Puebla||74731|21|74731||09|047|3713|Rural|
+74730|Vista Hermosa|Colonia|Chiautla|Puebla||74731|21|74731||09|047|3714|Rural|
+74730|Chiautla de Tapia|Pueblo|Chiautla|Puebla||74731|21|74731||28|047|1833|Rural|
+74730|Lindavista|Colonia|Chiautla|Puebla||74731|21|74731||09|047|3712|Rural|
+74732|Cruz Verde|Ranchería|Chiautla|Puebla||74731|21|74731||29|047|1836|Rural|
+74732|Cascalote de Bravo|Ranchería|Chiautla|Puebla||74731|21|74731||29|047|1835|Rural|
+74733|San Miguel Ejido|Pueblo|Chiautla|Puebla||74731|21|74731||28|047|0002|Rural|
+74733|San Miguel|Ejido|Chiautla|Puebla||74731|21|74731||15|047|1838|Rural|
+74733|Chiauzumba|Ranchería|Chiautla|Puebla||74731|21|74731||29|047|1837|Rural|
+74733|Titilintzin|Barrio|Chiautla|Puebla||74731|21|74731||02|047|0001|Urbano|
+74734|Tepoxmatla|Ranchería|Chiautla|Puebla||74731|21|74731||29|047|1839|Rural|
+74735|Santa Ana Tecolapa|Ranchería|Chiautla|Puebla||74731|21|74731||29|047|1840|Rural|
+74735|Tlancualpican|Pueblo|Chiautla|Puebla||74731|21|74731||28|047|1841|Rural|
+74736|Tlaica|Ranchería|Chiautla|Puebla||74731|21|74731||29|047|1844|Rural|
+74736|San Juan del Rio|Barrio|Chiautla|Puebla||74731|21|74731||02|047|1843|Rural|
+74736|Cañada Grande|Ranchería|Chiautla|Puebla||74731|21|74731||29|047|1842|Rural|
+74737|Pilcaya|Pueblo|Chiautla|Puebla||74731|21|74731||28|047|1845|Rural|
+74740|Santa María Cohetzala|Pueblo|Cohetzala|Puebla||74731|21|74731||28|032|1846|Rural|
+74740|Santa Mónica|Pueblo|Cohetzala|Puebla||74731|21|74731||28|032|1847|Rural|
+74741|El Platanar|Ranchería|Cohetzala|Puebla||74731|21|74731||29|032|1848|Rural|
+74750|Xicotlan|Pueblo|Xicotlán|Puebla||74791|21|74791||28|198|1849|Rural|
+74755|Coacalco|Pueblo|Xicotlán|Puebla||74791|21|74791||28|198|1850|Rural|
+74757|Temonapa|Ranchería|Xicotlán|Puebla||74791|21|74791||29|198|1851|Rural|
+74760|Chila de la Sal|Pueblo|Chila de la Sal|Puebla||74791|21|74791||28|056|1852|Rural|
+74760|San Pedro Ocotlán|Pueblo|Chila de la Sal|Puebla||74791|21|74791||28|056|1853|Rural|
+74770|Buenavista de Zapata|Pueblo|Ixcamilpa de Guerrero|Puebla||74731|21|74731||28|081|1854|Rural|
+79374|Rancho de Pro|Poblado comunal|Alaquines|San Luis Potosí||79381|24|79381||27|002|2815|Rural|
+79374|El Sabino|Ejido|Alaquines|San Luis Potosí||79381|24|79381||15|002|1245|Rural|
+79374|Colonia Indígena (Pascual Osorio Ortega)|Colonia|Alaquines|San Luis Potosí||79381|24|79381||09|002|2945|Rural|
+79374|Las Peñitas|Ejido|Alaquines|San Luis Potosí||79381|24|79381||15|002|0027|Rural|
+79374|La Máscara|Ejido|Alaquines|San Luis Potosí||79381|24|79381||15|002|0022|Rural|
+79374|Nueva Reforma|Ejido|Alaquines|San Luis Potosí||79381|24|79381||15|002|0035|Rural|
+79374|Maldonado|Ejido|Alaquines|San Luis Potosí||79381|24|79381||15|002|1248|Rural|
+79375|Los Pocitos (Los Pozos)|Ejido|Alaquines|San Luis Potosí||79381|24|79381||15|002|0031|Rural|
+79375|Pasito de San Francisco|Ranchería|Alaquines|San Luis Potosí||79381|24|79381||29|002|1247|Rural|
+79375|Agua Nueva|Ranchería|Alaquines|San Luis Potosí||79381|24|79381||29|002|0004|Rural|
+79375|Las Huertas|Ejido|Alaquines|San Luis Potosí||79381|24|79381||15|002|0026|Rural|
+79375|El Abra|Ranchería|Alaquines|San Luis Potosí||79381|24|79381||29|002|0009|Rural|
+79375|Olla del Durazno (Joya del Durazno)|Poblado comunal|Alaquines|San Luis Potosí||79381|24|79381||27|002|2700|Rural|
+79375|El Quebrantadero|Ranchería|Alaquines|San Luis Potosí||79381|24|79381||29|002|0016|Rural|
+79375|Las Crucitas|Ejido|Alaquines|San Luis Potosí||79381|24|79381||15|002|0025|Rural|
+79375|El Llanito|Ranchería|Alaquines|San Luis Potosí||79381|24|79381||29|002|0013|Rural|
+79375|El Pelillo|Ranchería|Alaquines|San Luis Potosí||79381|24|79381||29|002|0015|Rural|
+79375|Palo Hueco|Ejido|Alaquines|San Luis Potosí||79381|24|79381||15|002|0037|Rural|
+79375|Cañón de Guerrero|Ranchería|Alaquines|San Luis Potosí||79381|24|79381||29|002|0006|Rural|
+79375|El Infiernito|Ranchería|Alaquines|San Luis Potosí||79381|24|79381||29|002|0012|Rural|
+79375|San José del Corito|Pueblo|Alaquines|San Luis Potosí||79381|24|79381||28|002|0045|Rural|
+79375|Mesas del Durazno|Ejido|Alaquines|San Luis Potosí||79381|24|79381||15|002|0033|Rural|
+79376|Cañaditas|Pueblo|Alaquines|San Luis Potosí||79381|24|79381||28|002|0005|Rural|
+79376|Crucero del Llano|Ranchería|Alaquines|San Luis Potosí||79381|24|79381||29|002|0008|Rural|
+79376|Huerta de la Redonda|Ranchería|Alaquines|San Luis Potosí||79381|24|79381||29|002|0019|Rural|
+79376|La Sepultura|Ejido|Alaquines|San Luis Potosí||79381|24|79381||15|002|0024|Rural|
+79376|Las Tuzas|Ejido|Alaquines|San Luis Potosí||79381|24|79381||15|002|0029|Rural|
+79376|Rancho San Blas|Ejido|Alaquines|San Luis Potosí||79381|24|79381||15|002|0040|Rural|
+79376|Martínez|Ejido|Alaquines|San Luis Potosí||79381|24|79381||15|002|1249|Rural|
+79376|Mesa de San Francisco (Mesa de San José)|Ejido|Alaquines|San Luis Potosí||79381|24|79381||15|002|0032|Rural|
+79376|San Antonio|Ranchería|Alaquines|San Luis Potosí||79381|24|79381||29|002|0043|Rural|
+79377|Tanque el Granadillo|Ranchería|Alaquines|San Luis Potosí||79381|24|79381||29|002|0046|Rural|
+79380|Cárdenas Centro|Colonia|Cárdenas|San Luis Potosí|Cárdenas|79381|24|79381||09|005|1252|Urbano|09
+79382|El Mirador II|Colonia|Cárdenas|San Luis Potosí|Cárdenas|79381|24|79381||09|005|0005|Urbano|09
+79382|Del Carmen|Barrio|Cárdenas|San Luis Potosí|Cárdenas|79381|24|79381||02|005|1757|Urbano|09
+79382|El Calichal Grande|Barrio|Cárdenas|San Luis Potosí|Cárdenas|79381|24|79381||02|005|1758|Urbano|09
+79382|Ferrocarrilera|Conjunto habitacional|Cárdenas|San Luis Potosí|Cárdenas|79381|24|79381||12|005|2946|Urbano|09
+79382|Bellavista 2a Sección|Colonia|Cárdenas|San Luis Potosí|Cárdenas|79381|24|79381||09|005|0002|Urbano|09
+79382|Brownsville|Colonia|Cárdenas|San Luis Potosí|Cárdenas|79381|24|79381||09|005|0003|Urbano|09
+79382|El Señor del Amparo|Barrio|Cárdenas|San Luis Potosí|Cárdenas|79381|24|79381||02|005|1759|Urbano|09
+79383|De La Palma|Barrio|Cárdenas|San Luis Potosí|Cárdenas|79381|24|79381||02|005|1756|Urbano|09
+79384|Sector Corito|Colonia|Cárdenas|San Luis Potosí|Cárdenas|79381|24|79381||09|005|1755|Urbano|09
+79384|INFONAVIT|Colonia|Cárdenas|San Luis Potosí|Cárdenas|79381|24|79381||09|005|0006|Urbano|09
+79384|Arboledas|Fraccionamiento|Cárdenas|San Luis Potosí|Cárdenas|79381|24|79381||21|005|0001|Urbano|09
+79384|Guadalupe|Barrio|Cárdenas|San Luis Potosí|Cárdenas|79381|24|79381||02|005|1754|Urbano|09
+79384|Nuevo Venecia|Colonia|Cárdenas|San Luis Potosí|Cárdenas|79381|24|79381||09|005|0008|Urbano|09
+79385|Magisterial|Fraccionamiento|Cárdenas|San Luis Potosí|Cárdenas|79381|24|79381||21|005|1893|Urbano|09
+79385|La Atajea|Colonia|Cárdenas|San Luis Potosí|Cárdenas|79381|24|79381||09|005|0007|Urbano|09
+79385|Astral|Colonia|Cárdenas|San Luis Potosí|Cárdenas|79381|24|79381||09|005|1892|Urbano|09
+79385|San Isidro Chaparral|Barrio|Cárdenas|San Luis Potosí|Cárdenas|79381|24|79381||02|005|1762|Urbano|09
+79386|del Rasconcito|Barrio|Cárdenas|San Luis Potosí|Cárdenas|79381|24|79381||02|005|1761|Urbano|09
+79387|Morelos|Colonia|Cárdenas|San Luis Potosí|Cárdenas|79381|24|79381||09|005|1760|Urbano|09
+79387|El Mirador|Colonia|Cárdenas|San Luis Potosí|Cárdenas|79381|24|79381||09|005|0004|Urbano|09
+79390|Las Canoas|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0045|Rural|
+79390|Las Lomas|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0046|Rural|
+79390|Colonia Agrícola el Naranjo|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0017|Rural|
+79390|Miramar|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0052|Rural|
+79390|El Ranchito|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0025|Rural|
+79390|Lagunitas|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0044|Rural|
+79390|Naranjo|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|1256|Rural|
+79393|La Borreguita|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0037|Rural|
+79393|El Palo Alto|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0024|Rural|
+79393|La Pista|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0041|Rural|
+79393|El Trompillal|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0028|Rural|
+79393|Potrero de las Parejas (Ignacio Martínez)|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0059|Rural|
+79393|Arroyo del Tabaco|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0012|Rural|
+79393|Cárdenas (Olegario Castro)|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0015|Rural|
+79393|Potrero de las Ánimas|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0058|Rural|
+79393|Rancho Avestruces|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0062|Rural|
+79393|El Derramadero|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0020|Rural|
+79393|El Tulillo|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0029|Rural|
+79393|Isabel Gómez|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0035|Rural|
+79393|Rancho Moy Báez|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0068|Rural|
+79393|Flavio Contreras|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0033|Rural|
+79393|El Aguaje|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|1251|Rural|
+79394|Higinio Olivo (La Labor)|Ejido|Cárdenas|San Luis Potosí||79381|24|79381||15|005|1254|Rural|
+79394|Las Moras|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0047|Rural|
+79394|Pascual Rodríguez|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0056|Rural|
+79394|Cañada de Pastores|Poblado comunal|Cárdenas|San Luis Potosí||79381|24|79381||27|005|1258|Rural|
+79394|Lobos|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0049|Rural|
+79394|Potrero el Savial|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0060|Rural|
+79394|Ninguno [Estación de Microondas]|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0054|Rural|
+79395|Los Desmontes|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0050|Rural|
+79395|Pozo Número Diez|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0061|Rural|
+79395|Unidad de Riego Cárdenas (Jesús de León)|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0070|Rural|
+79395|Pozo Número Tres|Ejido|Cárdenas|San Luis Potosí||79381|24|79381||15|005|2422|Rural|
+79395|Agua Zarca|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0010|Rural|
+79395|Las Peñitas|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0048|Rural|
+79395|Rancho Espiricueta|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0064|Rural|
+79395|La Puerta [Potrero los Desmontes]|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0042|Rural|
+79395|Rancho los Rivera|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0067|Rural|
+79395|Pantano|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0055|Rural|
+79395|Rancho Bellavista|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0063|Rural|
+79395|Abel Calderón|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0009|Rural|
+79395|La Piedad|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0040|Rural|
+79396|Epifanio Guzmán|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0031|Rural|
+79396|El Alazán|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0018|Rural|
+79396|El Charco|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0019|Rural|
+79396|La Cinta|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0039|Rural|
+79396|Rancho Leal|Ranchería|Cárdenas|San Luis Potosí||79381|24|79381||29|005|0066|Rural|
+84175|Chupadero|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4063|Rural|
+84175|El Peñasco Colorado|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4115|Rural|
+84175|El Rincón|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4129|Rural|
+84175|El Tascalito|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4140|Rural|
+84175|El Tejanito|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4141|Rural|
+84175|La Lomita (Buena Vista)|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4196|Rural|
+84175|La Milpa de Daniel Peralta|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4200|Rural|
+84175|Las Parrillas|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4231|Rural|
+84175|Rancho de Rubén Quevedo|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4277|Rural|
+84175|Rancho Fernando Aguirre|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4279|Rural|
+84175|San Lorenzo la Angostura|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4300|Rural|
+84175|La Misión|Congregación|Magdalena|Sonora||84162|26|84162||11|036|0672|Rural|
+84175|San Lorenzo|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|0677|Rural|
+84175|Corrales el Recodo (El Chirrión)|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4065|Rural|
+84175|El Cajoncito|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4076|Rural|
+84175|El Cuadro|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4093|Rural|
+84175|El Recodo|Ejido|Magdalena|Sonora||84162|26|84162||15|036|4125|Rural|
+84175|La Angostura|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4167|Rural|
+84175|La Cuesta|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4178|Rural|
+84175|La Curva|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4180|Rural|
+84175|La Pollera|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4210|Rural|
+84175|Las Mesteñas|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4227|Rural|
+84175|Lizárraga (La Galera)|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4235|Rural|
+84175|Los Olivos|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4247|Rural|
+84175|Ocho Flores (Casa Blanca)|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4261|Rural|
+84175|Rancho de José Luis Aguirre|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4273|Rural|
+84175|Barrio de los Robles|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4048|Rural|
+84175|El Durazno|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4095|Rural|
+84175|El Tapiro|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4138|Rural|
+84175|González|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4151|Rural|
+84175|José Durazo Moreno|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4161|Rural|
+84175|La Angostura|Ejido|Magdalena|Sonora||84162|26|84162||15|036|4168|Rural|
+84175|La Maleneña|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4197|Rural|
+84175|Las Mochas|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4228|Rural|
+84175|Los Caporales|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4238|Rural|
+84175|Buena Vista|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4053|Rural|
+84175|Corrales de Robles|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4064|Rural|
+84175|El Alto|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4074|Rural|
+84175|El Recodo (Ejido el Sasabe)|Ejido|Magdalena|Sonora||84162|26|84162||15|036|4126|Rural|
+84175|El Taraicito|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4139|Rural|
+84175|La Ladrillera|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4192|Rural|
+84175|La Sauceda|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4212|Rural|
+84175|Los Carrillos|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4239|Rural|
+84175|Raúl Bravo Padres|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4268|Rural|
+84175|Rancho de Pablo Fuentes|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4275|Rural|
+84175|Sal si Puedes|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4286|Rural|
+84175|Santa Delia|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4308|Rural|
+84175|Divisaderos (Santo Niñito)|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4067|Rural|
+84175|El Aguajito|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4069|Rural|
+84175|El Nogal|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4108|Rural|
+84175|El Peñasco|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4114|Rural|
+84175|La Misión (Héctor G. López)|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4202|Rural|
+84175|La Pasadita|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4207|Rural|
+84175|Las Aguilillas|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4222|Rural|
+84175|San Carlos|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4289|Rural|
+84175|San Martín|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4303|Rural|
+84175|Santa Fe|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4310|Rural|
+84175|El Garambullo|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4099|Rural|
+84175|El Palomar|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4112|Rural|
+84175|Granja Avícola el Recodo|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4152|Rural|
+84175|Huerta de los Gavino|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4157|Rural|
+84175|La Viznaga (El Recodo)|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4219|Rural|
+84175|Lizárraga (La Calera)|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4234|Rural|
+84175|Padre Hoyos|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4262|Rural|
+84175|Pimería|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4265|Rural|
+84175|Raúl Osorio|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4269|Rural|
+84175|San Fernando|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4291|Rural|
+84175|Teodoro Ramírez P.|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4312|Rural|
+84175|Barrio Rastro Final (Divisaderos)|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4050|Rural|
+84175|El Cajoncito|Ejido|Magdalena|Sonora||84162|26|84162||15|036|4077|Rural|
+84175|El Calambre|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4078|Rural|
+84175|El Sauz|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4137|Rural|
+84175|El Tigre|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4142|Rural|
+84175|Granja Santa Regina|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4153|Rural|
+84175|La Manzanita|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4198|Rural|
+84175|La Mirandeña|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4201|Rural|
+84175|La Nochebuena|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4205|Rural|
+84175|Los Adobes|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4237|Rural|
+84175|Partes Usadas Valenzuela|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4263|Rural|
+84176|Arturo Mendoza|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4046|Rural|
+84176|Bellavista|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4052|Rural|
+84176|El Durazno|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4096|Rural|
+84176|El Infierno|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4100|Rural|
+84176|El Pino|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4116|Rural|
+84176|El Sacrificio|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4131|Rural|
+84176|El Sahuarito|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4132|Rural|
+84176|José María Valle Méndez|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4162|Rural|
+84176|La Gallinera|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4186|Rural|
+84176|Las Playas|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4232|Rural|
+84176|San Lázaro|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4299|Rural|
+84176|El Abandonado|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4068|Rural|
+84176|El Chupadero|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4090|Rural|
+84176|El Maguey|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4104|Rural|
+84176|El Represo|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4128|Rural|
+84176|El Saucito|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4136|Rural|
+84176|Jesús Nacamura|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4160|Rural|
+84176|La Escondida|Congregación|Magdalena|Sonora||84162|26|84162||11|036|4182|Rural|
+84176|La Jojobita (La Jojoba)|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4190|Rural|
+84176|La Pitahaya|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4209|Rural|
+84176|Las Grullas|Ranchería|Magdalena|Sonora||84162|26|84162||29|036|4226|Rural|
+88285|Parque Industrial Oradel|Zona industrial|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||37|027|0020|Urbano|06
+88285|Los Ángeles|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|3649|Urbano|06
+88285|Blanca Navidad|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|0005|Urbano|06
+88285|Lomas del Rosario|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|0014|Urbano|06
+88285|El Campanario|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|2777|Urbano|06
+88285|Villas del Oradel|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|3452|Urbano|06
+88285|Valles de Anáhuac|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|3612|Urbano|06
+88287|SUTERM I|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|0027|Urbano|06
+88287|Electricistas|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|0922|Urbano|06
+88289|Militar|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|0924|Urbano|06
+88289|Don Ramón Salcido|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|0923|Urbano|06
+88290|Los Fresnos|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|2785|Urbano|06
+88290|Los Ciruelos|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|0016|Urbano|06
+88290|Los Aztecas|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|2780|Urbano|06
+88290|Los Encinos|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|2781|Urbano|06
+88290|Villa del Lago|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|2784|Urbano|06
+88290|Del Valle|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|3450|Urbano|06
+88290|Viviendas Unidas|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|0001|Urbano|06
+88290|Lagos|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|0926|Urbano|06
+88290|Los Presidentes|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|2783|Urbano|06
+88290|Villas de la Concordia|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|0026|Urbano|06
+88290|La Paz|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|0925|Urbano|06
+88290|Villas del Sol|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|2773|Urbano|06
+88290|Santa Elena|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|3720|Urbano|06
+88290|Los Cerezos|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|0015|Urbano|06
+88290|Tulipanes|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|0002|Urbano|06
+88290|Balcones del Valle|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|0003|Urbano|06
+88290|El Nogal|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|2782|Urbano|06
+88290|Hacienda de la Concordia|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|3252|Urbano|06
+88290|Alfonso Gutiérrez|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|2779|Urbano|06
+88290|Santa Martha|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|3723|Urbano|06
+88293|Saneva|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|0930|Urbano|06
+88293|Carlos Benjamín Galván Maytorera|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|2745|Urbano|06
+88293|María del Pilar Martínez Muñoz|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|2748|Urbano|06
+88293|América 1|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|0927|Urbano|06
+88293|El Pedregal Residencial|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|3457|Urbano|06
+88293|Granjas Guzmán|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|0929|Urbano|06
+88293|Valles del Paraíso|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|2786|Urbano|06
+88293|Gilberto Montemayor Quintanilla|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|2738|Urbano|06
+88293|Manuel Martínez Méndez|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|2739|Urbano|06
+88293|América 14|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|0928|Urbano|06
+88293|El Caporal|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|2744|Urbano|06
+88294|Granjas Treviño|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|0933|Urbano|06
+88294|Santa Cecilia|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|2787|Urbano|06
+88294|Alijadores|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|0931|Urbano|06
+88294|Campesina|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|0932|Urbano|06
+88295|Granjas Económicas 2|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|0938|Urbano|06
+88295|Granjas Regina|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|0939|Urbano|06
+88295|Valle Elizondo|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|3923|Urbano|06
+88295|El Capulín|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|0935|Urbano|06
+88295|Las Piedritas|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|2747|Urbano|06
+88295|ITAVU|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|3455|Urbano|06
+88295|Vamos Tamaulipas|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|2788|Urbano|06
+88295|Palmares|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|3601|Urbano|06
+88295|Granjas Económicas 1|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|0937|Urbano|06
+88295|Haciendas de San Agustín|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|3596|Urbano|06
+88295|Valle Dorado|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|0024|Urbano|06
+88295|Enrique Cárdenas González|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|0936|Urbano|06
+88296|Los Agaves|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|3626|Urbano|06
+88296|Colinas del Sur Poniente|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|0944|Urbano|06
+88296|Lomas del Popo|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|2790|Urbano|06
+88296|América 2,3,5 y 6|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|0940|Urbano|06
+88296|CERESO|Equipamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||17|027|2791|Urbano|06
+88296|Bosques del Sur|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|3608|Urbano|06
+88296|Misión de San Mauricio|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|2789|Urbano|06
+88298|Agrónomos|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|3453|Urbano|06
+88298|Candelario Perales|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|3454|Urbano|06
+88298|La Concordia|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|0946|Urbano|06
+88299|Colinas de San Javier|Fraccionamiento|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||21|027|3729|Urbano|06
+88299|América 4|Colonia|Nuevo Laredo|Tamaulipas|Nuevo Laredo|88002|28|88002||09|027|0947|Urbano|06
+88300|Ciudad Miguel Alemán Centro|Colonia|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||09|025|0948|Urbano|17
+88302|Nuevo Santander|Fraccionamiento|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||21|025|2432|Urbano|17
+88302|Mezquital del Norte|Fraccionamiento|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||21|025|2433|Urbano|17
+88302|INFONAVIT Arboleda|Colonia|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||09|025|2430|Urbano|17
+88302|Gómez|Colonia|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||09|025|2429|Urbano|17
+88302|Solidaridad|Colonia|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||09|025|2431|Urbano|17
+88302|Del Norte|Fraccionamiento|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||21|025|2434|Urbano|17
+88302|Niños Héroes|Colonia|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||09|025|2435|Urbano|17
+88302|Jardín|Fraccionamiento|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||21|025|2436|Urbano|17
+88302|Plan de Guadalupe|Colonia|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||09|025|2452|Urbano|17
+88303|Nuevo Amanecer|Fraccionamiento|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||21|025|2440|Urbano|17
+88303|Cristóbal Colón|Colonia|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||09|025|2442|Urbano|17
+88303|Unidad Revolucionaria|Colonia|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||09|025|2441|Urbano|17
+88303|Independencia|Colonia|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||09|025|2450|Urbano|17
+88303|Barrera|Colonia|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||09|025|2443|Urbano|17
+88303|Río Bravo|Colonia|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||09|025|2444|Urbano|17
+88304|Guadalupe|Colonia|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||09|025|2447|Urbano|17
+88304|Los Presidentes|Colonia|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||09|025|0001|Urbano|17
+88304|El Mirador|Colonia|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||09|025|2453|Urbano|17
+88304|Montebello|Colonia|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||09|025|0002|Urbano|17
+88305|Arguello|Colonia|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||09|025|2445|Urbano|17
+88305|Adolfo López Mateos|Colonia|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||09|025|2448|Urbano|17
+88305|Lindavista|Colonia|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||09|025|2446|Urbano|17
+88305|Buenos Aires|Colonia|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||09|025|2449|Urbano|17
+88305|Tamaulipas|Colonia|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||09|025|3154|Urbano|17
+88306|Electricistas|Colonia|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||09|025|2424|Urbano|17
+88306|Mezquital del Río|Colonia|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||09|025|2438|Urbano|17
+88306|INFONAVIT Industrial|Fraccionamiento|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||21|025|3153|Urbano|17
+88306|INFONAVIT Santa Luisa|Fraccionamiento|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||21|025|3152|Urbano|17
+88306|Educación|Colonia|Miguel Alemán|Tamaulipas|Ciudad Miguel Alemán|88301|28|88301||09|025|2437|Urbano|17
+95835|Santa Elena|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8334|Rural|
+95835|Tetax Sesecapan|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8348|Rural|
+95835|Texcochapan de Arriba|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8349|Rural|
+95835|San Martín|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8324|Rural|
+95835|Tamaniapa|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8340|Rural|
+95835|Tepozapan|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8347|Rural|
+95835|Pitalúa|Barrio|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||02|143|0001|Rural|
+95835|Diente de León|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8154|Rural|
+95835|El Amate (Tepesiluapan)|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8157|Rural|
+95835|Tapalapan|Pueblo|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||28|143|3564|Rural|
+95835|Álvaro Castellanos|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8096|Rural|
+95835|Alta Luz|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8100|Rural|
+95835|Axochio|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8109|Rural|
+95835|Chilchutiuca|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8135|Rural|
+95835|Miguel Alemán|Colonia|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||09|143|8145|Rural|
+95835|Fernando Bustamante|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8208|Rural|
+95835|Hermanos Camino|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8217|Rural|
+95835|Loma Quemada|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8261|Rural|
+95835|Los Chaneques|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8264|Rural|
+95835|Mario Carvajal|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8274|Rural|
+95835|Rancho la Cuchilla|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8303|Rural|
+95835|Rancho la Guadalupe|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8304|Rural|
+95835|Santa Elena|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8332|Rural|
+95835|Santa Isabel|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8335|Rural|
+95835|El Encanto|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8166|Rural|
+95835|José Castellanos|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8223|Rural|
+95835|La Aurora|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8226|Rural|
+95835|La Purificadora|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8248|Rural|
+95835|Raúl Carvajal|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8297|Rural|
+95835|Rancho Oliveros|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8306|Rural|
+95835|Sinapán|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8338|Rural|
+95835|Ubaldo Aguilera|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8360|Rural|
+95836|Arroyo de Piedra|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8103|Rural|
+95836|San Lorenzo|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8321|Rural|
+95836|Arroyo Salado (El Porvenir)|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8106|Rural|
+95836|El Platanar|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8184|Rural|
+95836|La Soledad|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8249|Rural|
+95836|Miguel Hidalgo y Costilla|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8279|Rural|
+95836|San Marcos|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8322|Rural|
+95836|San Miguel|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8326|Rural|
+95836|La Florida|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8237|Rural|
+95836|La Mechuda|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8245|Rural|
+95836|Los Pinos|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8271|Rural|
+95836|Mazatán|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8278|Rural|
+95836|Rolando Victorio|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8311|Rural|
+95836|Tenejapan|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8345|Rural|
+95836|Medellin de las Mercedes|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|3554|Rural|
+95836|Rincón de Sosa|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|3568|Rural|
+95836|Rincón de Lucia|Congregación|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||11|143|7873|Rural|
+95836|La Ceiba|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8228|Rural|
+95836|Omeapan|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8286|Rural|
+95836|Boca del Monte|Ejido|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||15|143|3567|Rural|
+95836|El Aguaje|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8156|Rural|
+95836|El Nanchital|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8179|Rural|
+95836|El Palmar|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8180|Rural|
+95836|El Zapote|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8204|Rural|
+95836|Ojo de Agua|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8284|Rural|
+95836|Rincón de Zapateros|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|3569|Rural|
+95836|Cruz de Vidaña|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8151|Rural|
+95836|El Potrero|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8185|Rural|
+95836|El Rincón|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8189|Rural|
+95836|El Vikingo (El Gringo)|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8199|Rural|
+95836|La Guadalupe|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8241|Rural|
+95836|San Agustín|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8314|Rural|
+95836|Totogal|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8353|Rural|
+95836|Xaltepec|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8364|Rural|
+95836|Salto de Agua de los Islaba|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|7562|Rural|
+95836|Cerro del Vigía de Enmedio|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8129|Rural|
+95836|El Zapote|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8203|Rural|
+95836|Pepetaca|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8292|Rural|
+95836|Salto de Agua de Pío (Dos Caminos)|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8313|Rural|
+95836|Tepetapan|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8346|Rural|
+95836|El Cañalito|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8159|Rural|
+95836|Palo Gacho (La Piedra)|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8289|Rural|
+95836|Xigüipilincan|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8365|Rural|
+95837|El Morillo|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8177|Rural|
+95837|Francisco I. Madero|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8212|Rural|
+95837|Francisco Isidoro Huatzozón|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8213|Rural|
+95837|La Encantada|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8234|Rural|
+95837|La Nueva Esperanza|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8246|Rural|
+95837|San José|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8320|Rural|
+95837|Camacho|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8120|Rural|
+95837|El Sacrificio|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8190|Rural|
+95837|Guinda|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8216|Rural|
+95837|Jesús de la Parra|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8221|Rural|
+95837|La Granja|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8239|Rural|
+95837|Los Mangos|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8268|Rural|
+95837|Los Naranjos|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8269|Rural|
+95837|Mario Flores|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8275|Rural|
+95837|Palmira|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8287|Rural|
+95837|Tibernal|Ejido|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||15|143|3559|Rural|
+95837|Abelino Lagunes|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8098|Rural|
+95837|El Embarcadero|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8165|Rural|
+95837|San Diego|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8317|Rural|
+95837|Banco de Grava|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8112|Rural|
+95837|El Laurel|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8171|Rural|
+95837|Entrada al Banco de Grava|Poblado comunal|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||27|143|8207|Rural|
+95837|La Esmeralda|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8235|Rural|
+95837|Raúl Vargas|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8299|Rural|
+95837|Kilómetro Diecinueve|Ranchería|Santiago Tuxtla|Veracruz de Ignacio de la Llave||95831|30|95831||29|143|8225|Rural|
+99823|El Laurel|Ranchería|Santa María de la Paz|Zacatecas||99801|32|99801||29|058|1489|Rural|
+99823|La Haciendita|Ranchería|Santa María de la Paz|Zacatecas||99801|32|99801||29|058|1490|Rural|
+99823|Los Rodriguez|Ranchería|Santa María de la Paz|Zacatecas||99801|32|99801||29|058|1517|Rural|
+99824|El Zapotito|Ranchería|Santa María de la Paz|Zacatecas||99801|32|99801||29|058|1492|Rural|
+99824|La Mesa Grande|Ranchería|Santa María de la Paz|Zacatecas||99801|32|99801||29|058|1494|Rural|
+99824|El Pantano|Ranchería|Santa María de la Paz|Zacatecas||99801|32|99801||29|058|1491|Rural|
+99824|Hidalgo (el Picacho)|Ranchería|Santa María de la Paz|Zacatecas||99801|32|99801||29|058|1493|Rural|
+99825|El Soto|Ranchería|Santa María de la Paz|Zacatecas||99801|32|99801||29|058|1496|Rural|
+99825|La Laguna|Ranchería|Santa María de la Paz|Zacatecas||99801|32|99801||29|058|1497|Rural|
+99825|Santa Fe|Ranchería|Santa María de la Paz|Zacatecas||99801|32|99801||29|058|1499|Rural|
+99825|Marines|Ranchería|Santa María de la Paz|Zacatecas||99801|32|99801||29|058|1495|Rural|
+99825|San Rafael|Ranchería|Santa María de la Paz|Zacatecas||99801|32|99801||29|058|1500|Rural|
+99826|El Arenal|Ranchería|Santa María de la Paz|Zacatecas||99801|32|99801||29|058|1502|Rural|
+99826|San Miguel Tepetitlan|Ranchería|Santa María de la Paz|Zacatecas||99801|32|99801||29|058|1503|Rural|
+99826|San Isidro|Ranchería|Santa María de la Paz|Zacatecas||99801|32|99801||29|058|1504|Rural|
+99826|El Saucito|Ranchería|Santa María de la Paz|Zacatecas||99801|32|99801||29|058|1501|Rural|
+99827|Hacienda Vieja|Ranchería|Santa María de la Paz|Zacatecas||99801|32|99801||29|058|1508|Rural|
+99827|Las Tablas|Ranchería|Santa María de la Paz|Zacatecas||99801|32|99801||29|058|1509|Rural|
+99827|Los Cedros|Ranchería|Santa María de la Paz|Zacatecas||99801|32|99801||29|058|1506|Rural|
+99827|Los Horcones|Ranchería|Santa María de la Paz|Zacatecas||99801|32|99801||29|058|1507|Rural|
+99827|El Capulín|Ranchería|Santa María de la Paz|Zacatecas||99801|32|99801||29|058|1505|Rural|
+99828|El Guitarrero|Ranchería|Santa María de la Paz|Zacatecas||99801|32|99801||29|058|1511|Rural|
+99828|Mesa de Trigos|Ranchería|Santa María de la Paz|Zacatecas||99801|32|99801||29|058|1513|Rural|
+99830|García de la Cadena|Pueblo|Trinidad García de la Cadena|Zacatecas||99831|32|99831||28|011|0713|Urbano|
+99833|La Ceja|Ranchería|Trinidad García de la Cadena|Zacatecas||99831|32|99831||29|011|0714|Rural|
+99833|Los Sauces|Rancho|Trinidad García de la Cadena|Zacatecas||99831|32|99831||48|011|0001|Rural|
+99833|Las Huertitas|Rancho|Trinidad García de la Cadena|Zacatecas||99831|32|99831||48|011|0002|Rural|
+99833|Los Horconcillos|Ranchería|Trinidad García de la Cadena|Zacatecas||99831|32|99831||29|011|1676|Rural|
+99834|Santa Rosa|Ranchería|Trinidad García de la Cadena|Zacatecas||99831|32|99831||29|011|0004|Rural|
+99834|Las Vueltas|Rancho|Trinidad García de la Cadena|Zacatecas||99831|32|99831||48|011|0003|Rural|
+99840|El Barranco|Ranchería|Trinidad García de la Cadena|Zacatecas||99831|32|99831||29|011|0005|Rural|
+99840|El Tambor|Rancho|Trinidad García de la Cadena|Zacatecas||99831|32|99831||48|011|0006|Rural|
+99843|Llano de las Palomas|Rancho|Trinidad García de la Cadena|Zacatecas||99831|32|99831||48|011|0007|Rural|
+99843|La Tetilla|Rancho|Trinidad García de la Cadena|Zacatecas||99831|32|99831||48|011|0008|Rural|
+99854|Las Higueras|Rancho|Trinidad García de la Cadena|Zacatecas||99831|32|99831||48|011|0009|Rural|
+99854|San Martín de las Peñas (San Martín de Arriba)|Rancho|Trinidad García de la Cadena|Zacatecas||99831|32|99831||48|011|0011|Rural|
+99854|Los Ciruelos|Rancho|Trinidad García de la Cadena|Zacatecas||99831|32|99831||48|011|0010|Rural|
+99855|Espinazo del Diablo|Rancho|Trinidad García de la Cadena|Zacatecas||99831|32|99831||48|011|0012|Rural|
+99860|Mezquital Del Oro|Ranchería|Mezquital del Oro|Zacatecas||99801|32|99801||29|028|0716|Rural|
+99864|La Coronilla|Pueblo|Mezquital del Oro|Zacatecas||99801|32|99801||28|028|0718|Rural|
+99865|El Malacate|Ranchería|Mezquital del Oro|Zacatecas||99801|32|99801||29|028|0001|Rural|
+99867|Los Gallos|Rancho|Mezquital del Oro|Zacatecas||99801|32|99801||48|028|0002|Rural|
+99900|Nochistlan Centro|Colonia|Nochistlán de Mejía|Zacatecas|Nochistlán de Mejía|99901|32|99901||09|034|0719|Urbano|11
+99902|La Gloria|Fraccionamiento|Nochistlán de Mejía|Zacatecas|Nochistlán de Mejía|99901|32|99901||21|034|0930|Urbano|11
+99902|Santo Santiago|Barrio|Nochistlán de Mejía|Zacatecas|Nochistlán de Mejía|99901|32|99901||02|034|0929|Urbano|11
+99904|Loma Bonita|Fraccionamiento|Nochistlán de Mejía|Zacatecas|Nochistlán de Mejía|99901|32|99901||21|034|0928|Urbano|11
+99904|Arboledas|Fraccionamiento|Nochistlán de Mejía|Zacatecas|Nochistlán de Mejía|99901|32|99901||21|034|0936|Urbano|11
+99905|Gonzalez Sanchez|Fraccionamiento|Nochistlán de Mejía|Zacatecas|Nochistlán de Mejía|99901|32|99901||21|034|0937|Urbano|11
+99905|San Miguel Oriente|Colonia|Nochistlán de Mejía|Zacatecas|Nochistlán de Mejía|99901|32|99901||09|034|0927|Urbano|11
+99905|Lomas del Refugio|Colonia|Nochistlán de Mejía|Zacatecas|Nochistlán de Mejía|99901|32|99901||09|034|0001|Urbano|11
+99906|Santa Cecilia|Colonia|Nochistlán de Mejía|Zacatecas|Nochistlán de Mejía|99901|32|99901||09|034|0935|Urbano|11
+99907|Bugambilias|Fraccionamiento|Nochistlán de Mejía|Zacatecas|Nochistlán de Mejía|99901|32|99901||21|034|0934|Urbano|11
+99908|La Quinta|Fraccionamiento|Nochistlán de Mejía|Zacatecas|Nochistlán de Mejía|99901|32|99901||21|034|1650|Urbano|11
+99908|La Presa|Fraccionamiento|Nochistlán de Mejía|Zacatecas|Nochistlán de Mejía|99901|32|99901||21|034|0933|Urbano|11
+99909|Los Arcos|Colonia|Nochistlán de Mejía|Zacatecas|Nochistlán de Mejía|99901|32|99901||09|034|0932|Urbano|11
+99909|Sutsemop|Fraccionamiento|Nochistlán de Mejía|Zacatecas|Nochistlán de Mejía|99901|32|99901||21|034|0931|Urbano|11
+99910|Monte de Yánez|Ranchería|Nochistlán de Mejía|Zacatecas||99901|32|99901||29|034|0727|Rural|
+99913|Toyahua de Arriba|Ranchería|Nochistlán de Mejía|Zacatecas||99901|32|99901||29|034|1388|Rural|
+99913|Las Huertas|Ranchería|Nochistlán de Mejía|Zacatecas||99901|32|99901||29|034|0725|Rural|
+99913|Las Delicias|Barrio|Nochistlán de Mejía|Zacatecas||99901|32|99901||02|034|1300|Rural|
+99913|Toyahua de Abajo|Ranchería|Nochistlán de Mejía|Zacatecas||99901|32|99901||29|034|1387|Rural|
+99914|Daniel Camarena|Ranchería|Nochistlán de Mejía|Zacatecas||99901|32|99901||29|034|0726|Rural|
+99915|Las Pilas|Ranchería|Nochistlán de Mejía|Zacatecas||99901|32|99901||29|034|0721|Rural|
+99915|La Villita|Ranchería|Nochistlán de Mejía|Zacatecas||99901|32|99901||29|034|0729|Rural|
+99917|Gabriel Lopez|Ranchería|Nochistlán de Mejía|Zacatecas||99901|32|99901||29|034|0724|Rural|
+99917|Capellania|Ranchería|Nochistlán de Mejía|Zacatecas||99901|32|99901||29|034|0722|Rural|
+99917|El Molino|Ranchería|Nochistlán de Mejía|Zacatecas||99901|32|99901||29|034|0723|Rural|
+99918|Fátima|Barrio|Nochistlán de Mejía|Zacatecas||99901|32|99901||02|034|1665|Rural|
+99918|Tlachichila|Ranchería|Nochistlán de Mejía|Zacatecas||99901|32|99901||29|034|0730|Rural|
+99918|Casas Grandes|Ranchería|Nochistlán de Mejía|Zacatecas||99901|32|99901||29|034|1660|Rural|
+99919|La Estancia|Ranchería|Nochistlán de Mejía|Zacatecas||99901|32|99901||29|034|0731|Rural|
+99920|San Pedro Apulco|Pueblo|Apulco|Zacatecas||99922|32|99922||28|002|0732|Rural|
+99921|Agua Blanca|Ranchería|Apulco|Zacatecas||99922|32|99922||29|002|0733|Rural|
+99925|La Pitaya|Ranchería|Apulco|Zacatecas||99601|32|99601||29|002|0669|Rural|
+99930|Tenayuca|Pueblo|Apulco|Zacatecas||99922|32|99922||28|002|0735|Rural|
+99940|De Abajo|Barrio|Apozol|Zacatecas||99961|32|99961||02|001|1653|Urbano|
+99940|Apozol|Pueblo|Apozol|Zacatecas||99961|32|99961||28|001|0736|Urbano|
+99949|Los Llamas|Ranchería|Apozol|Zacatecas||99961|32|99961||29|001|0738|Rural|
+99950|El Rescoldo|Ranchería|Apozol|Zacatecas||99961|32|99961||29|001|0739|Rural|
+99960|Juchipila|Pueblo|Juchipila|Zacatecas||99961|32|99961||28|023|0742|Rural|
+99960|San Sebastián|Pueblo|Juchipila|Zacatecas||99961|32|99961||28|023|0744|Rural|
+99960|Cerro La Arena|Fraccionamiento|Juchipila|Zacatecas||99961|32|99961||21|023|1675|Rural|
+99960|Contitlan|Ranchería|Juchipila|Zacatecas||99961|32|99961||29|023|0740|Rural|
+99960|Guadalupe Victoria|Ranchería|Juchipila|Zacatecas||99961|32|99961||29|023|0741|Rural|
+99960|La Quinta|Colonia|Juchipila|Zacatecas||99961|32|99961||09|023|1635|Rural|
+99960|Pueblo Viejo|Ranchería|Juchipila|Zacatecas||99961|32|99961||29|023|0743|Rural|
+99964|Popular del Sol|Colonia|Juchipila|Zacatecas||99961|32|99961||09|023|0001|Rural|
+99969|Mezquitera|Ranchería|Juchipila|Zacatecas||99961|32|99961||29|023|0746|Rural|
+99970|Remolino|Ranchería|Juchipila|Zacatecas||99961|32|99961||29|023|0747|Rural|
+99974|El Ranchito|Ranchería|Juchipila|Zacatecas||99961|32|99961||29|023|0748|Rural|
+99979|Amazochitl|Ranchería|Juchipila|Zacatecas||99961|32|99961||29|023|0749|Rural|
+99980|Moyahua Centro|Colonia|Moyahua de Estrada|Zacatecas|Moyahua de Estrada|99981|32|99981||09|033|0750|Rural|15
+99984|Santa Cruz|Fraccionamiento|Moyahua de Estrada|Zacatecas|Moyahua de Estrada|99981|32|99981||21|033|1022|Rural|15
+99984|Santa Maria|Fraccionamiento|Moyahua de Estrada|Zacatecas|Moyahua de Estrada|99981|32|99981||21|033|1024|Rural|15
+99987|Bajío Blanco|Fraccionamiento|Moyahua de Estrada|Zacatecas|Moyahua de Estrada|99981|32|99981||21|033|1023|Rural|15
+99990|Alameda Juárez|Ranchería|Moyahua de Estrada|Zacatecas||99961|32|99961||29|033|0754|Rural|
+99993|Cuxpala|Pueblo|Moyahua de Estrada|Zacatecas||99981|32|99981||28|033|0753|Rural|
+99994|Vicente Guerrero|Pueblo|Moyahua de Estrada|Zacatecas||99981|32|99981||28|033|0751|Rural|
+99998|Palmarejo|Ranchería|Moyahua de Estrada|Zacatecas||99961|32|99961||29|033|0756|Rural|
+99998|Jesús Maria|Ranchería|Moyahua de Estrada|Zacatecas||99961|32|99961||29|033|0755|Rural|
