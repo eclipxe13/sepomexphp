@@ -9,6 +9,20 @@ class Locations implements \IteratorAggregate, \Countable
     public function __construct(Location ...$location)
     {
         $this->collection = $location;
+
+    public static function extractUniqueCities(Location ...$locations): Cities
+    {
+        // This method is static because it does not use $this
+        $cities = [];
+        foreach ($locations as $location) {
+            if ($location->hasCity()) {
+                $city = $location->city();
+                if (! array_key_exists($city->id(), $cities)) {
+                    $cities[$city->id()] = $location->city();
+                }
+            }
+        }
+        return new Cities(...$cities);
     }
 
     public function getIterator()
