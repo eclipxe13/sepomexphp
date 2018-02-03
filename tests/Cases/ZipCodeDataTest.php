@@ -13,6 +13,10 @@ class ZipCodeDataTest extends TestCase
 
         $sepomex = new SepomexPhp(new Gateway($this->pdo()));
         $zipcode = $sepomex->getZipCodeData($expectedZipCode);
+        if (null === $zipcode) {
+            $this->fail("Expected information of zip code $expectedZipCode was not found");
+            return;
+        }
 
         $data = $zipcode->asArray();
 
