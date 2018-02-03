@@ -22,7 +22,12 @@ script:
   - vendor/bin/phpunit --coverage-text --coverage-clover=build/tests/coverage.xml
 
 after_script:
-  - if [[ $TRAVIS_PHP_VERSION == '5.6' ]]; then php vendor/bin/ocular code-coverage:upload --format=php-clover build/tests/coverage.xml; fi
+  # upload to scrutinizer
+  - |
+    if [[ $TRAVIS_PHP_VERSION == '7.1' ]]; then
+      wget https://scrutinizer-ci.com/ocular.phar
+      php ocular.phar code-coverage:upload --format=php-clover build/tests/coverage.xml
+    fi
 
 notifications:
   email: false
