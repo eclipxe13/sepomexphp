@@ -14,7 +14,7 @@ interface DataGatewayInterface
     /**
      * Get a Trasversable list of locations data
      * @param int $zipcode
-     * @return array An indexed array containing assoc array with keys: id, name, type, idcity, cityname
+     * @return array An indexed array containing assoc array with keys: id, name, idtype, typename, idcity, cityname
      */
     public function getLocationsFromZipCode($zipcode);
 }

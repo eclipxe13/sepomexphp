@@ -13,10 +13,10 @@ class Location
     use PropertyDistrictTrait;
     use PropertyCityTrait;
 
-    /** @var string */
+    /** @var LocationType */
     private $type;
 
-    public function __construct(int $id, string $name, string $type, District $district = null, City $city = null)
+    public function __construct(int $id, string $name, LocationType $type, District $district = null, City $city = null)
     {
         $this->setId($id);
         $this->setName($name);
@@ -25,14 +25,14 @@ class Location
         $this->setCity($city);
     }
 
-    public function type(): string
+    public function type(): LocationType
     {
         return $this->type;
     }
 
     public function getFullName(): string
     {
-        return $this->name . ' (' . $this->type . ')';
+        return $this->name() . ' (' . $this->type()->name() . ')';
     }
 
     public function asArray(): array
@@ -40,6 +40,8 @@ class Location
         return [
             'id' => $this->id(),
             'name' => $this->name(),
+            'fullname' => $this->getFullName(),
+            'type' => $this->type()->asArray(),
             'district' => $this->hasDistrict() ? $this->district()->asArray() : null,
             'city' => $this->hasCity() ? $this->city()->asArray() : null,
         ];

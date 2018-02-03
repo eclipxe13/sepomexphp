@@ -40,7 +40,7 @@ class Gateway implements DataGatewayInterface
 
     public function getLocationsFromZipCode($zipcode)
     {
-        $sql = 'select l.id, l.name, t.name as type, c.id as idcity, c.name as cityname'
+        $sql = 'select l.id, l.name, t.id as idtype, t.name as typename, c.id as idcity, c.name as cityname'
             . ' from zipcodes as z'
             . ' join locationzipcodes as lz on (lz.zipcode = z.id)'
             . ' join locations as l on (lz.idlocation = l.id)'

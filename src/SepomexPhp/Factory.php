@@ -32,4 +32,9 @@ class Factory
     {
         return new Location($id, $name, $type, $district, $city);
     }
+
+    public function newLocationType($id, $name): LocationType
+    {
+        return new LocationType($id, $name);
+    }
 }

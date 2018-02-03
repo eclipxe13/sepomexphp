@@ -64,7 +64,7 @@ class SepomexPhp
             $locations[] = $this->factory->newLocation(
                 $item['id'],
                 $item['name'],
-                $item['type'],
+                $this->factory->newLocationType($item['idtype'], $item['typename']),
                 null,
                 ($item['idcity']) ? $this->factory->newCity($item['idcity'], $item['cityname']) : null
             );
