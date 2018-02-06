@@ -3,7 +3,6 @@ namespace SepomexPhp;
 
 use SepomexPhp\Traits\PropertyIdIntegerTrait;
 use SepomexPhp\Traits\PropertyNameStringTrait;
-use SepomexPhp\Traits\PropertyStateTrait;
 
 class LocationType
 {
