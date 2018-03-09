@@ -1,4 +1,4 @@
-# SepomexPhp - Servicio postal Mexicano PHP Library
+# SepomexPhp - Servicio Postal Mexicano PHP Library
 
 [![Gitter][badge-gitter]][gitter]
 [![Latest Version][badge-release]][release]
@@ -61,9 +61,9 @@ That means:
 * Cannot create any profit of the information
 
 Anyhow, the data source has been released in 
-https://datos.gob.mx/busca/dataset/catalogo-nacional-de-codigos-postales/resource/13887b9a-f770-4276-8b80-f092cd886b44
-by the Mexican goverment using a less restrictive license called LIBRE USO MX https://datos.gob.mx/libreusomx and it
-allows us to distribute a copy of the original data and also to manipulate it.
+https://datos.gob.mx/busca/dataset/catalogo-nacional-de-codigos-postales/resource/2c5c36de-ffed-4dc6-9beb-66369db3a622
+by the Mexican goverment using a libre license called LIBRE USO MX https://datos.gob.mx/libreusomx and it
+remove any restrictions from the discraimer.
 
 If you run the script `scripts/create-sqlite-from-raw.php` you will create a sqlite database
 with the same information but normalized, the script will download the source if not exists.
