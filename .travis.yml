@@ -16,7 +16,6 @@ before_script:
         phpenv config-rm xdebug.ini
     fi
   - travis_retry composer install --no-interaction --prefer-dist
-  - travis_retry php scripts/create-sqlite-from-raw.php
 
 script:
   - mkdir -p build/tests/
