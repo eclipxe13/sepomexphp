@@ -23,11 +23,6 @@ call_user_func(function () {
         copy($sourceurl, $rawfile);
     }
 
-    // touch the dbfile if not exists
-    if (! file_exists($dbfile)) {
-        touch($dbfile);
-    }
-
     // create the pdo object
     $pdo = new \PDO('sqlite:' . $dbfile, null, null, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
 
