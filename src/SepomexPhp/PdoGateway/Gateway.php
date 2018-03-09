@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 namespace SepomexPhp\PdoGateway;
 
 use PDO;
@@ -16,7 +17,11 @@ class Gateway implements DataGatewayInterface
         $this->pdo = $pdo;
     }
 
-    public function getZipCodeData($zipcode)
+    /**
+     * @param string $zipcode
+     * @return array|null
+     */
+    public function getZipCodeData(string $zipcode)
     {
         $sql = 'select z.id as zipcode, d.id as iddistrict, d.name as districtname,'
             . ' s.id as idstate, s.name as statename'
@@ -38,7 +43,7 @@ class Gateway implements DataGatewayInterface
         return $data;
     }
 
-    public function getLocationsFromZipCode($zipcode)
+    public function getLocationsFromZipCode(string $zipcode): array
     {
         $sql = 'select l.id, l.name, t.id as idtype, t.name as typename, c.id as idcity, c.name as cityname'
             . ' from zipcodes as z'

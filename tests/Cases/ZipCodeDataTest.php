@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 namespace SepomexPhpTests\Cases;
 
 use SepomexPhpTests\TestCase;
@@ -13,7 +14,7 @@ class ZipCodeDataTest extends TestCase
 
     public function testZipCodeCheck()
     {
-        $expectedZipCode = 88305;
+        $expectedZipCode = '88305';
 
         $sepomex = $this->createSepomexPhp();
         $zipcode = $sepomex->getZipCodeData($expectedZipCode);

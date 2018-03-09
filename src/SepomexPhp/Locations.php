@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 namespace SepomexPhp;
 
 class Locations implements \IteratorAggregate, \Countable

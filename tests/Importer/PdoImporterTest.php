@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 namespace SepomexPhpTests\Importer;
 
 use SepomexPhp\Importer\PdoImporter;

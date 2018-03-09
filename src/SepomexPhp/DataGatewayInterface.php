@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 namespace SepomexPhp;
 
 interface DataGatewayInterface
@@ -6,15 +7,15 @@ interface DataGatewayInterface
     /**
      * Get zipcode data
      * This return null if no zipcode where found
-     * @param int $zipcode
+     * @param string $zipcode
      * @return array|null Assoc array with keys: zipcode, iddistrict, districtname, idstate, statename
      */
-    public function getZipCodeData($zipcode);
+    public function getZipCodeData(string $zipcode);
 
     /**
      * Get a Trasversable list of locations data
-     * @param int $zipcode
+     * @param string $zipcode
      * @return array An indexed array containing assoc array with keys: id, name, idtype, typename, idcity, cityname
      */
-    public function getLocationsFromZipCode($zipcode);
+    public function getLocationsFromZipCode(string $zipcode): array;
 }

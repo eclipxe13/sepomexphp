@@ -1,5 +1,5 @@
 <?php
-
+declare(strict_types=1);
 /**
  * This script is used to create the database using PDO and sqlite
  */

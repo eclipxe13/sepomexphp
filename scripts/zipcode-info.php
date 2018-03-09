@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 /**
  * This script is a command line tool to get information about a zipcode
  * It uses the database on assets/sepomex.db
@@ -25,7 +26,7 @@ call_user_func(function ($argv) {
     $sepomex = new \SepomexPhp\SepomexPhp($gateway);
 
     // query a zip code
-    $zipcode = $sepomex->getZipCodeData((int) $argv[1]);
+    $zipcode = $sepomex->getZipCodeData($argv[1]);
     if (null === $zipcode) {
         echo 'Not found: ', $argv[1], "\n";
         return;
