@@ -20,7 +20,7 @@ before_script:
 
 script:
   - mkdir -p build/tests/
-  - vendor/bin/parallel-lint src/ scripts/ tests/
+  - vendor/bin/phplint
   - vendor/bin/phpcs -sp src/ scripts/ tests/
   - vendor/bin/phpunit --coverage-text --coverage-clover=build/tests/coverage.xml
   - vendor/bin/phpstan analyse --level max scripts/ src/ tests/
