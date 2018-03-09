@@ -82,21 +82,6 @@ Right now you can search a mexican zip code and it will give you the information
 The city is located under the location entity because the same zip code can include some places inside the city
 and also some places outside the city. Yes, this is how it works in Mexico.
 
-# What is planned
-
-Search from global to specific:
-
-- [ ] Get the full list of states
-- [ ] Select a state and get all cities and districts.
-- [ ] Select a district and get all locations
-- [ ] Select a city and get all locations
-- [ ] Select a location and get all zip codes
-
-Other things to do:
-
-- [ ] Create common names, alias or short names for states.
-- [ ] Create an API for public access.
-- [ ] Create a sepomex.txt with fake information for testing.
 
 # Are you interested on help to this project?
 
