@@ -100,8 +100,8 @@ Por lo anterior, un asentamiento debería llamarse asentamiento + tipo de asenta
 * El campo `c_CP` es un campo vacío
 * El campo `id_asenta_cpcons` es un consecutivo de códigos postales,
   algo así como una llave autonumérica, encontraremos varios registros
-  en donde lo único que cambia es esta clave y el asentamiento, tipo de asentamiento,
-  municipio y estado son el mismo.
+  en donde lo único que cambia es esta clave y los otros campos: asentamiento, tipo de asentamiento,
+  municipio y estado son los mismos.
 
 ### La tabla de códigos postales
 
@@ -152,7 +152,7 @@ y a partir de él crea una base de datos de sqlite.
 
 ### Consultas para crear la estructura
 
-**TODO: Crear la estructura con foreign keys** 
+**TODO: Crear la estructura con foreign keys**
 
 ```sql
 CREATE TABLE raw (d_codigo text, d_asenta text, d_tipo_asenta text, d_mnpio text, d_estado text, d_ciudad text, d_cp text, c_estado text, c_oficina text, c_cp text, c_tipo_asenta text, c_mnpio text, id_asenta_cpcons text, d_zona text, c_cve_ciudad text);
