@@ -37,6 +37,12 @@ return PhpCsFixer\Config::create()
         'blank_line_after_opening_tag' => true,
         'ordered_imports' => true,
         'array_syntax' => ['syntax' => 'short'],
+        // PHP70Migration
+        'declare_strict_types' => true,
+        'non_printable_character' => true,
+        'pow_to_exponentiation' => true,
+        'random_api_migration' => true,
+        'ternary_to_null_coalescing' => true,
     ])
     ->setFinder(
         PhpCsFixer\Finder::create()->in([
