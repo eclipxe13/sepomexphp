@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 /**
  * This script is a command line tool to get information about a zipcode
