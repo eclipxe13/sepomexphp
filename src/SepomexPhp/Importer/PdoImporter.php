@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace SepomexPhp\Importer;
 
 use PDO;
+use PDOStatement;
 use SplFileObject;
 
 /**
@@ -21,10 +22,37 @@ class PdoImporter
         $this->pdo = $pdo;
     }
 
-    public function import(string $rawfile)
+    /**
+     * Retrieve a list of common states renames, like 'Veracruz de Ignacio de la Llave' to 'Veracruz'
+     *
+     * @return array
+     */
+    public static function commonSatesRename(): array
     {
+        return [
+            'Coahuila de Zaragoza' => 'Coahuila',
+            'Michoacán de Ocampo' => 'Michoacán',
+            'Veracruz de Ignacio de la Llave' => 'Veracruz',
+            // 'México' => 'Estado de México',
+        ];
+    }
+
+    /**
+     * Do the importation process from a raw file.
+     * It is expected that the data structure is already created.
+     *
+     * @param string $rawfile
+     * @param array|null $statesRename if null will use the common set of renames
+     * @see commonSatesRename
+     */
+    public function import(string $rawfile, array $statesRename = null)
+    {
+        if (null === $statesRename) {
+            $statesRename = $this->commonSatesRename();
+        }
         $this->importRawTxt($rawfile);
         $this->populateStates();
+        $this->renameStates($statesRename);
         $this->populateDistricts();
         $this->populateCities();
         $this->populateZipCodes();
@@ -100,7 +128,18 @@ class PdoImporter
             . ' FROM raw ORDER BY c_estado;',
         ];
         $this->execute(...$commands);
-        // TODO: renombrar los estados a su nombre tradicional
+    }
+
+    public function renameStates(array $names)
+    {
+        if (0 === count($names)) {
+            return;
+        }
+        $sql = 'UPDATE states SET name = :newname WHERE (name = :oldname);';
+        $stmt = $this->pdo->prepare($sql);
+        foreach ($names as $oldname => $newname) {
+            $stmt->execute(['oldname' => $oldname, 'newname' => $newname]);
+        }
     }
 
     public function populateDistricts()
@@ -187,10 +226,14 @@ class PdoImporter
         $this->execute('DELETE FROM raw;');
     }
 
-    protected function execute(string ...$commands)
+    protected function execute(...$commands)
     {
         foreach ($commands as $command) {
-            $this->pdo->exec($command);
+            if (is_string($command)) {
+                $this->pdo->exec($command);
+            } elseif ($command instanceof PDOStatement) {
+                $command->execute();
+            }
         }
     }
 }

@@ -61,12 +61,13 @@ class PdoImporterTest extends TestCase
         $importer->createStruct();
 
         // do the import process in one line
-        $importer->importRawTxt($rawfile);
-        $importer->import($rawfile);
+        $statesRename = $importer->commonSatesRename();
+        $importer->import($rawfile, $statesRename);
 
         // perform all the checks
         $this->assertEquals(0, $this->queryOne('select count(*) from raw;'));
         $this->assertEquals(15, $this->queryOne('select count(*) from states;'));
+        $this->assertEquals(1, $this->queryOne("select count(*) from states where name = 'Coahuila';"));
         $this->assertEquals(46, $this->queryOne('select count(*) from districts;'));
         $this->assertEquals(9, $this->queryOne('select count(*) from cities;'));
         $this->assertEquals(327, $this->queryOne('select count(*) from zipcodes;'));
