@@ -51,7 +51,7 @@ implements the methods and get the data from anywhere.
 
 Sepomex distribute its database of postal codes with a very restrictive clause on its first line:
 
->> *El Catálogo Nacional de Códigos Postales, es elaborado por Correos de México y se proporciona en forma gratuita para uso particular,
+> *El Catálogo Nacional de Códigos Postales, es elaborado por Correos de México y se proporciona en forma gratuita para uso particular,
 no estando permitida su comercialización, total o parcial, ni su distribución a terceros bajo ningún concepto.*
 
 That means:
@@ -67,6 +67,8 @@ remove any restrictions from the discraimer.
 
 If you run the script `scripts/create-sqlite-from-raw.php` you will create a sqlite database
 with the same information but normalized, the script will download the source if not exists.
+
+You would find more information about the source raw file inside [docs/DATABASE.md](docs/DATABASE.md) (*spanish*)
 
 # What is working
 
