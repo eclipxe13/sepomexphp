@@ -12,7 +12,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/../vendor/autoload.php';
 
 // escape the global scope
-exit(call_user_func(function (array $argv) {
+$returnValue = call_user_func(function (array $argv) {
     // exit if no arguments
     if (2 !== count($argv)) {
         echo 'Usage: ', $argv[0], " zipcode\n";
@@ -60,4 +60,6 @@ exit(call_user_func(function (array $argv) {
         file_put_contents('php://stderr', $exception->getMessage(), FILE_APPEND);
         return 1;
     }
-}, $argv));
+}, $argv);
+
+exit($returnValue);

@@ -7,7 +7,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/../vendor/autoload.php';
 
 // escape the global scope
-exit(call_user_func(function () {
+$returnValue = call_user_func(function () {
     try {
         $path = dirname(__DIR__) . '/assets';
         // create the path if this soes not exists
@@ -39,4 +39,6 @@ exit(call_user_func(function () {
         file_put_contents('php://stderr', $exception->getMessage(), FILE_APPEND);
         return 1;
     }
-}));
+});
+
+exit($returnValue);
