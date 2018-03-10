@@ -55,7 +55,7 @@ class SepomexPhp
      * @param string $zipcode
      * @return Location[]
      */
-    public function getLocationsFromZipCode(string $zipcode)
+    public function getLocationsFromZipCode(string $zipcode): array
     {
         $locations = [];
         $items = $this->gateway->getLocationsFromZipCode($zipcode);

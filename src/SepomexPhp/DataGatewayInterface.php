@@ -15,7 +15,7 @@ interface DataGatewayInterface
     public function getZipCodeData(string $zipcode);
 
     /**
-     * Get a Trasversable list of locations data
+     * Get a list of locations data
      * @param string $zipcode
      * @return array An indexed array containing assoc array with keys: id, name, idtype, typename, idcity, cityname
      */
