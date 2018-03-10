@@ -1,27 +1,32 @@
 <?php
+
+declare(strict_types=1);
+
 namespace SepomexPhp;
+
+use SepomexPhp\Traits\PropertyIdIntegerTrait;
+use SepomexPhp\Traits\PropertyNameStringTrait;
+use SepomexPhp\Traits\PropertyStateTrait;
 
 class City
 {
-    /** @var int */
-    public $id;
+    use PropertyIdIntegerTrait;
+    use PropertyNameStringTrait;
+    use PropertyStateTrait;
 
-    /** @var string */
-    public $name;
-
-    /** @var State|null */
-    public $state;
-
-    /**
-     * City constructor.
-     * @param int $id
-     * @param string $name
-     * @param State|null $state
-     */
-    public function __construct($id, $name, State $state = null)
+    public function __construct(int $id, string $name, State $state = null)
     {
-        $this->id = $id;
-        $this->name = $name;
-        $this->state = $state;
+        $this->setId($id);
+        $this->setName($name);
+        $this->setState($state);
+    }
+
+    public function asArray(): array
+    {
+        return [
+            'id' => $this->id(),
+            'name' => $this->name(),
+            'state' => $this->hasState() ? $this->state()->asArray() : null,
+        ];
     }
 }

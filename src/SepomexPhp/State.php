@@ -1,32 +1,32 @@
 <?php
+
+declare(strict_types=1);
+
 namespace SepomexPhp;
+
+use SepomexPhp\Traits\PropertyIdIntegerTrait;
+use SepomexPhp\Traits\PropertyNameStringTrait;
 
 class State
 {
-    /**
-     * @var int
-     */
-    public $id;
-
-    /**
-     * @var string
-     */
-    public $name;
-
-    /**
-     * @var Location[]
-     */
-    public $locations;
+    use PropertyIdIntegerTrait;
+    use PropertyNameStringTrait;
 
     /**
      * @param int $id
      * @param string $name
-     * @param Location[] $locations
      */
-    public function __construct($id, $name, array $locations = [])
+    public function __construct(int $id, string $name)
     {
-        $this->id = $id;
-        $this->name = $name;
-        $this->locations = $locations;
+        $this->setId($id);
+        $this->setName($name);
+    }
+
+    public function asArray(): array
+    {
+        return [
+            'id' => $this->id(),
+            'name' => $this->name(),
+        ];
     }
 }

@@ -1,41 +1,61 @@
 <?php
+
+declare(strict_types=1);
+
 namespace SepomexPhp;
+
+use SepomexPhp\Traits\PropertyDistrictTrait;
+use SepomexPhp\Traits\PropertyLocationsTrait;
+use SepomexPhp\Traits\PropertyStateTrait;
 
 class ZipCodeData
 {
-    /**
-     * @var int
-     */
-    public $zipcode;
-    /**
-     * @var Location[]
-     */
-    public $locations;
-    /**
-     * @var District
-     */
-    public $district;
-    /**
-     * @var State
-     */
-    public $state;
+    use PropertyLocationsTrait;
+    use PropertyDistrictTrait;
+    use PropertyStateTrait;
+
+    /** @var string */
+    private $zipcode;
+
+    private $formatted;
 
     /**
-     * @param int $zipcode
+     * @param string $zipcode
      * @param Location[] $locations
      * @param District $district
      * @param State $state
      */
-    public function __construct($zipcode, array $locations, District $district, State $state)
+    public function __construct(string $zipcode, array $locations, District $district, State $state)
     {
-        foreach ($locations as $location) {
-            if (! ($location instanceof Location)) {
-                throw new \InvalidArgumentException('locations must be an array of ' . Location::class);
-            }
+        if (1 !== preg_match('/^\d{4,5}$/', $zipcode)) {
+            throw new \UnexpectedValueException('Zipcode must be 4 to 5 digits');
         }
         $this->zipcode = $zipcode;
-        $this->locations = $locations;
-        $this->district = $district;
-        $this->state = $state;
+        $this->formatted = str_pad($this->zipcode, 5, '0', STR_PAD_LEFT);
+        $this->setLocations(...$locations);
+        $this->setDistrict($district);
+        $this->setState($state);
+    }
+
+    public function zipcode(): string
+    {
+        return $this->zipcode;
+    }
+
+    public function format(): string
+    {
+        return $this->formatted;
+    }
+
+    public function asArray(): array
+    {
+        $locations = $this->locations();
+        return [
+            'zipcode' => $this->zipcode(),
+            'locations' => $locations->asArray(),
+            'cities' => $locations->cities()->asArray(),
+            'district' => $this->district()->asArray(),
+            'state' => $this->state()->asArray(),
+        ];
     }
 }

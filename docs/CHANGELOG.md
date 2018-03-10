@@ -1,3 +1,12 @@
+Version 2.0.0 2018-03-09
+- Drop compatibility with PHP 5.6, minimum is PHP 7.0
+- Use typehints and strict mode
+- Data classes are now immutable (value objects)
+- Introduce collections of cities and locations
+- Use traits for common properties
+- Add tests for PdoImporter using an extract of the raw data
+- Do not remove the raw table, just delete all contents
+
 Version 1.1.1 2018-02-02
 - Make use of phpstan, include in travis and in CONTRIBUTING.md
 - Fix docblocks according to phpstan and scrutinizer

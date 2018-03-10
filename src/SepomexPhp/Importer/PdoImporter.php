@@ -1,7 +1,11 @@
 <?php
+
+declare(strict_types=1);
+
 namespace SepomexPhp\Importer;
 
 use PDO;
+use PDOStatement;
 use SplFileObject;
 
 /**
@@ -16,6 +20,46 @@ class PdoImporter
     public function __construct(PDO $pdo)
     {
         $this->pdo = $pdo;
+    }
+
+    /**
+     * Retrieve a list of common states renames, like 'Veracruz de Ignacio de la Llave' to 'Veracruz'
+     *
+     * @return array
+     */
+    public static function commonSatesRename(): array
+    {
+        return [
+            'Coahuila de Zaragoza' => 'Coahuila',
+            'Michoacán de Ocampo' => 'Michoacán',
+            'Veracruz de Ignacio de la Llave' => 'Veracruz',
+            // 'México' => 'Estado de México',
+        ];
+    }
+
+    /**
+     * Do the importation process from a raw file.
+     * It is expected that the data structure is already created.
+     *
+     * @param string $rawfile
+     * @param array|null $statesRename if null will use the common set of renames
+     * @see commonSatesRename
+     */
+    public function import(string $rawfile, array $statesRename = null)
+    {
+        if (null === $statesRename) {
+            $statesRename = $this->commonSatesRename();
+        }
+        $this->importRawTxt($rawfile);
+        $this->populateStates();
+        $this->renameStates($statesRename);
+        $this->populateDistricts();
+        $this->populateCities();
+        $this->populateZipCodes();
+        $this->populateLocationTypes();
+        $this->populateLocations();
+        $this->populateLocationZipCodes();
+        $this->clearRawTable();
     }
 
     public function createStruct()
@@ -52,10 +96,10 @@ class PdoImporter
             'CREATE TABLE locationzipcodes (idlocation integer not null, zipcode integer not null,'
             . ' primary key(idlocation, zipcode));',
         ];
-        $this->execute($commands);
+        $this->execute(...$commands);
     }
 
-    public function importRawTxt($filename)
+    public function importRawTxt(string $filename)
     {
         if (! file_exists($filename) || ! is_readable($filename)) {
             throw new \RuntimeException("File $filename not found or not readable");
@@ -67,7 +111,7 @@ class PdoImporter
         $source = new SplFileObject($filename, 'r');
         foreach ($source as $i => $line) {
             // discard first lines
-            if ($i < 2 || ! $line) {
+            if ($i < 2 || is_array($line) || ! $line) {
                 continue;
             }
             $values = explode('|', iconv('iso-8859-1', 'utf-8', $line));
@@ -83,8 +127,19 @@ class PdoImporter
             'INSERT INTO states SELECT DISTINCT CAST(c_estado AS INTEGER) as id, d_estado as name'
             . ' FROM raw ORDER BY c_estado;',
         ];
-        $this->execute($commands);
-        // TODO: renombrar los estados a su nombre tradicional
+        $this->execute(...$commands);
+    }
+
+    public function renameStates(array $names)
+    {
+        if (0 === count($names)) {
+            return;
+        }
+        $sql = 'UPDATE states SET name = :newname WHERE (name = :oldname);';
+        $stmt = $this->pdo->prepare($sql);
+        foreach ($names as $oldname => $newname) {
+            $stmt->execute(['oldname' => $oldname, 'newname' => $newname]);
+        }
     }
 
     public function populateDistricts()
@@ -94,7 +149,7 @@ class PdoImporter
             'INSERT INTO districts SELECT DISTINCT null as id, CAST(c_estado AS INTEGER) as idstate, d_mnpio as name,'
             . ' CAST(c_mnpio AS INTEGER) as idraw FROM raw ORDER BY c_estado, c_mnpio;',
         ];
-        $this->execute($commands);
+        $this->execute(...$commands);
     }
 
     public function populateCities()
@@ -105,7 +160,7 @@ class PdoImporter
             . ' CAST(c_cve_ciudad AS INTEGER) as idraw FROM raw WHERE (d_ciudad <> "")'
             . ' ORDER BY c_estado, c_cve_ciudad;',
         ];
-        $this->execute($commands);
+        $this->execute(...$commands);
     }
 
     public function populateLocationTypes()
@@ -115,7 +170,7 @@ class PdoImporter
             'INSERT INTO locationtypes SELECT DISTINCT CAST(c_tipo_asenta AS INTEGER) AS id, d_tipo_asenta AS name'
             . ' FROM raw ORDER BY c_tipo_asenta;',
         ];
-        $this->execute($commands);
+        $this->execute(...$commands);
     }
 
     public function populateLocations()
@@ -133,7 +188,7 @@ class PdoImporter
             . ' ON (c.idraw = CAST(c_cve_ciudad AS INTEGER) AND c.idstate = CAST(c_estado AS INTEGER))'
             . ';',
         ];
-        $this->execute($commands);
+        $this->execute(...$commands);
     }
 
     public function populateZipCodes()
@@ -147,7 +202,7 @@ class PdoImporter
             . ' ON (d.idraw = CAST(c_mnpio AS INTEGER) AND d.idstate = CAST(c_estado AS INTEGER))'
             . ';',
         ];
-        $this->execute($commands);
+        $this->execute(...$commands);
     }
 
     public function populateLocationZipCodes()
@@ -163,24 +218,22 @@ class PdoImporter
             . ' INNER JOIN locations AS l ON (t.id = l.idlocationtype AND d.id = l.iddistrict AND l.name = r.d_asenta)'
             . ';',
         ];
-        $this->execute($commands);
+        $this->execute(...$commands);
     }
 
-    public function dropRawTable()
+    public function clearRawTable()
     {
-        $commands = [
-            'DROP TABLE IF EXISTS raw;',
-        ];
-        $this->execute($commands);
+        $this->execute('DELETE FROM raw;');
     }
 
-    /**
-     * @param string[] $commands
-     */
-    protected function execute(array $commands)
+    protected function execute(...$commands)
     {
         foreach ($commands as $command) {
-            $this->pdo->exec($command);
+            if (is_string($command)) {
+                $this->pdo->exec($command);
+            } elseif ($command instanceof PDOStatement) {
+                $command->execute();
+            }
         }
     }
 }

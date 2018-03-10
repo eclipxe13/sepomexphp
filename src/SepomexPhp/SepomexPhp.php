@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 namespace SepomexPhp;
 
 class SepomexPhp
@@ -28,15 +31,11 @@ class SepomexPhp
 
     /**
      * Return a ZipCodeData object or null if not found
-     * @param int|string $zipcode
+     * @param string $zipcode
      * @return ZipCodeData|null
      */
-    public function getZipCodeData($zipcode)
+    public function getZipCodeData(string $zipcode)
     {
-        // fix input type
-        if (is_string($zipcode)) {
-            $zipcode = intval($zipcode);
-        }
         // get data information
         $data = $this->gateway->getZipCodeData($zipcode);
         // no data, return null
@@ -47,28 +46,53 @@ class SepomexPhp
         return $this->factory->newZipCodeData(
             $zipcode,
             $this->getLocationsFromZipCode($zipcode),
-            $this->factory->newDistrict($data['iddistrict'], $data['districtname']),
-            $this->factory->newState($data['idstate'], $data['statename'])
+            $this->factory->newDistrict((int) $data['iddistrict'], $data['districtname']),
+            $this->factory->newState((int) $data['idstate'], $data['statename'])
         );
     }
 
     /**
-     * @param int $zipcode
+     * @param string $zipcode
      * @return Location[]
      */
-    public function getLocationsFromZipCode($zipcode)
+    public function getLocationsFromZipCode(string $zipcode): array
     {
         $locations = [];
         $items = $this->gateway->getLocationsFromZipCode($zipcode);
         foreach ($items as $item) {
             $locations[] = $this->factory->newLocation(
-                $item['id'],
+                (int) $item['id'],
                 $item['name'],
-                $item['type'],
+                $this->factory->newLocationType((int) $item['idtype'], $item['typename']),
                 null,
-                ($item['idcity']) ? $this->factory->newCity($item['idcity'], $item['cityname']) : null
+                ($item['idcity']) ? $this->factory->newCity((int) $item['idcity'], $item['cityname']) : null
             );
         }
         return $locations;
+    }
+
+    /**
+     * @param string $districtName
+     * @param string $stateName
+     * @param int $pageIndex
+     * @param int $pageSize
+     * @return District[]
+     */
+    public function searchDistricts(
+        string $districtName,
+        string $stateName,
+        int $pageIndex = 0,
+        int $pageSize = 100
+    ): array {
+        $states = [];
+        $districts = [];
+        $rows = $this->gateway->searchDistricts($districtName, $stateName, $pageIndex, $pageSize);
+        foreach ($rows as $row) {
+            if (! array_key_exists($row['idstate'], $states)) {
+                $states[$row['idstate']] = $this->factory->newState((int) $row['idstate'], $row['statename']);
+            }
+            $districts[] = $this->factory->newDistrict((int) $row['id'], $row['name'], $states[$row['idstate']]);
+        }
+        return $districts;
     }
 }

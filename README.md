@@ -1,4 +1,4 @@
-# SepomexPhp - Servicio postal Mexicano PHP Library
+# SepomexPhp - Servicio Postal Mexicano PHP Library
 
 [![Gitter][badge-gitter]][gitter]
 [![Latest Version][badge-release]][release]
@@ -47,11 +47,11 @@ Also, check the `zipcode-info.php` script. and `ZipCodeDataTest.php`
 Do you have your own dataset of Sepomex? You can extend this library, just create `DataGatewayInterface` that
 implements the methods and get the data from anywhere.
 
-# About the SEPOMEX information (as of 2017-01-25)
+# About the SEPOMEX information (as of 2018-02-02)
 
 Sepomex distribute its database of postal codes with a very restrictive clause on its first line:
 
->> *El Catálogo Nacional de Códigos Postales, es elaborado por Correos de México y se proporciona en forma gratuita para uso particular,
+> *El Catálogo Nacional de Códigos Postales, es elaborado por Correos de México y se proporciona en forma gratuita para uso particular,
 no estando permitida su comercialización, total o parcial, ni su distribución a terceros bajo ningún concepto.*
 
 That means:
@@ -61,12 +61,14 @@ That means:
 * Cannot create any profit of the information
 
 Anyhow, the data source has been released in 
-https://datos.gob.mx/busca/dataset/catalogo-nacional-de-codigos-postales/resource/13887b9a-f770-4276-8b80-f092cd886b44
-by the Mexican goverment using a less restrictive license called LIBRE USO MX https://datos.gob.mx/libreusomx and it
-allows us to distribute a copy of the original data and also to manipulate it.
+https://datos.gob.mx/busca/dataset/catalogo-nacional-de-codigos-postales/resource/2c5c36de-ffed-4dc6-9beb-66369db3a622
+by the Mexican goverment using a libre license called LIBRE USO MX https://datos.gob.mx/libreusomx and it
+remove any restrictions from the discraimer.
 
 If you run the script `scripts/create-sqlite-from-raw.php` you will create a sqlite database
 with the same information but normalized, the script will download the source if not exists.
+
+You would find more information about the source raw file inside [docs/DATABASE.md](docs/DATABASE.md) (*spanish*)
 
 # What is working
 
@@ -82,21 +84,6 @@ Right now you can search a mexican zip code and it will give you the information
 The city is located under the location entity because the same zip code can include some places inside the city
 and also some places outside the city. Yes, this is how it works in Mexico.
 
-# What is planned
-
-Search from global to specific:
-
-- [ ] Get the full list of states
-- [ ] Select a state and get all cities and districts.
-- [ ] Select a district and get all locations
-- [ ] Select a city and get all locations
-- [ ] Select a location and get all zip codes
-
-Other things to do:
-
-- [ ] Create common names, alias or short names for states.
-- [ ] Create an API for public access.
-- [ ] Create a sepomex.txt with fake information for testing.
 
 # Are you interested on help to this project?
 

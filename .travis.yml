@@ -2,7 +2,6 @@ language: php
 
 # php compatibility
 php:
-  - 5.6
   - 7.0
   - 7.1
   - 7.2
@@ -17,18 +16,13 @@ before_script:
         phpenv config-rm xdebug.ini
     fi
   - travis_retry composer install --no-interaction --prefer-dist
-  - travis_retry php scripts/create-sqlite-from-raw.php
 
 script:
   - mkdir -p build/tests/
-  - vendor/bin/parallel-lint src/ scripts/ tests/
+  - vendor/bin/phplint
   - vendor/bin/phpcs -sp src/ scripts/ tests/
   - vendor/bin/phpunit --coverage-text --coverage-clover=build/tests/coverage.xml
-  - |
-    if [[ $TRAVIS_PHP_VERSION != '5.6' ]]; then
-        wget https://github.com/phpstan/phpstan-shim/raw/master/phpstan.phar
-        php phpstan.phar analyse --level max scripts/ src/ tests/
-    fi
+  - vendor/bin/phpstan analyse --level max scripts/ src/ tests/
 
 after_script:
   # upload to scrutinizer

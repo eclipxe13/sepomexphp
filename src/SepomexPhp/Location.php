@@ -1,44 +1,52 @@
 <?php
+
+declare(strict_types=1);
+
 namespace SepomexPhp;
+
+use SepomexPhp\Traits\PropertyCityTrait;
+use SepomexPhp\Traits\PropertyDistrictTrait;
+use SepomexPhp\Traits\PropertyIdIntegerTrait;
+use SepomexPhp\Traits\PropertyNameStringTrait;
 
 class Location
 {
-    /** @var int */
-    public $id;
+    use PropertyIdIntegerTrait;
+    use PropertyNameStringTrait;
+    use PropertyDistrictTrait;
+    use PropertyCityTrait;
 
-    /** @var string */
-    public $name;
+    /** @var LocationType */
+    private $type;
 
-    /** @var string */
-    public $type;
-
-    /** @var District|null */
-    public $district;
-
-    /** @var City|null */
-    public $city;
-
-    /**
-     * @param int $id
-     * @param string $name
-     * @param string $type
-     * @param District|null $district
-     * @param City|null $city
-     */
-    public function __construct($id, $name, $type, District $district = null, City $city = null)
+    public function __construct(int $id, string $name, LocationType $type, District $district = null, City $city = null)
     {
-        $this->id = $id;
-        $this->name = $name;
+        $this->setId($id);
+        $this->setName($name);
         $this->type = $type;
-        $this->district = $district;
-        $this->city = $city;
+        $this->setDistrict($district);
+        $this->setCity($city);
     }
 
-    /**
-     * @return string
-     */
-    public function getFullName()
+    public function type(): LocationType
     {
-        return $this->name . ' (' . $this->type . ')';
+        return $this->type;
+    }
+
+    public function getFullName(): string
+    {
+        return $this->name() . ' (' . $this->type()->name() . ')';
+    }
+
+    public function asArray(): array
+    {
+        return [
+            'id' => $this->id(),
+            'name' => $this->name(),
+            'fullname' => $this->getFullName(),
+            'type' => $this->type()->asArray(),
+            'district' => $this->hasDistrict() ? $this->district()->asArray() : null,
+            'city' => $this->hasCity() ? $this->city()->asArray() : null,
+        ];
     }
 }
