@@ -59,4 +59,27 @@ class Gateway implements DataGatewayInterface
         }
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    public function searchDistricts(string $districtName, string $stateName, int $pageIndex, int $pageSize): array
+    {
+        $sql = 'select distinct d.id, d.name, s.id as idstate, s.name as statename'
+            . ' from districts as d'
+            . ' join states s on (d.idstate = s.id)'
+            . ' where (d.name like :districtName)'
+            . ' and (s.name like :stateName)'
+            . ' order by s.name, d.name'
+            . ' limit :pageIndex, :pageSize'
+            . ';';
+        $stmt = $this->pdo->prepare($sql);
+        $params = [
+            'districtName' => '%' . $districtName . '%',
+            'stateName' => '%' . $stateName . '%',
+            'pageIndex' => $pageIndex * $pageSize,
+            'pageSize' => $pageSize,
+        ];
+        if (! $stmt->execute($params)) {
+            throw new \RuntimeException('Cannot execute ' . $stmt->queryString);
+        }
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }

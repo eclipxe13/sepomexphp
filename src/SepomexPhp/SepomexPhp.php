@@ -70,4 +70,29 @@ class SepomexPhp
         }
         return $locations;
     }
+
+    /**
+     * @param string $districtName
+     * @param string $stateName
+     * @param int $pageIndex
+     * @param int $pageSize
+     * @return District[]
+     */
+    public function searchDistricts(
+        string $districtName,
+        string $stateName,
+        int $pageIndex = 0,
+        int $pageSize = 100
+    ): array {
+        $states = [];
+        $districts = [];
+        $rows = $this->gateway->searchDistricts($districtName, $stateName, $pageIndex, $pageSize);
+        foreach ($rows as $row) {
+            if (! array_key_exists($row['idstate'], $states)) {
+                $states[$row['idstate']] = $this->factory->newState((int) $row['idstate'], $row['statename']);
+            }
+            $districts[] = $this->factory->newDistrict((int) $row['id'], $row['name'], $states[$row['idstate']]);
+        }
+        return $districts;
+    }
 }
