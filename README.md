@@ -111,7 +111,7 @@ Getting from https://datos.gob.mx/busca/dataset/catalogo-nacional-de-codigos-pos
 [build]: https://travis-ci.org/eclipxe13/sepomexphp
 [quality]: https://scrutinizer-ci.com/g/eclipxe13/sepomexphp/
 [sensiolabs]: https://insight.sensiolabs.com/projects/0b8eb458-a6ef-4300-8950-3c4972228bbe
-[coverage]: https://scrutinizer-ci.com/g/eclipxe13/sepomexphp/?branch=master
+[coverage]: https://scrutinizer-ci.com/g/eclipxe13/sepomexphp/code-structure/master/code-coverage
 [downloads]: https://packagist.org/packages/eclipxe/sepomexphp
 
 [badge-source]: http://img.shields.io/badge/source-eclipxe13/sepomexphp-blue.svg?style=flat-square
