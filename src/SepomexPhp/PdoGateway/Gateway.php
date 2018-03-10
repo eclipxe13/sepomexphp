@@ -33,10 +33,7 @@ class Gateway implements DataGatewayInterface
             . ' where (z.id = :zipcode)'
             . ';';
         $stmt = $this->pdo->prepare($sql);
-        if (! $stmt->bindParam(':zipcode', $zipcode, PDO::PARAM_INT)) {
-            throw new \RuntimeException('Cannot bind param :zipcode');
-        }
-        if (! $stmt->execute()) {
+        if (! $stmt->execute(['zipcode' => $zipcode])) {
             throw new \RuntimeException('Cannot execute ' . $stmt->queryString);
         }
         if (false === $data = $stmt->fetch(PDO::FETCH_ASSOC)) {
@@ -57,10 +54,7 @@ class Gateway implements DataGatewayInterface
             . ' order by l.name, t.name, c.name'
             . ';';
         $stmt = $this->pdo->prepare($sql);
-        if (! $stmt->bindParam(':zipcode', $zipcode, PDO::PARAM_INT)) {
-            throw new \RuntimeException('Cannot bind param :zipcode');
-        }
-        if (! $stmt->execute()) {
+        if (! $stmt->execute(['zipcode' => $zipcode])) {
             throw new \RuntimeException('Cannot execute ' . $stmt->queryString);
         }
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
