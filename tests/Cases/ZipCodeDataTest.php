@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace SepomexPhpTests\Cases;
 
+use DMS\PHPUnitExtensions\ArraySubset\Assert;
 use SepomexPhpTests\TestCase;
 
 class ZipCodeDataTest extends TestCase
@@ -27,11 +28,11 @@ class ZipCodeDataTest extends TestCase
 
         $data = $zipcode->asArray();
 
-        \DMS\PHPUnitExtensions\ArraySubset\Assert::assertArraySubset(['zipcode' => $expectedZipCode], $data);
-        \DMS\PHPUnitExtensions\ArraySubset\Assert::assertArraySubset(['state' => ['name' => 'Tamaulipas']], $data);
-        \DMS\PHPUnitExtensions\ArraySubset\Assert::assertArraySubset(['district' => ['name' => 'Miguel Alemán']], $data);
-        \DMS\PHPUnitExtensions\ArraySubset\Assert::assertArraySubset(['cities' => [['name' => 'Ciudad Miguel Alemán']]], $data);
-        \DMS\PHPUnitExtensions\ArraySubset\Assert::assertArraySubset(['locations' => [['name' => 'Adolfo López Mateos']]], $data);
+        Assert::assertArraySubset(['zipcode' => $expectedZipCode], $data);
+        Assert::assertArraySubset(['state' => ['name' => 'Tamaulipas']], $data);
+        Assert::assertArraySubset(['district' => ['name' => 'Miguel Alemán']], $data);
+        Assert::assertArraySubset(['cities' => [['name' => 'Ciudad Miguel Alemán']]], $data);
+        Assert::assertArraySubset(['locations' => [['name' => 'Adolfo López Mateos']]], $data);
         $this->assertCount(5, $data['locations']);
     }
 }
