@@ -9,8 +9,7 @@ use SepomexPhp\Locations;
 
 trait PropertyLocationsTrait
 {
-    /** @var Locations */
-    private $locations;
+    private Locations $locations;
 
     /**
      * @return Locations|Location[]

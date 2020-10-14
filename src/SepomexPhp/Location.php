@@ -16,8 +16,7 @@ class Location
     use PropertyDistrictTrait;
     use PropertyCityTrait;
 
-    /** @var LocationType */
-    private $type;
+    private LocationType $type;
 
     public function __construct(int $id, string $name, LocationType $type, District $district = null, City $city = null)
     {

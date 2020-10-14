@@ -7,6 +7,7 @@ namespace SepomexPhp;
 use SepomexPhp\Traits\PropertyDistrictTrait;
 use SepomexPhp\Traits\PropertyLocationsTrait;
 use SepomexPhp\Traits\PropertyStateTrait;
+use UnexpectedValueException;
 
 class ZipCodeData
 {
@@ -14,10 +15,9 @@ class ZipCodeData
     use PropertyDistrictTrait;
     use PropertyStateTrait;
 
-    /** @var string */
-    private $zipcode;
+    private string $zipcode;
 
-    private $formatted;
+    private string $formatted;
 
     /**
      * @param string $zipcode
@@ -28,7 +28,7 @@ class ZipCodeData
     public function __construct(string $zipcode, array $locations, District $district, State $state)
     {
         if (1 !== preg_match('/^\d{4,5}$/', $zipcode)) {
-            throw new \UnexpectedValueException('Zipcode must be 4 to 5 digits');
+            throw new UnexpectedValueException('Zipcode must be 4 to 5 digits');
         }
         $this->zipcode = $zipcode;
         $this->formatted = str_pad($this->zipcode, 5, '0', STR_PAD_LEFT);

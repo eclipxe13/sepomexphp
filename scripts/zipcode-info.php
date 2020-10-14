@@ -9,6 +9,10 @@ declare(strict_types=1);
  *
  * Usage: zipcode-info.php zipcode
  */
+
+use SepomexPhp\PdoGateway\Gateway;
+use SepomexPhp\SepomexPhp;
+
 require_once __DIR__ . '/../vendor/autoload.php';
 
 // escape the global scope
@@ -25,9 +29,9 @@ $returnValue = call_user_func(function (array $argv) {
         // create the PDO Object
         $pdo = new PDO('sqlite:' . $dbfile, null, null, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
         // create the gateway
-        $gateway = new SepomexPhp\PdoGateway\Gateway($pdo);
+        $gateway = new Gateway($pdo);
         // create the SepomexPhp Object
-        $sepomex = new \SepomexPhp\SepomexPhp($gateway);
+        $sepomex = new SepomexPhp($gateway);
 
         // query a zip code
         $zipcode = $sepomex->getZipCodeData($argv[1]);
@@ -56,7 +60,7 @@ $returnValue = call_user_func(function (array $argv) {
             echo '               ', $location->getFullName(), "\n";
         }
         return 0;
-    } catch (\Throwable $exception) {
+    } catch (Throwable $exception) {
         file_put_contents('php://stderr', $exception->getMessage(), FILE_APPEND);
         return 1;
     }

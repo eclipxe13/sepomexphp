@@ -27,11 +27,11 @@ class ZipCodeDataTest extends TestCase
 
         $data = $zipcode->asArray();
 
-        $this->assertArraySubset(['zipcode' => $expectedZipCode], $data);
-        $this->assertArraySubset(['state' => ['name' => 'Tamaulipas']], $data);
-        $this->assertArraySubset(['district' => ['name' => 'Miguel Alemán']], $data);
-        $this->assertArraySubset(['cities' => [['name' => 'Ciudad Miguel Alemán']]], $data);
-        $this->assertArraySubset(['locations' => [['name' => 'Adolfo López Mateos']]], $data);
+        \DMS\PHPUnitExtensions\ArraySubset\Assert::assertArraySubset(['zipcode' => $expectedZipCode], $data);
+        \DMS\PHPUnitExtensions\ArraySubset\Assert::assertArraySubset(['state' => ['name' => 'Tamaulipas']], $data);
+        \DMS\PHPUnitExtensions\ArraySubset\Assert::assertArraySubset(['district' => ['name' => 'Miguel Alemán']], $data);
+        \DMS\PHPUnitExtensions\ArraySubset\Assert::assertArraySubset(['cities' => [['name' => 'Ciudad Miguel Alemán']]], $data);
+        \DMS\PHPUnitExtensions\ArraySubset\Assert::assertArraySubset(['locations' => [['name' => 'Adolfo López Mateos']]], $data);
         $this->assertCount(5, $data['locations']);
     }
 }

@@ -6,8 +6,7 @@ namespace SepomexPhp\Traits;
 
 trait PropertyIdIntegerTrait
 {
-    /** @var int */
-    private $id;
+    private int $id;
 
     public function id(): int
     {

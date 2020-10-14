@@ -6,15 +6,9 @@ namespace SepomexPhp;
 
 class SepomexPhp
 {
-    /**
-     * @var DataGatewayInterface
-     */
-    protected $gateway;
+    protected DataGatewayInterface $gateway;
 
-    /**
-     * @var Factory
-     */
-    protected $factory;
+    protected Factory $factory;
 
     /**
      * @param DataGatewayInterface $gateway
@@ -23,10 +17,7 @@ class SepomexPhp
     public function __construct(DataGatewayInterface $gateway, Factory $factory = null)
     {
         $this->gateway = $gateway;
-        if (null === $factory) {
-            $factory = new Factory();
-        }
-        $this->factory = $factory;
+        $this->factory = $factory ?? new Factory();
     }
 
     /**

@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace SepomexPhp\Traits;
 
+use LogicException;
 use SepomexPhp\State;
 
 trait PropertyStateTrait
 {
-    /** @var State|null */
-    private $state;
+    private ?State $state = null;
 
     public function state(): State
     {
         if (! $this->state instanceof State) {
-            throw new \LogicException('Try to access the state when no exists');
+            throw new LogicException('Try to access the state when no exists');
         }
         return $this->state;
     }

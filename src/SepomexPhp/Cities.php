@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace SepomexPhp;
 
-class Cities implements \IteratorAggregate, \Countable
+use ArrayIterator;
+use Countable;
+use IteratorAggregate;
+use OutOfRangeException;
+
+class Cities implements IteratorAggregate, Countable
 {
     /** @var City[] */
-    private $collection;
+    private array $collection;
 
     public function __construct(City ...$city)
     {
@@ -16,7 +21,7 @@ class Cities implements \IteratorAggregate, \Countable
 
     public function getIterator()
     {
-        return new \ArrayIterator($this->collection);
+        return new ArrayIterator($this->collection);
     }
 
     public function count(): int
@@ -29,7 +34,7 @@ class Cities implements \IteratorAggregate, \Countable
         if (array_key_exists($index, $this->collection)) {
             return $this->collection[$index];
         }
-        throw new \OutOfRangeException('Index out of bounds');
+        throw new OutOfRangeException('Index out of bounds');
     }
 
     public function asArray(): array

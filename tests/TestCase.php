@@ -10,8 +10,7 @@ use SepomexPhp\SepomexPhp;
 
 class TestCase extends \PHPUnit\Framework\TestCase
 {
-    /** @var PDO */
-    private $pdo;
+    private ?\PDO $pdo = null;
 
     public static function utilAsset($filename)
     {

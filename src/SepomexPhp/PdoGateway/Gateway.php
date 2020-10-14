@@ -5,14 +5,12 @@ declare(strict_types=1);
 namespace SepomexPhp\PdoGateway;
 
 use PDO;
+use RuntimeException;
 use SepomexPhp\DataGatewayInterface;
 
 class Gateway implements DataGatewayInterface
 {
-    /**
-     * @var PDO
-     */
-    protected $pdo;
+    protected PDO $pdo;
 
     public function __construct(PDO $pdo)
     {
@@ -34,7 +32,7 @@ class Gateway implements DataGatewayInterface
             . ';';
         $stmt = $this->pdo->prepare($sql);
         if (! $stmt->execute(['zipcode' => $zipcode])) {
-            throw new \RuntimeException('Cannot execute ' . $stmt->queryString);
+            throw new RuntimeException('Cannot execute ' . $stmt->queryString);
         }
         if (false === $data = $stmt->fetch(PDO::FETCH_ASSOC)) {
             return null;
@@ -55,9 +53,9 @@ class Gateway implements DataGatewayInterface
             . ';';
         $stmt = $this->pdo->prepare($sql);
         if (! $stmt->execute(['zipcode' => $zipcode])) {
-            throw new \RuntimeException('Cannot execute ' . $stmt->queryString);
+            throw new RuntimeException('Cannot execute ' . $stmt->queryString);
         }
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC) ?: [];
     }
 
     public function searchDistricts(string $districtName, string $stateName, int $pageIndex, int $pageSize): array
@@ -78,8 +76,8 @@ class Gateway implements DataGatewayInterface
             'pageSize' => $pageSize,
         ];
         if (! $stmt->execute($params)) {
-            throw new \RuntimeException('Cannot execute ' . $stmt->queryString);
+            throw new RuntimeException('Cannot execute ' . $stmt->queryString);
         }
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC) ?: [];
     }
 }

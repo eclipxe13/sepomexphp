@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace SepomexPhp\Traits;
 
+use LogicException;
 use SepomexPhp\City;
 
 trait PropertyCityTrait
 {
-    /** @var City|null */
-    private $city;
+    private ?City $city = null;
 
     public function city(): City
     {
         if (! $this->city instanceof City) {
-            throw new \LogicException('Try to access city when no exists');
+            throw new LogicException('Try to access city when no exists');
         }
         return $this->city;
     }

@@ -4,6 +4,9 @@ declare(strict_types=1);
 /**
  * This script is used to create the database using PDO and sqlite
  */
+
+use SepomexPhp\Importer\PdoImporter;
+
 require_once __DIR__ . '/../vendor/autoload.php';
 
 // escape the global scope
@@ -26,16 +29,16 @@ $returnValue = call_user_func(function () {
         }
 
         // create the pdo object
-        $pdo = new \PDO('sqlite:' . $dbfile, null, null, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+        $pdo = new PDO('sqlite:' . $dbfile, null, null, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
 
         // create the importer class
-        $importer = new \SepomexPhp\Importer\PdoImporter($pdo);
+        $importer = new PdoImporter($pdo);
 
         // follow this steps
         $importer->createStruct();
         $importer->import($rawfile, null);
         return 0;
-    } catch (\Throwable $exception) {
+    } catch (Throwable $exception) {
         file_put_contents('php://stderr', $exception->getMessage(), FILE_APPEND);
         return 1;
     }

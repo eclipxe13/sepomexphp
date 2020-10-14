@@ -6,6 +6,7 @@ namespace SepomexPhp\Importer;
 
 use PDO;
 use PDOStatement;
+use RuntimeException;
 use SplFileObject;
 
 /**
@@ -14,8 +15,7 @@ use SplFileObject;
  */
 class PdoImporter
 {
-    /** @var PDO */
-    private $pdo;
+    private PDO $pdo;
 
     public function __construct(PDO $pdo)
     {
@@ -102,7 +102,7 @@ class PdoImporter
     public function importRawTxt(string $filename)
     {
         if (! file_exists($filename) || ! is_readable($filename)) {
-            throw new \RuntimeException("File $filename not found or not readable");
+            throw new RuntimeException("File $filename not found or not readable");
         }
         $sqlInsert = 'INSERT INTO raw VALUES (' . trim(str_repeat('?,', 15), ',') . ');';
         $stmt = $this->pdo->prepare($sqlInsert);
@@ -114,7 +114,7 @@ class PdoImporter
             if ($i < 2 || is_array($line) || ! $line) {
                 continue;
             }
-            $values = explode('|', iconv('iso-8859-1', 'utf-8', $line));
+            $values = explode('|', strval(iconv('iso-8859-1', 'utf-8', $line)));
             $stmt->execute($values);
         }
         $this->pdo->commit();

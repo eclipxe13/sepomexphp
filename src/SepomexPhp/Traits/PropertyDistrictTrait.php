@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace SepomexPhp\Traits;
 
+use LogicException;
 use SepomexPhp\District;
 
 trait PropertyDistrictTrait
 {
-    /** @var District|null */
-    private $district;
+    private ?District $district = null;
 
     public function district(): District
     {
         if (! $this->district instanceof District) {
-            throw new \LogicException('Try to access district when no exists');
+            throw new LogicException('Try to access district when no exists');
         }
         return $this->district;
     }

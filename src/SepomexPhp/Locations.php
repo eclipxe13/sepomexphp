@@ -4,13 +4,16 @@ declare(strict_types=1);
 
 namespace SepomexPhp;
 
-class Locations implements \IteratorAggregate, \Countable
+use ArrayIterator;
+use Countable;
+use IteratorAggregate;
+
+class Locations implements IteratorAggregate, Countable
 {
     /** @var Location[] */
-    private $collection;
+    private array $collection;
 
-    /** @var Cities */
-    private $cities;
+    private Cities $cities;
 
     public function __construct(Location ...$location)
     {
@@ -35,7 +38,7 @@ class Locations implements \IteratorAggregate, \Countable
 
     public function getIterator()
     {
-        return new \ArrayIterator($this->collection);
+        return new ArrayIterator($this->collection);
     }
 
     public function count(): int
