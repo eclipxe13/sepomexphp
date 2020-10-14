@@ -71,7 +71,6 @@ The following tests must pass before we will accept a pull request. If any of th
 it will result in a complete build failure. Before you can run these, be sure to run `composer install`.
 
 ```
-./vendor/bin/parallel-lint src/ scripts/ tests/
 ./vendor/bin/phpcs -sp --colors src/ scripts/ tests/
 ./vendor/bin/phpunit --coverage-text
 ./vendor/bin/phpstan.phar analyse --level max scripts/ src/ tests/
