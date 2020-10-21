@@ -18,12 +18,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "SepomexPhp\\": "src/SepomexPhp"
+            "Eclipxe\\SepomexPhp\\": "src/SepomexPhp"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "SepomexPhpTests\\": "tests"
+            "Eclipxe\\SepomexPhp\\Tests\\": "tests"
         }
     },
     "require": {

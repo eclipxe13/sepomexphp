@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace SepomexPhpTests\Importer;
+namespace Eclipxe\SepomexPhp\Tests\Importer;
 
-use SepomexPhp\Importer\PdoImporter;
-use SepomexPhpTests\TestCase;
+use Eclipxe\SepomexPhp\Importer\PdoImporter;
+use Eclipxe\SepomexPhp\Tests\TestCase;
 
 class PdoImporterTest extends TestCase
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SepomexPhp\Importer;
+namespace Eclipxe\SepomexPhp\Importer;
 
 use PDO;
 use PDOStatement;
@@ -11,7 +11,7 @@ use SplFileObject;
 
 /**
  * Import the sepomex raw file (iso-8859-1 encoded)
- * @package SepomexPhp\Importer
+ * @package Eclipxe\SepomexPhp\Importer
  */
 class PdoImporter
 {

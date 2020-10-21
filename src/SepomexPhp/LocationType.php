@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace SepomexPhp;
+namespace Eclipxe\SepomexPhp;
 
-use SepomexPhp\Traits\PropertyIdIntegerTrait;
-use SepomexPhp\Traits\PropertyNameStringTrait;
+use Eclipxe\SepomexPhp\Traits\PropertyIdIntegerTrait;
+use Eclipxe\SepomexPhp\Traits\PropertyNameStringTrait;
 
 class LocationType
 {

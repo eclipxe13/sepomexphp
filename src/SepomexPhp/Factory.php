@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace SepomexPhp;
+namespace Eclipxe\SepomexPhp;
 
 /**
- * Factory, do not include new statements on SepomexPhp class
+ * Factory, do not include new statements on Eclipxe\SepomexPhp class
  * @access private
- * @package SepomexPhp
+ * @package Eclipxe\SepomexPhp
  */
 class Factory
 {

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace SepomexPhpTests\Cases;
+namespace Eclipxe\SepomexPhp\Tests\Cases;
 
 use DMS\PHPUnitExtensions\ArraySubset\Assert;
-use SepomexPhpTests\TestCase;
+use Eclipxe\SepomexPhp\Tests\TestCase;
 
 class ZipCodeDataTest extends TestCase
 {

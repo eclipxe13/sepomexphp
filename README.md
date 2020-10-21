@@ -1,4 +1,4 @@
-# SepomexPhp - Servicio Postal Mexicano PHP Library
+# Eclipxe\SepomexPhp - Servicio Postal Mexicano PHP Library
 
 [![Gitter][badge-gitter]][gitter]
 [![Latest Version][badge-release]][release]
@@ -32,8 +32,8 @@ This is a basic usage example to
 $pdostring = "...";
 
 // create the SepomexPhp Object
-$sepomex = new \SepomexPhp\SepomexPhp(
-    new SepomexPhp\PdoGateway\Gateway(
+$sepomex = new \Eclipxe\SepomexPhp\Eclipxe\SepomexPhp(
+    new \Eclipxe\SepomexPhp\PdoGateway\Gateway(
         new PDO($pdostring)
     )
 );
@@ -93,7 +93,7 @@ Lets make this agnostic, a simple library, without depends on any framework, exc
 
 # License
 
-The SepomexPhp library is copyright © [Carlos C Soto](https://eclipxe.com.mx/)
+The Eclipxe\SepomexPhp library is copyright © [Carlos C Soto](https://eclipxe.com.mx/)
 and licensed for use under the MIT License (MIT). Please see [LICENSE][] for more information.
 
 ## Data source

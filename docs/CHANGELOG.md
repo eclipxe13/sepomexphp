@@ -2,6 +2,8 @@
 
 ## Version 3.0.0 UNRELEASED
 
+- El namespace principal de el proyecto cambia de `Eclipxe\SepomexPhp` a `Eclipxe\Eclipxe\SepomexPhp`.
+
 ### Cambios para usuarios
 
 - La versión mínima requerida es PHP versión 7.4 <https://www.php.net/supported-versions.php>

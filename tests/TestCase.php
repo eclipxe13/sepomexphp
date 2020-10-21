@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace SepomexPhpTests;
+namespace Eclipxe\SepomexPhp\Tests;
 
+use Eclipxe\SepomexPhp\PdoGateway\Gateway;
+use Eclipxe\SepomexPhp\SepomexPhp;
 use PDO;
-use SepomexPhp\PdoGateway\Gateway;
-use SepomexPhp\SepomexPhp;
 
 class TestCase extends \PHPUnit\Framework\TestCase
 {

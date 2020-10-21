@@ -10,8 +10,8 @@ declare(strict_types=1);
  * Usage: zipcode-info.php zipcode
  */
 
-use SepomexPhp\PdoGateway\Gateway;
-use SepomexPhp\SepomexPhp;
+use Eclipxe\SepomexPhp\PdoGateway\Gateway;
+use Eclipxe\SepomexPhp\SepomexPhp;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace SepomexPhp\PdoGateway;
+namespace Eclipxe\SepomexPhp\PdoGateway;
 
+use Eclipxe\SepomexPhp\DataGatewayInterface;
 use PDO;
 use RuntimeException;
-use SepomexPhp\DataGatewayInterface;
 
 class Gateway implements DataGatewayInterface
 {

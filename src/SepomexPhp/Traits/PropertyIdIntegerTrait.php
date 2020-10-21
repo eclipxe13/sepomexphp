@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SepomexPhp\Traits;
+namespace Eclipxe\SepomexPhp\Traits;
 
 trait PropertyIdIntegerTrait
 {

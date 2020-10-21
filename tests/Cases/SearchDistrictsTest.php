@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace SepomexPhpTests\Cases;
+namespace Eclipxe\SepomexPhp\Tests\Cases;
 
-use SepomexPhp\District;
-use SepomexPhpTests\TestCase;
+use Eclipxe\SepomexPhp\District;
+use Eclipxe\SepomexPhp\Tests\TestCase;
 
 class SearchDistrictsTest extends TestCase
 {
