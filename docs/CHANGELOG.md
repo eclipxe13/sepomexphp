@@ -16,6 +16,7 @@
 
 - Se elimina la dependencia a phplint
 - Se actualiza la versión de PHPUnit a 9.4 y PHPStan a 0.11
+- Se usan los comandos de composer `dev:*`
 
 
 ## Version 2.0.0 2018-03-09

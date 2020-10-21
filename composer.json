@@ -37,5 +37,32 @@
         "squizlabs/php_codesniffer": "^3.2",
         "friendsofphp/php-cs-fixer": "^2.10",
         "phpstan/phpstan": "^0.11"
+    },
+    "scripts": {
+        "dev:build": ["@dev:fix-style", "@dev:test"],
+        "dev:check-style": [
+            "vendor/bin/php-cs-fixer fix --dry-run --verbose",
+            "vendor/bin/phpcs --colors -sp src/ tests/"
+        ],
+        "dev:fix-style": [
+            "vendor/bin/php-cs-fixer fix --verbose",
+            "vendor/bin/phpcbf --colors -sp src/ tests/"
+        ],
+        "dev:test": [
+            "@dev:check-style",
+            "vendor/bin/phpunit --testdox --verbose --stop-on-failure",
+            "vendor/bin/phpstan analyse --no-progress --level max src/ tests/"
+        ],
+        "dev:coverage": [
+            "@php -dzend_extension=xdebug.so vendor/bin/phpunit --testdox --coverage-html build/coverage/html/"
+        ]
+    },
+    "scripts-descriptions": {
+        "dev:install": "DEV: install development tools into tools/",
+        "dev:build": "DEV: run dev:fix-style dev:tests and dev:docs, run before pull request",
+        "dev:check-style": "DEV: search for code style errors using php-cs-fixer and phpcs",
+        "dev:fix-style": "DEV: fix code style errors using php-cs-fixer and phpcbf",
+        "dev:test": "DEV: run phplint, dev:check-style, phpunit and phpstan",
+        "dev:coverage": "DEV: run phpunit with xdebug and storage coverage in build/coverage/html/"
     }
 }
