@@ -8,6 +8,8 @@
 
 ### Cambios para implementadores
 
+- El método `DataGatewayInterface::getZipCodeData()` regresa un arreglo vacío en lugar de nulo cuando no existen resultados.
+
 ### Desarrollo
 
 - Se elimina la dependencia a phplint

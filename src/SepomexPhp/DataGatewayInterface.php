@@ -8,11 +8,11 @@ interface DataGatewayInterface
 {
     /**
      * Get zipcode data
-     * This return null if no zipcode where found
+     *
      * @param string $zipcode
-     * @return array|null Assoc array with keys: zipcode, iddistrict, districtname, idstate, statename
+     * @return array Assoc array with keys: zipcode, iddistrict, districtname, idstate, statename
      */
-    public function getZipCodeData(string $zipcode);
+    public function getZipCodeData(string $zipcode): array;
 
     /**
      * Get a list of locations data

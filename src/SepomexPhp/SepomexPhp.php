@@ -23,14 +23,13 @@ class SepomexPhp
     /**
      * Return a ZipCodeData object or null if not found
      * @param string $zipcode
-     * @return ZipCodeData|null
+     * @return ZipCodeData
      */
-    public function getZipCodeData(string $zipcode)
+    public function getZipCodeData(string $zipcode): ?ZipCodeData
     {
         // get data information
         $data = $this->gateway->getZipCodeData($zipcode);
-        // no data, return null
-        if (null === $data) {
+        if ([] === $data) {
             return null;
         }
         // return ZipCodeData array

@@ -17,11 +17,7 @@ class Gateway implements DataGatewayInterface
         $this->pdo = $pdo;
     }
 
-    /**
-     * @param string $zipcode
-     * @return array|null
-     */
-    public function getZipCodeData(string $zipcode)
+    public function getZipCodeData(string $zipcode): array
     {
         $sql = 'select z.id as zipcode, d.id as iddistrict, d.name as districtname,'
             . ' s.id as idstate, s.name as statename'
@@ -35,7 +31,7 @@ class Gateway implements DataGatewayInterface
             throw new RuntimeException('Cannot execute ' . $stmt->queryString);
         }
         if (false === $data = $stmt->fetch(PDO::FETCH_ASSOC)) {
-            return null;
+            return [];
         }
         return $data;
     }
