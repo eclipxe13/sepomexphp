@@ -18,7 +18,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Eclipxe\\SepomexPhp\\": "src/SepomexPhp"
+            "Eclipxe\\SepomexPhp\\": "src"
         }
     },
     "autoload-dev": {
