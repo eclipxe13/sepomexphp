@@ -1,11 +1,10 @@
 # Eclipxe\SepomexPhp - Servicio Postal Mexicano PHP Library
 
-[![Gitter][badge-gitter]][gitter]
+[![Source][badge-source]][source]
 [![Latest Version][badge-release]][release]
 [![Software License][badge-license]][license]
 [![Build Status][badge-build]][build]
 [![Scrutinizer][badge-quality]][quality]
-[![SensioLabsInsight][badge-sensiolabs]][sensiolabs]
 [![Coverage Status][badge-coverage]][coverage]
 [![Total Downloads][badge-downloads]][downloads]
 
@@ -105,21 +104,17 @@ Getting from https://datos.gob.mx/busca/dataset/catalogo-nacional-de-codigos-pos
 [license]: LICENSE
 
 [source]: https://github.com/eclipxe13/sepomexphp
-[gitter]: https://gitter.im/eclipxe13/sepomexphp
 [release]: https://github.com/eclipxe13/sepomexphp/releases
 [license]: https://github.com/eclipxe13/sepomexphp/blob/master/LICENSE
-[build]: https://travis-ci.org/eclipxe13/sepomexphp
+[build]: https://travis-ci.com/eclipxe13/sepomexphp
 [quality]: https://scrutinizer-ci.com/g/eclipxe13/sepomexphp/
-[sensiolabs]: https://insight.sensiolabs.com/projects/0b8eb458-a6ef-4300-8950-3c4972228bbe
 [coverage]: https://scrutinizer-ci.com/g/eclipxe13/sepomexphp/code-structure/master/code-coverage
 [downloads]: https://packagist.org/packages/eclipxe/sepomexphp
 
 [badge-source]: http://img.shields.io/badge/source-eclipxe13/sepomexphp-blue.svg?style=flat-square
-[badge-gitter]: https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=flat-square
 [badge-release]: https://img.shields.io/github/release/eclipxe13/sepomexphp.svg?style=flat-square
-[badge-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[badge-build]: https://img.shields.io/travis/eclipxe13/sepomexphp.svg?style=flat-square
+[badge-license]: https://img.shields.io/github/license/eclipxe13/sepomexphp.svg?style=flat-square
+[badge-build]: https://img.shields.io/travis/com/eclipxe13/sepomexphp.svg?style=flat-square
 [badge-quality]: https://img.shields.io/scrutinizer/g/eclipxe13/sepomexphp/master.svg?style=flat-square
-[badge-sensiolabs]: https://img.shields.io/sensiolabs/i/0b8eb458-a6ef-4300-8950-3c4972228bbe.svg?style=flat-square
 [badge-coverage]: https://img.shields.io/scrutinizer/coverage/g/eclipxe13/sepomexphp/master.svg?style=flat-square
 [badge-downloads]: https://img.shields.io/packagist/dt/eclipxe/sepomexphp.svg?style=flat-square
