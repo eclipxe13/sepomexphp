@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Eclipxe\SepomexPhp;
+namespace Eclipxe\SepomexPhp\Data;
 
-use Eclipxe\SepomexPhp\Traits\PropertyDistrictTrait;
-use Eclipxe\SepomexPhp\Traits\PropertyLocationsTrait;
-use Eclipxe\SepomexPhp\Traits\PropertyStateTrait;
+use Eclipxe\SepomexPhp\Data\Traits\PropertyDistrictTrait;
+use Eclipxe\SepomexPhp\Data\Traits\PropertyLocationsTrait;
+use Eclipxe\SepomexPhp\Data\Traits\PropertyStateTrait;
 use UnexpectedValueException;
 
 class ZipCodeData

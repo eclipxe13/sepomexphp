@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Eclipxe\SepomexPhp;
+namespace Eclipxe\SepomexPhp\Data;
 
-use Eclipxe\SepomexPhp\Traits\PropertyIdIntegerTrait;
-use Eclipxe\SepomexPhp\Traits\PropertyNameStringTrait;
-use Eclipxe\SepomexPhp\Traits\PropertyStateTrait;
+use Eclipxe\SepomexPhp\Data\Traits\PropertyIdIntegerTrait;
+use Eclipxe\SepomexPhp\Data\Traits\PropertyNameStringTrait;
+use Eclipxe\SepomexPhp\Data\Traits\PropertyStateTrait;
 
 class City
 {

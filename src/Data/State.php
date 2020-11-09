@@ -2,16 +2,20 @@
 
 declare(strict_types=1);
 
-namespace Eclipxe\SepomexPhp;
+namespace Eclipxe\SepomexPhp\Data;
 
-use Eclipxe\SepomexPhp\Traits\PropertyIdIntegerTrait;
-use Eclipxe\SepomexPhp\Traits\PropertyNameStringTrait;
+use Eclipxe\SepomexPhp\Data\Traits\PropertyIdIntegerTrait;
+use Eclipxe\SepomexPhp\Data\Traits\PropertyNameStringTrait;
 
-class LocationType
+class State
 {
     use PropertyIdIntegerTrait;
     use PropertyNameStringTrait;
 
+    /**
+     * @param int $id
+     * @param string $name
+     */
     public function __construct(int $id, string $name)
     {
         $this->setId($id);

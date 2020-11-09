@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Eclipxe\SepomexPhp\Traits;
+namespace Eclipxe\SepomexPhp\Data\Traits;
 
-use Eclipxe\SepomexPhp\Location;
-use Eclipxe\SepomexPhp\Locations;
+use Eclipxe\SepomexPhp\Data\Location;
+use Eclipxe\SepomexPhp\Data\Locations;
 
 trait PropertyLocationsTrait
 {

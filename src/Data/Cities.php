@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Eclipxe\SepomexPhp;
+namespace Eclipxe\SepomexPhp\Data;
 
 use ArrayIterator;
 use Countable;

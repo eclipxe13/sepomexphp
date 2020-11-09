@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Eclipxe\SepomexPhp;
+namespace Eclipxe\SepomexPhp\Data;
 
-use Eclipxe\SepomexPhp\Traits\PropertyCityTrait;
-use Eclipxe\SepomexPhp\Traits\PropertyDistrictTrait;
-use Eclipxe\SepomexPhp\Traits\PropertyIdIntegerTrait;
-use Eclipxe\SepomexPhp\Traits\PropertyNameStringTrait;
+use Eclipxe\SepomexPhp\Data\Traits\PropertyCityTrait;
+use Eclipxe\SepomexPhp\Data\Traits\PropertyDistrictTrait;
+use Eclipxe\SepomexPhp\Data\Traits\PropertyIdIntegerTrait;
+use Eclipxe\SepomexPhp\Data\Traits\PropertyNameStringTrait;
 
 class Location
 {

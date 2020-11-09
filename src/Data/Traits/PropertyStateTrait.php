@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Eclipxe\SepomexPhp\Traits;
+namespace Eclipxe\SepomexPhp\Data\Traits;
 
-use Eclipxe\SepomexPhp\State;
+use Eclipxe\SepomexPhp\Data\State;
 use LogicException;
 
 trait PropertyStateTrait

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Eclipxe\SepomexPhp\Traits;
+namespace Eclipxe\SepomexPhp\Data\Traits;
 
-use Eclipxe\SepomexPhp\District;
+use Eclipxe\SepomexPhp\Data\District;
 use LogicException;
 
 trait PropertyDistrictTrait

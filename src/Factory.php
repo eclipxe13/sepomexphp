@@ -4,8 +4,16 @@ declare(strict_types=1);
 
 namespace Eclipxe\SepomexPhp;
 
+use Eclipxe\SepomexPhp\Data\City;
+use Eclipxe\SepomexPhp\Data\District;
+use Eclipxe\SepomexPhp\Data\Location;
+use Eclipxe\SepomexPhp\Data\LocationType;
+use Eclipxe\SepomexPhp\Data\State;
+use Eclipxe\SepomexPhp\Data\ZipCodeData;
+
 /**
  * Factory, do not include new statements on Eclipxe\SepomexPhp class
+ *
  * @access private
  * @package Eclipxe\SepomexPhp
  */

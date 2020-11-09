@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Eclipxe\SepomexPhp;
 
+use Eclipxe\SepomexPhp\Data\District;
+use Eclipxe\SepomexPhp\Data\Location;
+use Eclipxe\SepomexPhp\Data\ZipCodeData;
+
 class SepomexPhp
 {
     protected DataGatewayInterface $gateway;

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Eclipxe\SepomexPhp\Tests\Cases;
 
-use Eclipxe\SepomexPhp\District;
+use Eclipxe\SepomexPhp\Data\District;
 use Eclipxe\SepomexPhp\Tests\TestCase;
 
 class SearchDistrictsTest extends TestCase
