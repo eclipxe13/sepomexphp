@@ -37,7 +37,7 @@ class Factory
         return new State($id, $name);
     }
 
-    public function newDistrict(int $id, string $name, State $state = null): District
+    public function newDistrict(int $id, string $name, State $state): District
     {
         return new District($id, $name, $state);
     }
