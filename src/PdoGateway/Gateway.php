@@ -5,9 +5,10 @@ declare(strict_types=1);
 namespace Eclipxe\SepomexPhp\PdoGateway;
 
 use Eclipxe\SepomexPhp\DataGatewayInterface;
+use Eclipxe\SepomexPhp\DataGatewayQueryException;
 use PDO;
+use PDOException;
 use PDOStatement;
-use RuntimeException;
 
 class Gateway implements DataGatewayInterface
 {
@@ -28,7 +29,7 @@ class Gateway implements DataGatewayInterface
             . ' where (z.id = :zipcode)'
             . ';';
         $stmt = $this->pdo->prepare($sql);
-        return current($this->executeFetchAll($stmt, ['zipcode' => $zipcode])) ?: [];
+        return $this->executeFetch($stmt, ['zipcode' => $zipcode]);
     }
 
     public function getLocationsFromZipCode(string $zipcode): array
@@ -66,16 +67,34 @@ class Gateway implements DataGatewayInterface
         return $this->executeFetchAll($stmt, $params);
     }
 
-    private function executeFetchAll(PDOStatement $statement, array $parameters): array
+    /**
+     * @param PDOStatement $statement
+     * @param array $parameters
+     * @throws DataGatewayQueryException
+     */
+    private function executeStatement(PDOStatement $statement, array $parameters): void
     {
         try {
             $execution = $statement->execute($parameters);
-        } catch (\PDOException $exception) {
-            throw new RuntimeException('Cannot execute ' . $statement->queryString, 0, $exception);
+        } catch (PDOException $exception) {
+            throw DataGatewayQueryException::new($statement->queryString, $parameters, $exception);
         }
         if (! $execution) {
-            throw new RuntimeException('Cannot execute ' . $statement->queryString);
+            throw DataGatewayQueryException::new($statement->queryString, $parameters);
         }
+    }
+
+    private function executeFetch(PDOStatement $statement, array $parameters): array
+    {
+        /** @noinspection PhpUnhandledExceptionInspection */
+        $this->executeStatement($statement, $parameters);
+        return $statement->fetch(PDO::FETCH_ASSOC) ?: [];
+    }
+
+    private function executeFetchAll(PDOStatement $statement, array $parameters): array
+    {
+        /** @noinspection PhpUnhandledExceptionInspection */
+        $this->executeStatement($statement, $parameters);
         return $statement->fetchAll(PDO::FETCH_ASSOC) ?: [];
     }
 }
