@@ -24,6 +24,7 @@ class ZipCodeData
      * @param Locations $locations
      * @param District $district
      * @param State $state
+     * @throws UnexpectedValueException when zipcode is not 4 or 5 digits
      */
     public function __construct(string $zipcode, Locations $locations, District $district, State $state)
     {
