@@ -41,9 +41,9 @@ class Factory
         return new District($id, $name, $state);
     }
 
-    public function newCity(int $id, string $name, State $state = null): City
+    public function newCity(int $id, string $name): City
     {
-        return new City($id, $name, $state);
+        return new City($id, $name);
     }
 
     public function newLocation(
