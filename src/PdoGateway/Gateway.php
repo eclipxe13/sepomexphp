@@ -6,6 +6,7 @@ namespace Eclipxe\SepomexPhp\PdoGateway;
 
 use Eclipxe\SepomexPhp\DataGatewayInterface;
 use PDO;
+use PDOStatement;
 use RuntimeException;
 
 class Gateway implements DataGatewayInterface
@@ -27,13 +28,7 @@ class Gateway implements DataGatewayInterface
             . ' where (z.id = :zipcode)'
             . ';';
         $stmt = $this->pdo->prepare($sql);
-        if (! $stmt->execute(['zipcode' => $zipcode])) {
-            throw new RuntimeException('Cannot execute ' . $stmt->queryString);
-        }
-        if (false === $data = $stmt->fetch(PDO::FETCH_ASSOC)) {
-            return [];
-        }
-        return $data;
+        return current($this->executeFetchAll($stmt, ['zipcode' => $zipcode])) ?: [];
     }
 
     public function getLocationsFromZipCode(string $zipcode): array
@@ -48,10 +43,7 @@ class Gateway implements DataGatewayInterface
             . ' order by l.name, t.name, c.name'
             . ';';
         $stmt = $this->pdo->prepare($sql);
-        if (! $stmt->execute(['zipcode' => $zipcode])) {
-            throw new RuntimeException('Cannot execute ' . $stmt->queryString);
-        }
-        return $stmt->fetchAll(PDO::FETCH_ASSOC) ?: [];
+        return $this->executeFetchAll($stmt, ['zipcode' => $zipcode]);
     }
 
     public function searchDistricts(string $districtName, string $stateName, int $pageIndex, int $pageSize): array
@@ -71,9 +63,19 @@ class Gateway implements DataGatewayInterface
             'pageIndex' => $pageIndex * $pageSize,
             'pageSize' => $pageSize,
         ];
-        if (! $stmt->execute($params)) {
-            throw new RuntimeException('Cannot execute ' . $stmt->queryString);
+        return $this->executeFetchAll($stmt, $params);
+    }
+
+    private function executeFetchAll(PDOStatement $statement, array $parameters): array
+    {
+        try {
+            $execution = $statement->execute($parameters);
+        } catch (\PDOException $exception) {
+            throw new RuntimeException('Cannot execute ' . $statement->queryString, 0, $exception);
         }
-        return $stmt->fetchAll(PDO::FETCH_ASSOC) ?: [];
+        if (! $execution) {
+            throw new RuntimeException('Cannot execute ' . $statement->queryString);
+        }
+        return $statement->fetchAll(PDO::FETCH_ASSOC) ?: [];
     }
 }
