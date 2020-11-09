@@ -24,12 +24,11 @@ class Factory
      * @param string $zipcode
      * @param Locations $locations
      * @param District $district
-     * @param State $state
      * @return ZipCodeData
      */
-    public function newZipCodeData(string $zipcode, Locations $locations, District $district, State $state): ZipCodeData
+    public function newZipCodeData(string $zipcode, Locations $locations, District $district): ZipCodeData
     {
-        return new ZipCodeData($zipcode, $locations, $district, $state);
+        return new ZipCodeData($zipcode, $locations, $district);
     }
 
     public function newState(int $id, string $name): State
