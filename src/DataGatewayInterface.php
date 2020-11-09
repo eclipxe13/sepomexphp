@@ -8,23 +8,28 @@ interface DataGatewayInterface
 {
     /**
      * Get zipcode data
+     * Returns an assoc array with keys: id, name, idtype, typename, idcity, cityname
      *
      * @param string $zipcode
-     * @return array Assoc array with keys: zipcode, iddistrict, districtname, idstate, statename
+     * @return array<string, string>
      * @throws DataGatewayQueryException
      */
     public function getZipCodeData(string $zipcode): array;
 
     /**
      * Get a list of locations data
+     * Returns an indexed array containing assoc array with keys: id, name, idtype, typename, idcity, cityname
+     *
      * @param string $zipcode
-     * @return array An indexed array containing assoc array with keys: id, name, idtype, typename, idcity, cityname
+     * @return array<int, array<string, string>>
      * @throws DataGatewayQueryException
      */
     public function getLocationsFromZipCode(string $zipcode): array;
 
     /**
      * Get a list of districts that match with district name and state name
+     * Comparison is optional and match if the field contains on the search
+     * Returns an indexed array containing assoc array with keys: id, name, idstate, statename
      *
      * @param string $districtName
      * @param string $stateName
