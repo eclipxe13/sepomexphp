@@ -19,8 +19,8 @@ trait PropertyLocationsTrait
         return $this->locations;
     }
 
-    protected function setLocations(Location ...$locations)
+    protected function setLocations(Locations $locations)
     {
-        $this->locations = new Locations(...$locations);
+        $this->locations = $locations;
     }
 }

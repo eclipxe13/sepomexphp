@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Eclipxe\SepomexPhp;
 
 use Eclipxe\SepomexPhp\Data\District;
-use Eclipxe\SepomexPhp\Data\Location;
+use Eclipxe\SepomexPhp\Data\Locations;
 use Eclipxe\SepomexPhp\Data\ZipCodeData;
 
 class SepomexPhp
@@ -47,9 +47,9 @@ class SepomexPhp
 
     /**
      * @param string $zipcode
-     * @return Location[]
+     * @return Locations
      */
-    public function getLocationsFromZipCode(string $zipcode): array
+    public function getLocationsFromZipCode(string $zipcode): Locations
     {
         $locations = [];
         $items = $this->gateway->getLocationsFromZipCode($zipcode);
@@ -62,7 +62,7 @@ class SepomexPhp
                 ($item['idcity']) ? $this->factory->newCity((int) $item['idcity'], $item['cityname']) : null
             );
         }
-        return $locations;
+        return new Locations(...$locations);
     }
 
     /**

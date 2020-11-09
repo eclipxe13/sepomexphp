@@ -21,18 +21,18 @@ class ZipCodeData
 
     /**
      * @param string $zipcode
-     * @param Location[] $locations
+     * @param Locations $locations
      * @param District $district
      * @param State $state
      */
-    public function __construct(string $zipcode, array $locations, District $district, State $state)
+    public function __construct(string $zipcode, Locations $locations, District $district, State $state)
     {
         if (1 !== preg_match('/^\d{4,5}$/', $zipcode)) {
             throw new UnexpectedValueException('Zipcode must be 4 to 5 digits');
         }
         $this->zipcode = $zipcode;
         $this->formatted = str_pad($this->zipcode, 5, '0', STR_PAD_LEFT);
-        $this->setLocations(...$locations);
+        $this->setLocations($locations);
         $this->setDistrict($district);
         $this->setState($state);
     }

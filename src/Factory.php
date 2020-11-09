@@ -7,6 +7,7 @@ namespace Eclipxe\SepomexPhp;
 use Eclipxe\SepomexPhp\Data\City;
 use Eclipxe\SepomexPhp\Data\District;
 use Eclipxe\SepomexPhp\Data\Location;
+use Eclipxe\SepomexPhp\Data\Locations;
 use Eclipxe\SepomexPhp\Data\LocationType;
 use Eclipxe\SepomexPhp\Data\State;
 use Eclipxe\SepomexPhp\Data\ZipCodeData;
@@ -21,12 +22,12 @@ class Factory
 {
     /**
      * @param string $zipcode
-     * @param Location[] $locations
+     * @param Locations $locations
      * @param District $district
      * @param State $state
      * @return ZipCodeData
      */
-    public function newZipCodeData(string $zipcode, array $locations, District $district, State $state): ZipCodeData
+    public function newZipCodeData(string $zipcode, Locations $locations, District $district, State $state): ZipCodeData
     {
         return new ZipCodeData($zipcode, $locations, $district, $state);
     }
