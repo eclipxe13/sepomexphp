@@ -36,13 +36,11 @@ class SepomexPhp
         if ([] === $data) {
             return null;
         }
-        // return ZipCodeData array
-        return $this->factory->newZipCodeData(
-            $zipcode,
-            $this->getLocationsFromZipCode($zipcode),
-            $this->factory->newDistrict((int) $data['iddistrict'], $data['districtname']),
-            $this->factory->newState((int) $data['idstate'], $data['statename'])
-        );
+
+        $state = $this->factory->newState((int) $data['idstate'], $data['statename']);
+        $district = $this->factory->newDistrict((int) $data['iddistrict'], $data['districtname'], $state);
+        $locations = $this->getLocationsFromZipCode($zipcode);
+        return $this->factory->newZipCodeData($zipcode, $locations, $district);
     }
 
     /**
