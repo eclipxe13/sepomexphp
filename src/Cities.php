@@ -8,7 +8,13 @@ use ArrayIterator;
 use Countable;
 use IteratorAggregate;
 use OutOfRangeException;
+use Traversable;
 
+/**
+ * City Collection
+ *
+ * @implements IteratorAggregate<City>
+ */
 class Cities implements IteratorAggregate, Countable
 {
     /** @var City[] */
@@ -19,6 +25,7 @@ class Cities implements IteratorAggregate, Countable
         $this->collection = $city;
     }
 
+    /** @return Traversable<City> */
     public function getIterator()
     {
         return new ArrayIterator($this->collection);
@@ -29,20 +36,19 @@ class Cities implements IteratorAggregate, Countable
         return count($this->collection);
     }
 
-    public function byIndex(int $index)
+    public function byIndex(int $index): City
     {
-        if (array_key_exists($index, $this->collection)) {
-            return $this->collection[$index];
+        if (! isset($this->collection[$index])) {
+            throw new OutOfRangeException('Index out of bounds');
         }
-        throw new OutOfRangeException('Index out of bounds');
+        return $this->collection[$index];
     }
 
     public function asArray(): array
     {
-        $array = [];
-        foreach ($this->collection as $city) {
-            $array[] = $city->asArray();
-        }
-        return $array;
+        return array_map(
+            fn (City $city): array => $city->asArray(),
+            $this->collection
+        );
     }
 }

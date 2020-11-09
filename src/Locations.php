@@ -7,7 +7,13 @@ namespace Eclipxe\SepomexPhp;
 use ArrayIterator;
 use Countable;
 use IteratorAggregate;
+use Traversable;
 
+/**
+ * Location Collection
+ *
+ * @implements IteratorAggregate<Location>
+ */
 class Locations implements IteratorAggregate, Countable
 {
     /** @var Location[] */
@@ -28,7 +34,7 @@ class Locations implements IteratorAggregate, Countable
         foreach ($locations as $location) {
             if ($location->hasCity()) {
                 $city = $location->city();
-                if (! array_key_exists($city->id(), $cities)) {
+                if (! isset($cities[$city->id()])) {
                     $cities[$city->id()] = $location->city();
                 }
             }
@@ -36,6 +42,7 @@ class Locations implements IteratorAggregate, Countable
         return new Cities(...$cities);
     }
 
+    /** @return Traversable<Location> */
     public function getIterator()
     {
         return new ArrayIterator($this->collection);
@@ -47,7 +54,9 @@ class Locations implements IteratorAggregate, Countable
     }
 
     /**
-     * @return Cities|City[]
+     * List of unique cities extracted from all locations
+     *
+     * @return Cities
      */
     public function cities(): Cities
     {
@@ -56,10 +65,9 @@ class Locations implements IteratorAggregate, Countable
 
     public function asArray(): array
     {
-        $array = [];
-        foreach ($this->collection as $location) {
-            $array[] = $location->asArray();
-        }
-        return $array;
+        return array_map(
+            fn (Location $location): array => $location->asArray(),
+            $this->collection
+        );
     }
 }
