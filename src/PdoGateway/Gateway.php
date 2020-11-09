@@ -28,8 +28,7 @@ class Gateway implements DataGatewayInterface
             . ' inner join states as s on (s.id = d.idstate)'
             . ' where (z.id = :zipcode)'
             . ';';
-        $stmt = $this->pdo->prepare($sql);
-        return $this->executeFetch($stmt, ['zipcode' => $zipcode]);
+        return $this->fetch($sql, ['zipcode' => $zipcode]);
     }
 
     public function getLocationsFromZipCode(string $zipcode): array
@@ -43,8 +42,7 @@ class Gateway implements DataGatewayInterface
             . ' where z.id = :zipcode'
             . ' order by l.name, t.name, c.name'
             . ';';
-        $stmt = $this->pdo->prepare($sql);
-        return $this->executeFetchAll($stmt, ['zipcode' => $zipcode]);
+        return $this->fetchAll($sql, ['zipcode' => $zipcode]);
     }
 
     public function searchDistricts(string $districtName, string $stateName, int $pageIndex, int $pageSize): array
@@ -57,23 +55,26 @@ class Gateway implements DataGatewayInterface
             . ' order by s.name, d.name'
             . ' limit :pageIndex, :pageSize'
             . ';';
-        $stmt = $this->pdo->prepare($sql);
         $params = [
             'districtName' => '%' . $districtName . '%',
             'stateName' => '%' . $stateName . '%',
             'pageIndex' => $pageIndex * $pageSize,
             'pageSize' => $pageSize,
         ];
-        return $this->executeFetchAll($stmt, $params);
+        return $this->fetchAll($sql, $params);
     }
 
     /**
-     * @param PDOStatement $statement
+     * Prepare and execute query with given parameters
+     *
+     * @param string $query
      * @param array $parameters
+     * @return PDOStatement
      * @throws DataGatewayQueryException
      */
-    private function executeStatement(PDOStatement $statement, array $parameters): void
+    private function query(string $query, array $parameters): PDOStatement
     {
+        $statement = $this->pdo->prepare($query);
         try {
             $execution = $statement->execute($parameters);
         } catch (PDOException $exception) {
@@ -82,19 +83,34 @@ class Gateway implements DataGatewayInterface
         if (! $execution) {
             throw DataGatewayQueryException::new($statement->queryString, $parameters);
         }
+        return $statement;
     }
 
-    private function executeFetch(PDOStatement $statement, array $parameters): array
+    /**
+     * Run query and fetch result
+     *
+     * @param string $query
+     * @param array $parameters
+     * @return array<string, string>
+     * @throws DataGatewayQueryException
+     */
+    private function fetch(string $query, array $parameters): array
     {
-        /** @noinspection PhpUnhandledExceptionInspection */
-        $this->executeStatement($statement, $parameters);
+        $statement = $this->query($query, $parameters);
         return $statement->fetch(PDO::FETCH_ASSOC) ?: [];
     }
 
-    private function executeFetchAll(PDOStatement $statement, array $parameters): array
+    /**
+     * Run query and fetch all results
+     *
+     * @param string $query
+     * @param array $parameters
+     * @return array<int, array<string, string>>
+     * @throws DataGatewayQueryException
+     */
+    private function fetchAll(string $query, array $parameters): array
     {
-        /** @noinspection PhpUnhandledExceptionInspection */
-        $this->executeStatement($statement, $parameters);
+        $statement = $this->query($query, $parameters);
         return $statement->fetchAll(PDO::FETCH_ASSOC) ?: [];
     }
 }
