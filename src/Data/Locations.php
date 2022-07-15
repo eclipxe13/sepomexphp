@@ -24,19 +24,16 @@ class Locations implements IteratorAggregate, Countable
     public function __construct(Location ...$location)
     {
         $this->collection = $location;
-        $this->cities = $this->extractUniqueCities(...$location);
+        $this->cities = $this->extractUniqueCities();
     }
 
-    public static function extractUniqueCities(Location ...$locations): Cities
+    public function extractUniqueCities(): Cities
     {
-        // This method is static because it does not use $this
         $cities = [];
-        foreach ($locations as $location) {
+        foreach ($this->collection as $location) {
             if ($location->hasCity()) {
                 $city = $location->city();
-                if (! isset($cities[$city->id()])) {
-                    $cities[$city->id()] = $location->city();
-                }
+                $cities[$city->id()] = $city;
             }
         }
         return new Cities(...$cities);
