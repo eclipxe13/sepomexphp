@@ -1,6 +1,7 @@
-# Eclipxe\SepomexPhp - Servicio Postal Mexicano PHP Library
+# eclipxe\sepomexphp - Servicio Postal Mexicano PHP Library
 
 [![Source][badge-source]][source]
+[![Packagist PHP Version Support][badge-php-version]][php-version]
 [![Latest Version][badge-release]][release]
 [![Software License][badge-license]][license]
 [![Build Status][badge-build]][build]
@@ -13,7 +14,7 @@ This library is an unofficial version for the Mexicam SEPOMEX data.
 Some parts of the project are in Spanish since the main consumers of this library would are mexicans.
 Anyhow, all the database, code and other information is in english (that is not my primary language, so forgive me)
  
-# Installation
+## Installation
 
 Install using composer, no other methods are recommended!
 
@@ -21,7 +22,7 @@ Install using composer, no other methods are recommended!
 composer require eclipxe/sepomexphp
 ```
 
-# Usage
+## Usage
 
 ```php
 <?php
@@ -44,7 +45,7 @@ Also, check the `zipcode-info.php` script. And `ZipCodeDataTest.php` test.
 Do you have your own dataset of Sepomex? You can extend this library, just create `DataGatewayInterface` that
 implements the methods and get the data from anywhere.
 
-# About the SEPOMEX information (as of 2018-02-02)
+## About the SEPOMEX information (as of 2018-02-02)
 
 Sepomex distribute its database of postal codes with a very restrictive clause on its first line:
 
@@ -67,7 +68,7 @@ with the same information but normalized, the script will download the source if
 
 You would find more information about the source raw file inside [docs/DATABASE.md](docs/DATABASE.md) (*spanish*)
 
-# What is working
+## What is working
 
 Right now you can search a mexican zip code, and it will give you the information about:
 
@@ -81,15 +82,14 @@ Right now you can search a mexican zip code, and it will give you the informatio
 The city is located under the location entity because the same zip code can include some places inside the city
 and also some places outside the city. Yes, this is how it works in Mexico.
 
-# Are you interested on help to this project?
+## Contributing
 
-Contributions are welcome! Please read [CONTRIBUTING][] for details.
+Contributions are welcome! Please read [CONTRIBUTING][] for details
+and don't forget to take a look the [TODO][] and [CHANGELOG][] files.
 
-Let's make this agnostic, a simple library, without depends on any framework, except for an implementation (like an API).
+## License
 
-# License
-
-The `Eclipxe\SepomexPhp` library is copyright © [Carlos C Soto](https://eclipxe.com.mx/)
+The `eclipxe\sepomexphp` library is copyright © [Carlos C Soto](https://eclipxe.com.mx/)
 and licensed for use under the MIT License (MIT). Please see [LICENSE][] for more information.
 
 ## Data source
@@ -99,21 +99,24 @@ Getting from:
 - Since 2017-01-25 <http://www.correosdemexico.gob.mx/datosabiertos/cp/cpdescarga.txt>
 - Since 2022-06-14 <https://www.correosdemexico.gob.mx/SSLServicios/ConsultaCP/CodigoPostal_Exportar.aspx>
 
-[contributing]: CONTRIBUTING.md
-[license]: LICENSE
+[contributing]: https://github.com/eclipxe13/sepomexphp/blob/main/CONTRIBUTING.md
+[changelog]: https://github.com/eclipxe13/sepomexphp/blob/main/docs/CHANGELOG.md
+[todo]: https://github.com/eclipxe13/sepomexphp/blob/main/docs/TODO.md
 
 [source]: https://github.com/eclipxe13/sepomexphp
+[php-version]: https://packagist.org/packages/eclipxe/sepomexphp
 [release]: https://github.com/eclipxe13/sepomexphp/releases
 [license]: https://github.com/eclipxe13/sepomexphp/blob/master/LICENSE
-[build]: https://travis-ci.com/eclipxe13/sepomexphp
+[build]: https://github.com/eclipxe13/sepomexphp/actions/workflows/build.yml?query=branch:main
 [quality]: https://scrutinizer-ci.com/g/eclipxe13/sepomexphp/
 [coverage]: https://scrutinizer-ci.com/g/eclipxe13/sepomexphp/code-structure/master/code-coverage
 [downloads]: https://packagist.org/packages/eclipxe/sepomexphp
 
 [badge-source]: http://img.shields.io/badge/source-eclipxe13/sepomexphp-blue.svg?style=flat-square
+[badge-php-version]: https://img.shields.io/packagist/php-v/eclipxe/sepomexphp?style=flat-square
 [badge-release]: https://img.shields.io/github/release/eclipxe13/sepomexphp.svg?style=flat-square
 [badge-license]: https://img.shields.io/github/license/eclipxe13/sepomexphp.svg?style=flat-square
-[badge-build]: https://img.shields.io/travis/com/eclipxe13/sepomexphp.svg?style=flat-square
+[badge-build]: https://img.shields.io/github/workflow/status/eclipxe13/sepomexphp/build/main?style=flat-square
 [badge-quality]: https://img.shields.io/scrutinizer/g/eclipxe13/sepomexphp/master.svg?style=flat-square
 [badge-coverage]: https://img.shields.io/scrutinizer/coverage/g/eclipxe13/sepomexphp/master.svg?style=flat-square
 [badge-downloads]: https://img.shields.io/packagist/dt/eclipxe/sepomexphp.svg?style=flat-square
