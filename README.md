@@ -42,6 +42,33 @@ $zipcode = $sepomex->getZipCodeData((int) $argv[1]);
 
 Also, check the `zipcode-info.php` script. And `ZipCodeDataTest.php` test.
 
+If you only want to download the source file from SEPOMEX, check `scripts/download.php`.
+
+```php
+<?php
+/**
+ * @var string $destinationFile is the path where the destination file will be located. 
+ */
+$downloader = new Eclipxe\SepomexPhp\Downloader\Downloader();
+printf("Download from %s to %s\n", $downloader::LINK, $destinationFile);
+$downloader->downloadTo($destinationFile);
+```
+
+If you want to import the source file from SEPOMEX into your own SQLite3 database, check `create-sqlite-from-raw.php`.
+
+```php
+<?php
+/**
+ * @var PDO $pdo The PDO connection to your database.
+ * @var string $sourceFile The path to the SEPOMEX database in TXT format. 
+ */
+$importer = new Eclipxe\SepomexPhp\Importer\PdoImporter($pdo);
+// drop tables if existed, create tables.
+$importer->createStruct();
+// perform data import
+$importer->import($sourceFile);
+```
+
 Do you have your own dataset of Sepomex? You can extend this library, just create `DataGatewayInterface` that
 implements the methods and get the data from anywhere.
 

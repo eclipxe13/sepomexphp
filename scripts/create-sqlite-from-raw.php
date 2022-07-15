@@ -12,7 +12,7 @@ use Eclipxe\SepomexPhp\Importer\PdoImporter;
 require_once __DIR__ . '/../vendor/autoload.php';
 
 // escape the global scope
-$returnValue = call_user_func(function () {
+exit(call_user_func(function () {
     try {
         $path = dirname(__DIR__) . '/assets';
         // create the path if this soes not exists
@@ -44,6 +44,4 @@ $returnValue = call_user_func(function () {
         file_put_contents('php://stderr', $exception->getMessage(), FILE_APPEND);
         return 1;
     }
-});
-
-exit($returnValue);
+}));

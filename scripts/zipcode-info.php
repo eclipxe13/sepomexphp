@@ -15,8 +15,7 @@ use Eclipxe\SepomexPhp\SepomexPhp;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-// escape the global scope
-$returnValue = call_user_func(function (string $command, string $zipcodeInput = '', string ...$otherArguments) {
+exit(call_user_func(function (string $command, string $zipcodeInput = '', string ...$otherArguments) {
     // exit if no arguments
     if ('' === $zipcodeInput || [] !== $otherArguments) {
         echo 'Usage: ', $command, ' zipcode', PHP_EOL;
@@ -56,7 +55,6 @@ $returnValue = call_user_func(function (string $command, string $zipcodeInput = 
             echo '         City: ', ($citiesCount > 0) ? $cities->byIndex(0)->name() : '(Ninguna)', PHP_EOL;
         }
         echo '    Locations: ', $locations->count() ?: '(Ninguna)', PHP_EOL;
-        /** @var \Eclipxe\SepomexPhp\Data\Location $location */
         foreach ($locations as $location) {
             echo '               ', $location->getFullName(), PHP_EOL;
         }
@@ -65,6 +63,4 @@ $returnValue = call_user_func(function (string $command, string $zipcodeInput = 
         file_put_contents('php://stderr', $exception->getMessage() . PHP_EOL, FILE_APPEND);
         return 1;
     }
-}, ...$argv);
-
-exit($returnValue);
+}, ...$argv));
