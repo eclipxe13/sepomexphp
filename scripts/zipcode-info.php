@@ -10,7 +10,7 @@
 
 declare(strict_types=1);
 
-use Eclipxe\SepomexPhp\PdoGateway\Gateway;
+use Eclipxe\SepomexPhp\PdoDataGateway\PdoDataGateway;
 use Eclipxe\SepomexPhp\SepomexPhp;
 
 require_once __DIR__ . '/../vendor/autoload.php';
@@ -29,7 +29,7 @@ $returnValue = call_user_func(function (string $command, string $zipcodeInput = 
         // create the PDO Object
         $pdo = new PDO('sqlite:' . $dbfile, null, null, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
         // create the gateway
-        $gateway = new Gateway($pdo);
+        $gateway = new PdoDataGateway($pdo);
         // create the SepomexPhp Object
         $sepomex = new SepomexPhp($gateway);
 

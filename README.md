@@ -30,7 +30,7 @@ $pdostring = "...";
 
 // create the SepomexPhp Object
 $sepomex = new \Eclipxe\SepomexPhp\SepomexPhp(
-    new \Eclipxe\SepomexPhp\PdoGateway\Gateway(
+    new \Eclipxe\SepomexPhp\PdoDataGateway\PdoDataGateway(
         new PDO($pdostring)
     )
 );

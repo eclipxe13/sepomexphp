@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Eclipxe\SepomexPhp\Tests;
 
-use Eclipxe\SepomexPhp\PdoGateway\Gateway;
+use Eclipxe\SepomexPhp\PdoDataGateway\PdoDataGateway;
 use Eclipxe\SepomexPhp\SepomexPhp;
 use PDO;
 
@@ -19,7 +19,7 @@ abstract class TestCase extends \PHPUnit\Framework\TestCase
 
     protected function createSepomexPhp(): SepomexPhp
     {
-        return new SepomexPhp(new Gateway($this->pdo($this->dbfile())));
+        return new SepomexPhp(new PdoDataGateway($this->pdo($this->dbfile())));
     }
 
     public static function dbfile(): string

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Eclipxe\SepomexPhp\PdoGateway;
+namespace Eclipxe\SepomexPhp\PdoDataGateway;
 
 use Eclipxe\SepomexPhp\DataGatewayInterface;
 use Eclipxe\SepomexPhp\DataGatewayQueryException;
@@ -10,7 +10,7 @@ use PDO;
 use PDOException;
 use PDOStatement;
 
-class Gateway implements DataGatewayInterface
+class PdoDataGateway implements DataGatewayInterface
 {
     protected PDO $pdo;
 
