@@ -23,15 +23,13 @@ composer require eclipxe/sepomexphp
 
 # Usage
 
-This is a basic usage example to 
-
 ```php
 <?php
 // set the database connection using Pdo
 $pdostring = "...";
 
 // create the SepomexPhp Object
-$sepomex = new \Eclipxe\SepomexPhp\Eclipxe\SepomexPhp(
+$sepomex = new \Eclipxe\SepomexPhp\SepomexPhp(
     new \Eclipxe\SepomexPhp\PdoGateway\Gateway(
         new PDO($pdostring)
     )
@@ -41,7 +39,7 @@ $sepomex = new \Eclipxe\SepomexPhp\Eclipxe\SepomexPhp(
 $zipcode = $sepomex->getZipCodeData((int) $argv[1]);
 ```
 
-Also, check the `zipcode-info.php` script. and `ZipCodeDataTest.php`
+Also, check the `zipcode-info.php` script. And `ZipCodeDataTest.php` test.
 
 Do you have your own dataset of Sepomex? You can extend this library, just create `DataGatewayInterface` that
 implements the methods and get the data from anywhere.
@@ -60,9 +58,9 @@ That means:
 * Cannot create any profit of the information
 
 Anyhow, the data source has been released in 
-https://datos.gob.mx/busca/dataset/catalogo-nacional-de-codigos-postales/resource/2c5c36de-ffed-4dc6-9beb-66369db3a622
-by the Mexican goverment using a libre license called LIBRE USO MX https://datos.gob.mx/libreusomx and it
-remove any restrictions from the discraimer.
+<https://datos.gob.mx/busca/dataset/catalogo-nacional-de-codigos-postales/resource/2c5c36de-ffed-4dc6-9beb-66369db3a622>
+by the Mexican goverment using a libre license called [LIBRE USO MX](https://datos.gob.mx/libreusomx),
+and it removes any restrictions from the discraimer.
 
 If you run the script `scripts/create-sqlite-from-raw.php` you will create a sqlite database
 with the same information but normalized, the script will download the source if not exists.
@@ -71,7 +69,7 @@ You would find more information about the source raw file inside [docs/DATABASE.
 
 # What is working
 
-Right now you can search a mexican zip code and it will give you the information about:
+Right now you can search a mexican zip code, and it will give you the information about:
 
 * The state *Estado* where it is located, like 'Tabasco'
 * The district *Delegación/Municipio* where it is located, like 'Centro'
@@ -83,22 +81,23 @@ Right now you can search a mexican zip code and it will give you the information
 The city is located under the location entity because the same zip code can include some places inside the city
 and also some places outside the city. Yes, this is how it works in Mexico.
 
-
 # Are you interested on help to this project?
 
 Contributions are welcome! Please read [CONTRIBUTING][] for details.
 
-Lets make this agnostic, a simple library, without depends on any framework, except for an implementation (like an API)
+Let's make this agnostic, a simple library, without depends on any framework, except for an implementation (like an API).
 
 # License
 
-The Eclipxe\SepomexPhp library is copyright © [Carlos C Soto](https://eclipxe.com.mx/)
+The `Eclipxe\SepomexPhp` library is copyright © [Carlos C Soto](https://eclipxe.com.mx/)
 and licensed for use under the MIT License (MIT). Please see [LICENSE][] for more information.
 
 ## Data source
 
 "Tabla de Códigos Postales y asentamientos humanos" published by "Correos de México".
-Getting from https://datos.gob.mx/busca/dataset/catalogo-nacional-de-codigos-postales on 2017-01-25. 
+Getting from:
+- Since 2017-01-25 <http://www.correosdemexico.gob.mx/datosabiertos/cp/cpdescarga.txt>
+- Since 2022-06-14 <https://www.correosdemexico.gob.mx/SSLServicios/ConsultaCP/CodigoPostal_Exportar.aspx>
 
 [contributing]: CONTRIBUTING.md
 [license]: LICENSE

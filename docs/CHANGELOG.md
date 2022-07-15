@@ -1,8 +1,10 @@
 # eclipxe/sepomexphp changelog
 
+**This document is in spanish**
+
 ## Version 3.0.0 UNRELEASED
 
-- El namespace principal de el proyecto cambia de `Eclipxe\SepomexPhp` a `Eclipxe\Eclipxe\SepomexPhp`.
+- El namespace principal del proyecto cambia de `Eclipxe\SepomexPhp` a `Eclipxe\Eclipxe\SepomexPhp`.
 
 ### Cambios para usuarios
 

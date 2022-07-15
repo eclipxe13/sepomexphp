@@ -11,7 +11,7 @@ incluso para fines comerciales.
 La base de datos en texto se puede descargar desde:
 <https://www.correosdemexico.gob.mx/SSLServicios/ConsultaCP/CodigoPostal_Exportar.aspx>
 
-# Estructura origen:
+## Estructura origen
 
 ```
 d_codigo            Descripción del código
@@ -31,13 +31,13 @@ d_zona              Nombre de la zona
 c_cve_ciudad        clave ciudad
 ```
 
-# Información que se puede extraer
+## Información que se puede extraer
 
 Primero, no podemos dar por hecho que la información no va a cambiar,
 podría cambiar, por ilógico que parezca se pueden crear estados, anexarse a ciudades,
-cambiar el nombre de una ciudad, etc... por lo que debe ser creada de esta forma desde su origen.
+cambiar el nombre de una ciudad, etc. por lo que debe ser creada de esta forma desde su origen.
 
-### Listado de estados:
+### Listado de estados
 
 Lista de las 32 entidades federativas, la información corresponde a INEGI, por lo que el estado
 en lugar de llamarse "Veracruz" se llama "Veracruz de Ignacio de la Llave",
@@ -85,10 +85,8 @@ Los tipos de asentamiento juegan el papel de un prefijo para la colonia (asentam
 por ejemplo: en la delegación Álvaro Obregón de la Ciudad de México
 existen dos asentamientos llamados "Molino de Santo Domingo", solo que uno es "Unidad habitacional" y el otro es "Colonia".
 
-Como esta base de datos es por SEPOMEX y no por INEGI,
-cuenta con un tipo de asentamiento llamado "Gran usuario",
-no es información geográfica y representa únicamente a los intereses de SEPOMEX,
-pero vaya, es un código postal.
+Como esta base de datos es por SEPOMEX y no por INEGI, cuenta con un tipo de asentamiento llamado "Gran usuario",
+no es información geográfica y representa únicamente a los intereses de SEPOMEX, pero vaya, es un código postal.
 
 Por lo anterior, un asentamiento debería llamarse asentamiento + tipo de asentamiento, por ejemplo:
 
@@ -97,13 +95,13 @@ Por lo anterior, un asentamiento debería llamarse asentamiento + tipo de asenta
 
 ### Información inútil
 
-* Los campos `d_CP` y `C_oficina` son idénticos,
-  se refiere a la oficina de SEPOMEX que les reparte a un código postal,
+* Los campos `d_CP` y `C_oficina` son idénticos, 
+  se refiere a la oficina de SEPOMEX que les reparte a un código postal, 
   no hay una descripción de su ubicación o su nombre así que podemos considerar no nos sirve.
 * El campo `c_CP` es un campo vacío
-* El campo `id_asenta_cpcons` es un consecutivo de códigos postales,
-  algo así como una llave autonumérica, encontraremos varios registros
-  en donde lo único que cambia es esta clave y los otros campos: asentamiento, tipo de asentamiento,
+* El campo `id_asenta_cpcons` es un consecutivo de códigos postales, 
+  algo así como una llave autonumérica, encontraremos varios registros 
+  en donde lo único que cambia es esta clave y los otros campos: asentamiento, tipo de asentamiento, 
   municipio y estado son los mismos.
 
 ### La tabla de códigos postales
@@ -152,7 +150,6 @@ y a partir de él crea una base de datos de sqlite.
 1. Leer cada una de las líneas de texto e insertarlas en la tabla raw
 1. Llenar por consultas de SQL las tablas
 
-
 ### Consultas para crear la estructura
 
 ```sql
@@ -165,7 +162,6 @@ CREATE TABLE locations (id integer primary key autoincrement not null, idlocatio
 CREATE TABLE zipcodes (id integer primary key not null, iddistrict int not null);
 CREATE TABLE locationzipcodes (idlocation integer not null, zipcode integer not null, primary key(idlocation, zipcode));
 ```
-
 
 ### Consultas para llenar los datos
 ```sql
@@ -201,5 +197,4 @@ INSERT INTO locationzipcodes
     INNER JOIN locationtypes AS t ON (t.name = r.d_tipo_asenta)
     INNER JOIN districts AS d ON (d.idraw = CAST(c_mnpio AS INTEGER) AND d.idstate = CAST(c_estado AS INTEGER))
     INNER JOIN locations AS l ON (t.id = l.idlocationtype AND d.id = l.iddistrict AND l.name = r.d_asenta)
-
 ```
