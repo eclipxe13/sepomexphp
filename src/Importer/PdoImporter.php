@@ -134,7 +134,7 @@ class PdoImporter
      */
     public function renameStates(array $names): void
     {
-        if (0 === count($names)) {
+        if ([] === $names) {
             return;
         }
         $sql = 'UPDATE states SET name = :newname WHERE (name = :oldname);';

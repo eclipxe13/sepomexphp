@@ -55,7 +55,7 @@ class TestCase extends \PHPUnit\Framework\TestCase
         $stmt = $this->pdo()->prepare($sql);
         $stmt->execute($parameters);
         $fetched = $stmt->fetch(PDO::FETCH_NUM);
-        if (is_array($fetched) && 1 === count($fetched)) {
+        if (is_array($fetched) && isset($fetched[0])) {
             return $fetched[0];
         }
         return null;
