@@ -23,7 +23,6 @@ final class ZipCodeDataTest extends TestCase
         $zipcode = $sepomex->getZipCodeData($expectedZipCode);
         if (null === $zipcode) {
             $this->fail("Expected information of zip code $expectedZipCode was not found");
-            return;
         }
 
         $data = $zipcode->asArray();
