@@ -25,7 +25,7 @@ class PdoImporter
     /**
      * Retrieve a list of common states renames, like 'Veracruz de Ignacio de la Llave' to 'Veracruz'
      *
-     * @return array
+     * @return array<string, string>
      */
     public static function commonStatesRename(): array
     {
@@ -42,10 +42,10 @@ class PdoImporter
      * It is expected that the data structure is already created.
      *
      * @param string $rawfile
-     * @param array|null $statesRename if null will use the common set of renames
-     * @see commonSatesRename
+     * @param array<string, string>|null $statesRename if null will use the common set of renames
+     * @see commonStatesRename
      */
-    public function import(string $rawfile, array $statesRename = null)
+    public function import(string $rawfile, array $statesRename = null): void
     {
         if (null === $statesRename) {
             $statesRename = $this->commonStatesRename();
@@ -62,7 +62,7 @@ class PdoImporter
         $this->clearRawTable();
     }
 
-    public function createStruct()
+    public function createStruct(): void
     {
         $commands = [
             // raw
@@ -99,7 +99,7 @@ class PdoImporter
         $this->execute(...$commands);
     }
 
-    public function importRawTxt(string $filename)
+    public function importRawTxt(string $filename): void
     {
         if (! file_exists($filename) || ! is_readable($filename)) {
             throw new RuntimeException("File $filename not found or not readable");
@@ -120,7 +120,7 @@ class PdoImporter
         $this->pdo->commit();
     }
 
-    public function populateStates()
+    public function populateStates(): void
     {
         $commands = [
             'DELETE FROM states;',
@@ -130,7 +130,10 @@ class PdoImporter
         $this->execute(...$commands);
     }
 
-    public function renameStates(array $names)
+    /**
+     * @param array<string, string> $names
+     */
+    public function renameStates(array $names): void
     {
         if (0 === count($names)) {
             return;
@@ -142,7 +145,7 @@ class PdoImporter
         }
     }
 
-    public function populateDistricts()
+    public function populateDistricts(): void
     {
         $commands = [
             'DELETE FROM districts;',
@@ -152,7 +155,7 @@ class PdoImporter
         $this->execute(...$commands);
     }
 
-    public function populateCities()
+    public function populateCities(): void
     {
         $commands = [
             'DELETE FROM cities;',
@@ -163,7 +166,7 @@ class PdoImporter
         $this->execute(...$commands);
     }
 
-    public function populateLocationTypes()
+    public function populateLocationTypes(): void
     {
         $commands = [
             'DELETE FROM locationtypes;',
@@ -173,7 +176,7 @@ class PdoImporter
         $this->execute(...$commands);
     }
 
-    public function populateLocations()
+    public function populateLocations(): void
     {
         $commands = [
             'DELETE FROM locations;',
@@ -191,7 +194,7 @@ class PdoImporter
         $this->execute(...$commands);
     }
 
-    public function populateZipCodes()
+    public function populateZipCodes(): void
     {
         $commands = [
             'DELETE FROM zipcodes;',
@@ -205,7 +208,7 @@ class PdoImporter
         $this->execute(...$commands);
     }
 
-    public function populateLocationZipCodes()
+    public function populateLocationZipCodes(): void
     {
         $commands = [
             'DELETE FROM locationzipcodes;',
@@ -221,12 +224,16 @@ class PdoImporter
         $this->execute(...$commands);
     }
 
-    public function clearRawTable()
+    public function clearRawTable(): void
     {
         $this->execute('DELETE FROM raw;');
     }
 
-    protected function execute(...$commands)
+    /**
+     * @param string|PDOStatement ...$commands
+     * @return void
+     */
+    protected function execute(...$commands): void
     {
         foreach ($commands as $command) {
             if (is_string($command)) {

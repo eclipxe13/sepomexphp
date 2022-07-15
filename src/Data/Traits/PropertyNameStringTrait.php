@@ -15,7 +15,7 @@ trait PropertyNameStringTrait
         return $this->name;
     }
 
-    protected function setName(string $name)
+    protected function setName(string $name): void
     {
         if ('' === $name) {
             throw new InvalidArgumentException('Name property cannot be empty');

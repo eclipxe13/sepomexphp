@@ -37,8 +37,8 @@ class SepomexPhp
             return null;
         }
 
-        $state = $this->factory->newState((int) $data['idstate'], $data['statename']);
-        $district = $this->factory->newDistrict((int) $data['iddistrict'], $data['districtname'], $state);
+        $state = $this->factory->newState((int) $data['idstate'], (string) $data['statename']);
+        $district = $this->factory->newDistrict((int) $data['iddistrict'], (string) $data['districtname'], $state);
         $locations = $this->getLocationsFromZipCode($zipcode);
         return $this->factory->newZipCodeData($zipcode, $locations, $district);
     }
@@ -54,10 +54,10 @@ class SepomexPhp
         foreach ($items as $item) {
             $locations[] = $this->factory->newLocation(
                 (int) $item['id'],
-                $item['name'],
-                $this->factory->newLocationType((int) $item['idtype'], $item['typename']),
+                (string) $item['name'],
+                $this->factory->newLocationType((int) $item['idtype'], (string) $item['typename']),
                 null,
-                ($item['idcity']) ? $this->factory->newCity((int) $item['idcity'], $item['cityname']) : null
+                ($item['idcity']) ? $this->factory->newCity((int) $item['idcity'], (string) $item['cityname']) : null
             );
         }
         return new Locations(...$locations);
@@ -80,10 +80,11 @@ class SepomexPhp
         $districts = [];
         $rows = $this->gateway->searchDistricts($districtName, $stateName, $pageIndex, $pageSize);
         foreach ($rows as $row) {
-            if (! array_key_exists($row['idstate'], $states)) {
-                $states[$row['idstate']] = $this->factory->newState((int) $row['idstate'], $row['statename']);
+            $idstate = (int) $row['idstate'];
+            if (! isset($states[$idstate])) {
+                $states[$idstate] = $this->factory->newState($idstate, (string) $row['statename']);
             }
-            $districts[] = $this->factory->newDistrict((int) $row['id'], $row['name'], $states[$row['idstate']]);
+            $districts[] = $this->factory->newDistrict((int) $row['id'], (string) $row['name'], $states[$idstate]);
         }
         return $districts;
     }

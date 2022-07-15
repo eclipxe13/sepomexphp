@@ -11,8 +11,15 @@ final class DataGatewayQueryException extends RuntimeException
 {
     private string $query;
 
+    /** @var array<string, scalar|null> */
     private array $parameters;
 
+    /**
+     * @param string $message
+     * @param string $query
+     * @param array<string, scalar|null> $parameters
+     * @param Throwable|null $previous
+     */
     public function __construct(string $message, string $query, array $parameters, Throwable $previous = null)
     {
         parent::__construct($message, 0, $previous);
@@ -20,6 +27,12 @@ final class DataGatewayQueryException extends RuntimeException
         $this->parameters = $parameters;
     }
 
+    /**
+     * @param string $query
+     * @param array<string, scalar|null> $parameters
+     * @param Throwable|null $previous
+     * @return self
+     */
     public static function new(string $query, array $parameters, Throwable $previous = null): self
     {
         $message = 'Unable to execute statement: ' . $query;
@@ -31,6 +44,9 @@ final class DataGatewayQueryException extends RuntimeException
         return $this->query;
     }
 
+    /**
+     * @return array<string, scalar|null>
+     */
     public function getParameters(): array
     {
         return $this->parameters;

@@ -10,7 +10,7 @@ use PDO;
 
 class TestCase extends \PHPUnit\Framework\TestCase
 {
-    private ?\PDO $pdo = null;
+    private ?PDO $pdo = null;
 
     public static function filePath(string $filename): string
     {
@@ -27,7 +27,7 @@ class TestCase extends \PHPUnit\Framework\TestCase
         return static::filePath('test.db');
     }
 
-    public function pdo(string $dbfile = '')
+    public function pdo(string $dbfile = ''): PDO
     {
         if (null === $this->pdo) {
             $this->pdo = $this->createPdo($dbfile);
@@ -45,6 +45,11 @@ class TestCase extends \PHPUnit\Framework\TestCase
         ]);
     }
 
+    /**
+     * @param string $sql
+     * @param array<string, string>|null $parameters
+     * @return mixed|null
+     */
     protected function queryOne(string $sql, array $parameters = null)
     {
         $stmt = $this->pdo()->prepare($sql);

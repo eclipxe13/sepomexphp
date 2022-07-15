@@ -24,7 +24,7 @@ trait PropertyCityTrait
         return ($this->city instanceof City);
     }
 
-    protected function setCity(City $city = null)
+    protected function setCity(City $city = null): void
     {
         $this->city = $city;
     }

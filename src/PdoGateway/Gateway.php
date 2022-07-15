@@ -68,7 +68,7 @@ class Gateway implements DataGatewayInterface
      * Prepare and execute query with given parameters
      *
      * @param string $query
-     * @param array $parameters
+     * @param array<string, scalar|null> $parameters
      * @return PDOStatement
      * @throws DataGatewayQueryException
      */
@@ -90,27 +90,31 @@ class Gateway implements DataGatewayInterface
      * Run query and fetch result
      *
      * @param string $query
-     * @param array $parameters
-     * @return array<string, string>
+     * @param array<string, string> $parameters
+     * @return array<string, scalar|null>
      * @throws DataGatewayQueryException
      */
     private function fetch(string $query, array $parameters): array
     {
         $statement = $this->query($query, $parameters);
-        return $statement->fetch(PDO::FETCH_ASSOC) ?: [];
+        /** @var array<string, scalar|null>|false $result */
+        $result = $statement->fetch(PDO::FETCH_ASSOC);
+        return $result ?: [];
     }
 
     /**
      * Run query and fetch all results
      *
      * @param string $query
-     * @param array $parameters
-     * @return array<int, array<string, string>>
+     * @param array<string, scalar|null> $parameters
+     * @return array<int, array<string, scalar|null>>
      * @throws DataGatewayQueryException
      */
     private function fetchAll(string $query, array $parameters): array
     {
         $statement = $this->query($query, $parameters);
-        return $statement->fetchAll(PDO::FETCH_ASSOC) ?: [];
+        /** @var array<int, array<string, scalar|null>>|false $result */
+        $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+        return $result ?: [];
     }
 }

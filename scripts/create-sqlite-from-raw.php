@@ -1,11 +1,12 @@
 <?php
 
-declare(strict_types=1);
-
 /**
  * This script is used to create the database using PDO and sqlite
  */
 
+declare(strict_types=1);
+
+use Eclipxe\SepomexPhp\Downloader\Downloader;
 use Eclipxe\SepomexPhp\Importer\PdoImporter;
 
 require_once __DIR__ . '/../vendor/autoload.php';

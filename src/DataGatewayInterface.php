@@ -11,7 +11,7 @@ interface DataGatewayInterface
      * Returns an assoc array with keys: id, name, idtype, typename, idcity, cityname
      *
      * @param string $zipcode
-     * @return array<string, string>
+     * @return array<string, scalar|null>
      * @throws DataGatewayQueryException
      */
     public function getZipCodeData(string $zipcode): array;
@@ -21,7 +21,7 @@ interface DataGatewayInterface
      * Returns an indexed array containing assoc array with keys: id, name, idtype, typename, idcity, cityname
      *
      * @param string $zipcode
-     * @return array<int, array<string, string>>
+     * @return array<int, array<string, scalar|null>>
      * @throws DataGatewayQueryException
      */
     public function getLocationsFromZipCode(string $zipcode): array;
@@ -35,7 +35,7 @@ interface DataGatewayInterface
      * @param string $stateName
      * @param int $pageIndex
      * @param int $pageSize
-     * @return array
+     * @return array<array<string, scalar|null>>
      * @throws DataGatewayQueryException
      */
     public function searchDistricts(string $districtName, string $stateName, int $pageIndex, int $pageSize): array;

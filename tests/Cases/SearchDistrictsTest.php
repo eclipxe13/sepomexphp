@@ -9,7 +9,7 @@ use Eclipxe\SepomexPhp\Tests\TestCase;
 
 class SearchDistrictsTest extends TestCase
 {
-    public function testSearchDistrictsCount()
+    public function testSearchDistrictsCount(): void
     {
         $sepomex = $this->createSepomexPhp();
 
@@ -22,7 +22,7 @@ class SearchDistrictsTest extends TestCase
         $this->assertCount(1, $sepomex->searchDistricts('Ocampo', ''));
     }
 
-    public function testSearchDistrictsItem()
+    public function testSearchDistrictsItem(): void
     {
         $sepomex = $this->createSepomexPhp();
 
@@ -36,7 +36,7 @@ class SearchDistrictsTest extends TestCase
         $this->assertStringContainsString('Chiapas', $item->state()->name());
     }
 
-    public function testSearchDistrictsList()
+    public function testSearchDistrictsList(): void
     {
         $sepomex = $this->createSepomexPhp();
 

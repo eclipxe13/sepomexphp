@@ -1,14 +1,14 @@
 <?php
 
-declare(strict_types=1);
-
 /**
  * This script is a command line tool to get information about a zipcode
  * It uses the database on assets/sepomex.db
- * This database is not distributable but you can create it with create-sqlite-from-raw.php
+ * This database is not distributable, but you can create it with create-sqlite-from-raw.php
  *
  * Usage: zipcode-info.php zipcode
  */
+
+declare(strict_types=1);
 
 use Eclipxe\SepomexPhp\PdoGateway\Gateway;
 use Eclipxe\SepomexPhp\SepomexPhp;

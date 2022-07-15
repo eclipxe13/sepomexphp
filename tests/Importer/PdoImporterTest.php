@@ -9,7 +9,7 @@ use Eclipxe\SepomexPhp\Tests\TestCase;
 
 class PdoImporterTest extends TestCase
 {
-    public function testImportProcess()
+    public function testImportProcess(): void
     {
         // check if source file exists
         $rawfile = $this->filePath('rawextract.txt');
@@ -49,7 +49,7 @@ class PdoImporterTest extends TestCase
         $this->assertEquals(0, $this->queryOne('select count(*) from raw;'));
     }
 
-    public function testImportAllInOne()
+    public function testImportAllInOne(): void
     {
         // check if source file exists
         $rawfile = $this->filePath('rawextract.txt');

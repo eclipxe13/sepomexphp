@@ -24,7 +24,7 @@ trait PropertyDistrictTrait
         return ($this->district instanceof District);
     }
 
-    protected function setDistrict(District $district = null)
+    protected function setDistrict(District $district = null): void
     {
         $this->district = $district;
     }

@@ -15,7 +15,7 @@ trait PropertyStateTrait
         return $this->state;
     }
 
-    protected function setState(State $state)
+    protected function setState(State $state): void
     {
         $this->state = $state;
     }

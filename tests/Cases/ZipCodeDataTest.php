@@ -9,13 +9,13 @@ use Eclipxe\SepomexPhp\Tests\TestCase;
 
 class ZipCodeDataTest extends TestCase
 {
-    public function testGetZipCodeDataOnNotFound()
+    public function testGetZipCodeDataOnNotFound(): void
     {
         $sepomex = $this->createSepomexPhp();
         $this->assertNull($sepomex->getZipCodeData('00001'));
     }
 
-    public function testZipCodeCheck()
+    public function testZipCodeCheck(): void
     {
         $expectedZipCode = '88305';
 

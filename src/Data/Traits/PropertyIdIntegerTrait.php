@@ -13,7 +13,7 @@ trait PropertyIdIntegerTrait
         return $this->id;
     }
 
-    protected function setId(int $id)
+    protected function setId(int $id): void
     {
         if ($id <= 0) {
             throw new \InvalidArgumentException('Value cannot be less than or equal to zero');
