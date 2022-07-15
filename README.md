@@ -13,7 +13,7 @@ This library is an unofficial version for the Mexicam SEPOMEX data.
 
 Some parts of the project are in Spanish since the main consumers of this library would are mexicans.
 Anyhow, all the database, code and other information is in english (that is not my primary language, so forgive me)
- 
+
 ## Installation
 
 Install using composer, no other methods are recommended!
@@ -76,14 +76,14 @@ implements the methods and get the data from anywhere.
 
 Sepomex distribute its database of postal codes with a very restrictive clause on its first line:
 
-> *El Catálogo Nacional de Códigos Postales, es elaborado por Correos de México y se proporciona en forma gratuita para uso particular,
-no estando permitida su comercialización, total o parcial, ni su distribución a terceros bajo ningún concepto.*
+> *El Catálogo Nacional de Códigos Postales, es elaborado por Correos de México y se proporciona en forma gratuita para uso particular, 
+> no estando permitida su comercialización, total o parcial, ni su distribución a terceros bajo ningún concepto.*
 
 That means:
 
-* The data is ditributed only for personal use
-* Cannot redistribute the information (total or partial) to anyone (insert a big WTF! here)
-* Cannot create any profit of the information
+* The data is distributed only for personal use.
+* Cannot redistribute the information (total or partial) to anyone (insert a big WTF! here).
+* Cannot create any profit of the information.
 
 Anyhow, the data source has been released in 
 <https://datos.gob.mx/busca/dataset/catalogo-nacional-de-codigos-postales/resource/2c5c36de-ffed-4dc6-9beb-66369db3a622>
@@ -91,7 +91,7 @@ by the Mexican goverment using a libre license called [LIBRE USO MX](https://dat
 and it removes any restrictions from the discraimer.
 
 If you run the script `scripts/create-sqlite-from-raw.php` you will create a sqlite database
-with the same information but normalized, the script will download the source if not exists.
+with the same information but normalized, the script will download the source if it does not exist.
 
 You would find more information about the source raw file inside [docs/DATABASE.md](docs/DATABASE.md) (*spanish*)
 

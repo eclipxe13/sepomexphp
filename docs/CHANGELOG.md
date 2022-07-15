@@ -2,24 +2,35 @@
 
 **This document is in spanish**
 
-## Version 3.0.0 UNRELEASED
+## Version 3.0.0 2022-07-15
 
-- El namespace principal del proyecto cambia de `Eclipxe\SepomexPhp` a `Eclipxe\Eclipxe\SepomexPhp`.
+No hay una guía de migración porque el proyecto cambió drásticamente.
+El mejor consejo es reimplementar la librería en esta nueva versión.
 
 ### Cambios para usuarios
 
-- La versión mínima requerida es PHP versión 7.4 <https://www.php.net/supported-versions.php>
+- El namespace principal del proyecto cambia de `SepomexPhp` a `Eclipxe\SepomexPhp`.
+- La versión mínima requerida es PHP versión 7.4. Vea <https://www.php.net/supported-versions.php>.
 
 ### Cambios para implementadores
 
 - El método `DataGatewayInterface::getZipCodeData()` regresa un arreglo vacío en lugar de nulo cuando no existen resultados.
 
+### Descarga de catálogo
+
+El origen de los datos estaba disponible desde <http://www.correosdemexico.gob.mx/datosabiertos/cp/cpdescarga.txt>,
+sin embargo, este origen no se ha actualizado. SEPOMEX ahora permite la descarga a través de una aplicación web,
+por lo que tuvo que implementar un *scraper* para obtener el catálogo actualizado desde
+<https://www.correosdemexico.gob.mx/SSLServicios/ConsultaCP/CodigoPostal_Exportar.aspx>.
+
+Se creó el script `scripts/download.php` para descargar y extraer la base de datos de SEPOMEX.
+
 ### Desarrollo
 
-- Se elimina la dependencia a phplint
-- Se actualiza la versión de PHPUnit a 9.4 y PHPStan a 0.11
-- Se usan los comandos de composer `dev:*`
-
+- Se elimina la dependencia a phplint.
+- Se actualiza la versión de PHPUnit a 9.5.
+- Se migran las herramientas de desarrollo de `composer` a `phive`.
+- El proyecto ahora se construye en GitHub Workflows en lugar de Travis CI. ¡Gracias Travis CI!.
 
 ## Version 2.0.0 2018-03-09
 
