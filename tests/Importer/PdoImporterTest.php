@@ -7,7 +7,7 @@ namespace Eclipxe\SepomexPhp\Tests\Importer;
 use Eclipxe\SepomexPhp\Importer\PdoImporter;
 use Eclipxe\SepomexPhp\Tests\TestCase;
 
-class PdoImporterTest extends TestCase
+final class PdoImporterTest extends TestCase
 {
     public function testImportProcess(): void
     {

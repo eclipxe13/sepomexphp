@@ -7,7 +7,7 @@ namespace Eclipxe\SepomexPhp\Tests\Cases;
 use DMS\PHPUnitExtensions\ArraySubset\Assert;
 use Eclipxe\SepomexPhp\Tests\TestCase;
 
-class ZipCodeDataTest extends TestCase
+final class ZipCodeDataTest extends TestCase
 {
     public function testGetZipCodeDataOnNotFound(): void
     {

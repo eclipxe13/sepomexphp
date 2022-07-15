@@ -8,7 +8,7 @@ use Eclipxe\SepomexPhp\PdoGateway\Gateway;
 use Eclipxe\SepomexPhp\SepomexPhp;
 use PDO;
 
-class TestCase extends \PHPUnit\Framework\TestCase
+abstract class TestCase extends \PHPUnit\Framework\TestCase
 {
     private ?PDO $pdo = null;
 

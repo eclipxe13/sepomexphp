@@ -7,7 +7,7 @@ namespace Eclipxe\SepomexPhp\Tests\Cases;
 use Eclipxe\SepomexPhp\Data\District;
 use Eclipxe\SepomexPhp\Tests\TestCase;
 
-class SearchDistrictsTest extends TestCase
+final class SearchDistrictsTest extends TestCase
 {
     public function testSearchDistrictsCount(): void
     {
