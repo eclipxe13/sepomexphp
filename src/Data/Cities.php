@@ -26,7 +26,7 @@ class Cities implements IteratorAggregate, Countable
     }
 
     /** @return Traversable<City> */
-    public function getIterator()
+    public function getIterator(): Traversable
     {
         return new ArrayIterator($this->collection);
     }

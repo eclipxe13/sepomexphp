@@ -40,7 +40,7 @@ class Locations implements IteratorAggregate, Countable
     }
 
     /** @return Traversable<Location> */
-    public function getIterator()
+    public function getIterator(): Traversable
     {
         return new ArrayIterator($this->collection);
     }
