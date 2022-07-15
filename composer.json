@@ -34,7 +34,7 @@
         "fabpot/goutte": "^4.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.4",
+        "phpunit/phpunit": "^9.5",
         "dms/phpunit-arraysubset-asserts": "^0.2.1"
     },
     "scripts": {
