@@ -21,6 +21,7 @@ class District
         $this->setState($state);
     }
 
+    /** @return array{id: int, name: string, state: array{id: int, name: string}} */
     public function asArray(): array
     {
         return [

@@ -37,6 +37,16 @@ class Location
         return $this->name() . ' (' . $this->type()->name() . ')';
     }
 
+    /**
+     * @return array{
+     *      id: int,
+     *      name: string,
+     *      fullname: string,
+     *      type: array{id: int, name: string},
+     *      district: null|array{id: int, name: string, state: array{id: int, name: string}},
+     *      city: null|array{id: int, name: string}
+     *  }
+     */
     public function asArray(): array
     {
         return [

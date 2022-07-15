@@ -63,6 +63,16 @@ class Locations implements IteratorAggregate, Countable
         return $this->cities;
     }
 
+    /**
+     * @return array<array{
+     *     id: int,
+     *     name: string,
+     *     fullname: string,
+     *     type: array{id: int, name: string},
+     *     district: null|array{id: int, name: string, state: array{id: int, name: string}},
+     *     city: null|array{id: int, name: string}
+     *     }>
+     */
     public function asArray(): array
     {
         return array_map(

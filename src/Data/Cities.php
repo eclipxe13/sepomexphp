@@ -44,6 +44,7 @@ class Cities implements IteratorAggregate, Countable
         return $this->collection[$index];
     }
 
+    /** @return array<array{id: int, name: string}> */
     public function asArray(): array
     {
         return array_map(

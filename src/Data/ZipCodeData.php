@@ -49,6 +49,22 @@ class ZipCodeData
         return $this->district()->state();
     }
 
+    /**
+     * @return array{
+     *     zipcode: string,
+     *     locations: array<array{
+     *         id: int,
+     *         name: string,
+     *         fullname: string,
+     *         type: array{id: int, name: string},
+     *         district: null|array{id: int, name: string, state: array{id: int, name: string}},
+     *         city: null|array{id: int, name: string}
+     *         }>,
+     *     cities: array<array{id: int, name: string}>,
+     *     district: array{id: int, name: string, state: array{id: int, name: string}},
+     *     state: array{id: int, name: string}
+     * }
+     */
     public function asArray(): array
     {
         $locations = $this->locations();

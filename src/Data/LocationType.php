@@ -18,6 +18,7 @@ class LocationType
         $this->setName($name);
     }
 
+    /** @return array{id: int, name: string} */
     public function asArray(): array
     {
         return [
