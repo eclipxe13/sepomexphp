@@ -27,7 +27,7 @@ class PdoImporter
      *
      * @return array
      */
-    public static function commonSatesRename(): array
+    public static function commonStatesRename(): array
     {
         return [
             'Coahuila de Zaragoza' => 'Coahuila',
@@ -48,7 +48,7 @@ class PdoImporter
     public function import(string $rawfile, array $statesRename = null)
     {
         if (null === $statesRename) {
-            $statesRename = $this->commonSatesRename();
+            $statesRename = $this->commonStatesRename();
         }
         $this->importRawTxt($rawfile);
         $this->populateStates();

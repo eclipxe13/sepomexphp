@@ -61,7 +61,7 @@ class PdoImporterTest extends TestCase
         $importer->createStruct();
 
         // do the import process in one line
-        $statesRename = $importer->commonSatesRename();
+        $statesRename = $importer->commonStatesRename();
         $importer->import($rawfile, $statesRename);
 
         // perform all the checks
