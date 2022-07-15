@@ -16,10 +16,10 @@ use Eclipxe\SepomexPhp\SepomexPhp;
 require_once __DIR__ . '/../vendor/autoload.php';
 
 // escape the global scope
-$returnValue = call_user_func(function (array $argv) {
+$returnValue = call_user_func(function (string $command, string $zipcodeInput = '', string ...$otherArguments) {
     // exit if no arguments
-    if (2 !== count($argv)) {
-        echo 'Usage: ', $argv[0], " zipcode\n";
+    if ('' === $zipcodeInput || [] !== $otherArguments) {
+        echo 'Usage: ', $command, ' zipcode', PHP_EOL;
         return 1;
     }
 
@@ -34,9 +34,9 @@ $returnValue = call_user_func(function (array $argv) {
         $sepomex = new SepomexPhp($gateway);
 
         // query a zip code
-        $zipcode = $sepomex->getZipCodeData($argv[1]);
+        $zipcode = $sepomex->getZipCodeData($zipcodeInput);
         if (null === $zipcode) {
-            echo 'Not found: ', $argv[1], "\n";
+            echo 'Not found: ', $zipcodeInput, PHP_EOL;
             return 1;
         }
         $locations = $zipcode->locations();
@@ -44,26 +44,27 @@ $returnValue = call_user_func(function (array $argv) {
         $citiesCount = $cities->count();
 
         // display information
-        echo '      ZipCode: ', $zipcode->format(), "\n";
-        echo '     District: ', $zipcode->district()->name(), "\n";
-        echo '        State: ', $zipcode->state()->name(), "\n";
+        echo '      ZipCode: ', $zipcode->format(), PHP_EOL;
+        echo '     District: ', $zipcode->district()->name(), PHP_EOL;
+        echo '        State: ', $zipcode->state()->name(), PHP_EOL;
         if ($citiesCount > 1) {
-            echo '       Cities: ', $citiesCount, "\n";
+            echo '       Cities: ', $citiesCount, PHP_EOL;
             foreach ($cities as $city) {
-                echo '               ', $city->name(), "\n";
+                echo '               ', $city->name(), PHP_EOL;
             }
         } else {
-            echo '         City: ', ($citiesCount > 0) ? $cities->byIndex(0)->name() : '(Ninguna)', "\n";
+            echo '         City: ', ($citiesCount > 0) ? $cities->byIndex(0)->name() : '(Ninguna)', PHP_EOL;
         }
-        echo '    Locations: ', $locations->count() ? : '(Ninguna)', "\n";
+        echo '    Locations: ', $locations->count() ?: '(Ninguna)', PHP_EOL;
+        /** @var \Eclipxe\SepomexPhp\Data\Location $location */
         foreach ($locations as $location) {
-            echo '               ', $location->getFullName(), "\n";
+            echo '               ', $location->getFullName(), PHP_EOL;
         }
         return 0;
     } catch (Throwable $exception) {
-        file_put_contents('php://stderr', $exception->getMessage(), FILE_APPEND);
+        file_put_contents('php://stderr', $exception->getMessage() . PHP_EOL, FILE_APPEND);
         return 1;
     }
-}, $argv);
+}, ...$argv);
 
 exit($returnValue);
