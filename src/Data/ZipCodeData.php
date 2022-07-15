@@ -6,7 +6,7 @@ namespace Eclipxe\SepomexPhp\Data;
 
 use Eclipxe\SepomexPhp\Data\Traits\PropertyDistrictTrait;
 use Eclipxe\SepomexPhp\Data\Traits\PropertyLocationsTrait;
-use UnexpectedValueException;
+use InvalidArgumentException;
 
 class ZipCodeData
 {
@@ -21,12 +21,12 @@ class ZipCodeData
      * @param string $zipcode
      * @param Locations $locations
      * @param District $district
-     * @throws UnexpectedValueException when zipcode is not 4 or 5 digits
+     * @throws InvalidArgumentException when zipcode is not 4 or 5 digits
      */
     public function __construct(string $zipcode, Locations $locations, District $district)
     {
-        if (1 !== preg_match('/^\d{4,5}$/', $zipcode)) {
-            throw new UnexpectedValueException('Zipcode must be 4 to 5 digits');
+        if (! preg_match('/^\d{4,5}$/', $zipcode)) {
+            throw new InvalidArgumentException('Zipcode must be 4 to 5 digits');
         }
         $this->zipcode = $zipcode;
         $this->formatted = str_pad($this->zipcode, 5, '0', STR_PAD_LEFT);
