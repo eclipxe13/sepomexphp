@@ -25,9 +25,9 @@ $returnValue = call_user_func(function () {
 
         // raw file
         if (! file_exists($rawfile)) {
-            $sourceurl = 'http://www.correosdemexico.gob.mx/datosabiertos/cp/cpdescarga.txt';
-            echo "File $rawfile does not exists, will be downloaded from $sourceurl\n";
-            copy($sourceurl, $rawfile);
+            $downloader = new Downloader();
+            printf("File %s does not exists, will be downloaded from %s\n", $rawfile, $downloader::LINK);
+            $downloader->downloadTo($rawfile);
         }
 
         // create the pdo object
@@ -38,7 +38,7 @@ $returnValue = call_user_func(function () {
 
         // follow this steps
         $importer->createStruct();
-        $importer->import($rawfile, null);
+        $importer->import($rawfile);
         return 0;
     } catch (Throwable $exception) {
         file_put_contents('php://stderr', $exception->getMessage(), FILE_APPEND);
