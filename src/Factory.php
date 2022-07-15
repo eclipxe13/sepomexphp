@@ -16,7 +16,6 @@ use Eclipxe\SepomexPhp\Data\ZipCodeData;
  * Factory, do not include new statements on Eclipxe\SepomexPhp class
  *
  * @access private
- * @package Eclipxe\SepomexPhp
  */
 class Factory
 {

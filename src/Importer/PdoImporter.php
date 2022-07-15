@@ -11,7 +11,6 @@ use SplFileObject;
 
 /**
  * Import the sepomex raw file (iso-8859-1 encoded)
- * @package Eclipxe\SepomexPhp\Importer
  */
 class PdoImporter
 {
