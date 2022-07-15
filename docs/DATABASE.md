@@ -8,6 +8,9 @@ A pesar de la leyenda restrictiva en el archivo descargado, la información es l
 que mientras se cite la fuente y se utilice en los términos de la misma licencia se permite su distribución y uso de la información
 incluso para fines comerciales.
 
+La base de datos en texto se puede descargar desde:
+<https://www.correosdemexico.gob.mx/SSLServicios/ConsultaCP/CodigoPostal_Exportar.aspx>
+
 # Estructura origen:
 
 ```
