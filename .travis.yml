@@ -3,21 +3,30 @@ language: php
 # php compatibility
 php:
   - 7.4
+  - 8.0
+  - 8.1
 
 before_script:
   - phpenv config-rm xdebug.ini || true
   - travis_retry composer install --no-interaction --prefer-dist
+  - travis_retry phive update
 
 script:
   - mkdir -p build/tests/
-  - vendor/bin/phpcs -sp src/ scripts/ tests/
-  - vendor/bin/phpunit --testdox --coverage-clover=build/tests/coverage.xml
-  - vendor/bin/phpstan analyse --level max scripts/ src/ tests/
+  - tools/php-cs-fixer fix --dryrun --verbose
+  - tools/phpcs -sp
+  - |
+    if [[ $TRAVIS_PHP_VERSION == '8.1' ]]; then
+      php -dzend_extension=xdebug.so -dxdebug.mode=coverage vendor/bin/phpunit --testdox --coverage-clover=build/tests/coverage.xml
+    else
+      vendor/bin/phpunit --testdox
+    fi
+  - tools/phpstan analyse --no-progress --no-interaction
 
 after_script:
   # upload to scrutinizer
   - |
-    if [[ $TRAVIS_PHP_VERSION == '7.4' ]]; then
+    if [[ $TRAVIS_PHP_VERSION == '8.1' ]]; then
       wget https://scrutinizer-ci.com/ocular.phar
       php ocular.phar code-coverage:upload --format=php-clover build/tests/coverage.xml
     fi
