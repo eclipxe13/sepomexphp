@@ -12,7 +12,7 @@ class PdoImporterTest extends TestCase
     public function testImportProcess()
     {
         // check if source file exists
-        $rawfile = $this->utilAsset('rawextract.txt');
+        $rawfile = $this->filePath('rawextract.txt');
         $this->assertFileExists($rawfile);
 
         // create the importer with struct since this is an empty sqlite database
@@ -52,7 +52,7 @@ class PdoImporterTest extends TestCase
     public function testImportAllInOne()
     {
         // check if source file exists
-        $rawfile = $this->utilAsset('rawextract.txt');
+        $rawfile = $this->filePath('rawextract.txt');
         $this->assertFileExists($rawfile);
 
         // create the importer with struct since this is an empty sqlite database

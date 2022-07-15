@@ -12,9 +12,9 @@ class TestCase extends \PHPUnit\Framework\TestCase
 {
     private ?\PDO $pdo = null;
 
-    public static function utilAsset($filename)
+    public static function filePath(string $filename): string
     {
-        return __DIR__ . '/assets/' . $filename;
+        return __DIR__ . '/_files/' . $filename;
     }
 
     protected function createSepomexPhp(): SepomexPhp
@@ -24,7 +24,7 @@ class TestCase extends \PHPUnit\Framework\TestCase
 
     public static function dbfile(): string
     {
-        return static::utilAsset('test.db');
+        return static::filePath('test.db');
     }
 
     public function pdo(string $dbfile = '')
