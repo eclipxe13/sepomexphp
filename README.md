@@ -126,15 +126,15 @@ Getting from:
 - Since 2017-01-25 <http://www.correosdemexico.gob.mx/datosabiertos/cp/cpdescarga.txt>
 - Since 2022-06-14 <https://www.correosdemexico.gob.mx/SSLServicios/ConsultaCP/CodigoPostal_Exportar.aspx>
 
-[contributing]: https://github.com/eclipxe13/sepomexphp/blob/main/CONTRIBUTING.md
-[changelog]: https://github.com/eclipxe13/sepomexphp/blob/main/docs/CHANGELOG.md
-[todo]: https://github.com/eclipxe13/sepomexphp/blob/main/docs/TODO.md
+[contributing]: https://github.com/eclipxe13/sepomexphp/blob/master/CONTRIBUTING.md
+[changelog]: https://github.com/eclipxe13/sepomexphp/blob/master/docs/CHANGELOG.md
+[todo]: https://github.com/eclipxe13/sepomexphp/blob/master/docs/TODO.md
 
 [source]: https://github.com/eclipxe13/sepomexphp
 [php-version]: https://packagist.org/packages/eclipxe/sepomexphp
 [release]: https://github.com/eclipxe13/sepomexphp/releases
 [license]: https://github.com/eclipxe13/sepomexphp/blob/master/LICENSE
-[build]: https://github.com/eclipxe13/sepomexphp/actions/workflows/build.yml?query=branch:main
+[build]: https://github.com/eclipxe13/sepomexphp/actions/workflows/build.yml?query=branch:master
 [quality]: https://scrutinizer-ci.com/g/eclipxe13/sepomexphp/
 [coverage]: https://scrutinizer-ci.com/g/eclipxe13/sepomexphp/code-structure/master/code-coverage
 [downloads]: https://packagist.org/packages/eclipxe/sepomexphp
@@ -143,7 +143,7 @@ Getting from:
 [badge-php-version]: https://img.shields.io/packagist/php-v/eclipxe/sepomexphp?style=flat-square
 [badge-release]: https://img.shields.io/github/release/eclipxe13/sepomexphp.svg?style=flat-square
 [badge-license]: https://img.shields.io/github/license/eclipxe13/sepomexphp.svg?style=flat-square
-[badge-build]: https://img.shields.io/github/actions/workflow/status/eclipxe13/sepomexphp/build.yml?branch=main&style=flat-square
+[badge-build]: https://img.shields.io/github/actions/workflow/status/eclipxe13/sepomexphp/build.yml?branch=master&style=flat-square
 [badge-quality]: https://img.shields.io/scrutinizer/g/eclipxe13/sepomexphp/master.svg?style=flat-square
 [badge-coverage]: https://img.shields.io/scrutinizer/coverage/g/eclipxe13/sepomexphp/master.svg?style=flat-square
 [badge-downloads]: https://img.shields.io/packagist/dt/eclipxe/sepomexphp.svg?style=flat-square
