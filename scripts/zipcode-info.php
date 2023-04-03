@@ -24,9 +24,9 @@ exit(call_user_func(function (string $command, string $zipcodeInput = '', string
 
     try {
         // set the database location
-        $dbfile = __DIR__ . '/../assets/sepomex.db';
+        $dbFile = __DIR__ . '/../assets/sepomex.db';
         // create the PDO Object
-        $pdo = new PDO('sqlite:' . $dbfile, null, null, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+        $pdo = new PDO('sqlite:' . $dbFile, null, null, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
         // create the gateway
         $gateway = new PdoDataGateway($pdo);
         // create the SepomexPhp Object

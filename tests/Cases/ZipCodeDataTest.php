@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * @noinspection PhpUnhandledExceptionInspection
+ */
+
 declare(strict_types=1);
 
 namespace Eclipxe\SepomexPhp\Tests\Cases;

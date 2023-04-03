@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Eclipxe\SepomexPhp\Data\Traits;
 
+use InvalidArgumentException;
+
 trait PropertyIdIntegerTrait
 {
     private int $id;
@@ -16,7 +18,7 @@ trait PropertyIdIntegerTrait
     protected function setId(int $id): void
     {
         if ($id <= 0) {
-            throw new \InvalidArgumentException('Value cannot be less than or equal to zero');
+            throw new InvalidArgumentException('Value cannot be less than or equal to zero');
         }
         $this->id = $id;
     }

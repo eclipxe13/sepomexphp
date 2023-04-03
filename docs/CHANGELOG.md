@@ -20,7 +20,7 @@ El mejor consejo es reimplementar la librería en esta nueva versión.
 
 El origen de los datos estaba disponible desde <http://www.correosdemexico.gob.mx/datosabiertos/cp/cpdescarga.txt>,
 sin embargo, este origen no se ha actualizado. SEPOMEX ahora permite la descarga a través de una aplicación web,
-por lo que tuvo que implementar un *scraper* para obtener el catálogo actualizado desde
+por lo que tuvo que implementar un *scraper* para obtener el catálogo actualizado desde 
 <https://www.correosdemexico.gob.mx/SSLServicios/ConsultaCP/CodigoPostal_Exportar.aspx>.
 
 Se creó el script `scripts/download.php` para descargar y extraer la base de datos de SEPOMEX.

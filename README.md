@@ -9,7 +9,7 @@
 [![Coverage Status][badge-coverage]][coverage]
 [![Total Downloads][badge-downloads]][downloads]
 
-This library is an unofficial version for the Mexicam SEPOMEX data.
+This library is an unofficial version for the Mexican SEPOMEX data.
 
 Some parts of the project are in Spanish since the main consumers of this library would are mexicans.
 Anyhow, all the database, code and other information is in english (that is not my primary language, so forgive me)
@@ -26,13 +26,13 @@ composer require eclipxe/sepomexphp
 
 ```php
 <?php
-// set the database connection using Pdo
-$pdostring = "...";
+/** @var string $pdoString set the database connection using Pdo */
+$pdoString = "...";
 
 // create the SepomexPhp Object
 $sepomex = new \Eclipxe\SepomexPhp\SepomexPhp(
     new \Eclipxe\SepomexPhp\PdoDataGateway\PdoDataGateway(
-        new PDO($pdostring)
+        new PDO($pdoString)
     )
 );
 
@@ -87,8 +87,8 @@ That means:
 
 Anyhow, the data source has been released in 
 <https://datos.gob.mx/busca/dataset/catalogo-nacional-de-codigos-postales/resource/2c5c36de-ffed-4dc6-9beb-66369db3a622>
-by the Mexican goverment using a libre license called [LIBRE USO MX](https://datos.gob.mx/libreusomx),
-and it removes any restrictions from the discraimer.
+by the Mexican government using a libre license called [LIBRE USO MX](https://datos.gob.mx/libreusomx),
+and it removes any restrictions from the disclaimer.
 
 If you run the script `scripts/create-sqlite-from-raw.php` you will create a sqlite database
 with the same information but normalized, the script will download the source if it does not exist.
