@@ -143,7 +143,7 @@ Getting from:
 [badge-php-version]: https://img.shields.io/packagist/php-v/eclipxe/sepomexphp?style=flat-square
 [badge-release]: https://img.shields.io/github/release/eclipxe13/sepomexphp.svg?style=flat-square
 [badge-license]: https://img.shields.io/github/license/eclipxe13/sepomexphp.svg?style=flat-square
-[badge-build]: https://img.shields.io/github/workflow/status/eclipxe13/sepomexphp/build/main?style=flat-square
+[badge-build]: https://img.shields.io/github/actions/workflow/status/eclipxe13/sepomexphp/build.yml?branch=main&style=flat-square
 [badge-quality]: https://img.shields.io/scrutinizer/g/eclipxe13/sepomexphp/master.svg?style=flat-square
 [badge-coverage]: https://img.shields.io/scrutinizer/coverage/g/eclipxe13/sepomexphp/master.svg?style=flat-square
 [badge-downloads]: https://img.shields.io/packagist/dt/eclipxe/sepomexphp.svg?style=flat-square
