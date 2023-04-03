@@ -9,7 +9,7 @@ By participating in this project and its community, you are expected to uphold t
 ## Team members
 
 * [Carlos C Soto](https://github.com/eclipxe13) - original author and maintainer
-* [GitHub constributors](https://github.com/eclipxe13/sepomexphp/graphs/contributors)
+* [GitHub contributors](https://github.com/eclipxe13/sepomexphp/graphs/contributors)
 
 ## Communication Channels
 
@@ -19,7 +19,7 @@ You can find help and discussion in the following places:
 
 ## Reporting Bugs
 
-We track our bugs in our project's [issue tracker](https://github.com/eclipxe13/sepomexphp/issues).
+Bugs are tracked in our project's [issue tracker](https://github.com/eclipxe13/sepomexphp/issues).
 
 When submitting a bug report, please include enough information for us to reproduce the bug.
 A good bug report includes the following sections:
@@ -65,7 +65,7 @@ When you do begin working on your feature, here are some guidelines to consider:
 This project uses different development tools to ensure code style, test and quality (using code analyzers).
 
 ```shell
-# install project direct dependences
+# install project direct dependencies
 composer install
 
 # install development tools
@@ -74,7 +74,7 @@ phive update
 
 ## Check the code style
 
-If you are having issues with coding standars use `php-cs-fixer` and `phpcbf`
+If you are having issues with coding standards use `php-cs-fixer` and `phpcbf`
 
 ```shell
 # using composer
