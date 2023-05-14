@@ -5,6 +5,7 @@ filter:
     - 'vendor/'
 
 build:
+  image: default-bionic
   dependencies:
     override:
       - composer update --no-interaction --prefer-dist
@@ -14,6 +15,8 @@ build:
       tests:
         override:
           - php-scrutinizer-run --enable-security-analysis
-
-tools:
-  external_code_coverage: true
+          - command: php -dzend_extension=xdebug.so -dxdebug.mode=coverage \
+                     vendor/bin/phpunit --verbose --testdox --coverage-clover=coverage.clover
+            coverage:
+              file: coverage.clover
+              format: clover
