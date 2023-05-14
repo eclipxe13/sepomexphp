@@ -23,6 +23,7 @@ Puede ver la guía de implementación en el archivo [CHANGES_VERSION_2.0_TO_3.0.
 - Se actualiza la versión de PHPUnit a 9.5.
 - Se migran las herramientas de desarrollo de `composer` a `phive`.
 - El proyecto ahora se construye en GitHub Workflows en lugar de Travis CI. ¡Gracias Travis CI!.
+- El proyecto ahora se analiza en SonarCloud en lugar de Scrutinizer-CI. ¡Gracias Scrutinizer-CI!.
 
 ## Version 2.0.0 2018-03-09
 

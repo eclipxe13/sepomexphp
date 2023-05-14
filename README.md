@@ -5,8 +5,6 @@
 [![Latest Version][badge-release]][release]
 [![Software License][badge-license]][license]
 [![Build Status][badge-build]][build]
-[![Scrutinizer][badge-quality]][quality]
-[![Coverage Status][badge-coverage]][coverage]
 [![Total Downloads][badge-downloads]][downloads]
 
 This library is an unofficial version for the Mexican SEPOMEX data.
@@ -148,8 +146,6 @@ Getting from:
 [release]: https://github.com/eclipxe13/sepomexphp/releases
 [license]: https://github.com/eclipxe13/sepomexphp/blob/master/LICENSE
 [build]: https://github.com/eclipxe13/sepomexphp/actions/workflows/build.yml?query=branch:master
-[quality]: https://scrutinizer-ci.com/g/eclipxe13/sepomexphp/
-[coverage]: https://scrutinizer-ci.com/g/eclipxe13/sepomexphp/code-structure/master/code-coverage
 [downloads]: https://packagist.org/packages/eclipxe/sepomexphp
 
 [badge-source]: http://img.shields.io/badge/source-eclipxe13/sepomexphp-blue.svg?style=flat-square
@@ -157,6 +153,4 @@ Getting from:
 [badge-release]: https://img.shields.io/github/release/eclipxe13/sepomexphp.svg?style=flat-square
 [badge-license]: https://img.shields.io/github/license/eclipxe13/sepomexphp.svg?style=flat-square
 [badge-build]: https://img.shields.io/github/actions/workflow/status/eclipxe13/sepomexphp/build.yml?branch=master&style=flat-square
-[badge-quality]: https://img.shields.io/scrutinizer/g/eclipxe13/sepomexphp/master.svg?style=flat-square
-[badge-coverage]: https://img.shields.io/scrutinizer/coverage/g/eclipxe13/sepomexphp/master.svg?style=flat-square
 [badge-downloads]: https://img.shields.io/packagist/dt/eclipxe/sepomexphp.svg?style=flat-square
