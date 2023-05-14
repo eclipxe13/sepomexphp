@@ -13,7 +13,7 @@ The new version of this library is compatible with PHP 7.0. It uses strict types
 ## Value objects
 
 In version 1.1 properties of objects where public, now they are value objects,
-this means that you cannot access as properties and also you cannot change its values.
+this means that you cannot access as properties, and also you cannot change its values.
 
 
 ## Import process
@@ -23,7 +23,7 @@ The import process can be made in only one step using `SepomexPhp\Importer\PdoIm
 
 ## Rename states
 
-Some states has their legal names like 'Veracruz de Ignacio de la Llave',
+Some states have their legal names like 'Veracruz de Ignacio de la Llave',
 you can rename any state name by passing an array to the import process
 or calling `SepomexPhp\Importer\PdoImporter::renameStates`.
 

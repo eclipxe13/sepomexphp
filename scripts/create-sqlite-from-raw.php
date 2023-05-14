@@ -1,44 +1,47 @@
 <?php
 
-declare(strict_types=1);
 /**
  * This script is used to create the database using PDO and sqlite
  */
+
+declare(strict_types=1);
+
+use Eclipxe\SepomexPhp\Downloader\Downloader;
+use Eclipxe\SepomexPhp\Importer\PdoImporter;
+
 require_once __DIR__ . '/../vendor/autoload.php';
 
 // escape the global scope
-$returnValue = call_user_func(function () {
+exit(call_user_func(function () {
     try {
         $path = dirname(__DIR__) . '/assets';
-        // create the path if this soes not exists
+        // create the path if this does not exist
         if (! is_dir($path)) {
-            mkdir($path, 0755, true);
+            mkdir($path, permissions: 0755, recursive: true);
         }
         // files
-        $dbfile = $path . '/sepomex.db';
-        $rawfile = $path . '/sepomex.txt';
+        $dbFile = $path . '/sepomex.db';
+        $rawFile = $path . '/sepomex.txt';
 
         // raw file
-        if (! file_exists($rawfile)) {
-            $sourceurl = 'http://www.correosdemexico.gob.mx/datosabiertos/cp/cpdescarga.txt';
-            echo "File $rawfile does not exists, will be downloaded from $sourceurl\n";
-            copy($sourceurl, $rawfile);
+        if (! file_exists($rawFile)) {
+            $downloader = new Downloader();
+            printf("File %s does not exists, will be downloaded from %s\n", $rawFile, $downloader::LINK);
+            $downloader->downloadTo($rawFile);
         }
 
         // create the pdo object
-        $pdo = new \PDO('sqlite:' . $dbfile, null, null, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+        $pdo = new PDO('sqlite:' . $dbFile, options: [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
 
         // create the importer class
-        $importer = new \SepomexPhp\Importer\PdoImporter($pdo);
+        $importer = new PdoImporter($pdo);
 
         // follow this steps
         $importer->createStruct();
-        $importer->import($rawfile, null);
+        $importer->import($rawFile);
         return 0;
-    } catch (\Throwable $exception) {
-        file_put_contents('php://stderr', $exception->getMessage(), FILE_APPEND);
+    } catch (Throwable $exception) {
+        file_put_contents('php://stderr', $exception->getMessage() . PHP_EOL, FILE_APPEND);
         return 1;
     }
-});
-
-exit($returnValue);
+}));

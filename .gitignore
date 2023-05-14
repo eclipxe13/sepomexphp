@@ -1,4 +1,4 @@
-/composer.lock
-/vendor/
 /assets/
-/build/
+/composer.lock
+/tools/
+/vendor/

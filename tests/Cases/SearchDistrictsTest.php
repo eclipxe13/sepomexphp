@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace SepomexPhpTests\Cases;
+namespace Eclipxe\SepomexPhp\Tests\Cases;
 
-use SepomexPhp\District;
-use SepomexPhpTests\TestCase;
+use Eclipxe\SepomexPhp\Data\District;
+use Eclipxe\SepomexPhp\Tests\TestCase;
 
-class SearchDistrictsTest extends TestCase
+final class SearchDistrictsTest extends TestCase
 {
-    public function testSearchDistrictsCount()
+    public function testSearchDistrictsCount(): void
     {
         $sepomex = $this->createSepomexPhp();
 
@@ -22,7 +22,7 @@ class SearchDistrictsTest extends TestCase
         $this->assertCount(1, $sepomex->searchDistricts('Ocampo', ''));
     }
 
-    public function testSearchDistrictsItem()
+    public function testSearchDistrictsItem(): void
     {
         $sepomex = $this->createSepomexPhp();
 
@@ -32,11 +32,11 @@ class SearchDistrictsTest extends TestCase
         }
 
         $item = $list[0];
-        $this->assertContains('Ocampo', $item->name());
-        $this->assertContains('Chiapas', $item->state()->name());
+        $this->assertStringContainsString('Ocampo', $item->name);
+        $this->assertStringContainsString('Chiapas', $item->state->name);
     }
 
-    public function testSearchDistrictsList()
+    public function testSearchDistrictsList(): void
     {
         $sepomex = $this->createSepomexPhp();
 
