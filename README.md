@@ -5,6 +5,10 @@
 [![Latest Version][badge-release]][release]
 [![Software License][badge-license]][license]
 [![Build Status][badge-build]][build]
+[![Reliability][badge-reliability]][reliability]
+[![Maintainability][badge-maintainability]][maintainability]
+[![Code Coverage][badge-coverage]][coverage]
+[![Violations][badge-violations]][violations]
 [![Total Downloads][badge-downloads]][downloads]
 
 This library is an unofficial version for the Mexican SEPOMEX data.
@@ -146,6 +150,10 @@ Getting from:
 [release]: https://github.com/eclipxe13/sepomexphp/releases
 [license]: https://github.com/eclipxe13/sepomexphp/blob/master/LICENSE
 [build]: https://github.com/eclipxe13/sepomexphp/actions/workflows/build.yml?query=branch:master
+[reliability]:https://sonarcloud.io/component_measures?id=eclipxe13_sepomexphp&metric=Reliability
+[maintainability]: https://sonarcloud.io/component_measures?id=eclipxe13_sepomexphp&metric=Maintainability
+[coverage]: https://sonarcloud.io/component_measures?id=eclipxe13_sepomexphp&metric=Coverage
+[violations]: https://sonarcloud.io/project/issues?id=eclipxe13_sepomexphp&resolved=false
 [downloads]: https://packagist.org/packages/eclipxe/sepomexphp
 
 [badge-source]: http://img.shields.io/badge/source-eclipxe13/sepomexphp-blue.svg?style=flat-square
@@ -153,4 +161,8 @@ Getting from:
 [badge-release]: https://img.shields.io/github/release/eclipxe13/sepomexphp.svg?style=flat-square
 [badge-license]: https://img.shields.io/github/license/eclipxe13/sepomexphp.svg?style=flat-square
 [badge-build]: https://img.shields.io/github/actions/workflow/status/eclipxe13/sepomexphp/build.yml?branch=master&style=flat-square
+[badge-reliability]: https://sonarcloud.io/api/project_badges/measure?project=eclipxe13_sepomexphp&metric=reliability_rating
+[badge-maintainability]: https://sonarcloud.io/api/project_badges/measure?project=eclipxe13_sepomexphp&metric=sqale_rating
+[badge-coverage]: https://img.shields.io/sonar/coverage/eclipxe13_sepomexphp/main?logo=sonarcloud&server=https%3A%2F%2Fsonarcloud.io
+[badge-violations]: https://img.shields.io/sonar/violations/eclipxe13_sepomexphp/main?format=long&logo=sonarcloud&server=https%3A%2F%2Fsonarcloud.io
 [badge-downloads]: https://img.shields.io/packagist/dt/eclipxe/sepomexphp.svg?style=flat-square
