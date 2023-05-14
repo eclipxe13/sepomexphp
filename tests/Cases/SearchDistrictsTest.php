@@ -32,8 +32,8 @@ final class SearchDistrictsTest extends TestCase
         }
 
         $item = $list[0];
-        $this->assertStringContainsString('Ocampo', $item->name());
-        $this->assertStringContainsString('Chiapas', $item->state()->name());
+        $this->assertStringContainsString('Ocampo', $item->name);
+        $this->assertStringContainsString('Chiapas', $item->state->name);
     }
 
     public function testSearchDistrictsList(): void

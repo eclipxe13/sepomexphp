@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Eclipxe\SepomexPhp\Downloader;
 
-use Goutte\Client;
 use RuntimeException;
+use Symfony\Component\BrowserKit\HttpBrowser;
 use Symfony\Component\BrowserKit\Response;
 use ZipArchive;
 
@@ -13,27 +13,18 @@ final class Downloader implements DownloaderInterface
 {
     public const LINK = 'https://www.correosdemexico.gob.mx/SSLServicios/ConsultaCP/CodigoPostal_Exportar.aspx';
 
-    private Client $client;
-
-    public function __construct(Client $client = null)
-    {
-        $this->client = $client ?? new Client();
-    }
-
-    public function getClient(): Client
-    {
-        return $this->client;
+    public function __construct(
+        public readonly HttpBrowser $client = new HttpBrowser(),
+    ) {
     }
 
     public function downloadTo(string $destinationFile): void
     {
-        $client = $this->getClient();
-
-        $crawler = $client->request('GET', self::LINK);
+        $crawler = $this->client->request('GET', self::LINK);
         $form = $crawler->selectButton('btnDescarga')->form();
-        $client->submit($form, ['rblTipo' => 'txt']);
+        $this->client->submit($form, ['rblTipo' => 'txt']);
         /** @var Response $response */
-        $response = $client->getResponse();
+        $response = $this->client->getResponse();
 
         if (false === $zipTempFile = tempnam('', '')) {
             throw new RuntimeException('Unable to create a temporary file');

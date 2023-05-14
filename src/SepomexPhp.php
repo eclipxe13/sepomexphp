@@ -7,27 +7,32 @@ namespace Eclipxe\SepomexPhp;
 use Eclipxe\SepomexPhp\Data\District;
 use Eclipxe\SepomexPhp\Data\Locations;
 use Eclipxe\SepomexPhp\Data\ZipCodeData;
+use Eclipxe\SepomexPhp\PdoDataGateway\PdoDataGateway;
+use PDO;
 
 class SepomexPhp
 {
-    protected DataGatewayInterface $gateway;
+    public function __construct(
+        public readonly DataGatewayInterface $gateway,
+        public readonly Factory $factory = new Factory()
+    ) {
+    }
 
-    protected Factory $factory;
-
-    /**
-     * @param DataGatewayInterface $gateway
-     * @param Factory|null $factory Change the object creation factory, if null the internal factory will be instanced
-     */
-    public function __construct(DataGatewayInterface $gateway, Factory $factory = null)
+    public static function createForDatabaseFile(string $databaseFile): self
     {
-        $this->gateway = $gateway;
-        $this->factory = $factory ?? new Factory();
+        $pdo = new PDO(
+            sprintf('sqlite:%s', $databaseFile),
+            options: [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION],
+        );
+        $pdoDataGateway = new PdoDataGateway($pdo);
+        $factory = new Factory();
+        return new self($pdoDataGateway, $factory);
     }
 
     /**
      * Return a ZipCodeData object or null if not found
      * @param string $zipcode
-     * @return ZipCodeData
+     * @return ZipCodeData|null
      */
     public function getZipCodeData(string $zipcode): ?ZipCodeData
     {
@@ -43,10 +48,6 @@ class SepomexPhp
         return $this->factory->newZipCodeData($zipcode, $locations, $district);
     }
 
-    /**
-     * @param string $zipcode
-     * @return Locations
-     */
     public function getLocationsFromZipCode(string $zipcode): Locations
     {
         $locations = [];
@@ -63,13 +64,7 @@ class SepomexPhp
         return new Locations(...$locations);
     }
 
-    /**
-     * @param string $districtName
-     * @param string $stateName
-     * @param int $pageIndex
-     * @param int $pageSize
-     * @return District[]
-     */
+    /** @return District[] */
     public function searchDistricts(
         string $districtName,
         string $stateName,

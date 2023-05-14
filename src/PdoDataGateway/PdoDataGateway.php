@@ -12,49 +12,50 @@ use PDOStatement;
 
 class PdoDataGateway implements DataGatewayInterface
 {
-    protected PDO $pdo;
-
-    public function __construct(PDO $pdo)
+    public function __construct(public readonly PDO $pdo)
     {
-        $this->pdo = $pdo;
     }
 
     public function getZipCodeData(string $zipcode): array
     {
-        $sql = 'select z.id as zipcode, d.id as iddistrict, d.name as districtname,'
-            . ' s.id as idstate, s.name as statename'
-            . ' from zipcodes as z'
-            . ' inner join districts as d on (d.id = z.iddistrict)'
-            . ' inner join states as s on (s.id = d.idstate)'
-            . ' where (z.id = :zipcode)'
-            . ';';
+        $sql = <<< SQL
+            select z.id as zipcode,
+                   d.id as iddistrict, d.name as districtname,
+                   s.id as idstate, s.name as statename
+            from zipcodes as z
+                inner join districts as d on (d.id = z.iddistrict)
+                inner join states as s on (s.id = d.idstate)
+            where (z.id = :zipcode);
+            SQL;
         return $this->fetch($sql, ['zipcode' => $zipcode]);
     }
 
     public function getLocationsFromZipCode(string $zipcode): array
     {
-        $sql = 'select l.id, l.name, t.id as idtype, t.name as typename, c.id as idcity, c.name as cityname'
-            . ' from zipcodes as z'
-            . ' join locationzipcodes as lz on (lz.zipcode = z.id)'
-            . ' join locations as l on (lz.idlocation = l.id)'
-            . ' join locationtypes as t on (l.idlocationtype = t.id)'
-            . ' left join cities as c on (l.idcity = c.id)'
-            . ' where z.id = :zipcode'
-            . ' order by l.name, t.name, c.name'
-            . ';';
+        $sql = <<< SQL
+            select l.id, l.name, t.id as idtype, t.name as typename, c.id as idcity, c.name as cityname
+            from zipcodes as z
+                join locationzipcodes as lz on (lz.zipcode = z.id)
+                join locations as l on (lz.idlocation = l.id)
+                join locationtypes as t on (l.idlocationtype = t.id)
+                left join cities as c on (l.idcity = c.id)
+            where z.id = :zipcode
+            order by l.name, t.name, c.name;
+            SQL;
         return $this->fetchAll($sql, ['zipcode' => $zipcode]);
     }
 
     public function searchDistricts(string $districtName, string $stateName, int $pageIndex, int $pageSize): array
     {
-        $sql = 'select distinct d.id, d.name, s.id as idstate, s.name as statename'
-            . ' from districts as d'
-            . ' join states s on (d.idstate = s.id)'
-            . ' where (d.name like :districtName)'
-            . ' and (s.name like :stateName)'
-            . ' order by s.name, d.name'
-            . ' limit :pageIndex, :pageSize'
-            . ';';
+        $sql = <<< SQL
+            select distinct d.id, d.name, s.id as idstate, s.name as statename
+            from districts as d
+                join states s on (d.idstate = s.id)
+            where (d.name like :districtName)
+              and (s.name like :stateName)
+            order by s.name, d.name
+            limit :pageIndex, :pageSize;
+            SQL;
         $params = [
             'districtName' => '%' . $districtName . '%',
             'stateName' => '%' . $stateName . '%',
@@ -67,9 +68,7 @@ class PdoDataGateway implements DataGatewayInterface
     /**
      * Prepare and execute query with given parameters
      *
-     * @param string $query
      * @param array<string, scalar|null> $parameters
-     * @return PDOStatement
      * @throws DataGatewayQueryException
      */
     private function query(string $query, array $parameters): PDOStatement
@@ -89,7 +88,6 @@ class PdoDataGateway implements DataGatewayInterface
     /**
      * Run query and fetch result
      *
-     * @param string $query
      * @param array<string, string> $parameters
      * @return array<string, scalar|null>
      * @throws DataGatewayQueryException
@@ -105,7 +103,6 @@ class PdoDataGateway implements DataGatewayInterface
     /**
      * Run query and fetch all results
      *
-     * @param string $query
      * @param array<string, scalar|null> $parameters
      * @return array<int, array<string, scalar|null>>
      * @throws DataGatewayQueryException

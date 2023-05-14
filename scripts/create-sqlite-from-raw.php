@@ -17,7 +17,7 @@ exit(call_user_func(function () {
         $path = dirname(__DIR__) . '/assets';
         // create the path if this does not exist
         if (! is_dir($path)) {
-            mkdir($path, 0755, true);
+            mkdir($path, permissions: 0755, recursive: true);
         }
         // files
         $dbFile = $path . '/sepomex.db';
@@ -31,7 +31,7 @@ exit(call_user_func(function () {
         }
 
         // create the pdo object
-        $pdo = new PDO('sqlite:' . $dbFile, null, null, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+        $pdo = new PDO('sqlite:' . $dbFile, options: [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
 
         // create the importer class
         $importer = new PdoImporter($pdo);
@@ -41,7 +41,7 @@ exit(call_user_func(function () {
         $importer->import($rawFile);
         return 0;
     } catch (Throwable $exception) {
-        file_put_contents('php://stderr', $exception->getMessage(), FILE_APPEND);
+        file_put_contents('php://stderr', $exception->getMessage() . PHP_EOL, FILE_APPEND);
         return 1;
     }
 }));

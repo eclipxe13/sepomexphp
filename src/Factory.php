@@ -19,12 +19,6 @@ use Eclipxe\SepomexPhp\Data\ZipCodeData;
  */
 class Factory
 {
-    /**
-     * @param string $zipcode
-     * @param Locations $locations
-     * @param District $district
-     * @return ZipCodeData
-     */
     public function newZipCodeData(string $zipcode, Locations $locations, District $district): ZipCodeData
     {
         return new ZipCodeData($zipcode, $locations, $district);

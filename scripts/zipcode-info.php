@@ -10,54 +10,74 @@
 
 declare(strict_types=1);
 
-use Eclipxe\SepomexPhp\PdoDataGateway\PdoDataGateway;
 use Eclipxe\SepomexPhp\SepomexPhp;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
 exit(call_user_func(function (string $command, string $zipcodeInput = '', string ...$otherArguments) {
     // exit if no arguments
-    if ('' === $zipcodeInput || [] !== $otherArguments) {
-        echo 'Usage: ', $command, ' zipcode', PHP_EOL;
-        return 1;
+
+    $askForHelp = in_array($zipcodeInput, ['--help', '-h', 'help']);
+    if ($askForHelp || '' === $zipcodeInput || [] !== $otherArguments) {
+        echo 'Usage: ', basename($command), ' zipcode', PHP_EOL;
+        return $askForHelp ? 0 : 1;
     }
 
     try {
         // set the database location
         $dbFile = __DIR__ . '/../assets/sepomex.db';
-        // create the PDO Object
-        $pdo = new PDO('sqlite:' . $dbFile, null, null, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
-        // create the gateway
-        $gateway = new PdoDataGateway($pdo);
         // create the SepomexPhp Object
-        $sepomex = new SepomexPhp($gateway);
+        $sepomex = SepomexPhp::createForDatabaseFile($dbFile);
 
         // query a zip code
         $zipcode = $sepomex->getZipCodeData($zipcodeInput);
         if (null === $zipcode) {
-            echo 'Not found: ', $zipcodeInput, PHP_EOL;
-            return 1;
+            throw new Exception(sprintf('Not found: %s', $zipcodeInput));
         }
-        $locations = $zipcode->locations();
-        $cities = $locations->cities();
+
+        $locations = $zipcode->locations;
+        $cities = $locations->cities;
         $citiesCount = $cities->count();
 
-        // display information
-        echo '      ZipCode: ', $zipcode->format(), PHP_EOL;
-        echo '     District: ', $zipcode->district()->name(), PHP_EOL;
-        echo '        State: ', $zipcode->state()->name(), PHP_EOL;
+        // create information summary
+        /** @var array<array{string, string}> $table */
+        $table = [
+            ['ZipCode', $zipcode->formatted],
+            ['District', $zipcode->district->name],
+            ['State', $zipcode->state->name],
+        ];
+
         if ($citiesCount > 1) {
-            echo '       Cities: ', $citiesCount, PHP_EOL;
+            $table[] = ['Cities', sprintf('%d cities', $citiesCount)];
             foreach ($cities as $city) {
-                echo '               ', $city->name(), PHP_EOL;
+                $table[] = ['', $city->name];
             }
+        } elseif (1 === $citiesCount) {
+            $table[] = ['City', $cities->first()->name];
         } else {
-            echo '         City: ', ($citiesCount > 0) ? $cities->byIndex(0)->name() : '(Ninguna)', PHP_EOL;
+            $table[] = ['City', '(none)'];
         }
-        echo '    Locations: ', $locations->count() ?: '(Ninguna)', PHP_EOL;
-        foreach ($locations as $location) {
-            echo '               ', $location->getFullName(), PHP_EOL;
+
+        $locationsCount = $locations->count();
+        if ($locationsCount > 1) {
+            $table[] = ['Locations', sprintf('%d locations', $locationsCount)];
+            foreach ($locations as $location) {
+                $table[] = ['', sprintf('%s (%s)', $location->name, $location->type->name)];
+            }
+        } elseif (1 === $locationsCount) {
+            $location = $locations->first();
+            $table[] = ['Location', sprintf('%s (%s)', $location->name, $location->type->name)];
+        } else {
+            $table[] = ['Locations', '(none)'];
         }
+
+        // print table
+        $firstColumnLength = max(...array_map(fn (array $row): int => mb_strlen($row[0]), $table)) + 3;
+        foreach ($table as $row) {
+            $text = '' !== $row[0] ? sprintf('%s: ', $row[0]) : '';
+            echo str_pad($text, $firstColumnLength, ' ', STR_PAD_LEFT), $row[1], PHP_EOL;
+        }
+
         return 0;
     } catch (Throwable $exception) {
         file_put_contents('php://stderr', $exception->getMessage() . PHP_EOL, FILE_APPEND);

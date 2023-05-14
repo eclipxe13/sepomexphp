@@ -4,44 +4,23 @@ declare(strict_types=1);
 
 namespace Eclipxe\SepomexPhp\Data;
 
-use Eclipxe\SepomexPhp\Data\Traits\PropertyCityTrait;
-use Eclipxe\SepomexPhp\Data\Traits\PropertyDistrictTrait;
-use Eclipxe\SepomexPhp\Data\Traits\PropertyIdIntegerTrait;
-use Eclipxe\SepomexPhp\Data\Traits\PropertyNameStringTrait;
+use JsonSerializable;
 
-class Location
+class Location implements JsonSerializable, ExportableAsArray
 {
-    use PropertyIdIntegerTrait;
-    use PropertyNameStringTrait;
-    use PropertyDistrictTrait;
-    use PropertyCityTrait;
-
-    private LocationType $type;
-
-    public function __construct(int $id, string $name, LocationType $type, District $district = null, City $city = null)
-    {
-        $this->setId($id);
-        $this->setName($name);
-        $this->type = $type;
-        $this->setDistrict($district);
-        $this->setCity($city);
-    }
-
-    public function type(): LocationType
-    {
-        return $this->type;
-    }
-
-    public function getFullName(): string
-    {
-        return $this->name() . ' (' . $this->type()->name() . ')';
+    public function __construct(
+        public readonly int $id,
+        public readonly string $name,
+        public readonly LocationType $type,
+        public readonly District|null $district = null,
+        public readonly City|null $city = null
+    ) {
     }
 
     /**
      * @return array{
      *      id: int,
      *      name: string,
-     *      fullname: string,
      *      type: array{id: int, name: string},
      *      district: null|array{id: int, name: string, state: array{id: int, name: string}},
      *      city: null|array{id: int, name: string}
@@ -50,12 +29,31 @@ class Location
     public function asArray(): array
     {
         return [
-            'id' => $this->id(),
-            'name' => $this->name(),
-            'fullname' => $this->getFullName(),
-            'type' => $this->type()->asArray(),
-            'district' => $this->hasDistrict() ? $this->district()->asArray() : null,
-            'city' => $this->hasCity() ? $this->city()->asArray() : null,
+            'id' => $this->id,
+            'name' => $this->name,
+            'type' => $this->type->asArray(),
+            'district' => $this->district?->asArray(),
+            'city' => $this->city?->asArray(),
+        ];
+    }
+
+    /**
+     * @return array{
+     *      id: int,
+     *      name: string,
+     *      type: LocationType,
+     *      district: District|null,
+     *      city: City|null
+     *  }
+     */
+    public function jsonSerialize(): array
+    {
+        return [
+            'id' => $this->id,
+            'name' => $this->name,
+            'type' => $this->type,
+            'district' => $this->district,
+            'city' => $this->city,
         ];
     }
 }

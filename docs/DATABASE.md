@@ -65,8 +65,8 @@ podemos decir que un asentamiento pertenece en su totalidad o no a una ciudad.
 
 ### Zonas
 
-Hay tres zonas: Rural, semiurbano y urbano y no viene especificada su clave.
-No encuentro en qué sentido esta información podría ser útil.
+Hay tres zonas: Rural, semi-urbano y urbano y no viene especificada su clave.
+No encuentro en qué sentido podría ser útil esta información.
 
 ### Asentamiento
 
@@ -83,9 +83,9 @@ Sin embargo, para cada uno de estos registros le corresponden varios códigos po
 
 Los tipos de asentamiento juegan el papel de un prefijo para la colonia (asentamiento),
 por ejemplo: en la delegación Álvaro Obregón de la Ciudad de México
-existen dos asentamientos llamados "Molino de Santo Domingo", solo que uno es "Unidad habitacional" y el otro es "Colonia".
+existen dos asentamientos llamados "Molino de Santo Domingo", donde uno es "Unidad habitacional" y el otro es "Colonia".
 
-Como esta base de datos es por SEPOMEX y no por INEGI, cuenta con un tipo de asentamiento llamado "Gran usuario",
+Como esta base de datos es creada por SEPOMEX y no por INEGI, cuenta con un tipo de asentamiento llamado "Gran usuario",
 no es información geográfica y representa únicamente a los intereses de SEPOMEX, pero vaya, es un código postal.
 
 Por lo anterior, un asentamiento debería llamarse asentamiento + tipo de asentamiento, por ejemplo:
@@ -98,9 +98,9 @@ Por lo anterior, un asentamiento debería llamarse asentamiento + tipo de asenta
 * Los campos `d_CP` y `C_oficina` son idénticos, 
   se refiere a la oficina de SEPOMEX que les reparte a un código postal, 
   no hay una descripción de su ubicación o su nombre así que podemos considerar no nos sirve.
-* El campo `c_CP` es un campo vacío
+* El campo `c_CP` es un campo vacío.
 * El campo `id_asenta_cpcons` es un consecutivo de códigos postales, 
-  algo así como una llave autonumérica, encontraremos varios registros 
+  algo así como una llave autonumerada, encontraremos varios registros 
   en donde lo único que cambia es esta clave y los otros campos: asentamiento, tipo de asentamiento, 
   municipio y estado son los mismos.
 
@@ -117,11 +117,11 @@ y de esa forma agilizar las consultas.
 
 Gracias a esta base de datos podríamos saber, por ejemplo:
 
-* Los estados de México
-* Para un estado, las ciudades que lo conforman
-* Para un estado, los municipios que lo conforman
-* Para una ciudad, qué municipios están incluídos
-* Las colonias (asentamientos) que conforman un municipio
+* Los estados de México.
+* Para un estado, las ciudades que lo conforman.
+* Para un estado, los municipios que lo conforman.
+* Para una ciudad, qué municipios están incluidos.
+* Las colonias (asentamientos) que conforman un municipio.
 
 ## Estructura
 
@@ -147,8 +147,8 @@ Existe un script `create-sqlite-from-raw.php` que toma el archivo de texto de se
 y a partir de él crea una base de datos de sqlite.
 
 1. Crear las estructuras
-1. Leer cada una de las líneas de texto e insertarlas en la tabla raw
-1. Llenar por consultas de SQL las tablas
+2. Leer cada una de las líneas de texto e insertarlas en la tabla raw
+3. Llenar por consultas de SQL las tablas
 
 ### Consultas para crear la estructura
 
@@ -167,31 +167,31 @@ CREATE TABLE locationzipcodes (idlocation integer not null, zipcode integer not 
 ```sql
 
 -- states (estados)
-INSERT INTO states
+INSERT INTO states (id, name)
     SELECT DISTINCT CAST(c_estado AS INTEGER) as id, d_estado as name FROM raw ORDER BY c_estado;
 -- districts (municipios) 
-INSERT INTO districts
-    SELECT DISTINCT null as id, CAST(c_estado AS INTEGER) as idstate, d_mnpio as name, CAST(c_mnpio AS INTEGER) as idraw FROM raw ORDER BY c_estado, c_mnpio;
+INSERT INTO districts (idstate, name, idraw) 
+    SELECT DISTINCT CAST(c_estado AS INTEGER) as idstate, d_mnpio as name, CAST(c_mnpio AS INTEGER) as idraw FROM raw ORDER BY c_estado, c_mnpio;
 -- cities (ciudades)
-INSERT INTO cities
-    SELECT DISTINCT null as id, CAST(c_estado AS INTEGER) as idstate, d_ciudad as name, CAST(c_cve_ciudad AS INTEGER) as idraw FROM raw WHERE (d_ciudad <> "") ORDER BY c_estado, c_cve_ciudad;
+INSERT INTO cities (idstate, name, idraw)
+    SELECT DISTINCT CAST(c_estado AS INTEGER) as idstate, d_ciudad as name, CAST(c_cve_ciudad AS INTEGER) as idraw FROM raw WHERE (d_ciudad <> '') ORDER BY c_estado, c_cve_ciudad;
 -- locationtypes (tipo de asentamiento)
-INSERT INTO locationtypes
+INSERT INTO locationtypes (id, name)
     SELECT DISTINCT CAST(c_tipo_asenta AS INTEGER) AS id, d_tipo_asenta AS name FROM raw ORDER BY c_tipo_asenta;
 -- locations (asentamientos)
-INSERT INTO locations
-    SELECT DISTINCT NULL AS id, t.id as idlocationtype, d.id AS iddistrict, c.id AS idcity, d_asenta AS name
+INSERT INTO locations (idlocationtype, iddistrict, idcity, name)
+    SELECT DISTINCT t.id as idlocationtype, d.id AS iddistrict, c.id AS idcity, d_asenta AS name
     FROM raw AS r
     INNER JOIN locationtypes as t ON (t.name = r.d_tipo_asenta)
     INNER JOIN districts as d ON (d.idraw = CAST(c_mnpio AS INTEGER) AND d.idstate = CAST(c_estado AS INTEGER))
     LEFT JOIN cities as c ON (c.idraw = CAST(c_cve_ciudad AS INTEGER) AND c.idstate = CAST(c_estado AS INTEGER));
 -- zipcodes (codigos postales)
-INSERT INTO zipcodes
+INSERT INTO zipcodes (id, iddistrict)
     SELECT DISTINCT CAST(d_codigo AS INTEGER) AS id, d.id AS iddistrict
     FROM raw AS r
     INNER JOIN districts AS d ON (d.idraw = CAST(c_mnpio AS INTEGER) AND d.idstate = CAST(c_estado AS INTEGER));
 -- locationzipcodes (relación N a N de asentamientos y códigos postales)
-INSERT INTO locationzipcodes
+INSERT INTO locationzipcodes (idlocation, zipcode)
     SELECT DISTINCT l.id AS idlocation, CAST(d_codigo AS INTEGER) AS zipcode
     FROM raw AS r
     INNER JOIN locationtypes AS t ON (t.name = r.d_tipo_asenta)

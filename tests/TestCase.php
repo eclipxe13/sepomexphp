@@ -19,43 +19,36 @@ abstract class TestCase extends \PHPUnit\Framework\TestCase
 
     protected function createSepomexPhp(): SepomexPhp
     {
-        return new SepomexPhp(new PdoDataGateway($this->pdo($this->dbfile())));
+        return new SepomexPhp(new PdoDataGateway($this->pdo()));
     }
 
-    public static function dbfile(): string
-    {
-        return static::filePath('test.db');
-    }
-
-    public function pdo(string $dbfile = ''): PDO
+    public function pdo(string $source = ''): PDO
     {
         if (null === $this->pdo) {
-            $this->pdo = $this->createPdo($dbfile);
+            $this->pdo = $this->createPdo($source);
         }
         return $this->pdo;
     }
 
-    protected function createPdo(string $dbfile): PDO
+    protected function createPdo(string $source): PDO
     {
-        if ('' === $dbfile) {
-            $dbfile = $this->dbfile();
-        }
-        return new PDO('sqlite:' . $dbfile, null, null, [
+        $source = $source ?: static::filePath('test.db');
+        return new PDO('sqlite:' . $source, options: [
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         ]);
     }
 
     /**
-     * @param string $sql
      * @param array<string, string>|null $parameters
-     * @return mixed|null
+     * @return scalar|null
+     * @noinspection PhpMissingReturnTypeInspection
      */
     protected function queryOne(string $sql, array $parameters = null)
     {
         $stmt = $this->pdo()->prepare($sql);
         $stmt->execute($parameters);
         $fetched = $stmt->fetch(PDO::FETCH_NUM);
-        if (is_array($fetched) && isset($fetched[0])) {
+        if (is_array($fetched) && isset($fetched[0]) && is_scalar($fetched[0])) {
             return $fetched[0];
         }
         return null;

@@ -4,49 +4,26 @@ declare(strict_types=1);
 
 namespace Eclipxe\SepomexPhp\Data;
 
-use Eclipxe\SepomexPhp\Data\Traits\PropertyDistrictTrait;
-use Eclipxe\SepomexPhp\Data\Traits\PropertyLocationsTrait;
-use InvalidArgumentException;
+use Eclipxe\SepomexPhp\Internal\DataValidation;
+use JsonSerializable;
 
-class ZipCodeData
+class ZipCodeData implements JsonSerializable, ExportableAsArray
 {
-    use PropertyLocationsTrait;
-    use PropertyDistrictTrait;
+    public readonly string $formatted;
 
-    private string $zipcode;
+    public readonly State $state;
 
-    private string $formatted;
+    public readonly Cities $cities;
 
-    /**
-     * @param string $zipcode
-     * @param Locations $locations
-     * @param District $district
-     * @throws InvalidArgumentException when zipcode is not 4 or 5 digits
-     */
-    public function __construct(string $zipcode, Locations $locations, District $district)
-    {
-        if (! preg_match('/^\d{4,5}$/', $zipcode)) {
-            throw new InvalidArgumentException('Zipcode must be 4 to 5 digits');
-        }
-        $this->zipcode = $zipcode;
+    public function __construct(
+        public readonly string $zipcode,
+        public readonly Locations $locations,
+        public readonly District $district,
+    ) {
+        DataValidation::validateZipCode($this->zipcode);
         $this->formatted = str_pad($this->zipcode, 5, '0', STR_PAD_LEFT);
-        $this->setLocations($locations);
-        $this->setDistrict($district);
-    }
-
-    public function zipcode(): string
-    {
-        return $this->zipcode;
-    }
-
-    public function format(): string
-    {
-        return $this->formatted;
-    }
-
-    public function state(): State
-    {
-        return $this->district()->state();
+        $this->state = $this->district->state;
+        $this->cities = $this->locations->cities;
     }
 
     /**
@@ -55,7 +32,6 @@ class ZipCodeData
      *     locations: array<array{
      *         id: int,
      *         name: string,
-     *         fullname: string,
      *         type: array{id: int, name: string},
      *         district: null|array{id: int, name: string, state: array{id: int, name: string}},
      *         city: null|array{id: int, name: string}
@@ -67,13 +43,32 @@ class ZipCodeData
      */
     public function asArray(): array
     {
-        $locations = $this->locations();
         return [
-            'zipcode' => $this->zipcode(),
-            'locations' => $locations->asArray(),
-            'cities' => $locations->cities()->asArray(),
-            'district' => $this->district()->asArray(),
-            'state' => $this->state()->asArray(),
+            'zipcode' => $this->zipcode,
+            'locations' => $this->locations->asArray(),
+            'cities' => $this->cities->asArray(),
+            'district' => $this->district->asArray(),
+            'state' => $this->state->asArray(),
+        ];
+    }
+
+    /**
+     * @return array{
+     *     zipcode: string,
+     *     locations: Locations,
+     *     cities: Cities,
+     *     district: District,
+     *     state: State
+     * }
+     */
+    public function jsonSerialize(): array
+    {
+        return [
+            'zipcode' => $this->zipcode,
+            'locations' => $this->locations,
+            'cities' => $this->cities,
+            'district' => $this->district,
+            'state' => $this->state,
         ];
     }
 }

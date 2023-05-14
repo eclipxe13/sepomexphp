@@ -4,30 +4,37 @@ declare(strict_types=1);
 
 namespace Eclipxe\SepomexPhp\Data;
 
-use Eclipxe\SepomexPhp\Data\Traits\PropertyIdIntegerTrait;
-use Eclipxe\SepomexPhp\Data\Traits\PropertyNameStringTrait;
-use Eclipxe\SepomexPhp\Data\Traits\PropertyStateTrait;
+use Eclipxe\SepomexPhp\Internal\DataValidation;
+use JsonSerializable;
 
-class District
+class District implements JsonSerializable, ExportableAsArray
 {
-    use PropertyIdIntegerTrait;
-    use PropertyNameStringTrait;
-    use PropertyStateTrait;
-
-    public function __construct(int $id, string $name, State $state)
-    {
-        $this->setId($id);
-        $this->setName($name);
-        $this->setState($state);
+    public function __construct(
+        public readonly int $id,
+        public readonly string $name,
+        public readonly State $state,
+    ) {
+        DataValidation::validateArgumentId($this->id);
+        DataValidation::validateName($this->name);
     }
 
     /** @return array{id: int, name: string, state: array{id: int, name: string}} */
     public function asArray(): array
     {
         return [
-            'id' => $this->id(),
-            'name' => $this->name(),
-            'state' => $this->state()->asArray(),
+            'id' => $this->id,
+            'name' => $this->name,
+            'state' => $this->state->asArray(),
+        ];
+    }
+
+    /** @return array{id: int, name: string, state: State} */
+    public function jsonSerialize(): array
+    {
+        return [
+            'id' => $this->id,
+            'name' => $this->name,
+            'state' => $this->state,
         ];
     }
 }

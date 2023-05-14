@@ -11,8 +11,8 @@
 
 This library is an unofficial version for the Mexican SEPOMEX data.
 
-Some parts of the project are in Spanish since the main consumers of this library would are mexicans.
-Anyhow, all the database, code and other information is in english (that is not my primary language, so forgive me)
+Some parts of the project are in Spanish since the main consumers of this library are mexicans.
+Anyhow, all the database, code and other information is in english.
 
 ## Installation
 
@@ -24,6 +24,19 @@ composer require eclipxe/sepomexphp
 
 ## Usage
 
+Using a Sqlite3 database file created by the library:
+
+```php
+<?php
+/** @var string $databaseFilename set the database file location */
+$sepomex = \Eclipxe\SepomexPhp\SepomexPhp::createForDatabaseFile($databaseFilename);
+
+// query a zip code
+$zipcode = $sepomex->getZipCodeData('86100');
+```
+
+Using your own PDO connection:
+
 ```php
 <?php
 /** @var string $pdoString set the database connection using Pdo */
@@ -32,7 +45,7 @@ $pdoString = "...";
 // create the SepomexPhp Object
 $sepomex = new \Eclipxe\SepomexPhp\SepomexPhp(
     new \Eclipxe\SepomexPhp\PdoDataGateway\PdoDataGateway(
-        new PDO($pdoString)
+        new \PDO($pdoString)
     )
 );
 
@@ -42,14 +55,14 @@ $zipcode = $sepomex->getZipCodeData((int) $argv[1]);
 
 Also, check the `zipcode-info.php` script. And `ZipCodeDataTest.php` test.
 
-If you only want to download the source file from SEPOMEX, check `scripts/download.php`.
+If you only want to download the source file from SEPOMEX, check script file `scripts/download.php`.
 
 ```php
 <?php
 /**
  * @var string $destinationFile is the path where the destination file will be located. 
  */
-$downloader = new Eclipxe\SepomexPhp\Downloader\Downloader();
+$downloader = new \Eclipxe\SepomexPhp\Downloader\Downloader();
 printf("Download from %s to %s\n", $downloader::LINK, $destinationFile);
 $downloader->downloadTo($destinationFile);
 ```
@@ -62,15 +75,15 @@ If you want to import the source file from SEPOMEX into your own SQLite3 databas
  * @var PDO $pdo The PDO connection to your database.
  * @var string $sourceFile The path to the SEPOMEX database in TXT format. 
  */
-$importer = new Eclipxe\SepomexPhp\Importer\PdoImporter($pdo);
+$importer = new \Eclipxe\SepomexPhp\Importer\PdoImporter($pdo);
 // drop tables if existed, create tables.
 $importer->createStruct();
 // perform data import
 $importer->import($sourceFile);
 ```
 
-Do you have your own dataset of Sepomex? You can extend this library, just create `DataGatewayInterface` that
-implements the methods and get the data from anywhere.
+Do you have your own dataset of Sepomex? Then you can extend this library,
+just create `DataGatewayInterface` that implements the methods and get the data from anywhere.
 
 ## About the SEPOMEX information (as of 2018-02-02)
 
@@ -124,7 +137,7 @@ and licensed for use under the MIT License (MIT). Please see [LICENSE][] for mor
 "Tabla de Códigos Postales y asentamientos humanos" published by "Correos de México".
 Getting from:
 - Since 2017-01-25 <http://www.correosdemexico.gob.mx/datosabiertos/cp/cpdescarga.txt>
-- Since 2022-06-14 <https://www.correosdemexico.gob.mx/SSLServicios/ConsultaCP/CodigoPostal_Exportar.aspx>
+- Since 2023-05-13 <https://www.correosdemexico.gob.mx/SSLServicios/ConsultaCP/CodigoPostal_Exportar.aspx>
 
 [contributing]: https://github.com/eclipxe13/sepomexphp/blob/master/CONTRIBUTING.md
 [changelog]: https://github.com/eclipxe13/sepomexphp/blob/master/docs/CHANGELOG.md

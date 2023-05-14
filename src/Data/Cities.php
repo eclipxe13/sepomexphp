@@ -7,6 +7,7 @@ namespace Eclipxe\SepomexPhp\Data;
 use ArrayIterator;
 use Countable;
 use IteratorAggregate;
+use JsonSerializable;
 use OutOfRangeException;
 use Traversable;
 
@@ -15,14 +16,14 @@ use Traversable;
  *
  * @implements IteratorAggregate<City>
  */
-class Cities implements IteratorAggregate, Countable
+class Cities implements IteratorAggregate, Countable, JsonSerializable, ExportableAsArray
 {
     /** @var City[] */
     private array $collection;
 
     public function __construct(City ...$city)
     {
-        $this->collection = $city;
+        $this->collection = array_values($city);
     }
 
     /** @return Traversable<City> */
@@ -34,6 +35,11 @@ class Cities implements IteratorAggregate, Countable
     public function count(): int
     {
         return count($this->collection);
+    }
+
+    public function first(): City
+    {
+        return $this->byIndex(0);
     }
 
     public function byIndex(int $index): City
@@ -51,5 +57,11 @@ class Cities implements IteratorAggregate, Countable
             fn (City $city): array => $city->asArray(),
             $this->collection
         );
+    }
+
+    /** @return City[] */
+    public function jsonSerialize(): array
+    {
+        return $this->collection;
     }
 }

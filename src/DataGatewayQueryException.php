@@ -9,29 +9,22 @@ use Throwable;
 
 final class DataGatewayQueryException extends RuntimeException
 {
-    private string $query;
-
-    /** @var array<string, scalar|null> */
-    private array $parameters;
-
     /**
-     * @param string $message
-     * @param string $query
      * @param array<string, scalar|null> $parameters
      * @param Throwable|null $previous
      */
-    public function __construct(string $message, string $query, array $parameters, Throwable $previous = null)
-    {
-        parent::__construct($message, 0, $previous);
-        $this->query = $query;
-        $this->parameters = $parameters;
+    public function __construct(
+        string $message,
+        private readonly string $query,
+        private readonly array $parameters,
+        Throwable $previous = null
+    ) {
+        parent::__construct($message, previous: $previous);
     }
 
     /**
-     * @param string $query
      * @param array<string, scalar|null> $parameters
      * @param Throwable|null $previous
-     * @return self
      */
     public static function new(string $query, array $parameters, Throwable $previous = null): self
     {

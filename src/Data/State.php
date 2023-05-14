@@ -4,30 +4,31 @@ declare(strict_types=1);
 
 namespace Eclipxe\SepomexPhp\Data;
 
-use Eclipxe\SepomexPhp\Data\Traits\PropertyIdIntegerTrait;
-use Eclipxe\SepomexPhp\Data\Traits\PropertyNameStringTrait;
+use JsonSerializable;
 
-class State
+class State implements JsonSerializable, ExportableAsArray
 {
-    use PropertyIdIntegerTrait;
-    use PropertyNameStringTrait;
-
-    /**
-     * @param int $id
-     * @param string $name
-     */
-    public function __construct(int $id, string $name)
-    {
-        $this->setId($id);
-        $this->setName($name);
+    public function __construct(
+        public readonly int $id,
+        public readonly string $name,
+    ) {
     }
 
     /** @return array{id: int, name: string} */
     public function asArray(): array
     {
         return [
-            'id' => $this->id(),
-            'name' => $this->name(),
+            'id' => $this->id,
+            'name' => $this->name,
+        ];
+    }
+
+    /** @return array{id: int, name: string} */
+    public function jsonSerialize(): array
+    {
+        return [
+            'id' => $this->id,
+            'name' => $this->name,
         ];
     }
 }

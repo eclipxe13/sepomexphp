@@ -1,5 +1,7 @@
 <?php
 
+/** @noinspection SqlWithoutWhere */
+
 declare(strict_types=1);
 
 namespace Eclipxe\SepomexPhp\Importer;
@@ -14,44 +16,19 @@ use SplFileObject;
  */
 class PdoImporter
 {
-    private PDO $pdo;
-
-    public function __construct(PDO $pdo)
+    public function __construct(private readonly PDO $pdo)
     {
-        $this->pdo = $pdo;
-    }
-
-    /**
-     * Retrieve a list of common states renames, like 'Veracruz de Ignacio de la Llave' to 'Veracruz'
-     *
-     * @return array<string, string>
-     */
-    public static function commonStatesRename(): array
-    {
-        return [
-            'Coahuila de Zaragoza' => 'Coahuila',
-            'Michoacán de Ocampo' => 'Michoacán',
-            'Veracruz de Ignacio de la Llave' => 'Veracruz',
-            // 'México' => 'Estado de México',
-        ];
     }
 
     /**
      * Do the importation process from a raw file.
      * It is expected that the data structure is already created.
-     *
-     * @param string $rawfile
-     * @param array<string, string>|null $statesRename if null will use the common set of renames
-     * @see commonStatesRename
      */
-    public function import(string $rawfile, array $statesRename = null): void
+    public function import(string $filename, ?RenameRules $renameStatesRules = null): void
     {
-        if (null === $statesRename) {
-            $statesRename = $this->commonStatesRename();
-        }
-        $this->importRawTxt($rawfile);
+        $this->importRawTxt($filename);
         $this->populateStates();
-        $this->renameStates($statesRename);
+        $this->renameStates($renameStatesRules ?? RenameRules::createDefault());
         $this->populateDistricts();
         $this->populateCities();
         $this->populateZipCodes();
@@ -63,39 +40,92 @@ class PdoImporter
 
     public function createStruct(): void
     {
-        $commands = [
+        $this->execute(
             // raw
             'DROP TABLE IF EXISTS raw;',
-            'CREATE TABLE raw (d_codigo text, d_asenta text, d_tipo_asenta text, d_mnpio text, d_estado text,'
-                . ' d_ciudad text, d_cp text, c_estado text, c_oficina text, c_cp text, c_tipo_asenta text,'
-                . ' c_mnpio text, id_asenta_cpcons text, d_zona text, c_cve_ciudad text);',
+            <<< SQL
+                CREATE TABLE raw (
+                    d_codigo text,
+                    d_asenta text,
+                    d_tipo_asenta text,
+                    d_mnpio text,
+                    d_estado text,
+                    d_ciudad text,
+                    d_cp text,
+                    c_estado text,
+                    c_oficina text,
+                    c_cp text,
+                    c_tipo_asenta text,
+                    c_mnpio text,
+                    id_asenta_cpcons text,
+                    d_zona text,
+                    c_cve_ciudad text
+                );
+                SQL,
             // states
             'DROP TABLE IF EXISTS states;',
-            'CREATE TABLE states (id integer primary key not null, name text not null);',
-            // districts (autonumeric)
+            <<< SQL
+                CREATE TABLE states (
+                    id integer primary key not null,
+                    name text not null
+                );
+                SQL,
+            // districts (autoincrement)
             'DROP TABLE IF EXISTS districts;',
-            'CREATE TABLE districts (id integer primary key autoincrement not null, idstate integer not null,'
-            . ' name text not null, idraw text);',
-            // cities (autonumeric)
+            <<< SQL
+                CREATE TABLE districts (
+                    id integer primary key autoincrement not null,
+                    idstate integer not null,
+                    name text not null,
+                    idraw text
+                );
+                SQL, // cities (autoincrement)
             'DROP TABLE IF EXISTS cities;',
-            'CREATE TABLE cities (id integer primary key autoincrement not null, idstate integer not null,'
-            . ' name text not null, idraw text);',
+            <<< SQL
+                CREATE TABLE cities (
+                    id integer primary key autoincrement not null,
+                    idstate integer not null,
+                    name text not null,
+                    idraw text
+                );
+                SQL,
             // locationtypes
             'DROP TABLE IF EXISTS locationtypes;',
-            'CREATE TABLE locationtypes (id integer primary key not null, name text not null);',
+            <<< SQL
+                CREATE TABLE locationtypes (
+                    id integer primary key not null,
+                    name text not null
+                );
+                SQL,
             // locations
             'DROP TABLE IF EXISTS locations;',
-            'CREATE TABLE locations (id integer primary key autoincrement not null, idlocationtype integer not null,'
-            . ' iddistrict integer not null, idcity integer default null, name text not null);',
+            <<< SQL
+                CREATE TABLE locations (
+                    id integer primary key autoincrement not null,
+                    idlocationtype integer not null,
+                    iddistrict integer not null,
+                    idcity integer default null,
+                    name text not null
+                );
+                SQL,
             // zipcodes
             'DROP TABLE IF EXISTS zipcodes;',
-            'CREATE TABLE zipcodes (id integer primary key not null, iddistrict int not null);',
+            <<< SQL
+                CREATE TABLE zipcodes (
+                    id integer primary key not null,
+                    iddistrict int not null
+                );
+                SQL,
             // locationzipcodes
             'DROP TABLE IF EXISTS locationzipcodes;',
-            'CREATE TABLE locationzipcodes (idlocation integer not null, zipcode integer not null,'
-            . ' primary key(idlocation, zipcode));',
-        ];
-        $this->execute(...$commands);
+            <<< SQL
+                CREATE TABLE locationzipcodes (
+                    idlocation integer not null,
+                    zipcode integer not null,
+                    primary key(idlocation, zipcode)
+                );
+                SQL,
+        );
     }
 
     public function importRawTxt(string $filename): void
@@ -103,10 +133,11 @@ class PdoImporter
         if (! file_exists($filename) || ! is_readable($filename)) {
             throw new RuntimeException("File $filename not found or not readable");
         }
+        /** @noinspection SqlInsertValues */
         $sqlInsert = 'INSERT INTO raw VALUES (' . trim(str_repeat('?,', 15), ',') . ');';
-        $stmt = $this->pdo->prepare($sqlInsert);
+        $stmtInsert = $this->pdo->prepare($sqlInsert);
         $this->pdo->beginTransaction();
-        $this->pdo->exec('DELETE FROM raw');
+        $this->pdo->exec('DELETE FROM raw;');
         $source = new SplFileObject($filename, 'r');
         foreach ($source as $i => $line) {
             // discard first lines
@@ -114,113 +145,119 @@ class PdoImporter
                 continue;
             }
             $values = explode('|', strval(iconv('iso-8859-1', 'utf-8', $line)));
-            $stmt->execute($values);
+            $stmtInsert->execute($values);
         }
         $this->pdo->commit();
     }
 
     public function populateStates(): void
     {
-        $commands = [
+        $this->execute(
             'DELETE FROM states;',
-            'INSERT INTO states SELECT DISTINCT CAST(c_estado AS INTEGER) as id, d_estado as name'
-            . ' FROM raw ORDER BY c_estado;',
-        ];
-        $this->execute(...$commands);
+            <<< SQL
+                INSERT INTO states (id, name)
+                SELECT DISTINCT CAST(c_estado AS INTEGER) as id, d_estado as name
+                FROM raw
+                ORDER BY c_estado;
+                SQL,
+        );
     }
 
-    /**
-     * @param array<string, string> $names
-     */
-    public function renameStates(array $names): void
+    public function renameStates(RenameRules $renameStatesRules): void
     {
-        if ([] === $names) {
-            return;
-        }
-        $sql = 'UPDATE states SET name = :newname WHERE (name = :oldname);';
+        $sql = 'UPDATE states SET name = :new WHERE (name = :old);';
         $stmt = $this->pdo->prepare($sql);
-        foreach ($names as $oldname => $newname) {
-            $stmt->execute(['oldname' => $oldname, 'newname' => $newname]);
+        foreach ($renameStatesRules->rulesAsNames() as $old => $new) {
+            $stmt->execute(['old' => $old, 'new' => $new]);
         }
     }
 
     public function populateDistricts(): void
     {
-        $commands = [
+        $this->execute(
             'DELETE FROM districts;',
-            'INSERT INTO districts SELECT DISTINCT null as id, CAST(c_estado AS INTEGER) as idstate, d_mnpio as name,'
-            . ' CAST(c_mnpio AS INTEGER) as idraw FROM raw ORDER BY c_estado, c_mnpio;',
-        ];
-        $this->execute(...$commands);
+            <<< SQL
+                INSERT INTO districts (idstate, name, idraw)
+                SELECT DISTINCT CAST(c_estado AS INTEGER) as idstate, d_mnpio as name, CAST(c_mnpio AS INTEGER) as idraw
+                FROM raw
+                ORDER BY c_estado, c_mnpio;
+                SQL,
+        );
     }
 
     public function populateCities(): void
     {
-        $commands = [
+        $this->execute(
             'DELETE FROM cities;',
-            'INSERT INTO cities SELECT DISTINCT null as id, CAST(c_estado AS INTEGER) as idstate, d_ciudad as name,'
-            . ' CAST(c_cve_ciudad AS INTEGER) as idraw FROM raw WHERE (d_ciudad <> "")'
-            . ' ORDER BY c_estado, c_cve_ciudad;',
-        ];
-        $this->execute(...$commands);
+            <<< SQL
+                INSERT INTO cities (idstate, name, idraw)
+                SELECT DISTINCT CAST(c_estado AS INTEGER) as idstate, d_ciudad as name,
+                                CAST(c_cve_ciudad AS INTEGER) as idraw
+                FROM raw
+                WHERE (d_ciudad <> '')
+                ORDER BY c_estado, c_cve_ciudad;
+                SQL,
+        );
     }
 
     public function populateLocationTypes(): void
     {
-        $commands = [
+        $this->execute(
             'DELETE FROM locationtypes;',
-            'INSERT INTO locationtypes SELECT DISTINCT CAST(c_tipo_asenta AS INTEGER) AS id, d_tipo_asenta AS name'
-            . ' FROM raw ORDER BY c_tipo_asenta;',
-        ];
-        $this->execute(...$commands);
+            <<< SQL
+                INSERT INTO locationtypes (id, name)
+                SELECT DISTINCT CAST(c_tipo_asenta AS INTEGER) AS id, d_tipo_asenta AS name
+                FROM raw ORDER BY c_tipo_asenta;
+                SQL,
+        );
     }
 
     public function populateLocations(): void
     {
-        $commands = [
+        $this->execute(
             'DELETE FROM locations;',
-            'INSERT INTO locations '
-            . ' SELECT DISTINCT NULL AS id, t.id as idlocationtype, d.id AS iddistrict,'
-            . ' c.id AS idcity, d_asenta AS name'
-            . ' FROM raw AS r'
-            . ' INNER JOIN locationtypes as t ON (t.name = r.d_tipo_asenta)'
-            . ' INNER JOIN districts as d'
-            . ' ON (d.idraw = CAST(c_mnpio AS INTEGER) AND d.idstate = CAST(c_estado AS INTEGER))'
-            . ' LEFT JOIN cities as c'
-            . ' ON (c.idraw = CAST(c_cve_ciudad AS INTEGER) AND c.idstate = CAST(c_estado AS INTEGER))'
-            . ';',
-        ];
-        $this->execute(...$commands);
+            <<< SQL
+                INSERT INTO locations (idlocationtype, iddistrict, idcity, name)
+                SELECT DISTINCT t.id as idlocationtype, d.id AS iddistrict, c.id AS idcity, d_asenta AS name
+                FROM raw AS r
+                INNER JOIN locationtypes as t ON (t.name = r.d_tipo_asenta)
+                INNER JOIN districts as d
+                    ON (d.idraw = CAST(c_mnpio AS INTEGER) AND d.idstate = CAST(c_estado AS INTEGER))
+                LEFT JOIN cities as c
+                    ON (c.idraw = CAST(c_cve_ciudad AS INTEGER) AND c.idstate = CAST(c_estado AS INTEGER));
+                SQL,
+        );
     }
 
     public function populateZipCodes(): void
     {
-        $commands = [
+        $this->execute(
             'DELETE FROM zipcodes;',
-            'INSERT INTO zipcodes'
-            . ' SELECT DISTINCT CAST(d_codigo AS INTEGER) AS id, d.id AS iddistrict'
-            . ' FROM raw AS r'
-            . ' INNER JOIN districts AS d'
-            . ' ON (d.idraw = CAST(c_mnpio AS INTEGER) AND d.idstate = CAST(c_estado AS INTEGER))'
-            . ';',
-        ];
-        $this->execute(...$commands);
+            <<< SQL
+                INSERT INTO zipcodes (id, iddistrict)
+                SELECT DISTINCT CAST(d_codigo AS INTEGER) AS id, d.id AS iddistrict
+                FROM raw AS r
+                INNER JOIN districts AS d
+                    ON (d.idraw = CAST(c_mnpio AS INTEGER) AND d.idstate = CAST(c_estado AS INTEGER));
+                SQL,
+        );
     }
 
     public function populateLocationZipCodes(): void
     {
-        $commands = [
+        $this->execute(
             'DELETE FROM locationzipcodes;',
-            'INSERT INTO locationzipcodes'
-            . ' SELECT DISTINCT l.id AS idlocation, CAST(d_codigo AS INTEGER) AS zipcode'
-            . ' FROM raw AS r'
-            . ' INNER JOIN locationtypes AS t ON (t.name = r.d_tipo_asenta)'
-            . ' INNER JOIN districts AS d'
-            . ' ON (d.idraw = CAST(c_mnpio AS INTEGER) AND d.idstate = CAST(c_estado AS INTEGER))'
-            . ' INNER JOIN locations AS l ON (t.id = l.idlocationtype AND d.id = l.iddistrict AND l.name = r.d_asenta)'
-            . ';',
-        ];
-        $this->execute(...$commands);
+            <<< SQL
+                INSERT INTO locationzipcodes (idlocation, zipcode)
+                SELECT DISTINCT l.id AS idlocation, CAST(d_codigo AS INTEGER) AS zipcode
+                FROM raw AS r
+                INNER JOIN locationtypes AS t ON (t.name = r.d_tipo_asenta)
+                INNER JOIN districts AS d
+                    ON (d.idraw = CAST(c_mnpio AS INTEGER) AND d.idstate = CAST(c_estado AS INTEGER))
+                INNER JOIN locations AS l
+                    ON (t.id = l.idlocationtype AND d.id = l.iddistrict AND l.name = r.d_asenta);
+                SQL,
+        );
     }
 
     public function clearRawTable(): void
@@ -228,14 +265,27 @@ class PdoImporter
         $this->execute('DELETE FROM raw;');
     }
 
-    /**
-     * @param string|PDOStatement ...$commands
-     * @return void
-     */
-    protected function execute(...$commands): void
+    protected function execute(string|PDOStatement ...$commands): void
     {
         foreach ($commands as $command) {
             if (is_string($command)) {
+                $command = (string) preg_replace(
+                    [
+                        '/^\s+/',
+                        '/\s+/',
+                        '/\(\s+/',
+                        '/\s+\)/',
+                        '/\s+;\s*$/',
+                    ],
+                    [
+                        '',
+                        ' ',
+                        '(',
+                        ')',
+                        ';',
+                    ],
+                    $command
+                );
                 $this->pdo->exec($command);
             } elseif ($command instanceof PDOStatement) {
                 $command->execute();
