@@ -163,6 +163,6 @@ Getting from:
 [badge-build]: https://img.shields.io/github/actions/workflow/status/eclipxe13/sepomexphp/build.yml?branch=master&style=flat-square
 [badge-reliability]: https://sonarcloud.io/api/project_badges/measure?project=eclipxe13_sepomexphp&metric=reliability_rating
 [badge-maintainability]: https://sonarcloud.io/api/project_badges/measure?project=eclipxe13_sepomexphp&metric=sqale_rating
-[badge-coverage]: https://img.shields.io/sonar/coverage/eclipxe13_sepomexphp/main?logo=sonarcloud&server=https%3A%2F%2Fsonarcloud.io
-[badge-violations]: https://img.shields.io/sonar/violations/eclipxe13_sepomexphp/main?format=long&logo=sonarcloud&server=https%3A%2F%2Fsonarcloud.io
+[badge-coverage]: https://img.shields.io/sonar/coverage/eclipxe13_sepomexphp/master?logo=sonarcloud&server=https%3A%2F%2Fsonarcloud.io
+[badge-violations]: https://img.shields.io/sonar/violations/eclipxe13_sepomexphp/master?format=long&logo=sonarcloud&server=https%3A%2F%2Fsonarcloud.io
 [badge-downloads]: https://img.shields.io/packagist/dt/eclipxe/sepomexphp.svg?style=flat-square
