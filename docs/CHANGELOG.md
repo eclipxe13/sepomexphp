@@ -2,6 +2,23 @@
 
 **This document is in spanish**
 
+## Versión 4.0.0 2023-06-30
+
+El proyecto tiene cambios menores en la descarga, pero que rompen la compatibilidad.
+Puede ver la guía de actualización en el archivo [CHANGES_VERSION_3.0_TO_4.0.md](CHANGES_VERSION_3.0_TO_4.0.md).
+
+En esta actualización, se supone que es posible reutilizar los datos del formulario indefinidamente, por lo tanto,
+no sería necesario utilizar una herramienta tan completa como *Symfony Browser Kit* y simplemente se puede generar
+la descarga utilizando un cliente HTTP.
+
+### Cambios para usuarios
+
+- La clase `Downloader` se renombró a `SymfonyDownloader`.
+- Se agregó `GuzzleDownloader` que también permite hacer la descarga del recurso público.
+- Se agregó `PhpStreamsDownloader` que también permite hacer la descarga del recurso público sin dependencias.
+- Ya no es necesario instalar forzosamente `symfony/browser-kit`.
+- El proyecto sugiere `symfony/browser-kit` y `guzzlehttp/guzzle`, haciendo opcional su instalación.
+
 ## Version 3.0.0 2023-05-13
 
 El proyecto cambió drásticamente. El mejor consejo es volver a implementar la librería en esta nueva versión.
