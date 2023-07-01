@@ -30,7 +30,7 @@ A diferencia de la clase `SymfonyDownloader`, no interpreta el formulario y util
 
 ## Se agregó `PhpStreamsDownloader`
 
-La clase `GuzzleDownloader` permite hacer la descarga del recurso público, pero utilizando
+La clase `PhpStreamsDownloader` permite hacer la descarga del recurso público, pero utilizando
 funciones de PHP. No necesita ninguna dependencia externa, pero en algunos entornos restringidos
 podría llegar a fallar.
 
