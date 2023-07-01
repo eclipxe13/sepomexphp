@@ -6,7 +6,7 @@
 
 declare(strict_types=1);
 
-use Eclipxe\SepomexPhp\Downloader\Downloader;
+use Eclipxe\SepomexPhp\Downloader\SymfonyDownloader;
 use Eclipxe\SepomexPhp\Importer\PdoImporter;
 
 require_once __DIR__ . '/../vendor/autoload.php';
@@ -25,7 +25,7 @@ exit(call_user_func(function () {
 
         // raw file
         if (! file_exists($rawFile)) {
-            $downloader = new Downloader();
+            $downloader = new SymfonyDownloader();
             printf("File %s does not exists, will be downloaded from %s\n", $rawFile, $downloader::LINK);
             $downloader->downloadTo($rawFile);
         }

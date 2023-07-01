@@ -30,12 +30,19 @@
         "php": ">=8.1",
         "ext-pdo": "*",
         "ext-iconv": "*",
-        "ext-zip": "*",
-        "symfony/browser-kit": "^6.2"
+        "ext-zip": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",
-        "dms/phpunit-arraysubset-asserts": "^0.4.0"
+        "dms/phpunit-arraysubset-asserts": "^0.4.0",
+        "guzzlehttp/guzzle": "^7.7",
+        "symfony/browser-kit": "^6.3",
+        "symfony/http-client": "^6.3",
+        "symfony/mime": "^6.3"
+    },
+    "suggest": {
+        "guzzlehttp/guzzle": "Perform the download process using Guzzle",
+        "symfony/browser-kit": "Perform the download process using Symfony Browser Kit (recommended)"
     },
     "scripts": {
         "dev:build": ["@dev:fix-style", "@dev:test"],

@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-use Eclipxe\SepomexPhp\Downloader\Downloader;
+use Eclipxe\SepomexPhp\Downloader\SymfonyDownloader;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
@@ -32,7 +32,7 @@ exit(call_user_func(function (string $command, string ...$arguments): int {
     if ('' === $destinationFile) {
         $destinationFile = $defaultDestinationFile;
     }
-    $downloader = new Downloader();
+    $downloader = new SymfonyDownloader();
     echo sprintf("Download from %s to %s\n", $downloader::LINK, $destinationFile);
 
     try {
