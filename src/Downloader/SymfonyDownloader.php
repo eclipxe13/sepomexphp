@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Eclipxe\SepomexPhp\Downloader;
 
-use Eclipxe\SepomexPhp\Internal\ZipExtractor;
 use RuntimeException;
 use Symfony\Component\BrowserKit\HttpBrowser;
 use Symfony\Component\BrowserKit\Response;
 
 final class SymfonyDownloader implements DownloaderInterface
 {
+    use DownloaderTrait;
+
     public function __construct(
         public readonly HttpBrowser $client = new HttpBrowser(),
     ) {
@@ -37,7 +38,7 @@ final class SymfonyDownloader implements DownloaderInterface
             throw new RuntimeException("Unable to write data to $zipTempFile");
         }
 
-        (new ZipExtractor())->extractFirstFileTo($zipTempFile, '*.txt', $destinationFile);
+        $this->extractFirstFileTo($zipTempFile, '*.txt', $destinationFile);
         unlink($zipTempFile);
     }
 }
