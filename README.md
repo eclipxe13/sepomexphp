@@ -64,7 +64,7 @@ If you only want to download the source file from SEPOMEX, check script file `sc
 /**
  * @var string $destinationFile is the path where the destination file will be located. 
  */
-$downloader = new \Eclipxe\SepomexPhp\Downloader\Downloader();
+$downloader = new \Eclipxe\SepomexPhp\Downloader\SymfonyDownloader();
 printf("Download from %s to %s\n", $downloader::LINK, $destinationFile);
 $downloader->downloadTo($destinationFile);
 ```

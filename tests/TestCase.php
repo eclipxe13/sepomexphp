@@ -7,10 +7,29 @@ namespace Eclipxe\SepomexPhp\Tests;
 use Eclipxe\SepomexPhp\PdoDataGateway\PdoDataGateway;
 use Eclipxe\SepomexPhp\SepomexPhp;
 use PDO;
+use RuntimeException;
 
 abstract class TestCase extends \PHPUnit\Framework\TestCase
 {
     private ?PDO $pdo = null;
+
+    public static function fileTemp(): string
+    {
+        $temporaryName = tempnam('', '');
+        if (false === $temporaryName) {
+            throw new RuntimeException('Unable to create a temporary file');
+        }
+        return $temporaryName;
+    }
+
+    public static function fileFirstLine(string $file): string
+    {
+        $handler = fopen($file, 'r');
+        if (false === $handler) {
+            throw new \RuntimeException(sprintf('Unable to open "%s"', $file));
+        }
+        return (string) fgets($handler);
+    }
 
     public static function filePath(string $filename): string
     {
