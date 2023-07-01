@@ -69,6 +69,14 @@ printf("Download from %s to %s\n", $downloader::LINK, $destinationFile);
 $downloader->downloadTo($destinationFile);
 ```
 
+It is possible to use your own downloader, just implement the interface `DownloaderInterface`.
+
+The project provides the following implementations:
+
+- `SymfonyDownloader`: It uses *Symfony Browser Kit* to perform the download (recommended).
+- `GuzzleDownloader`: Uses *Guzzle* and fixed data to perform the download. 
+- `PhpStreamsDownloader`: Uses plain PHP functions and fixed data to perform the download. 
+
 If you want to import the source file from SEPOMEX into your own SQLite3 database, check `create-sqlite-from-raw.php`.
 
 ```php
