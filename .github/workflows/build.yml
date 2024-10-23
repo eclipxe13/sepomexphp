@@ -59,6 +59,7 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php-version }}
+          extensions: sqlite3, iconv, zip
           coverage: none
           tools: composer:v2
         env:
