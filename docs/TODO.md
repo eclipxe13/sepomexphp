@@ -3,6 +3,7 @@
 For next major release:
 
 - [ ] Remove empty constructor for `Eclipxe\SepomexPhp\Downloader\PhpStreamsDownloader`.
+- [ ] Use dedicated exceptions.
 
 Include more options like:
 
