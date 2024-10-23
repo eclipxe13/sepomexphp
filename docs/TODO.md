@@ -1,5 +1,9 @@
 # SepomexPHP To Do List
 
+For next major release:
+
+- [ ] Remove empty constructor for `Eclipxe\SepomexPhp\Downloader\PhpStreamsDownloader`.
+
 Include more options like:
 
 - [ ] Search states by name
