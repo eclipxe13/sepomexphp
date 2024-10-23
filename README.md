@@ -164,13 +164,13 @@ Getting from:
 [violations]: https://sonarcloud.io/project/issues?id=eclipxe13_sepomexphp&resolved=false
 [downloads]: https://packagist.org/packages/eclipxe/sepomexphp
 
-[badge-source]: http://img.shields.io/badge/source-eclipxe13/sepomexphp-blue.svg
-[badge-php-version]: https://img.shields.io/packagist/php-v/eclipxe/sepomexphp
-[badge-release]: https://img.shields.io/github/release/eclipxe13/sepomexphp.svg
-[badge-license]: https://img.shields.io/github/license/eclipxe13/sepomexphp.svg
-[badge-build]: https://img.shields.io/github/actions/workflow/status/eclipxe13/sepomexphp/build.yml?branch=master
+[badge-source]: http://img.shields.io/badge/source-eclipxe13/sepomexphp-blue.svg?logo=github
+[badge-php-version]: https://img.shields.io/packagist/php-v/eclipxe/sepomexphp?logo=php
+[badge-release]: https://img.shields.io/github/release/eclipxe13/sepomexphp.svg?logo=git
+[badge-license]: https://img.shields.io/github/license/eclipxe13/sepomexphp.svg?logo=open-source-initiative
+[badge-build]: https://img.shields.io/github/actions/workflow/status/eclipxe13/sepomexphp/build.yml?branch=master&logo=github-actions
 [badge-reliability]: https://sonarcloud.io/api/project_badges/measure?project=eclipxe13_sepomexphp&metric=reliability_rating
 [badge-maintainability]: https://sonarcloud.io/api/project_badges/measure?project=eclipxe13_sepomexphp&metric=sqale_rating
 [badge-coverage]: https://img.shields.io/sonar/coverage/eclipxe13_sepomexphp/master?logo=sonarcloud&server=https%3A%2F%2Fsonarcloud.io
 [badge-violations]: https://img.shields.io/sonar/violations/eclipxe13_sepomexphp/master?format=long&logo=sonarcloud&server=https%3A%2F%2Fsonarcloud.io
-[badge-downloads]: https://img.shields.io/packagist/dt/eclipxe/sepomexphp.svg
+[badge-downloads]: https://img.shields.io/packagist/dt/eclipxe/sepomexphp.svg?logo=packagist
