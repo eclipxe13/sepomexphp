@@ -12,6 +12,7 @@ final class PhpStreamsDownloader implements DownloaderInterface
 
     public function __construct()
     {
+        // if empty, remove on next major release
     }
 
     public function downloadTo(string $destinationFile): void

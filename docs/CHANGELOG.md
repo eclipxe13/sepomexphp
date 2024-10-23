@@ -2,6 +2,22 @@
 
 **This document is in spanish**
 
+## Mantenimiento 2024-10-23
+
+Se da mantenimiento a los archivos de documentación y de desarrollo del proyecto:
+
+- Se actualiza el archivo de licencia a 2024.
+- Se actualiza la configuración de `php-cs-fixer` por que la regla `function_typehint_space` fue deprecada.
+- Se agrega la compatibilidad con Symfony 7.x en desarrollo.
+- Se actualiza la librería `dms/phpunit-arraysubset-asserts` en desarrollo a la versión `0.5.0`.
+- En los flujos de trabajo de GitHub:
+  - Se agrega PHP 8.3 a la matriz de pruebas.
+  - Se usa PHP 8.3 para los trabajos.
+  - Se actualizan las acciones de GitHub a la versión 4.
+  - Se cambia la variable `php-version` a singular.
+  - Se agrega la configuración extensiones al ejecutar el trabajo `phpunit` pues falla en `nektos/act`.
+- Se actualizan las herramientas de desarrollo.
+
 ## Versión 4.0.0 2023-06-30
 
 El proyecto tiene cambios menores en la descarga, pero que rompen la compatibilidad.
