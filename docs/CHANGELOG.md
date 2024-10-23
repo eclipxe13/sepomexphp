@@ -8,6 +8,7 @@ Se da mantenimiento a los archivos de documentación y de desarrollo del proyect
 
 - Se actualiza el archivo de licencia a 2024.
 - Se actualiza la configuración de `php-cs-fixer` por que la regla `function_typehint_space` fue deprecada.
+- Se agrega la compatibilidad con Symfony 7.x en desarrollo.
 - En los flujos de trabajo de GitHub:
   - Se agrega PHP 8.3 a la matriz de pruebas.
   - Se usa PHP 8.3 para los trabajos.
